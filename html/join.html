@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
     <link rel="stylesheet" href="/Dround/bootstrap5.2.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Dround/css/common.css">
+    <!-- js -->
     <script src="/Dround/bootstrap5.2.3/js/bootstrap.min.js"></script>
-    <title>회원가입</title>
+    <script src="/Dround/js/common.js"></script>
+    <title>회원가입</title> 
     <style>
         .fsP12{font-size: 12px !important;} 
         .color1{color:#1c8f5C !important;}
@@ -27,112 +31,112 @@
         <h1 class="my-3"><b class="color1">D</b>round</h1>
         <h2 class="mb-5">회원가입</h2>
         <form class="fw-bold fs-5">
-        <div class="mb-3">
-            <label for="email" class="form-label">이메일</label>
-            <div class="fsP12 color2 back_color1 p-1 mb-1">회사 이메일로만 가입이 가능합니다. 없을 경우 <a href="#none" class="color2">문의해주세요.</a></div>    
-            <input type="email" class="form-control" id="email" name="email" placeholder="회사 이메일을 입력해주세요.">
-        </div>
-        <div class="mb-3">
-            <label for="nickname" class="form-label">닉네임</label>
-            <input type="text" class="form-control" id="nickname" name="nickname" placeholder="닉네임을 설정해주세요.">
-        </div>
-        <div class="mb-3">
-            <label for="password" class="form-label">비밀번호</label>
-            <input type="password" class="form-control" id="password" name="password" placeholder="비밀번호를 입력하세요">
-        </div>
-        <div class="mb-3">
-            <label for="password-confirm" class="form-label">비밀번호 확인</label>
-            <input type="password" class="form-control" id="password-confirm" name="password-confirm" placeholder="비밀번호를 다시 한번 입력해주세요">
-        </div>
-        <div class="mb-3">
-            <label for="phone" class="form-label">휴대폰 번호</label>
-            <div class="input-group">
-                <input type="tel" class="form-control" id="phone" name="phone" placeholder="번호를 입력해주세요" maxlength="11">
-                <button type="button" class="btn btn-outline-secondary ms-2">인증번호</button>
+            <div class="mb-3">
+                <label for="email" class="form-label">이메일</label>
+                <div class="fsP12 color2 back_color1 p-1 mb-1">회사 이메일로만 가입이 가능합니다. 없을 경우 <a href="#none" class="color2">문의해주세요.</a></div>    
+                <input type="email" class="form-control" id="email" name="email" placeholder="회사 이메일을 입력해주세요.">
             </div>
-            <div class="input-group w-25">
-                <input type="tel" class="form-control mt-1 " id="phone2" name="phone2" placeholder="인증번호 입력" maxlength="6">
+            <div class="mb-3">
+                <label for="nickname" class="form-label">닉네임</label>
+                <input type="text" class="form-control" id="nickname" name="nickname" placeholder="닉네임을 설정해주세요.">
             </div>
-        </div>
-        <div class="mb-3">
-            <label for="belong" class="form-label">소속</label>
-            <input type="password" class="form-control" id="belong" name="belong" placeholder="본부/실/팀 등 자세히 입력해주세요.">
-        </div>
-        <div class="mb-3">
-            <p>직무 선택</p>
-            <div class="row text-center fw-normal fs-2 job_selection">
-                <div class="col-5">
-                    <input type="checkbox" class="btn-check" id="implementer" autocomplete="off">
-                    <label class="btn" for="implementer">시행사</label>
+            <div class="mb-3">
+                <label for="password" class="form-label">비밀번호</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="비밀번호를 입력하세요">
+            </div>
+            <div class="mb-3">
+                <label for="password-confirm" class="form-label">비밀번호 확인</label>
+                <input type="password" class="form-control" id="password-confirm" name="password-confirm" placeholder="비밀번호를 다시 한번 입력해주세요">
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">휴대폰 번호</label>
+                <div class="input-group">
+                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="번호를 입력해주세요" maxlength="11">
+                    <button type="button" class="btn btn-outline-secondary ms-2">인증번호</button>
                 </div>
-                <div class="col-5">
-                    <input type="checkbox" class="btn-check" id="securities_company" autocomplete="off">
-                    <label class="btn" for="securities_company">증권사</label>
+                <div class="input-group w-25">
+                    <input type="tel" class="form-control mt-1 " id="phone2" name="phone2" placeholder="인증번호 입력" maxlength="6">
                 </div>
-                <div class="col-5">
-                    <input type="checkbox" class="btn-check" id="manager" autocomplete="off">
-                    <label class="btn" for="manager">운용사</label>
-                </div>
-                <div class="col-5">
-                    <input type="checkbox" class="btn-check" id="builder" autocomplete="off">
-                    <label class="btn" for="builder">시공사</label>
-                </div>
-                <div class="col-5">
-                    <input type="checkbox" class="btn-check" id="trust_company" autocomplete="off">
-                    <label class="btn" for="trust_company">신탁사</label>
-                </div>
-                <div class="col-5">
-                    <input type="checkbox" class="btn-check" id="for_weeks" autocomplete="off">
-                    <label class="btn" for="for_weeks">대 주</label>
-                </div>
-                <div class="col-5">
-                    <input type="checkbox" class="btn-check" id="md_consulting" autocomplete="off">
-                    <label class="btn" for="md_consulting">MD/컨설팅</label>
-                </div>
-                <div class="col-5">
-                    <input type="checkbox" class="btn-check" id="proofreader" autocomplete="off">
-                    <label class="btn" for="proofreader">증개사</label>
-                </div>
-                <div class="col-5">
-                    <input type="checkbox" class="btn-check" id="accounting_firm" autocomplete="off">
-                    <label class="btn" for="accounting_firm">회계법인</label>
-                </div>
-                <div class="col-5">
-                    <input type="checkbox" class="btn-check" id="law_firm" autocomplete="off">
-                    <label class="btn" for="law_firm">법무법인</label>
-                </div>
-                <div class="col-5">
-                    <input type="checkbox" class="btn-check" id="appraisal_agency" autocomplete="off">
-                    <label class="btn" for="appraisal_agency">감정평가법인</label>
-                </div>
-                <div class="col-5">
-                    <input type="checkbox" class="btn-check" id="related_corporation" autocomplete="off">
-                    <label class="btn" for="related_corporation">유관법인</label>
-                </div>
-                <div class="fsP12 p-1 mb-1 text-start">그 외 직무 분야를 희망할 경우 문의주세요. <a href="#none">문의하기</a></div>    
+            </div>
+            <div class="mb-3">
+                <label for="belong" class="form-label">소속</label>
+                <input type="password" class="form-control" id="belong" name="belong" placeholder="본부/실/팀 등 자세히 입력해주세요.">
+            </div>
+            <div class="mb-3">
+                <p>직무 선택</p>
+                <div class="row text-center fw-normal fs-2 job_selection">
+                    <div class="col-5">
+                        <input type="checkbox" class="btn-check" id="implementer" autocomplete="off">
+                        <label class="btn" for="implementer">시행사</label>
+                    </div>
+                    <div class="col-5">
+                        <input type="checkbox" class="btn-check" id="securities_company" autocomplete="off">
+                        <label class="btn" for="securities_company">증권사</label>
+                    </div>
+                    <div class="col-5">
+                        <input type="checkbox" class="btn-check" id="manager" autocomplete="off">
+                        <label class="btn" for="manager">운용사</label>
+                    </div>
+                    <div class="col-5">
+                        <input type="checkbox" class="btn-check" id="builder" autocomplete="off">
+                        <label class="btn" for="builder">시공사</label>
+                    </div>
+                    <div class="col-5">
+                        <input type="checkbox" class="btn-check" id="trust_company" autocomplete="off">
+                        <label class="btn" for="trust_company">신탁사</label>
+                    </div>
+                    <div class="col-5">
+                        <input type="checkbox" class="btn-check" id="for_weeks" autocomplete="off">
+                        <label class="btn" for="for_weeks">대 주</label>
+                    </div>
+                    <div class="col-5">
+                        <input type="checkbox" class="btn-check" id="md_consulting" autocomplete="off">
+                        <label class="btn" for="md_consulting">MD/컨설팅</label>
+                    </div>
+                    <div class="col-5">
+                        <input type="checkbox" class="btn-check" id="proofreader" autocomplete="off">
+                        <label class="btn" for="proofreader">증개사</label>
+                    </div>
+                    <div class="col-5">
+                        <input type="checkbox" class="btn-check" id="accounting_firm" autocomplete="off">
+                        <label class="btn" for="accounting_firm">회계법인</label>
+                    </div>
+                    <div class="col-5">
+                        <input type="checkbox" class="btn-check" id="law_firm" autocomplete="off">
+                        <label class="btn" for="law_firm">법무법인</label>
+                    </div>
+                    <div class="col-5">
+                        <input type="checkbox" class="btn-check" id="appraisal_agency" autocomplete="off">
+                        <label class="btn" for="appraisal_agency">감정평가법인</label>
+                    </div>
+                    <div class="col-5">
+                        <input type="checkbox" class="btn-check" id="related_corporation" autocomplete="off">
+                        <label class="btn" for="related_corporation">유관법인</label>
+                    </div>
+                    <div class="fsP12 p-1 mb-1 text-start">그 외 직무 분야를 희망할 경우 문의주세요. <a href="#none">문의하기</a></div>    
+                </div>    
             </div>    
-        </div>    
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="allAgreeCheck">
-            <label class="form-check-label" for="allAgreeCheck">전체 동의하기</label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="termAgreeCheck">
-            <label class="form-check-label" for="termAgreeCheck">서비스 이용약관 동의</label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="privacyAgreeCheck">
-            <label class="form-check-label" for="privacyAgreeCheck">개인정보 취급방침 동의</label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="usageAgreeCheck">
-            <label class="form-check-label" for="usageAgreeCheck">개인정보 이용/수집 동의</label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="notifyAgreeCheck">
-            <label class="form-check-label" for="notifyAgreeCheck">부동산정보 및 서비스 진행 상 알림</label>
-        </div>
-        <button type="submit" class="btn btn-primary w-100">회원가입 완료</button>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="allAgreeCheck">
+                <label class="form-check-label" for="allAgreeCheck">전체 동의하기</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="termAgreeCheck">
+                <label class="form-check-label" for="termAgreeCheck">서비스 이용약관 동의</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="privacyAgreeCheck">
+                <label class="form-check-label" for="privacyAgreeCheck">개인정보 취급방침 동의</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="usageAgreeCheck">
+                <label class="form-check-label" for="usageAgreeCheck">개인정보 이용/수집 동의</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="notifyAgreeCheck">
+                <label class="form-check-label" for="notifyAgreeCheck">부동산정보 및 서비스 진행 상 알림</label>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">회원가입 완료</button>
         </form>
     </div>
 </body>
