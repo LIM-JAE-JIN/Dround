@@ -1,17 +1,55 @@
 @charset "utf-8";
+a{
+    text-decoration:none;
+    color:#353839;
+}
+
+ol, ul {
+    list-style:none;
+}
+
+table{
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
 
 /* body */
-body{color: #353839;}
-
-
+body{
+    color:#353839 ;line-height:1;
+}
 
 /* header */
-header{position:relative;background:#fff;height: 90px;}
+header{position:relative;background:#fff;height:90px;overflow:hidden;}
 header .header_warp{max-width:1200px;height:90px;margin:0 auto;}
 header .header_warp h1{max-width:113px;}
 
 
-
 /* img */
 img{max-width:100%;}
+
+
 /* .d-green{color: #1C8F51;} */
