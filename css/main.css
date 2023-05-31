@@ -57,3 +57,20 @@
 .dr-button.disabled{color:#989CA1;background:#E8E8EB;border-color:transparent;}
 
 
+/* Text field states */
+/* input */
+.dr-input-wrap{position:relative;display:inline-block;width:100%;}
+.dr-input-wrap .dr-input{width:100%;height:45px;padding:1.2rem 0 1.2rem 1.5rem;border:1px solid #d7d7d7;border-radius:3px;color:#353839;font-size:1.4rem;font-weight:500;}
+input:focus{border-color:#131414;}
+input::placeholder{color:#989CA1; font-weight: 400;}
+
+/* textarea */
+.dr-textarea-wrap{position:relative;display:inline-block;width:100%;}
+.dr-textarea-wrap .dr-textarea{width:100%;padding:1.2rem 1.5rem;border:1px solid #131414; font-size:1.4rem; line-height:2.1rem;}
+
+/* check */
+.dr-checkbox{}
+.dr-checkbox input{width:18px;height:18px;color:#D2D2D2;border-color:#D2D2D2; }
+.dr-checkbox input + label{vertical-align:top;font-size:1.5rem;color:#989CA1;}
+.dr-checkbox input:checked {background-color: red;}
+.dr-checkbox input:checked + label{color: #353839; font-family: 500;}
