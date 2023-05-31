@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/laout.css">
+    <link rel="stylesheet" href="bootstrap5.2.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/laout.css">
     <title>가이드</title>
     <style>
         div.header-guide{position:fixed;top:0;left:0;width:100%;background:#000;color:#fff;z-index:100;padding:20px;}
         div.header-guide h1.tit1{font-size: 1.8rem;}
-
         /* main */
         main.guide{padding:20px; line-height: 20px;}
         main.guide .table_wrap table{width:100%;border-spacing:0;border-collapse: collapse;}
         main.guide .table_wrap table th{border:1px solid #dedede; padding:5px;}
         .dr-guide-line{ margin-top: 3rem; margin-bottom: 1rem;}
         .dr-guide-line h2{font-size: 3rem; color: red; position: relative; display: inline-block;}
-        .dr-guide-line h2::before{content: "#"; display: inline-block;}
+        .dr-guide-line h2::before{content: "dr-"; display: inline-block;}
         .dr-guide-line h2::after{content: ""; display:block;}
+        hr{margin:0.5rem 0;border-color:transparent;}
     </style>
 </head>
 <body>
@@ -48,25 +49,32 @@
             <h2>icon label</h2>
         </div>
         <span class="dr-icon-txt">기본</span>
-        <span class="dr-icon-txt txt-1">시행사</span>
-        <span class="dr-icon-txt txt-2">증권사</span>
-        <span class="dr-icon-txt txt-3">운용사</span>
-        <span class="dr-icon-txt txt-4">시공사</span>
-        <span class="dr-icon-txt txt-5">신탁사</span>
-        <span class="dr-icon-txt txt-6">대주</span>
-        <span class="dr-icon-txt txt-7">MD/컨설팅</span>
-        <span class="dr-icon-txt txt-8">중개사</span>
-        <span class="dr-icon-txt txt-9">회계법인</span>
-        <span class="dr-icon-txt txt-10">법무법인</span>
-        <span class="dr-icon-txt txt-11">감정평가법인</span>
-        <span class="dr-icon-txt txt-12">유관법인</span>
+        <span class="dr-icon-txt dr-color-1">시행사</span>
+        <span class="dr-icon-txt dr-color-2">증권사</span>
+        <span class="dr-icon-txt dr-color-3">운용사</span>
+        <span class="dr-icon-txt dr-color-4">시공사</span>
+        <span class="dr-icon-txt dr-color-5">신탁사</span>
+        <span class="dr-icon-txt dr-color-6">대주</span>
+        <span class="dr-icon-txt dr-color-7">MD/컨설팅</span>
+        <span class="dr-icon-txt dr-color-8">중개사</span>
+        <span class="dr-icon-txt dr-color-9">회계법인</span>
+        <span class="dr-icon-txt dr-color-10">법무법인</span>
+        <span class="dr-icon-txt dr-color-11">감정평가법인</span>
+        <span class="dr-icon-txt dr-color-12">유관법인</span>
         <!-- button -->
         <div class="dr-guide-line">
             <h2>button</h2>
         </div>
         <div class="d-flex">
-            <button class="button">button</button>
-            <button class="button hover">hover</button>
+            <button class="dr-button me-1">button</button>
+            <button class="dr-button hover me-1">hover</button>
+            <button class="dr-button disabled" disabled="disabled">button</button><br>
+        </div>
+        <hr>
+        <div class="d-flex">
+            <button class="dr-button green me-1">button</button>
+            <button class="dr-button green hover me-1">hover</button>
+            <button class="dr-button disabled" disabled="disabled">button</button>
         </div>
     </main>
     <footer>
