@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap5.2.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/laout.css">
+    <title>Dround : 로그인</title>
+</head>
+<body>
+    <!-- 컨테이너 -->
+    <div class="container">
+        <div class="row">
+            <div class="login_wrap">
+                <h1 class="my-3"><img src="../img/icon_logo.png" alt="logo이미지"></h1>
+                <h2 class="fs1_3 color3 fw-bold mb-5">로그인 후 이용가능합니다.</h2>
+                <p class="text-danger fw-normal"> <!-- error_message  --></p>
+                <form method="post" action=" url 'signin' ">
+                    <div class="mb-3 dr-input-wrap">
+                        <input type="email" class="dr-input" id="email" name="email" placeholder="이메일 계정을 입력해주세요.">
+                        <span id="email-status"></span>
+                    </div>
+                    <div class="mb-3 dr-input-wrap">
+                        <input type="password" class="dr-input" id="password" name="password" placeholder="비밀번호를 입력해주세요.">
+                        <span id="password-status"></span>
+                    </div>
+                    <div class="d-flex fsP12 justify-content-between align-items-center">
+
+                        <div class="dr-checkbox">
+                            <input type="checkbox" id="login_continue" class="">
+                            <label for="login_continue" class="dr-color-main">로그인 유지</label>
+                        </div>
+                        <div>
+                            <span><a href="#none" class="dr-fz-14 dr-color-2 fw-bold">이메일 찾기</a></span>
+                            <span><a href="#none" class="dr-fz-14 dr-color-2 fw-bold">비밀번호 재설정</a></span>
+                        </div>
+                    </div>
+
+                    <div class="btn_wrap text-center mt-4">
+                        <div>
+                            <button type="submit" class="dr-button indigo w-100">로그인 하기</button>
+                        </div>
+                        <div class="mt-2">
+                            <a href="#none">
+                                <button type="button" class="dr-button disabled w-100">회원가입 하기</button>
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">회원가입 완료</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p><!-- {{ success_message }} --></p>  <!-- 동적으로 메세지 출력 -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--// 컨테이너 -->
+</body>
+</html>

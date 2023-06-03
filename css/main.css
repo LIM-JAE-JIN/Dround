@@ -50,10 +50,9 @@
 /* button */
 .dr-button{position:relative;display:inline-block;width:auto;padding:1.3rem 5.6rem;text-align:center;vertical-align:middle;font-size:1.6rem;font-weight:700;white-space:nowrap;text-decoration:none;overflow:hidden;box-sizing:border-box;border:1px solid #989CA1;border-radius:3px;color:#353839;line-height:2.4rem;}
 .dr-button.hover:hover{border-color: #353839;} /* 호버 */
-
 .dr-button.green{color:#fff;background-color:#1C8F51;border-color:transparent;} 
 .dr-button.green.hover:hover{background-color:#177442;}
-
+.dr-button.indigo{color:#fff;background-color:#353839;border-color:transparent;}
 .dr-button.disabled{color:#989CA1;background:#E8E8EB;border-color:transparent;}
 
 
@@ -71,6 +70,15 @@ input::placeholder{color:#989CA1; font-weight: 400;}
 /* check */
 .dr-checkbox{}
 .dr-checkbox input{width:18px;height:18px;color:#D2D2D2;border-color:#D2D2D2; }
-.dr-checkbox input + label{vertical-align:top;font-size:1.5rem;color:#989CA1;}
+.dr-checkbox input + label{vertical-align:top;font-size:1.4rem;color:#989CA1;margin-top:2px;}
 .dr-checkbox input:checked {background-color: red;}
 .dr-checkbox input:checked + label{color: #353839; font-family: 500;}
+
+
+/* ---------------------------------------------------------------------각 페이지 ---------------------------------------------------------------------------------*/
+
+
+/* 로그인 페이지*/
+.login_wrap{width:388px;position:fixed;top:50%;left:50%;transform: translate(-50%,-50%);padding:5rem 3rem 4rem 3rem;border:1px solid #e5e5e5;border-radius:10px;box-shadow:0px 0px 1px 1px rgba(0,0,0,0.09);}
+.login_wrap h1{max-width:113px;max-height:22px;}
+#timer{position:absolute;margin-left:auto;right:70px;top:14px;font-size:12px;color:red;opacity:.6;}
