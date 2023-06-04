@@ -2,18 +2,29 @@
 
 /* ------공통------ s */
 /* font */
-.dr-fz-11 { font-size: 1.1rem !important; } 
-.dr-fz-12 { font-size: 1.2rem !important; } 
-.dr-fz-13 { font-size: 1.3rem !important; } 
-.dr-fz-14 { font-size: 1.4rem !important; } 
-.dr-fz-15 { font-size: 1.5rem !important; } 
-.dr-fz-16 { font-size: 1.6rem !important; } 
-.dr-fz-17 { font-size: 1.7rem !important; } 
-.dr-fz-18 { font-size: 1.8rem !important; } 
-.dr-fz-19 { font-size: 1.9rem !important; } 
+.dr-fz-11 {font-size:1.1rem !important;} 
+.dr-fz-12 {font-size:1.2rem !important;} 
+.dr-fz-13 {font-size:1.3rem !important;} 
+.dr-fz-14 {font-size:1.4rem !important;} 
+.dr-fz-15 {font-size:1.5rem !important;} 
+.dr-fz-16 {font-size:1.6rem !important;} 
+.dr-fz-17 {font-size:1.7rem !important;} 
+.dr-fz-18 {font-size:1.8rem !important;} 
+.dr-fz-19 {font-size:1.9rem !important;} 
+
+/* font-weight */
+.dr-fw-100{font-weight:100 !important;}
+.dr-fw-200{font-weight:200 !important;}
+.dr-fw-300{font-weight:300 !important;}
+.dr-fw-400{font-weight:400 !important;}
+.dr-fw-500{font-weight:500 !important;}
+.dr-fw-600{font-weight:600 !important;}
+.dr-fw-700{font-weight:700 !important;}
+.dr-fw-800{font-weight:800 !important;}
+.dr-fw-900{font-weight:900 !important;}
 
 /* icon-label */
-.dr-icon-txt { display: inline-block; border: 1px solid transparent; background: #f3f3f3; font-size: 1.2rem; padding: 0 0.5rem; font-weight: 600; vertical-align: middle; white-space: nowrap; border-radius: 0.3rem; margin: 0 0.6rem 0.6rem 0; } 
+.dr-icon-txt {display:inline-block;border:1px solid transparent; background: #f3f3f3; font-size: 1.2rem; padding: 0 0.5rem; font-weight: 600; vertical-align: middle; white-space: nowrap; border-radius: 0.3rem; margin: 0 0.6rem 0.6rem 0; } 
 .dr-icon-txt:last-child { margin-right: 0; } 
 
 /* color */
