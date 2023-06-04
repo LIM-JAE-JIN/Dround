@@ -70,7 +70,7 @@ input::placeholder { color: #989ca1; font-weight: 400; }
 /* check */
 .dr-checkbox {position: relative;}
 .dr-checkbox input[type="checkbox"] { display: none; }
-.dr-checkbox input[type="checkbox"] + label {line-height:18px; padding-left:25px}
+.dr-checkbox input[type="checkbox"] + label {line-height:18px; padding-left:25px; font-size:1.4rem;}
 .dr-checkbox input[type="checkbox"] + label::after { content:''; display: block; position: absolute; width:18px; height:18px; top:0; left:0; background:url(../img/icon/toggle_off.png) no-repeat; background-size:cover;} 
 .dr-checkbox input[type="checkbox"]:checked + label::after { content:''; background:url(../img/icon/toggle_on.png) no-repeat; background-size:cover; } 
 /* Text field states e */
