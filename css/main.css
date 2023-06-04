@@ -89,5 +89,11 @@ input::placeholder { color: #989ca1; font-weight: 400; }
 
 @media (max-width: 840px) { } 
 
-@media (max-width: 480px) { } 
+@media (max-width: 480px) {
+    /* ------로그인------ s */
+    .login_wrap{position:fixed;top:0;left:0;transform:translate(0);width:100%;padding:1rem;border:0;box-shadow:unset;}
+    .dr-sm-login{flex-wrap: wrap;}
+    .dr-sm-login div:nth-child(2){width: 100%; text-align: center; margin-top: 1rem;}
+    /* ------로그인------ e */
+} 
 /* ------반응형------ e */
