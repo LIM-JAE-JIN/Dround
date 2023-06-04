@@ -43,7 +43,7 @@ html{
 }
 body{
     color:#353839;line-height:1;
-    font-family: 'Pretendard';
+    font-family: 'Pretendard' !important;
 }
 
 /* header */
