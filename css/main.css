@@ -25,6 +25,20 @@
 .dr-join-chk-wrap .dr-checkbox .dr-bs-info-txt {font-size:1.2rem; color:#989ca1; font-weight:400; line-height:1.6rem; margin:6px 0 0 65px;}
 /* ------회원가입----- e */
 
+/* ------푸터------ s */
+footer{background-color:#F2F2F2; }
+.dr-footer-wrap{max-width:1200px; margin:0 auto; padding:6rem 3rem;align-items: flex-start;}
+.dr-footer-logo{width:100px;}
+.dr-footer-logo img{width:100%;}
+.dr-footer-wrap span{color:#626262;line-height: 1.6rem;}
+.dr-footer-wrap > div {display: inline-block;}
+.dr-footer-wrap .dr-footer-adress span{color:#626262}
+.dr-footer-wrap .dr-footer-terms ul li{display:inline-block;}
+.dr-footer-wrap .dr-footer-terms ul li a{font-size:1.3rem; color:#626262;line-height: 1.6rem;}
+.dr-footer-wrap .dr-copy-right{color:#B7B7B7; white-space: nowrap;}
+/* ------푸터------ e */
+
+
 /* ------반응형------ s */
 @media (max-width: 1200px) { 
 
@@ -34,7 +48,14 @@
 
 @media (max-width: 480px) {
     .dr-bg-w {background-color: #fff;}
+    /* ------로그인------ s */
     .dr-cont-wrap{/*position:unset;margin: 50px auto 0; transform: translate(0);*/width:100%;padding:1rem;border:0;}
     .dr-join {margin:5rem auto;}
+    /* ------로그인------ e */
+
+    /* ------footer------ s */
+    .dr-footer-wrap{padding:6rem 2rem;}
+    .dr-footer-wrap .dr-footer-adress, .dr-footer-wrap .dr-footer-terms{margin-top: 2rem;}
+    /* ------footer------ e */
 } 
 /* ------반응형------ e */
