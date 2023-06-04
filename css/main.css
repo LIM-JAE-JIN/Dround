@@ -68,8 +68,8 @@ input::placeholder { color: #989ca1; font-weight: 400; }
 .dr-textarea-wrap .dr-textarea { width: 100%; padding: 1.2rem 1.5rem; border: 1px solid #131414; font-size: 1.4rem; line-height: 2.1rem; } 
 
 /* check */
-.dr-checkbox { } 
-.dr-checkbox input { width: 18px; height: 18px; color: #d2d2d2; border-color: #d2d2d2; } 
+.dr-checkbox { }
+.dr-checkbox input[type="checkbox"] { display: none; } 
 .dr-checkbox input + label { vertical-align: top; font-size: 1.4rem; color: #989ca1; margin-top: 2px; font-weight: 500; } 
 .dr-checkbox input:checked { background-color: red; } 
 .dr-checkbox input:checked + label { color: #353839; font-family: 500; } 
