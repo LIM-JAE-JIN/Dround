@@ -14,10 +14,13 @@
     <script src="/js/common.js"></script>
     <title>회원가입</title>
     <style>
-        .fsP12{font-size: 12px !important;} 
-        .color1{color:#1c8f5C !important;}
-        .color2{color:#4da777 !important;}
-        .back_color1{background-color:#f9f9f9 !important;}
+        .dr-email-txt {background-color:#F0F7F3; color:#1C8F51; padding:4px 0 4px 9px; line-height:22px;}
+        .dr-email-txt a {color:#1C8F51; text-decoration: underline;}
+
+        .dr-phone-wrap {display:flex;}
+        .dr-phone-wrap .dr-input {width:calc(100% - 90px);}
+        .dr-phone-wrap .dr-phone_btn {width:83px; margin-left:7px; border:1px solid #d3d4da; border-radius:3px; background-color:#fff;}
+        .dr-phone-wrap .dr-phone_btn.disabled {border-color:#e8e8e8; color:#d2d2d2; cursor:default;}
 
         /* 직무선택 */
         .job_selection{justify-content: center;}
@@ -34,37 +37,38 @@
             <div class="dr-cont-wrap dr-join">
                 <div class="my-3 logo-wrap"><img src="/img/icon_logo.png" alt="logo이미지"></div>
                 <h2 class="fs1_3 color3 fw-bold mb-5">회원가입</h2>
-                <form class="fw-bold fs-5">
-                    <div class="mb-3">
-                        <label for="email" class="form-label">이메일</label>
-                        <div class="fsP12 color2 back_color1 p-1 mb-1">회사 이메일로만 가입이 가능합니다. 없을 경우 <a href="#none" class="color2">문의해주세요.</a></div>    
-                        <input type="email" class="form-control" id="email" name="email" placeholder="회사 이메일을 입력해주세요.">
+                <form class="dr-fw-700 fs-5">
+                    <div class="mb-5 dr-input-wrap">
+                        <p class="dr-fz-15 mb-3">이메일</p>
+                        <div class="dr-email-txt dr-fz-12 py-1 mb-2">회사 이메일로만 가입이 가능합니다. 없을 경우 <a href="#none"  class="">문의해주세요.</a></div>    
+                        <input type="email" class="dr-input" id="email" name="email" placeholder="회사 이메일을 입력해주세요.">
                     </div>
-                    <div class="mb-3">
-                        <label for="nickname" class="form-label">닉네임</label>
-                        <input type="text" class="form-control" id="nickname" name="nickname" placeholder="닉네임을 설정해주세요.">
+                    <div class="mb-5 dr-input-wrap">
+                        <p class="dr-fz-15 mb-3">닉네임</p>
+                        <input type="text" class="dr-input" id="nickname" name="nickname" placeholder="닉네임을 설정해주세요.">
                     </div>
-                    <div class="mb-3">
-                        <label for="password" class="form-label">비밀번호</label>
-                        <input type="password" class="form-control" id="password" name="password" placeholder="비밀번호를 입력하세요">
+                    <div class="mb-5 dr-input-wrap">
+                        <p class="dr-fz-15 mb-3">비밀번호</p>
+                        <input type="password" class="dr-input" id="password" name="password" placeholder="비밀번호를 입력하세요">
                     </div>
-                    <div class="mb-3">
-                        <label for="password-confirm" class="form-label">비밀번호 확인</label>
-                        <input type="password" class="form-control" id="password-confirm" name="password-confirm" placeholder="비밀번호를 다시 한번 입력해주세요">
+                    <div class="mb-5 dr-input-wrap">
+                        <p class="dr-fz-15 mb-3">비밀번호 확인</p>
+                        <input type="password" class="dr-input" id="password-confirm" name="password-confirm" placeholder="비밀번호를 다시 한번 입력해주세요">
                     </div>
-                    <div class="mb-3">
-                        <label for="phone" class="form-label">휴대폰 번호</label>
-                        <div class="input-group">
-                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="번호를 입력해주세요" maxlength="11">
-                            <button type="button" class="btn btn-outline-secondary ms-2">인증번호</button>
+                    <div class="mb-5 dr-input-wrap">
+                        <p class="dr-fz-15 mb-3">휴대폰 번호</p>
+                        <div class="dr-input-wrap dr-phone-wrap mb-2">
+                            <input type="tel" class="dr-input" id="phone" name="phone" placeholder="번호를 입력해주세요" maxlength="11">
+                            <button type="button" class="dr-phone_btn dr-fw-500 dr-fz-13">인증번호</button>
                         </div>
-                        <div class="input-group w-25">
-                            <input type="tel" class="form-control mt-1 " id="phone2" name="phone2" placeholder="인증번호 입력" maxlength="6">
+                        <div class="dr-input-wrap dr-phone-wrap">
+                            <input type="tel" class="dr-input" id="phone2" name="phone2" placeholder="인증번호 입력" maxlength="6">
+                            <button type="button" class="dr-phone_btn dr-fw-500 dr-fz-13 disabled">확인</button> <!-- disabled 추가 시 비활성화 -->
                         </div>
                     </div>
-                    <div class="mb-3">
-                        <label for="belong" class="form-label">소속</label>
-                        <input type="password" class="form-control" id="belong" name="belong" placeholder="본부/실/팀 등 자세히 입력해주세요.">
+                    <div class="mb-5 dr-input-wrap">
+                        <p class="dr-fz-15 mb-3">소속</p>
+                        <input type="password" class="dr-input" id="belong" name="belong" placeholder="본부/실/팀 등 자세히 입력해주세요.">
                     </div>
                     <div class="mb-3">
                         <p>직무 선택</p>
