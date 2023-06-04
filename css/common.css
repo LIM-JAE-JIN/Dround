@@ -118,7 +118,8 @@ img{max-width:100%;}
 
 /* button */
 .dr-button { position: relative; display: inline-block; width: auto; padding: 1.3rem 5.6rem; text-align: center; vertical-align: middle; font-size: 1.6rem; font-weight: 700; white-space: nowrap; text-decoration: none; overflow: hidden; box-sizing: border-box; border: 1px solid #989ca1; border-radius: 3px; color: #353839; line-height: 2.4rem; } 
-.dr-button.hover:hover { border-color: #353839; } 
+.dr-button.hover:hover { border-color: #353839; }
+.dr-underline {text-decoration: underline;}
 
 /* 호버 */
 .dr-button.green { color: #fff; background-color: #1c8f51; border-color: transparent; } 
