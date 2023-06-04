@@ -1,5 +1,6 @@
-@charset "utf-8";/* ------공통------ s */
+@charset "utf-8";
 
+/* ------공통------ s */
 /* font */
 .dr-fz-11 { font-size: 1.1rem !important; } 
 .dr-fz-12 { font-size: 1.2rem !important; } 
@@ -73,23 +74,18 @@ input::placeholder { color: #989ca1; font-weight: 400; }
 .dr-checkbox input:checked { background-color: red; } 
 .dr-checkbox input:checked + label { color: #353839; font-family: 500; } 
 /* Text field states e */
-
 /* ------공통------ e */
 
 /* ------로그인------ s */
-
 .login_wrap { width: 388px; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 5rem 3rem 4rem 3rem; border: 1px solid #e5e5e5; border-radius: 10px; box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.09); } 
 .login_wrap h1 { max-width: 113px; max-height: 22px; } 
 #timer { position: absolute; margin-left: auto; right: 70px; top: 14px; font-size: 12px; color: red; opacity: 0.6; } 
-
 /* ------로그인------ e */
 
 /* ------반응형------ s */
-
 @media (max-width: 1200px) { } 
 
 @media (max-width: 840px) { } 
 
 @media (max-width: 480px) { } 
-
 /* ------반응형------ e */
