@@ -1,116 +1,170 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap5.2.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/laout.css">
-    <title>가이드</title>
-    <style>
-        div.header-guide{position:fixed;top:0;left:0;width:100%;background:#000;color:#fff;z-index:100;padding:20px;}
-        div.header-guide h1.tit1{font-size: 1.8rem;}
-        /* main */
-        main.guide{padding:20px; line-height: 20px;}
-        main.guide .table_wrap table{width:100%;border-spacing:0;border-collapse: collapse;}
-        main.guide .table_wrap table th{border:1px solid #dedede; padding:5px;}
-        .dr-guide-line{ margin-top: 3rem; margin-bottom: 1rem;}
-        .dr-guide-line h2{font-size: 3rem; color: red; position: relative; display: inline-block;}
-        .dr-guide-line h2::before{content: "dr-"; display: inline-block;}
-        .dr-guide-line h2::after{content: ""; display:block;}
-        hr{margin:0.5rem 0;border-color:transparent;}
-    </style>
-</head>
-<body>
-    <div class="header-guide">
-        <nav>
-            <div>
-                <h1 class="tit1">가이드</h1>
-            </div>
-        </nav>
-    </div>
-    <main class="guide">
-        <!-- font-size -->
-        <div class="dr-guide-line">
-            <h2>size</h2>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="bootstrap5.2.3/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/layout.css" />
+        <title>가이드</title>
+        <style>
+            div.header-guide {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                background: #000;
+                color: #fff;
+                z-index: 100;
+                padding: 20px;
+            }
+            div.header-guide h1.tit1 {
+                font-size: 1.8rem;
+            }
+            /* main */
+            main.guide {
+                padding: 20px;
+                line-height: 20px;
+            }
+            main.guide .table_wrap table {
+                width: 100%;
+                border-spacing: 0;
+                border-collapse: collapse;
+            }
+            main.guide .table_wrap table th {
+                border: 1px solid #dedede;
+                padding: 5px;
+            }
+            .dr-guide-line {
+                margin-top: 3rem;
+                margin-bottom: 1rem;
+            }
+            .dr-guide-line h2 {
+                font-size: 3rem;
+                color: red;
+                position: relative;
+                display: inline-block;
+            }
+            .dr-guide-line h2::before {
+                content: "dr-";
+                display: inline-block;
+            }
+            .dr-guide-line h2::after {
+                content: "";
+                display: block;
+            }
+            hr {
+                margin: 0.5rem 0;
+                border-color: transparent;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header-guide">
+            <nav>
+                <div>
+                    <h1 class="tit1">가이드</h1>
+                </div>
+            </nav>
         </div>
-        <div class="dr-fz-11">dr-fz-11 : 1.1rem(11px)</div>
-        <div class="dr-fz-12">dr-fz-12 : 1.2rem(12px)</div>
-        <div class="dr-fz-13">dr-fz-13 : 1.3rem(13px)</div>
-        <div class="dr-fz-14">dr-fz-14 : 1.4rem(14px)</div>
-        <div class="dr-fz-15">dr-fz-15 : 1.5rem(15px)</div>
-        <div class="dr-fz-16">dr-fz-16 : 1.6rem(16px)</div>
-        <div class="dr-fz-17">dr-fz-17 : 1.7rem(17px)</div>
-        <div class="dr-fz-18">dr-fz-18 : 1.8rem(18px)</div>
-        <div class="dr-fz-19">dr-fz-19 : 1.9rem(19px)</div>
-
-        <!-- label -->
-        <div class="dr-guide-line">
-            <h2>icon label</h2>
-        </div>
-        <span class="dr-icon-txt">기본</span>
-        <span class="dr-icon-txt dr-color-1">시행사</span>
-        <span class="dr-icon-txt dr-color-2">증권사</span>
-        <span class="dr-icon-txt dr-color-3">운용사</span>
-        <span class="dr-icon-txt dr-color-4">시공사</span>
-        <span class="dr-icon-txt dr-color-5">신탁사</span>
-        <span class="dr-icon-txt dr-color-6">대주</span>
-        <span class="dr-icon-txt dr-color-7">MD/컨설팅</span>
-        <span class="dr-icon-txt dr-color-8">중개사</span>
-        <span class="dr-icon-txt dr-color-9">회계법인</span>
-        <span class="dr-icon-txt dr-color-10">법무법인</span>
-        <span class="dr-icon-txt dr-color-11">감정평가법인</span>
-        <span class="dr-icon-txt dr-color-12">유관법인</span>
-        <!-- button -->
-        <div class="dr-guide-line">
-            <h2>button</h2>
-        </div>
-        <div class="d-flex">
-            <button class="dr-button me-1">button</button>
-            <button class="dr-button hover me-1">hover</button>
-            <button class="dr-button disabled" disabled="disabled">button</button><br>
-        </div>
-        <hr>
-        <div class="d-flex">
-            <button class="dr-button green me-1">button</button>
-            <button class="dr-button green hover me-1">hover</button>
-            <button class="dr-button disabled" disabled="disabled">button</button>
-        </div>
-        <hr>
-        <div class="d-flex">
-            <button class="dr-button indigo w-100">button</button>
-        </div>
-        <div class="dr-guide-line">
-            <h2>Text Field States</h2>
-        </div>
-        <form action="#none">
-            <!-- maxlength 넣어야함 -->
-            <div class="dr-input-wrap">
-                <input type="text" class="dr-input" placeholder="Placeholder"> <!-- width 백퍼인데 부트스트랩클래스로 하나하나조절해보리기? -->
-            </div>
-            <div class="dr-textarea-wrap mt-4">
-                <textarea name="" class="dr-textarea" id="" cols="10" rows="10" placeholder="Placeholder"></textarea>
-            </div>
-
+        <main class="guide">
+            <!-- font-size -->
             <div class="dr-guide-line">
-                <h2>checkbox</h2>
+                <h2>size</h2>
             </div>
-            <div class="dr-checkbox">
-                <input type="checkbox" id="drCheck" class="">
-                <label for="drCheck">체크박스</label>
-            </div>
-        </form>
-    </main>
-    <footer>
+            <div class="dr-fz-11">dr-fz-11 : 1.1rem(11px)</div>
+            <div class="dr-fz-12">dr-fz-12 : 1.2rem(12px)</div>
+            <div class="dr-fz-13">dr-fz-13 : 1.3rem(13px)</div>
+            <div class="dr-fz-14">dr-fz-14 : 1.4rem(14px)</div>
+            <div class="dr-fz-15">dr-fz-15 : 1.5rem(15px)</div>
+            <div class="dr-fz-16">dr-fz-16 : 1.6rem(16px)</div>
+            <div class="dr-fz-17">dr-fz-17 : 1.7rem(17px)</div>
+            <div class="dr-fz-18">dr-fz-18 : 1.8rem(18px)</div>
+            <div class="dr-fz-19">dr-fz-19 : 1.9rem(19px)</div>
 
-    </footer>
-<script>
-    function common(){
-    //header    
-    let headerTop = document.querySelector('.header-guide').clientHeight;
-    document.querySelector('main').style.marginTop = headerTop +'px';
-}
-common();
-</script>
-</body>
+            <!-- label -->
+            <div class="dr-guide-line">
+                <h2>icon label</h2>
+            </div>
+            <span class="dr-icon-txt">기본</span>
+            <span class="dr-icon-txt dr-color-1">시행사</span>
+            <span class="dr-icon-txt dr-color-2">증권사</span>
+            <span class="dr-icon-txt dr-color-3">운용사</span>
+            <span class="dr-icon-txt dr-color-4">시공사</span>
+            <span class="dr-icon-txt dr-color-5">신탁사</span>
+            <span class="dr-icon-txt dr-color-6">대주</span>
+            <span class="dr-icon-txt dr-color-7">MD/컨설팅</span>
+            <span class="dr-icon-txt dr-color-8">중개사</span>
+            <span class="dr-icon-txt dr-color-9">회계법인</span>
+            <span class="dr-icon-txt dr-color-10">법무법인</span>
+            <span class="dr-icon-txt dr-color-11">감정평가법인</span>
+            <span class="dr-icon-txt dr-color-12">유관법인</span>
+            <!-- button -->
+            <div class="dr-guide-line">
+                <h2>button</h2>
+            </div>
+            <div class="d-flex">
+                <button class="dr-button me-1">button</button>
+                <button class="dr-button hover me-1">hover</button>
+                <button class="dr-button disabled" disabled="disabled">
+                    button</button
+                ><br />
+            </div>
+            <hr />
+            <div class="d-flex">
+                <button class="dr-button green me-1">button</button>
+                <button class="dr-button green hover me-1">hover</button>
+                <button class="dr-button disabled" disabled="disabled">
+                    button
+                </button>
+            </div>
+            <hr />
+            <div class="d-flex">
+                <button class="dr-button indigo w-100">button</button>
+            </div>
+            <div class="dr-guide-line">
+                <h2>Text Field States</h2>
+            </div>
+            <form action="#none">
+                <!-- maxlength 넣어야함 -->
+                <div class="dr-input-wrap">
+                    <input
+                        type="text"
+                        class="dr-input"
+                        placeholder="Placeholder"
+                    />
+                    <!-- width 백퍼인데 부트스트랩클래스로 하나하나조절해보리기? -->
+                </div>
+                <div class="dr-textarea-wrap mt-4">
+                    <textarea
+                        name=""
+                        class="dr-textarea"
+                        id=""
+                        cols="10"
+                        rows="10"
+                        placeholder="Placeholder"
+                    ></textarea>
+                </div>
+
+                <div class="dr-guide-line">
+                    <h2>checkbox</h2>
+                </div>
+                <div class="dr-checkbox">
+                    <input type="checkbox" id="drCheck" class="" />
+                    <label for="drCheck">체크박스</label>
+                </div>
+            </form>
+        </main>
+        <footer></footer>
+        <script>
+            function common() {
+                //header
+                let headerTop =
+                    document.querySelector(".header-guide").clientHeight;
+                document.querySelector("main").style.marginTop =
+                    headerTop + "px";
+            }
+            common();
+        </script>
+    </body>
 </html>
