@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/* 공통 s */
+/* ------공통------ s */
 
 /* font */
 .dr-fz-11 {
@@ -151,7 +151,9 @@
 }
 .dr-button.hover:hover {
     border-color: #353839;
-} /* 호버 */
+}
+
+/* 호버 */
 .dr-button.green {
     color: #fff;
     background-color: #1c8f51;
@@ -234,9 +236,10 @@ input::placeholder {
     font-family: 500;
 }
 
-/* 공통 e */
+/* ------공통------ e */
 
-/* 로그인 s */
+/* ------로그인------ s */
+
 .login_wrap {
     width: 388px;
     position: fixed;
@@ -261,4 +264,5 @@ input::placeholder {
     color: red;
     opacity: 0.6;
 }
-/* 로그인 e */
+
+/* ------로그인------ e */
