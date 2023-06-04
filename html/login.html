@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="../css/layout.css">
     <title>Dround : 로그인</title>
 </head>
-<body>
+<body class="dr-bg-w">
     <!-- 컨테이너 -->
     <div class="container">
         <div class="row">
-            <div class="login_wrap">
-                <h1 class="my-3"><img src="../img/icon_logo.png" alt="logo이미지"></h1>
+            <div class="dr-cont-wrap dr-login">
+                <div class="my-3 logo-wrap"><img src="../img/icon_logo.png" alt="logo이미지"></div>
                 <h2 class="fs1_3 color3 fw-bold mb-5">로그인 후 이용가능합니다.</h2>
                 <p class="text-danger fw-normal"> <!-- error_message  --></p>
                 <form method="post" action=" url 'signin' ">
@@ -32,12 +32,12 @@
                             <label for="login_continue" class="dr-color-main">로그인 유지</label>
                         </div>
                         <div>
-                            <span><a href="#none" class="dr-fz-14 dr-color-2 fw-bold">이메일 찾기</a></span>
-                            <span><a href="#none" class="dr-fz-14 dr-color-2 fw-bold">비밀번호 재설정</a></span>
+                            <span><a href="#none" class="dr-fz-14 dr-color-2 me-2">이메일 찾기</a></span>
+                            <span><a href="#none" class="dr-fz-14 dr-color-2">비밀번호 재설정</a></span>
                         </div>
                     </div>
 
-                    <div class="btn_wrap text-center mt-4">
+                    <div class="btn_wrap text-center mt-5">
                         <div>
                             <button type="submit" class="dr-button indigo w-100">로그인 하기</button>
                         </div>
@@ -48,24 +48,6 @@
                         </div>
                     </div>
                 </form>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="signupModalLabel">회원가입 완료</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p><!-- {{ success_message }} --></p>  <!-- 동적으로 메세지 출력 -->
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-dark" data-dismiss="modal">확인</button>
-                </div>
             </div>
         </div>
     </div>

@@ -74,11 +74,15 @@ input::placeholder { color: #989ca1; font-weight: 400; }
 .dr-checkbox input[type="checkbox"] + label::after { content:''; display: block; position: absolute; width:18px; height:18px; top:0; left:0; background:url(../img/icon/toggle_off.png) no-repeat; background-size:cover;} 
 .dr-checkbox input[type="checkbox"]:checked + label::after { content:''; background:url(../img/icon/toggle_on.png) no-repeat; background-size:cover; } 
 /* Text field states e */
+
+/* 컨텐츠 박스*/
+.dr-cont-wrap {padding:5rem 3rem 4rem 3rem;border:1px solid #e5e5e5; border-radius:10px; background-color: #fff; } 
+.dr-cont-wrap .logo-wrap {width:113px;}
+.dr-cont-wrap .logo-wrap img{width: 100%;}
 /* ------공통------ e */
 
 /* ------로그인------ s */
-.login_wrap { width: 388px; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 5rem 3rem 4rem 3rem; border: 1px solid #e5e5e5; border-radius: 10px; box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.09); } 
-.login_wrap h1 { max-width: 113px; max-height: 22px; } 
+.dr-login{width:388px; position:fixed; top:50%;left:50%;transform:translate(-50%, -50%);}
 #timer { position: absolute; margin-left: auto; right: 70px; top: 14px; font-size: 12px; color: red; opacity: 0.6; } 
 /* ------로그인------ e */
 
@@ -87,11 +91,10 @@ input::placeholder { color: #989ca1; font-weight: 400; }
 
 } 
 
-@media (max-width: 840px) { } 
+@media (max-width: 840px) {}
 
 @media (max-width: 480px) {
-    /* ------로그인------ s */
-    .login_wrap{position:fixed;top:0;left:0;transform:translate(0);width:100%;padding:1rem;border:0;box-shadow:unset;}
-    /* ------로그인------ e */
+    .dr-bg-w {background-color: #fff;}
+    .dr-cont-wrap{/*position:unset;margin: 50px auto 0; transform: translate(0);*/width:100%;padding:1rem;border:0;}
 } 
 /* ------반응형------ e */
