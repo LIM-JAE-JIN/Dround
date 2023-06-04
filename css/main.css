@@ -83,7 +83,9 @@ input::placeholder { color: #989ca1; font-weight: 400; }
 /* ------로그인------ e */
 
 /* ------반응형------ s */
-@media (max-width: 1200px) { } 
+@media (max-width: 1200px) { 
+    .login_wrap{}
+} 
 
 @media (max-width: 840px) { } 
 
