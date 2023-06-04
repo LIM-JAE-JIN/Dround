@@ -29,6 +29,8 @@
         .job_selection .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active{color: #1c8f5C !important; background-color: unset !important; border:2px solid #1c8f5C !important; font-weight: bold;}
         .job_selection div.col-6{margin-bottom: 10px; }
         .job_selection div.col-6 label{padding:0.5rem 0; width: 100%;}
+
+        .dr-join-chk-wrap .dr-checkbox:first-child {border-bottom:1px solid #e6e5ec;}
     </style>
 </head>
 <body class="dr-bg-w">
@@ -82,7 +84,7 @@
                     </div>
                     <div class="mb-5 dr-input-wrap">
                         <p class="dr-fz-15 mb-3">소속</p>
-                        <input type="password" class="dr-input" id="belong" name="belong" placeholder="본부/실/팀 등 자세히 입력해주세요.">
+                        <input type="text" class="dr-input" id="belong" name="belong" placeholder="본부/실/팀 등 자세히 입력해주세요.">
                     </div>
                     <div class="mb-3">
                         <p>직무 선택</p>
@@ -137,26 +139,28 @@
                             </div>
                             <div class="fsP12 p-1 mb-1 text-start">그 외 직무 분야를 희망할 경우 문의주세요. <a href="#none">문의하기</a></div>    
                         </div>    
-                    </div>    
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="allAgreeCheck">
-                        <label class="form-check-label" for="allAgreeCheck">전체 동의하기</label>
                     </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="termAgreeCheck">
-                        <label class="form-check-label" for="termAgreeCheck">서비스 이용약관 동의</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="privacyAgreeCheck">
-                        <label class="form-check-label" for="privacyAgreeCheck">개인정보 취급방침 동의</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="usageAgreeCheck">
-                        <label class="form-check-label" for="usageAgreeCheck">개인정보 이용/수집 동의</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="notifyAgreeCheck">
-                        <label class="form-check-label" for="notifyAgreeCheck">부동산정보 및 서비스 진행 상 알림</label>
+                    <div class="dr-join-chk-wrap">
+                        <div class="dr-checkbox mb-4 pb-4">
+                            <input type="checkbox" id="allAgreeCheck">
+                            <label class="dr-fz-15 dr-fw-6" for="allAgreeCheck">전체 동의하기</label>
+                        </div>
+                        <div class="dr-checkbox mb-4">
+                            <input type="checkbox" id="termAgreeCheck">
+                            <label class="dr-fz-14 dr-fw-4" for="termAgreeCheck">서비스 이용약관 동의</label>
+                        </div>
+                        <div class="dr-checkbox mb-4">
+                            <input type="checkbox" id="privacyAgreeCheck">
+                            <label class="dr-fz-14 dr-fw-4" for="privacyAgreeCheck">개인정보 취급방침 동의</label>
+                        </div>
+                        <div class="dr-checkbox mb-4">
+                            <input type="checkbox" id="usageAgreeCheck">
+                            <label class="dr-fz-14 dr-fw-4" for="usageAgreeCheck">개인정보 이용/수집 동의</label>
+                        </div>
+                        <div class="dr-checkbox mb-4">
+                            <input type="checkbox" id="notifyAgreeCheck">
+                            <label class="dr-fz-14 dr-fw-4" for="notifyAgreeCheck">부동산정보 및 서비스 진행 상 알림</label>
+                        </div>
                     </div>
                     <button type="submit" class="btn btn-primary w-100">회원가입 완료</button>
                 </form>
