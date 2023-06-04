@@ -30,7 +30,11 @@
         .job_selection div.col-6{margin-bottom: 10px; }
         .job_selection div.col-6 label{padding:0.5rem 0; width: 100%;}
 
+        .dr-selc-color {color:#989ca1;}
+        .dr-join-chk-wrap {padding:40px 0;}
+        .dr-join-chk-wrap .dr-checkbox label a {text-decoration: underline;}
         .dr-join-chk-wrap .dr-checkbox:first-child {border-bottom:1px solid #e6e5ec;}
+        .dr-join-chk-wrap .dr-checkbox .dr-bs-info-txt {font-size:1.2rem; color:#989ca1; font-weight:400; line-height:1.6rem; margin:6px 0 0 27px;}
     </style>
 </head>
 <body class="dr-bg-w">
@@ -40,7 +44,7 @@
             <div class="dr-cont-wrap dr-join">
                 <div class="my-3 logo-wrap"><img src="/img/icon_logo.png" alt="logo이미지"></div>
                 <h2 class="fs1_3 color3 fw-bold mb-5">회원가입</h2>
-                <form class="dr-fw-700 fs-5">
+                <form class="dr-fw-600 fs-5">
                     <div class="mb-5 dr-input-wrap">
                         <p class="dr-fz-15 mb-3">이메일</p>
                         <div class="dr-email-txt dr-fz-12 dr-fw-400 mb-2">회사 이메일로만 가입이 가능합니다. 없을 경우 <a href="#none"  class="">문의해주세요.</a></div>    
@@ -87,7 +91,7 @@
                         <input type="text" class="dr-input" id="belong" name="belong" placeholder="본부/실/팀 등 자세히 입력해주세요.">
                     </div>
                     <div class="mb-3">
-                        <p>직무 선택</p>
+                        <p class="dr-fz-15 mb-3">직무선택</p>
                         <div class="row text-center fw-normal fs-2 job_selection">
                             <div class="col-6">
                                 <input type="checkbox" class="btn-check" id="implementer" autocomplete="off">
@@ -143,23 +147,27 @@
                     <div class="dr-join-chk-wrap">
                         <div class="dr-checkbox mb-4 pb-4">
                             <input type="checkbox" id="allAgreeCheck">
-                            <label class="dr-fz-15 dr-fw-6" for="allAgreeCheck">전체 동의하기</label>
+                            <label class="dr-fz-15 dr-fw-600" for="allAgreeCheck">전체 동의하기</label>
                         </div>
                         <div class="dr-checkbox mb-4">
-                            <input type="checkbox" id="termAgreeCheck">
-                            <label class="dr-fz-14 dr-fw-4" for="termAgreeCheck">서비스 이용약관 동의</label>
+                            <input type="checkbox" id="termAgreeCheck" name="subCheck">
+                            <label class="dr-fw-400" for="termAgreeCheck"><span class="dr-color-2 me-2">[필수]</span><a href="javascript:void(0);">서비스 이용약관 동의</a></label>
                         </div>
                         <div class="dr-checkbox mb-4">
-                            <input type="checkbox" id="privacyAgreeCheck">
-                            <label class="dr-fz-14 dr-fw-4" for="privacyAgreeCheck">개인정보 취급방침 동의</label>
+                            <input type="checkbox" id="privacyAgreeCheck" name="subCheck">
+                            <label class="dr-fw-400" for="privacyAgreeCheck"><span class="dr-color-2 me-2">[필수]</span><a href="javascript:void(0);">개인정보 취급방침 동의</a></label>
                         </div>
                         <div class="dr-checkbox mb-4">
-                            <input type="checkbox" id="usageAgreeCheck">
-                            <label class="dr-fz-14 dr-fw-4" for="usageAgreeCheck">개인정보 이용/수집 동의</label>
+                            <input type="checkbox" id="usageAgreeCheck" name="subCheck">
+                            <label class="dr-fw-400" for="usageAgreeCheck"><span class="dr-color-2 me-2">[필수]</span><a href="javascript:void(0);">개인정보 이용/수집 동의</a></label>
                         </div>
                         <div class="dr-checkbox mb-4">
-                            <input type="checkbox" id="notifyAgreeCheck">
-                            <label class="dr-fz-14 dr-fw-4" for="notifyAgreeCheck">부동산정보 및 서비스 진행 상 알림</label>
+                            <input type="checkbox" id="notifyAgreeCheck" name="notifyAgreeCheck">
+                            <label class="dr-fw-400" for="notifyAgreeCheck"><span class="dr-selc-color me-2">[선택]</span>부동산정보 및 서비스 진행 상 알림</label>
+                            <p class="dr-bs-info-txt">
+                                서비스를 신청할 경우 진행 상황을 <br/>
+                                휴대폰(카카오톡)으로 받아볼 수 있습니다.
+                            </p>
                         </div>
                     </div>
                     <button type="submit" class="btn btn-primary w-100">회원가입 완료</button>

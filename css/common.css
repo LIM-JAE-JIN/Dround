@@ -3,6 +3,7 @@ a{
     text-decoration:none;
     color:#353839;
 }
+a:hover {color:unset;}
 
 ol, ul {
     list-style:none;
