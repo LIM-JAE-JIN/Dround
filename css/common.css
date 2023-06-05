@@ -102,7 +102,8 @@ img{max-width:100%;}
 .dr-color-12 { color: #e87a3c !important; } 
 
 /* bg-color */
-.dr-bg-main { background-color: #353839 !important; } 
+.dr-bg-main { background-color: #353839 !important; }
+.dr-bg-white {background-color: #fff !important; }
 .dr-bg-1 { background-color: #cc4040 !important; } 
 .dr-bg-2 { background-color: #1c8f51 !important; } 
 .dr-bg-3 { background-color: #411c8f !important; } 
