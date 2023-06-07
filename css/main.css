@@ -6,7 +6,7 @@
 
 /* ------회원가입----- s */
 .dr-join {width:500px; margin:9rem auto;}
-#timer { position: absolute; margin-left: auto; right: 70px; top: 14px; font-size: 12px; color: red; opacity: 0.6; } 
+#timer { position: absolute; margin-left: auto; right: 100px; top: 14px; font-size: 12px; color: red; opacity: 0.6; } 
 .dr-email-txt {background-color:#F0F7F3; color:#1C8F51; line-height:18px; padding:4px 0 4px 9px; border-radius:3px;}
 .dr-phone-wrap {display:flex;}
 .dr-phone-wrap .dr-input {width:calc(100% - 90px);}
