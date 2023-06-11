@@ -41,13 +41,16 @@ footer{background-color:#F2F2F2; }
 
 
 /* ------반응형------ s */
-@media (max-width: 1200px) { 
+@media (max-width: 1200px) {
+    
+} 
+@media (max-width: 1200px) {
 
 } 
+@media (max-width: 768px) {
 
-@media (max-width: 840px) {}
-
-@media (max-width: 480px) {
+}
+@media (max-width: 576px) {
     .dr-bg-w {background-color: #fff;}
     /* ------로그인------ s */
     .dr-cont-wrap{/*position:unset;margin: 50px auto 0; transform: translate(0);*/width:100%;padding:1rem;border:0;}
