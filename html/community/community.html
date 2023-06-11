@@ -17,33 +17,46 @@
     /* ------커뮤니티------ s */
         .dr-community-main{max-width: 1200px;}
         /* 자유 게시판 s */
-        .dr-free-board{width: 810px; overflow: hidden; border:1px solid #E8E8EB; border-radius:5px; padding: 2.5rem 3rem; background: #fff;}
+        .dr-free-board{width: 810px; min-height:900px; overflow: hidden; border:1px solid #E8E8EB; border-radius:5px; padding: 2.5rem 3rem; background: #fff;}
         .dr-free-board > div:nth-child(1){padding-bottom: 2.5rem;}
         .dr-tit-3 h3{font-size: 2.3rem; font-weight: 700;}
         button.dr-button-view{font-size:1.3rem;font-weight:500; border: 1px solid #E8E8EB; border-radius: 3px;color: #989CA2; background-color: #fff; padding: 0.8rem 2.6rem;}
         .dr-line{height: 1px; border-bottom: 1px solid #e9e9e9; margin: 0 -3rem;}
-        
         .dr-free-wrap{margin-top: 2rem;}
         .dr-free-wrap h4.dr-icon-best::before{content:"";display: inline-block; width: 20px; height: 20px; background-image: url(/img/icon/icon_best.png); background-size: cover;vertical-align: bottom; margin-left: -0.5rem; margin-right: 1rem;}
-        
         .dr-free-cont{position:relative; margin-bottom: 2rem;}
-        .dr-free-cont ul li{position: relative;padding-left: 1.7rem;display: inline-block;width: 50px;}
+        .dr-free-cont p {max-width: 524px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+        .dr-free-cont ul li{position: relative; width: 55px; padding-left: 2rem;display: inline-block;vertical-align:text-bottom}
+        .dr-free-cont .dr-free-icon{width: 108px;white-space: nowrap;}
         .dr-num{display: inline-block; width: 10px; line-height: 1.7rem; color: #989CA1; margin-right: 1.5rem;}
-
+        /* 하트, 말풍선 아이콘 */
         .dr-free-wrap a:nth-child(1) .dr-free-cont span, .dr-free-wrap a:nth-child(2) .dr-free-cont span,.dr-free-wrap a:nth-child(3) .dr-free-cont span{color: #CF2F2F;}
         .dr-heart::before,.dr-coment::before{position: absolute;content: "";width: 17px;height: 17px;color: #989CA1;background-size: contain;display: inline-block;vertical-align: bottom;left: 0;top: 50%;transform: translateY(-50%);}
         .dr-heart.dr-heart-d::before{background-image:url(/img/icon/icon_heart_d.png);}
         .dr-heart.dr-heart-r::before{background-image:url(/img/icon/icon_heart_r.png);}
         .dr-coment.dr-coment-d::before{background-image:url(/img/icon/icon_coment_d.png);}
         .dr-coment.dr-coment-r::before{background-image:url(/img/icon/icon_coment_prres.png);}
-        /* 자유 게시판 e */
+        /* 업계 커뮤니티 */
         .dr-industry{width:330px;border-radius: 5px;}
-        .dr-industry-cont{padding: 2.5rem 3rem; border: 1px solid #e8e8e8;  background-color: #fff;}
+        .dr-industry-cont{padding: 2.5rem 3rem; border: 1px solid #e8e8e8;  background-color: #fff; min-height: 550px; max-height: 55px; position: relative;}
         .dr-industry-cont .dr-line{padding-top: 2rem;}
+        .dr-industry-cont ul {min-height: 350px; overflow: hidden;}
+        .dr-industry-cont ul li{ position: relative; color: #505866; margin-bottom: 1rem;}
+        .dr-industry-cont ul li a{display: block;padding-top: 0.5rem;}
+        .dr-industry-cont ul li a::after {content: ""; display: inline-block; width: 23px; height: 23px; background-image: url(../../img/icon/icon_arrow.png); background-size: contain; position: absolute;right: 0;top: 5px;}
+        .dr-industry-cont ul li span{display: inline-block; font-size: 1.1rem; background-color:#F3F3F3; padding: 0.5rem 0.6rem; font-weight: 600; color: #1C8F51; border-radius: 3px; margin-right: 1rem;}
+        .dr-industry-cont ul li:nth-child(even) span{color: #505866;}
+        .dr-industry-cont ul li p{display: inline-block; max-width: 190px; font-size: 1.3rem;color:#505866; font-weight: 500; vertical-align: middle; overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+        .dr-industry-cont .dr-button-view{position: relative; width: 100%; bottom: -4rem;}
         .dr-button-worker{width: 118px; height: 35px; position: relative; background-color: #353839; border-radius: 4px; padding: 0.8rem 1rem; color: #fff; font-size: 1.4rem; font-weight: 600 ;}
         .dr-button-worker::before{content: ""; display: inline-block; width: 14px; height: 14px; background-image: url(/img/icon/green_check.png); background-size: contain; margin-right: 0.7rem; vertical-align: bottom; background-repeat: no-repeat;}
-        .dr-community-banner{width:330px; height: 140px; display: inline-block; background-color: green; border-radius: 5px;}
+        
+        /* 배너 */
+        .dr-community-banner{width:330px; height: 140px; display: inline-block; background-color: green; border-radius: 5px; position: relative;}
+        .dr-community-banner p { font-size: 2rem; color: #fff; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }
+        /* 투표 */
         .dr-community-vote{width:330px; height: 140px; background-color: black; color: #fff;}
+
         /* ------커뮤니티------ e */
     </style>
 </head>  
@@ -51,7 +64,7 @@
     <div class="container mt-5"><!-- 나중에지워 mt-5 -->
         <div class="row">
             <div class="dr-community-main mx-auto d-xl-flex"> 
-                <div class="dr-free-board me-md-5">
+                <div class="dr-free-board me-xl-5">
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="dr-tit-3">
                             <h3> 자유 게시판</h3>
@@ -67,60 +80,93 @@
                             <a href="#none">
                                 <div class="dr-fz-15 dr-fw-500 dr-free-cont d-flex align-items-center">
                                     <span class="dr-num">1</span>
-                                    <div class="d-inline-block dr-selc-color me-1">[잡담]</div>
-                                    <p class="d-inline-block">개인사업자, 법인 대출 40억 이내 취급 요청 물건 의뢰 요청 드립니다.</p>
-                                    <div class="ms-auto">
+                                    <div class="d-inline-block dr-selc-color me-1 text-nowrap">[잡담]</div>
+                                    <p class="d-inline-block">개인사업자, 법인 대출 40억 이내 취급 요청 물건 의뢰 요청 드립니다.개인사업자, 법인 대출 40억 이내 취급 요청 물건 의뢰 요청 드립니다.</p>
+                                    <div class="ms-auto dr-free-icon">
                                         <ul>
-                                            <li class="dr-selc-color dr-heart dr-heart-d">4420</li>
-                                            <li class="dr-selc-color dr-coment dr-coment-d">443</li>
+                                            <li class="dr-selc-color dr-heart dr-heart-d">440</li>
+                                            <li class="dr-selc-color dr-coment dr-coment-d">4430</li>
+                                            <!-- 하트, 말풍선 컬러버전 <li class="dr-selc-color dr-heart dr-heart-d">4420</li>
+                                            <li class="dr-selc-color dr-coment dr-coment-d">443</li> -->
                                         </ul>
-                                        <!-- 컬러버전 <i class=""dr-heart dr-heart-r"></i>
-                                        <i class="dr-coment dr-coment-r"></i> -->
                                     </div>
                                 </div>
                             </a>
                             <a href="#none">
                                 <div class="dr-fz-15 dr-fw-500 dr-free-cont d-flex align-items-center">
                                     <span class="dr-num red">2</span>
-                                    <div class="d-inline-block dr-selc-color me-1">[업무질문]</div>
+                                    <div class="d-inline-block dr-selc-color me-1 text-nowrap">[업무질문]</div>
                                     <p class="d-inline-block">최근 5개월 동안 분석결과 포트폴리오</p>
-                                    <div class="ms-auto">
+                                    <div class="ms-auto dr-free-icon">
                                         <ul>
                                             <li class="dr-selc-color dr-heart dr-heart-d">20</li>
                                             <li class="dr-selc-color dr-coment dr-coment-d">344</li>
                                         </ul>
-                                        <!-- 컬러버전 <i class=""dr-heart dr-heart-r"></i>
-                                        <i class="dr-coment dr-coment-r"></i> -->
                                     </div>
                                 </div>
                             </a>  
                             <a href="#none">
                                 <div class="dr-fz-15 dr-fw-500 dr-free-cont d-flex align-items-center">
                                     <span class="dr-num red">3</span>
-                                    <div class="d-inline-block dr-selc-color me-1">[잡담]</div>
+                                    <div class="d-inline-block dr-selc-color me-1 text-nowrap">[잡담]</div>
                                     <p class="d-inline-block">분양계약 10% 정말 환불 및 포기 안되는걸까요?</p>
-                                    <div class="ms-auto">
+                                    <div class="ms-auto dr-free-icon">
                                         <ul>
-                                            <li class="dr-selc-color dr-heart dr-heart-d">20</li>
-                                            <li class="dr-selc-color dr-coment dr-coment-d">3404</li>
+                                            <li class="dr-selc-color dr-heart dr-heart-d">200</li>
+                                            <li class="dr-selc-color dr-coment dr-coment-d">304</li>
                                         </ul>
-                                        <!-- 컬러버전 <i class=""dr-heart dr-heart-r"></i>
-                                        <i class="dr-coment dr-coment-r"></i> -->
                                     </div>
                                 </div>
                             </a>  
                             <a href="#none">
                                 <div class="dr-fz-15 dr-fw-500 dr-free-cont d-flex align-items-center">
                                     <span class="dr-num">4</span>
-                                    <div class="d-inline-block dr-selc-color me-1">[잡담]</div>
+                                    <div class="d-inline-block dr-selc-color me-1 text-nowrap">[잡담]</div>
                                     <p class="d-inline-block">분양계약 10% 정말 환불 및 포기 안되는걸까요?</p>
-                                    <div class="ms-auto">
+                                    <div class="ms-auto dr-free-icon">
                                         <ul>
-                                            <li class="dr-selc-color dr-heart dr-heart-r">20</li>
+                                            <li class="dr-selc-color dr-heart dr-heart-r">2000</li>
                                             <li class="dr-selc-color dr-coment dr-coment-r">3404</li>
                                         </ul>
-                                        <!-- 컬러버전 <i class=""dr-heart dr-heart-r"></i>
-                                        <i class="dr-coment dr-coment-r"></i> -->
+                                    </div>
+                                </div>
+                            </a> 
+                            <a href="#none">
+                                <div class="dr-fz-15 dr-fw-500 dr-free-cont d-flex align-items-center">
+                                    <span class="dr-num">5</span>
+                                    <div class="d-inline-block dr-selc-color me-1 text-nowrap">[잡담]</div>
+                                    <p class="d-inline-block">분양계약 10% 정말 환불 및 포기 안되는걸까요?</p>
+                                    <div class="ms-auto dr-free-icon">
+                                        <ul>
+                                            <li class="dr-selc-color dr-heart dr-heart-r">0</li>
+                                            <li class="dr-selc-color dr-coment dr-coment-r">3404</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a> 
+                            <a href="#none">
+                                <div class="dr-fz-15 dr-fw-500 dr-free-cont d-flex align-items-center">
+                                    <span class="dr-num">6</span>
+                                    <div class="d-inline-block dr-selc-color me-1 text-nowrap">[잡담]</div>
+                                    <p class="d-inline-block">분양계약 10% 정말 환불 및 포기 안되는걸까요?</p>
+                                    <div class="ms-auto dr-free-icon">
+                                        <ul>
+                                            <li class="dr-selc-color dr-heart dr-heart-r">200</li>
+                                            <li class="dr-selc-color dr-coment dr-coment-r">3404</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a> 
+                            <a href="#none">
+                                <div class="dr-fz-15 dr-fw-500 dr-free-cont d-flex align-items-center">
+                                    <span class="dr-num">7</span>
+                                    <div class="d-inline-block dr-selc-color me-1 text-nowrap">[잡담]</div>
+                                    <p class="d-inline-block">분양계약 10% 정말 환불 및 포기 안되는걸까요?분양계약 10% 정말 환불 및 포기 안되는걸까요?분양계약 10% 정말 환불 및 포기 안되는걸까요?</p>
+                                    <div class="ms-auto dr-free-icon">
+                                        <ul>
+                                            <li class="dr-selc-color dr-heart dr-heart-r">200</li>
+                                            <li class="dr-selc-color dr-coment dr-coment-r">3404</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </a> 
@@ -142,23 +188,82 @@
                         <div class="mt-4">
                             <ul>
                                 <li>
-                                    <span>파트너</span>
-                                    <p></p>
+                                    <a href="#none">
+                                        <span>파트너</span>
+                                        <p>개인사업자, 법인대출 40억</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                        <span>게시판</span>
+                                        <p>개인사업자, 법인대출 40억개인사업자, 법인대출 40억</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                        <span>파트너</span>
+                                        <p>개인사업자, 법인대출 40억</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                        <span>게시판</span>
+                                        <p>개인사업자, 법인대출 40억개인사업자, 법인대출 40억개인사업자, 법인대출 40억</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                        <span>파트너</span>
+                                        <p>개인사업자, 법인대출 40억</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                        <span>게시판</span>
+                                        <p>개인사업자, 법인대출 40억</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                        <span>파트너</span>
+                                        <p>개인사업자, 법인대출 40억 개인사업자, 법인대출 40억 개인사업자, 법인대출 40억</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                        <span>게시판</span>
+                                        <p>개인사업자, 법인대출 40억</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                        <span>파트너</span>
+                                        <p>개인사업자, 법인대출 40억 개인사업자, 법인대출 40억 개인사업자, 법인대출 40억</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                        <span>게시판</span>
+                                        <p>개인사업자, 법인대출 40억</p>
+                                    </a>
                                 </li>
                             </ul>
                         </div>
+                        <button class="dr-button-view text-center">전체보기</button>
                     </div>    
                     <!-- 로그인일시 노출 e -->
 
                     <!-- 로그인 아닐 시 노출 s-->
                     
                     <!-- 로그인 아닐 시 노출 e-->
-                    <div class="dr-community-banner mt-4">
-                        tlqkf
-                    </div> 
-                    <div class="dr-community-vote mt-4">
-                        존ㄴ ㅏ하기싫다 ...
-                    </div>  
+                    <div class="dr-community-side">
+                        <div class="dr-community-banner mt-xl-4">
+                            <p class="">Banner image link</p>
+                        </div> 
+                        <div class="dr-community-vote mt-4">
+                            존ㄴ ㅏ하기싫다 ...
+                        </div>  
+                    </div>
                 </div>
 
             </div>
