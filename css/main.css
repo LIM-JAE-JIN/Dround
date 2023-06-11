@@ -59,7 +59,9 @@ footer{background-color:#F2F2F2; }
 
 } 
 @media (max-width: 768px) {
-
+    /* 팝업 s */
+    .dr-popup-wrap {width:90% !important;}
+    /* 팝업 e */
 }
 @media (max-width: 576px) {
     .dr-bg-w {background-color: #fff;}
