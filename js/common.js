@@ -24,7 +24,6 @@ function drPopupOpen(popName){
     $('.dr-dim').css('display','block');
     $(popName).css('display','block');
 }
-
 //팝업 닫기
 function drPopupClose(im){
     $('body').css('overflow','auto');
