@@ -13,25 +13,6 @@
     <script src="/js/bootstrap/bootstrap.min.js"></script>
     <script src="/js/common.js"></script>
     <title>회원가입</title>
-    <style>
-        .dr-dim {position: fixed; top:0; left:0; bottom:0; right:0; background-color:rgba(0,0,0,.4); z-index:11; display: none;}
-        .dr-popup-wrap {position: fixed; background-color: #fff; border-radius: 5px; top:50%; left:50%; transform:translate(-50%, -50%); z-index: 111; padding:5rem 3rem 4rem; color:#353839; display: none;}
-        .dr-popup-wrap .dr-popup-close {position: absolute; top:18px; right:18px; background:url(../../img/icon/icon_close.png); background-position: center; background-size:cover; width:18px; height:18px; cursor:pointer;}
-        .dr-popup-wrap header {margin-bottom:2rem; height:auto;}
-        .dr-popup-wrap header h1 {font-weight: 600; font-size:2.3rem;}
-        .dr-popup-wrap header p {font-size:1.5rem; color:#505866; padding-top: 3px;}
-        .dr-popup-wrap footer {margin-top: 4rem;}
-
-        .dr-popup-terms {width:500px;}
-        .dr-popup-terms .dr-popup-content {height:50vh; overflow: hidden scroll;}
-        .dr-popup-terms .dr-popup-content::-webkit-scrollbar {width: 3px;}
-        .dr-popup-terms .dr-popup-content::-webkit-scrollbar-thumb {width:3px; border-radius: 3px; background-color:#505866;}
-        .dr-popup-terms .dr-popup-content h3 {font-size:1.5rem; font-weight: 600;}
-        .dr-popup-terms .dr-popup-content p {font-size:1.4rem; color:#505866; line-height:26px;}
-
-        .dr-popup-complete {width:500px; text-align: center;}
-        .dr-popup-complete .dr-popup-content p {font-size:1.5rem; line-height:2.1rem; color:#989ca1;}
-    </style>
 </head>
 <body class="dr-bg-w">
     <!-- 약관 팝업  s -->
@@ -199,11 +180,11 @@
                         </div>
                         <div class="dr-checkbox mb-4">
                             <input type="checkbox" id="privacyAgreeCheck" name="subCheck">
-                            <label class="dr-fw-400" for="privacyAgreeCheck"><span class="dr-color-2 me-2">[필수]</span><a href="javascript:void(0);" class="dr-underline" onclick="drPopupOpen('.dr-popup-complete')">개인정보 취급방침 동의</a></label>
+                            <label class="dr-fw-400" for="privacyAgreeCheck"><span class="dr-color-2 me-2">[필수]</span><a href="javascript:void(0);" class="dr-underline" onclick="drPopupOpen('.dr-popup-terms')">개인정보 취급방침 동의</a></label>
                         </div>
                         <div class="dr-checkbox mb-4">
                             <input type="checkbox" id="usageAgreeCheck" name="subCheck">
-                            <label class="dr-fw-400" for="usageAgreeCheck"><span class="dr-color-2 me-2">[필수]</span><a href="javascript:void(0);" class="dr-underline">개인정보 이용/수집 동의</a></label>
+                            <label class="dr-fw-400" for="usageAgreeCheck"><span class="dr-color-2 me-2">[필수]</span><a href="javascript:void(0);" class="dr-underline" onclick="drPopupOpen('.dr-popup-terms')">개인정보 이용/수집 동의</a></label>
                         </div>
                         <div class="dr-checkbox mb-4">
                             <input type="checkbox" id="notifyAgreeCheck" name="notifyAgreeCheck">
@@ -214,6 +195,7 @@
                             </p>
                         </div>
                     </div>
+                    <div onclick="drPopupOpen('.dr-popup-complete')">회원가입 완료 팝업열기</div>
                     <!-- 비활성화 시 클래스 disabled, 활성화 시 클래스 disabled 제거 후  indigo 삽입 -->
                     <button type="submit" class="dr-button w-100 disabled" disabled="true">회원가입</button>
                 </form>

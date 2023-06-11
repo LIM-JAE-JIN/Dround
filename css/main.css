@@ -24,6 +24,17 @@
 .dr-join-chk-wrap {padding:40px 0;}
 .dr-join-chk-wrap .dr-checkbox:first-child {border-bottom:1px solid #e6e5ec;}
 .dr-join-chk-wrap .dr-checkbox .dr-bs-info-txt {font-size:1.2rem; color:#989ca1; font-weight:400; line-height:1.6rem; margin:6px 0 0 65px;}
+
+/* 팝업 */
+.dr-popup-terms {width:500px;}
+.dr-popup-terms .dr-popup-content {height:50vh; overflow: hidden scroll;}
+.dr-popup-terms .dr-popup-content::-webkit-scrollbar {width: 3px;}
+.dr-popup-terms .dr-popup-content::-webkit-scrollbar-thumb {width:3px; border-radius: 3px; background-color:#505866;}
+.dr-popup-terms .dr-popup-content h3 {font-size:1.5rem; font-weight: 600;}
+.dr-popup-terms .dr-popup-content p {font-size:1.4rem; color:#505866; line-height:26px;}
+
+.dr-popup-complete {width:500px; text-align: center;}
+.dr-popup-complete .dr-popup-content p {font-size:1.5rem; line-height:2.1rem; color:#989ca1;}
 /* ------회원가입----- e */
 
 /* ------푸터------ s */
