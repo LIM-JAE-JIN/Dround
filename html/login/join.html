@@ -14,15 +14,77 @@
     <script src="/js/common.js"></script>
     <title>회원가입</title>
     <style>
-        
+        .dr-dim {position: fixed; top:0; left:0; bottom:0; right:0; background-color:rgba(0,0,0,.4); z-index:11; display: none;}
+        .dr-popup-wrap {position: fixed; background-color: #fff; border-radius: 5px; top:50%; left:50%; transform:translate(-50%, -50%); z-index: 111; padding:5rem 3rem 4rem; color:#353839; display: none;}
+        .dr-popup-wrap .dr-popup-close {position: absolute; top:18px; right:18px; background:url(../../img/icon/icon_close.png); background-position: center; background-size:cover; width:18px; height:18px; cursor:pointer;}
+        .dr-popup-wrap header {margin-bottom:2rem; height:auto;}
+        .dr-popup-wrap header h1 {font-weight: 600; font-size:2.3rem;}
+        .dr-popup-wrap header p {font-size:1.5rem; color:#505866; padding-top: 3px;}
+        .dr-popup-wrap footer {margin-top: 4rem;}
+
+        .dr-popup-terms {width:500px;}
+        .dr-popup-terms .dr-popup-content {height:50vh; overflow: hidden scroll;}
+        .dr-popup-terms .dr-popup-content::-webkit-scrollbar {width: 3px;}
+        .dr-popup-terms .dr-popup-content::-webkit-scrollbar-thumb {width:3px; border-radius: 3px; background-color:#505866;}
+        .dr-popup-terms .dr-popup-content h3 {font-size:1.5rem; font-weight: 600;}
+        .dr-popup-terms .dr-popup-content p {font-size:1.4rem; color:#505866; line-height:26px;}
+
+        .dr-popup-complete {width:500px; text-align: center;}
+        .dr-popup-complete .dr-popup-content p {font-size:1.5rem; line-height:2.1rem; color:#989ca1;}
     </style>
 </head>
 <body class="dr-bg-w">
+    <!-- 약관 팝업  s -->
+    <div class="dr-dim"></div>
+    <div class="dr-popup-wrap dr-popup-terms">
+        <div class="dr-popup-close" onclick="drPopupClose(this)"></div>
+        <header>
+            <h1>이용약관</h1>
+        </header>
+        <div class="dr-popup-content">
+            <h3 class="mb-5">목차</h3>
+            <p class="mb-5">
+                제1조 (목적)제2조 (용어의 정의)제3조 (약관의 적용)제4조 (서비스의 종류)제5조 (이용계약의 성립 등)제6조 (회원가입)제7조 (회원정보의 보호)제8조 (회사의 의무)제9조 (회원의 의무)제10조 (서비스 이용권리의 양도 등)제11조 (계약해지 및 이용제한)제12조 (서비스 변경 및 중지)제13조 (전자메일 등에 대한 회원의 의무와 책임)제14조 (게시물 등의 관리)제15조 (링크)제16조 (면책)제17조 (저작권의 귀속 및 이용제한)제18조 (약관의 효력 및 변경)제19조 (약관 위반 시 책임)제20조 (약관 외 준칙)제21조 (포인트)제22조 (정보의 제공)제23조 (분쟁해결)
+                제1조 (목적)
+                이 약관은 주식회사 에잇퍼센트(이하 ‘회사’)가 제공하는 온라인연계투자금융 및 관련 서비스를 이용함에 있어 회사와 이용자 사이의 권리와 의무, 책임 기타 필요한 사항을 규정함을 목적으로 합니다.
+                제1조 (목적)제2조 (용어의 정의)제3조 (약관의 적용)제4조 (서비스의 종류)제5조 (이용계약의 성립 등)제6조 (회원가입)제7조 (회원정보의 보호)제8조 (회사의 의무)제9조 (회원의 의무)제10조 (서비스 이용권리의 양도 등)제11조 (계약해지 및 이용제한)제12조 (서비스 변경 및 중지)제13조 (전자메일 등에 대한 회원의 의무와 책임)제14조 (게시물 등의 관리)제15조 (링크)제16조 (면책)제17조 (저작권의 귀속 및 이용제한)제18조 (약관의 효력 및 변경)제19조 (약관 위반 시 책임)제20조 (약관 외 준칙)제21조 (포인트)제22조 (정보의 제공)제23조 (분쟁해결)
+                제1조 (목적)
+                이 약관은 주식회사 에잇퍼센트(이하 ‘회사’)가 제공하는 온라인연계투자금
+            </p>
+            <h3 class="mb-5">목차</h3>
+            <p>
+                제1조 (목적)제2조 (용어의 정의)제3조 (약관의 적용)제4조 (서비스의 종류)제5조 (이용계약의 성립 등)제6조 (회원가입)제7조 (회원정보의 보호)제8조 (회사의 의무)제9조 (회원의 의무)제10조 (서비스 이용권리의 양도 등)제11조 (계약해지 및 이용제한)제12조 (서비스 변경 및 중지)제13조 (전자메일 등에 대한 회원의 의무와 책임)제14조 (게시물 등의 관리)제15조 (링크)제16조 (면책)제17조 (저작권의 귀속 및 이용제한)제18조 (약관의 효력 및 변경)제19조 (약관 위반 시 책임)제20조 (약관 외 준칙)제21조 (포인트)제22조 (정보의 제공)제23조 (분쟁해결)
+                제1조 (목적)
+                이 약관은 주식회사 에잇퍼센트(이하 ‘회사’)가 제공하는 온라인연계투자금융 및 관련 서비스를 이용함에 있어 회사와 이용자 사이의 권리와 의무, 책임 기타 필요한 사항을 규정함을 목적으로 합니다.
+                제1조 (목적)제2조 (용어의 정의)제3조 (약관의 적용)제4조 (서비스의 종류)제5조 (이용계약의 성립 등)제6조 (회원가입)제7조 (회원정보의 보호)제8조 (회사의 의무)제9조 (회원의 의무)제10조 (서비스 이용권리의 양도 등)제11조 (계약해지 및 이용제한)제12조 (서비스 변경 및 중지)제13조 (전자메일 등에 대한 회원의 의무와 책임)제14조 (게시물 등의 관리)제15조 (링크)제16조 (면책)제17조 (저작권의 귀속 및 이용제한)제18조 (약관의 효력 및 변경)제19조 (약관 위반 시 책임)제20조 (약관 외 준칙)제21조 (포인트)제22조 (정보의 제공)제23조 (분쟁해결)
+                제1조 (목적)
+                이 약관은 주식회사 에잇퍼센트(이하 ‘회사’)가 제공하는 온라인연계투자금
+            </p>
+        </div>
+    </div>
+    <!-- 약관 팝업  e -->
+    <!-- 가입 신청완료 팝업 s -->
+    <div class="dr-popup-wrap dr-popup-complete">
+        <header>
+            <h1>회원가입 신청 완료</h1>
+        </header>
+        <div class="dr-popup-content">
+            <p>
+                기업 메일 인증 승인 후 회원가입이 완료됩니다.<br/>
+                (약 1 영업일 소요됩니다.)
+            </p>
+        </div>
+        <footer>
+            <button class="dr-button indigo w-100">확인</button>
+        </footer>
+    </div>
+    <!-- 가입 신청완료 팝업 e -->
+
     <!-- 컨테이너 -->
     <div class="container">
         <div class="row">
             <div class="dr-cont-wrap dr-join">
-                <div class="my-3 logo-wrap"><img src="{% static 'imgs/icon_logo.png' %}" alt="logo이미지"></div>
+                <div class="my-3 logo-wrap"><img src="/img/icon_logo.png" alt="logo이미지"></div>
                 <h2 class="fs1_3 color3 fw-bold mb-5">회원가입</h2>
                 <form class="dr-fw-600 fs-5" method="post">
                     <div class="mb-5 dr-input-wrap">
@@ -133,11 +195,11 @@
                         </div>
                         <div class="dr-checkbox mb-4">
                             <input type="checkbox" id="termAgreeCheck" name="subCheck">
-                            <label class="dr-fw-400" for="termAgreeCheck"><span class="dr-color-2 me-2">[필수]</span><a href="javascript:void(0);" class="dr-underline">서비스 이용약관 동의</a></label>
+                            <label class="dr-fw-400" for="termAgreeCheck"><span class="dr-color-2 me-2">[필수]</span><a href="javascript:void(0);" class="dr-underline" onclick="drPopupOpen('.dr-popup-terms')">서비스 이용약관 동의</a></label>
                         </div>
                         <div class="dr-checkbox mb-4">
                             <input type="checkbox" id="privacyAgreeCheck" name="subCheck">
-                            <label class="dr-fw-400" for="privacyAgreeCheck"><span class="dr-color-2 me-2">[필수]</span><a href="javascript:void(0);" class="dr-underline">개인정보 취급방침 동의</a></label>
+                            <label class="dr-fw-400" for="privacyAgreeCheck"><span class="dr-color-2 me-2">[필수]</span><a href="javascript:void(0);" class="dr-underline" onclick="drPopupOpen('.dr-popup-complete')">개인정보 취급방침 동의</a></label>
                         </div>
                         <div class="dr-checkbox mb-4">
                             <input type="checkbox" id="usageAgreeCheck" name="subCheck">
