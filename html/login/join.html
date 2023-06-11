@@ -22,14 +22,14 @@
     <div class="container">
         <div class="row">
             <div class="dr-cont-wrap dr-join">
-                <div class="my-3 logo-wrap"><img src="/img/icon_logo.png" alt="logo이미지"></div>
+                <div class="my-3 logo-wrap"><img src="{% static 'imgs/icon_logo.png' %}" alt="logo이미지"></div>
                 <h2 class="fs1_3 color3 fw-bold mb-5">회원가입</h2>
-                <form class="dr-fw-600 fs-5">
+                <form class="dr-fw-600 fs-5" method="post">
                     <div class="mb-5 dr-input-wrap">
                         <p class="dr-fz-15 mb-3">이메일</p>
-                        <div class="dr-email-txt dr-fz-12 dr-fw-400 mb-2">회사 이메일로만 가입이 가능합니다. 없을 경우 <a href="#none" class="dr-underline dr-color-2">문의해주세요.</a></div>    
+                        <div class="dr-email-txt dr-fz-12 dr-fw-400 mb-2">회사 이메일로만 가입이 가능합니다. 없을 경우 <a href="#none" class="dr-underline dr-color-2">문의해주세요.</a></div>
                         <input type="email" class="dr-input" id="email" name="email" placeholder="회사 이메일을 입력해주세요.">
-                        <p class="dr-err-txt dr-fz-12 dr-fw-400">유효하지 않은 이메일 주소입니다.</p>
+                        <p class="dr-err-txt dr-fz-12 dr-fw-400" id="email-status" style="display: none;">유효하지 않은 이메일 주소입니다.</p>
                     </div>
                     <div class="mb-5 dr-input-wrap">
                         <p class="dr-fz-15 mb-3">이름</p>
@@ -38,91 +38,93 @@
                     <div class="mb-5 dr-input-wrap">
                         <p class="dr-fz-15 mb-3">닉네임</p>
                         <input type="text" class="dr-input" id="nickname" name="nickname" placeholder="닉네임을 설정해주세요.">
-                        <p class="dr-err-txt dr-fz-12 dr-fw-400 ">중복된 닉네임 입니다.</p>
+                        <p class="dr-err-txt dr-fz-12 dr-fw-400 " id="nickname-status" style="display: none;">중복된 닉네임 입니다.</p>
                     </div>
                     <div class="mb-5 dr-input-wrap">
                         <p class="dr-fz-15 mb-3">비밀번호</p>
                         <input type="password" class="dr-input" id="password" name="password" placeholder="비밀번호를 입력하세요">
-                        <p class="dr-err-txt dr-fz-12 dr-fw-400 ">영문/숫자/특수문자 모두 사용(8~15자 이하)</p>
+                        <p class="dr-err-txt dr-fz-12 dr-fw-400 " id="password-status" style="display: none;">영문/숫자/특수문자 모두 사용(8~15자 이하)</p>
                     </div>
                     <div class="mb-5 dr-input-wrap">
                         <p class="dr-fz-15 mb-3">비밀번호 확인</p>
-                        <input type="password" class="dr-input" id="password-confirm" name="password-confirm" placeholder="비밀번호를 다시 한번 입력해주세요">
-                        <p class="dr-err-txt dr-fz-12 dr-fw-400 ">비밀번호가 일치하지 않습니다.</p>
+                        <input type="password" class="dr-input" id="password2" name="password2" placeholder="비밀번호를 다시 한번 입력해주세요">
+                        <p class="dr-err-txt dr-fz-12 dr-fw-400 " id="password2-status" style="display: none;">비밀번호가 일치하지 않습니다.</p>
                     </div>
                     <div class="mb-5 dr-input-wrap">
                         <p class="dr-fz-15 mb-3">휴대폰 번호</p>
                         <div class="dr-input-wrap mb-2">
                             <div class="dr-phone-wrap">
                                 <input type="tel" class="dr-input" id="phone" name="phone" placeholder="번호를 입력해주세요" maxlength="11">
-                                <button type="button" class="dr-phone_btn dr-fw-500 dr-fz-13">인증번호</button>
+                                <button type="button" class="dr-phone_btn dr-fw-500 dr-fz-13" id="cert_send" disabled='true'>인증번호</button>
                             </div>
                         </div>
                         <div class="dr-input-wrap">
                             <div class="dr-phone-wrap">
-                                <input type="tel" class="dr-input" id="phone2" name="phone2" placeholder="인증번호 입력" maxlength="6">
-                                <button type="button" class="dr-phone_btn dr-fw-500 dr-fz-13 disabled">확인</button> <!-- disabled 추가 시 비활성화 -->
+                                <input type="tel" class="dr-input" id="cert_num" name="cert_num" placeholder="인증번호 입력" maxlength="6">
+                                <span id="timer"></span>
+                                <button type="button" class="dr-phone_btn dr-fw-500 dr-fz-13" id="cert_check" disabled='true'>확인</button> <!-- disabled 추가 시 비활성화 -->
+
                             </div>
-                            <p class="dr-err-txt dr-fz-12 dr-fw-400 ">유효하지 않은 이메일 주소입니다.</p>
+                            <p class="dr-err-txt dr-fz-12 dr-fw-400 " id="phone-status" style="display: none;">유효하지 않은 이메일 주소입니다.</p>
                         </div>
                     </div>
                     <div class="mb-5 dr-input-wrap">
                         <p class="dr-fz-15 mb-3">소속</p>
-                        <input type="text" class="dr-input" id="belong" name="belong" placeholder="본부/실/팀 등 자세히 입력해주세요.">
+                        <input type="text" class="dr-input" id="company" name="company" placeholder="본부/실/팀 등 자세히 입력해주세요.">
                     </div>
                     <div class="mb-3">
                         <p class="dr-fz-15 mb-3">직무선택</p>
                         <div class="dr-job-selection">
                             <div class="dr-job">
-                                <input type="checkbox" class="btn-check" id="implementer" autocomplete="off">
+                                <input type="radio" class="btn-check" id="implementer" autocomplete="off" name="radio_job" value="01">
                                 <label class="dr-selc-color" for="implementer">시행사</label>
                             </div>
                             <div class="dr-job">
-                                <input type="checkbox" class="btn-check" id="securities_company" autocomplete="off">
+                                <input type="radio" class="btn-check" id="securities_company" autocomplete="off" name="radio_job" value="02">
                                 <label class="dr-selc-color" for="securities_company">증권사</label>
                             </div>
                             <div class="dr-job">
-                                <input type="checkbox" class="btn-check" id="manager" autocomplete="off">
+                                <input type="radio" class="btn-check" id="manager" autocomplete="off" name="radio_job" value="03">
                                 <label class="dr-selc-color" for="manager">운용사</label>
                             </div>
                             <div class="dr-job">
-                                <input type="checkbox" class="btn-check" id="builder" autocomplete="off">
+                                <input type="radio" class="btn-check" id="builder" autocomplete="off" name="radio_job" value="04">
                                 <label class="dr-selc-color" for="builder">시공사</label>
                             </div>
                             <div class="dr-job">
-                                <input type="checkbox" class="btn-check" id="trust_company" autocomplete="off">
+                                <input type="radio" class="btn-check" id="trust_company" autocomplete="off" name="radio_job" value="05">
                                 <label class="dr-selc-color" for="trust_company">신탁사</label>
                             </div>
                             <div class="dr-job">
-                                <input type="checkbox" class="btn-check" id="for_weeks" autocomplete="off">
+                                <input type="radio" class="btn-check" id="for_weeks" autocomplete="off" name="radio_job" value="06">
                                 <label class="dr-selc-color" for="for_weeks">대 주</label>
                             </div>
                             <div class="dr-job">
-                                <input type="checkbox" class="btn-check" id="md_consulting" autocomplete="off">
+                                <input type="radio" class="btn-check" id="md_consulting" autocomplete="off" name="radio_job" value="07">
                                 <label class="dr-selc-color" for="md_consulting">MD/컨설팅</label>
                             </div>
                             <div class="dr-job">
-                                <input type="checkbox" class="btn-check" id="proofreader" autocomplete="off">
+                                <input type="radio" class="btn-check" id="proofreader" autocomplete="off" name="radio_job" value="08">
                                 <label class="dr-selc-color" for="proofreader">증개사</label>
                             </div>
                             <div class="dr-job">
-                                <input type="checkbox" class="btn-check" id="accounting_firm" autocomplete="off">
+                                <input type="radio" class="btn-check" id="accounting_firm" autocomplete="off" name="radio_job" value="09">
                                 <label class="dr-selc-color" for="accounting_firm">회계법인</label>
                             </div>
                             <div class="dr-job">
-                                <input type="checkbox" class="btn-check" id="law_firm" autocomplete="off">
+                                <input type="radio" class="btn-check" id="law_firm" autocomplete="off" name="radio_job" value="10">
                                 <label class="dr-selc-color" for="law_firm">법무법인</label>
                             </div>
                             <div class="dr-job">
-                                <input type="checkbox" class="btn-check" id="appraisal_agency" autocomplete="off">
+                                <input type="radio" class="btn-check" id="appraisal_agency" autocomplete="off" name="radio_job" value="11">
                                 <label class="dr-selc-color" for="appraisal_agency">감정평가법인</label>
                             </div>
                             <div class="dr-job">
-                                <input type="checkbox" class="btn-check" id="related_corporation" autocomplete="off">
+                                <input type="radio" class="btn-check" id="related_corporation" autocomplete="off" name="radio_job" value="12">
                                 <label class="dr-selc-color" for="related_corporation">유관법인</label>
                             </div>
-                            <div class="dr-fz-13 dr-fw-400">그 외 직무 분야를 희망할 경우 문의주세요. <a href="#none" class="dr-underline">문의하기</a></div>    
-                        </div>    
+                            <div class="dr-fz-13 dr-fw-400">그 외 직무 분야를 희망할 경우 문의주세요. <a href="#none" class="dr-underline">문의하기</a></div>
+                        </div>
                     </div>
                     <div class="dr-join-chk-wrap">
                         <div class="dr-checkbox mb-4 pb-4">
@@ -151,7 +153,7 @@
                         </div>
                     </div>
                     <!-- 비활성화 시 클래스 disabled, 활성화 시 클래스 disabled 제거 후  indigo 삽입 -->
-                    <button type="submit" class="dr-button w-100 disabled">회원가입</button>
+                    <button type="submit" class="dr-button w-100 disabled" disabled="true">회원가입</button>
                 </form>
             </div>
         </div>
