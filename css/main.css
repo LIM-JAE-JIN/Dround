@@ -55,10 +55,10 @@ footer{background-color:#F2F2F2; }
 .dr-free-board{width: 810px; min-height:900px; overflow: hidden; border:1px solid #E8E8EB; border-radius:5px; padding: 2.5rem 3rem; background: #fff;}
 .dr-free-board > div:nth-child(1){padding-bottom: 2.5rem;}
 .dr-tit-3 h3{font-size: 2.3rem; font-weight: 700;}
-button.dr-button-view{font-size:1.3rem;font-weight:500; border: 1px solid #E8E8EB; border-radius: 3px;color: #989CA2; background-color: #fff; padding: 0.8rem 2.6rem;}
+button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1px solid #E8E8EB; border-radius: 3px;color: #989CA2; background-color: #fff; padding: 0.8rem 2.6rem;}
 .dr-line{height: 1px; border-bottom: 1px solid #e9e9e9; margin: 0 -3rem;}
 .dr-free-wrap{margin-top: 2rem;}
-.dr-free-wrap h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inline-block; width: 20px; height: 20px; background-image: url(/img/icon/icon_best.png); background-size: cover;vertical-align: bottom; margin-left: -0.5rem; margin-right: 1rem;}
+.dr-free-wrap h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inline-block; width: 20px; height: 20px; background-image: url(../../img/icon/icon_best.png); background-size: cover;vertical-align: bottom; margin-left: -0.5rem; margin-right: 1rem;}
 .dr-free-cont{position:relative; margin-bottom: 2rem;}
 .dr-free-cont p {max-width: 524px; display: inline-block; overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
 .dr-free-cont ul li{position: relative; width: 55px; padding-left: 2rem;display: inline-block;vertical-align:text-bottom}
@@ -68,10 +68,10 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; border: 1px solid #E8E8E
 /* 하트, 말풍선 아이콘 */
 .dr-free-wrap a:nth-child(1) .dr-free-cont span, .dr-free-wrap a:nth-child(2) .dr-free-cont span,.dr-free-wrap a:nth-child(3) .dr-free-cont span{color: #CF2F2F;}
 .dr-heart::before,.dr-coment::before{position: absolute;content: "";width: 17px;height: 17px;color: #989CA1;background-size: contain;display: inline-block;vertical-align: bottom;left: 0;top: 50%;transform: translateY(-50%);}
-.dr-heart.dr-heart-d::before{background-image:url(/img/icon/icon_heart_d.png);}
-.dr-heart.dr-heart-r::before{background-image:url(/img/icon/icon_heart_r.png);}
-.dr-coment.dr-coment-d::before{background-image:url(/img/icon/icon_coment_d.png);}
-.dr-coment.dr-coment-r::before{background-image:url(/img/icon/icon_coment_prres.png);}
+.dr-heart.dr-heart-d::before{background-image:url(../../img/icon/icon_heart_d.png);}
+.dr-heart.dr-heart-r::before{background-image:url(../../img/icon/icon_heart_r.png);}
+.dr-coment.dr-coment-d::before{background-image:url(../../img/icon/icon_coment_d.png);}
+.dr-coment.dr-coment-r::before{background-image:url(../../img/icon/icon_coment_prres.png);}
 
 /* 업계 커뮤니티 */
 .dr-industry{width:330px;border-radius: 5px;}
@@ -85,7 +85,7 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; border: 1px solid #E8E8E
 .dr-industry-cont ul li p{display: inline-block; max-width: 190px; font-size: 1.3rem;color:#505866; font-weight: 500; vertical-align: middle; overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
 .dr-industry-cont .dr-button-view{position: relative; width: 100%; bottom: -2rem;}
 .dr-button-worker{width: 118px; height: 35px; position: relative; background-color: #353839; border-radius: 4px; padding: 0.8rem 1rem; color: #fff; font-size: 1.4rem; font-weight: 600 ;}
-.dr-button-worker::before{content: ""; display: inline-block; width: 14px; height: 14px; background-image: url(/img/icon/green_check.png); background-size: contain; margin-right: 0.7rem; vertical-align: bottom; background-repeat: no-repeat;}
+.dr-button-worker::before{content: ""; display: inline-block; width: 14px; height: 14px; background-image: url(../../img/icon/green_check.png); background-size: contain; margin-right: 0.7rem; vertical-align: bottom; background-repeat: no-repeat;}
 .dr-no-industry-cont{padding: 2.5rem 3rem; border: 1px solid #e8e8e8; background-color: #fff; min-height: 350px; max-height: 350px; position: relative;}
 .dr-no-industry-cont .dr-line{padding-top: 2rem;}
 .dr-no-industry-cont .dr-button-view{height: 35px; background-color:#353839; color: #fff; margin-top: 1.7rem;}
@@ -101,7 +101,7 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; border: 1px solid #E8E8E
 
 /* 투표 */
 .dr-community-vote{width:330px; height: 140px; border: 1px solid #E8E8EB;border-radius: 5px; padding: 2.5rem 3rem; overflow: hidden; background-color: #fff;}
-.dr-community-vote h4::before{background-image: url(/img/icon/icon_vote.png); margin-right: 0.5rem;}
+.dr-community-vote h4::before{background-image: url(../../img/icon/icon_vote.png); margin-right: 0.5rem;}
 .dr-community-vote ul {margin-top: 1.8rem;}
 .dr-community-vote ul li{margin-bottom: 1.5rem;}
 .dr-community-vote ul li a{display: block; position: relative;}
@@ -118,7 +118,6 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; border: 1px solid #E8E8E
     .dr-community-banner{width: 100%;}
     .dr-community-side{ width: 49%;}
     .dr-community-vote{ width: 100%;}
-
     /* 커뮤니티  e*/
 
 } 
@@ -137,14 +136,14 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; border: 1px solid #E8E8E
     .dr-community-banner{width: 100% ; margin-top: 2.5rem;}
     .dr-community-side{ width: 100%;}
     .dr-community-vote{ width: 100%;}
-
     .dr-free-wrap > div a {display: block; margin-bottom: 2rem;}
     .dr-num{margin-right: 0.5rem;}
     .dr-free-cont{display: unset !important;}
-    .dr-free-cont p{max-width: unset ; white-space: unset ; display: block ; line-clamp: 2; max-height: 30px; margin: 0.5rem 0 0.3rem;}
+    .dr-free-cont p{max-width: unset ; white-space: unset ; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; max-height: 30px; margin: 0.5rem 0 0.3rem;}
     .dr-free-cont .dr-free-icon{margin-left: 0 !important;}
-    .dr-industry-cont ul li p{max-width: 360px;}
+    .dr-industry-cont ul li p{max-width: 360px; width: calc(100% - 80px)}
     /* 커뮤니티  e*/
+
 }
 @media (max-width: 576px) {
     .dr-bg-w {background-color: #fff;}
@@ -162,10 +161,4 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; border: 1px solid #E8E8E
 
     /* 커뮤니티  e*/
 } 
-@media (max-width: 480px) {
-    .dr-industry-cont ul li p{max-width: 220px;}
-}
-@media (max-width: 320px) {
-    .dr-industry-cont ul li p{max-width: 170px;}
-}
 /* ------반응형------ e */
