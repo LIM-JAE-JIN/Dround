@@ -30,3 +30,9 @@ function drPopupClose(im){
     $(im).closest('.dr-popup-wrap').css('display','none');
     $('.dr-dim').css('display','none');
 }
+
+//탭버튼 클릭
+function tabBtnClick(im){
+    $(im).addClass('dr_on');
+    $(im).siblings().removeClass('dr_on');
+}
