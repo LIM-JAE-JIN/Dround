@@ -52,7 +52,7 @@ footer{background-color:#F2F2F2; }
 /* ------커뮤니티------ s */
 .dr-community-main{max-width: 1200px;}
 /* 자유 게시판 s */
-.dr-free-board{width: 810px; min-height:900px; overflow: hidden; border:1px solid #E8E8EB; border-radius:5px; padding: 2.5rem 3rem; background: #fff;}
+.dr-free-board{width: 840px; min-height:900px; overflow: hidden; border:1px solid #E8E8EB; border-radius:5px; padding: 2.5rem 3rem; background: #fff;}
 .dr-free-board > div:nth-child(1){padding-bottom: 2.5rem;}
 .dr-tit-3 h3{font-size: 2.3rem; font-weight: 700;}
 button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1px solid #E8E8EB; border-radius: 3px;color: #989CA2; background-color: #fff; padding: 0.8rem 2.6rem;}
@@ -84,7 +84,7 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 .dr-industry-cont ul li:nth-child(even) span{color: #505866;}
 .dr-industry-cont ul li p{display: inline-block; max-width: 190px; font-size: 1.3rem;color:#505866; font-weight: 500; vertical-align: middle; overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
 .dr-industry-cont .dr-button-view{position: relative; width: 100%; bottom: -2rem;}
-.dr-button-worker{width: 118px; height: 35px; position: relative; background-color: #353839; border-radius: 4px; padding: 0.8rem 1rem; color: #fff; font-size: 1.4rem; font-weight: 600 ;}
+.dr-button-worker{width: 118px; height: 35px; position: relative; background-color: #353839; border-radius: 4px; padding: 0.8rem 1rem; color: #fff; font-size: 1.4rem; font-weight: 600; white-space: nowrap;}
 .dr-button-worker::before{content: ""; display: inline-block; width: 14px; height: 14px; background-image: url(../../img/icon/green_check.png); background-size: contain; margin-right: 0.7rem; vertical-align: bottom; background-repeat: no-repeat;}
 .dr-no-industry-cont{padding: 2.5rem 3rem; border: 1px solid #e8e8e8; background-color: #fff; min-height: 350px; max-height: 350px; position: relative;}
 .dr-no-industry-cont .dr-line{padding-top: 2rem;}
