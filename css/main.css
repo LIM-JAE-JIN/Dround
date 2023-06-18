@@ -37,8 +37,8 @@
 /* ------회원가입----- e */
 
 /* ------푸터------ s */
-footer{background-color:#F2F2F2; }
-.dr-footer-wrap{max-width:1200px; margin:0 auto; padding:6rem 3rem;align-items: flex-start;}
+footer{background-color:#F2F2F2; margin-top: 12rem;}
+.dr-footer-wrap{max-width:1200px; margin:0 auto; padding:6rem 0rem;align-items: flex-start;}
 .dr-footer-logo{width:100px;}
 .dr-footer-logo img{width:100%;}
 .dr-footer-wrap span{color:#626262;line-height: 1.6rem;}
@@ -110,26 +110,37 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 /* ------커뮤니티------ e */
 
 /* ------반응형------ s */
+@media (max-width: 1400px) {
+    /* ------footer------ s */
+    .dr-footer-wrap{max-width: 1140px;}
+    /* ------footer------ e */ 
+} 
+
 @media (max-width: 1200px) {
-    /* 커뮤니티  s*/
+    /* ------커뮤니티------ s */
     .dr-free-board{width: 100%;}
     .dr-industry{display: flex; width: 100%; flex-wrap: wrap; flex-direction: row; margin-top: 2.5rem;}
     .dr-industry-cont, .dr-no-industry-cont{width: 49%; margin-right: 2%;}
     .dr-community-banner{width: 100%;}
     .dr-community-side{ width: 49%;}
     .dr-community-vote{ width: 100%;}
-    /* 커뮤니티  e*/
+    /* ------커뮤니티------ e */
 
+    /* ------footer------ s */
+    .dr-footer-wrap{max-width: 960px;}
+    /* ------footer------ e */ 
 } 
 @media (max-width: 992px) {
-
+    /* ------footer------ s */
+    .dr-footer-wrap{max-width: 720px;}
+    /* ------footer------ e */
 } 
 @media (max-width: 768px) {
-    /* 팝업 s */
+    /* ------팝업------ s */
     .dr-popup-wrap {width:90% !important;}
-    /* 팝업 e */
+    /* ------팝업------ e */
 
-    /* 커뮤니티  s*/
+    /* ------커뮤니티------ s*/
     .dr-free-board{width: 100% ;}
     .dr-industry{width: 100%;}
     .dr-industry-cont, .dr-no-industry-cont{width: 100%; margin-right: 0;}
@@ -142,23 +153,21 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
     .dr-free-cont p{max-width: unset ; white-space: unset ; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; max-height: 30px; margin: 0.5rem 0 0.3rem;}
     .dr-free-cont .dr-free-icon{margin-left: 0 !important;}
     .dr-industry-cont ul li p{max-width: 360px; width: calc(100% - 80px)}
-    /* 커뮤니티  e*/
-
+    /* ------커뮤니티------ e*/
+    
+    /* ------footer------ s */
+    .dr-footer-wrap .dr-footer-adress, .dr-footer-wrap .dr-footer-terms{margin-top: 2rem;}
+    /* ------footer------ e */
 }
 @media (max-width: 576px) {
     .dr-bg-w {background-color: #fff;}
     /* ------로그인------ s */
-    .dr-cont-wrap{/*position:unset;margin: 50px auto 0; transform: translate(0);*/width:100%;padding:1rem;border:0;}
+    .dr-cont-wrap{width:100%;padding:1rem;border:0;}
     .dr-join {margin:5rem auto;}
     /* ------로그인------ e */
 
     /* ------footer------ s */
-    .dr-footer-wrap{padding:6rem 2rem;}
-    .dr-footer-wrap .dr-footer-adress, .dr-footer-wrap .dr-footer-terms{margin-top: 2rem;}
+    .dr-footer-wrap{padding:6rem 0.75rem;}
     /* ------footer------ e */
-
-    /* 커뮤니티  s*/
-
-    /* 커뮤니티  e*/
 } 
 /* ------반응형------ e */
