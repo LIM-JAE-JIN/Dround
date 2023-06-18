@@ -146,6 +146,12 @@ input::placeholder { color: #989ca1; font-weight: 400; }
 .dr-checkbox input[type="checkbox"] + label {line-height:18px; padding-left:25px; font-size:1.4rem;}
 .dr-checkbox input[type="checkbox"] + label::after { content:''; display: block; position: absolute; width:18px; height:18px; top:0; left:0; background:url(../img/icon/toggle_off.png) no-repeat; background-size:cover;} 
 .dr-checkbox input[type="checkbox"]:checked + label::after { content:''; background:url(../img/icon/toggle_on.png) no-repeat; background-size:cover; } 
+
+/* radio */
+.dr-radio-wrap input{display: none;}
+.dr-radio-wrap input[type="radio"] + label span.round{display:inline-block;width: 18px;height: 18px;margin: -2px 9px 0 4px;font-size: 0;vertical-align: middle;background: url(../../img/btn/icon/Ellipse_190.png) no-repeat;cursor:pointer; background-size: contain;}
+input[type="radio"]:checked + label span.round { background: url(../../img/btn/icon/icon_vote_on.png) no-repeat; background-size: contain;}
+
 /* Text field states e */
 
 /* 컨텐츠 박스*/
