@@ -108,7 +108,7 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 .dr-community-vote ul li a::after{top: -4px;}
 .dr-community-vote ul li p{ text-indent: -4px; font-size: 1.4rem; font-weight: 500; color: #353839;}
 
-/* 커뮤니티-글상세 s */
+/* 커뮤니티-글상세 */
 .dr-details-tit::before{ content: "";display: inline-block;width: 20px;height: 20px;background-size: cover;vertical-align: bottom; background-image: url(../../img/icon/icon_vote.png);margin-right: 0.5rem;}
 .dr-details-wrap{max-width: 840px; overflow: hidden;border: 1px solid #E8E8EB;border-radius: 5px;padding: 2.5rem 3rem;background: #fff; margin-right: 3rem;}
 .dr-details-wrap .dr-delete-button{font-size: 1.2rem; color: #EA5555; margin-left: auto;}
@@ -135,12 +135,10 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 .dr-writer .dr-participation i { color: #EA5555; border: 1px solid #EA5555; border-radius: 12.5px; padding: 0.2rem 0.4rem; font-style: normal;}
 .dr-writer{background-color: #F8F8F8; border-top: 1px solid #E9E9E9; border-bottom: 1px solid #E9E9E9; margin-top: 2rem; padding: 2rem 2rem 2rem 1rem; }
 .dr-writer-1{margin-top: 2.5rem;}
-
 .dr-industry-cont-best{max-width: 330px; padding: 2.5rem 3rem;border: 1px solid #e8e8e8;background-color: #fff;min-height: 405px;max-height: 55px;position: relative;}
 .dr-industry-cont-best ul li a{display: block; padding-top: 0.5rem; position: relative; line-height: 20px;}
 .dr-industry-cont-best ul li a::after{content: "";display: inline-block;width: 23px;height: 23px;background-image: url(../../img/icon/icon_arrow.png);background-size: contain;position: absolute;right: 0;top: 5px;}
 .dr-industry-cont-best ul li p{display: inline-block; width: calc(100% - 40px); font-size: 1.3rem; color: #505866; font-weight: 500; vertical-align: middle; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
-/* 커뮤니티-글상세 e */
 
 /* ------커뮤니티------ e */
 
@@ -163,7 +161,7 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
     /* 커뮤니티-글상세 s */
     .dr-details-wrap{max-width: 460px;}
     .dr-industry-cont-best{max-width: 290px;}
-     /* 커뮤니티-글상세 s */
+     /* 커뮤니티-글상세 e */
 
     /* ------커뮤니티------ e */
 
@@ -175,14 +173,6 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
     /* ------footer------ s */
     .dr-footer-wrap{max-width: 720px;}
     /* ------footer------ e */
-
-    /* ------커뮤니티------ s*/
-    
-    /* 커뮤니티-글상세 s */
-
-    /* 커뮤니티-글상세 s */
-
-    /* ------커뮤니티------ e*/
 } 
 @media (max-width: 768px) {
     /* ------팝업------ s */
@@ -208,7 +198,7 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
     .dr-details-wrap{max-width: 100%;}
     .dr-industry-cont-best{max-width: 100%; margin-top: 2.5rem;}
     .dr-details-wrap{margin-right: 0rem;}
-    /* 커뮤니티-글상세 s */
+    /* 커뮤니티-글상세 e */
     /* ------커뮤니티------ e*/
     
     /* ------footer------ s */
