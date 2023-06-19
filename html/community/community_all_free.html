@@ -13,45 +13,33 @@
     <script src="../../js/bootstrap/bootstrap.min.js"></script>
     <script src="../../js/common.js"></script>
     <title>Dround : 자유게시판</title>
-    <style>
-        .dr-all-board {max-width:1200px; border:1px; border-top:1px solid #e8e8eb; border-left:1px solid #e8e8eb;}
-        .dr-all-board .dr-all-board-box {padding:2.5rem 3rem; border:1px solid #e8e8eb; border-top:0; border-left: 0; display: flex; justify-content: space-between; align-items: center; background-color: #fff;}
-        .dr-cumunity-tab li {margin-right:25px; font-weight: 500; color:#d2d2d2; position: relative; cursor: pointer;}
-        .dr-cumunity-tab li.dr_on {color: #353839; font-weight: 700;}
-        .dr-cumunity-tab li.dr_on::before {content: ''; display: block; position: absolute; bottom:-26px; width: 100%; height: 1px; background: #000;}
-        .dr-cumunity-tab-mini  li {font-weight: 500; color:#989CA1; cursor: pointer;}
-        .dr-cumunity-tab-mini  li.dr_on {font-weight: 600; color:#353839;}
-        .dr-all-board-list > ul {display: flex; flex-wrap: wrap;}
-        .dr-all-board-list > ul > li {position: relative; width:50%; padding:4rem 3rem; border-bottom:1px solid #e8e8eb; border-right:1px solid #e8e8eb; background-color:#fff;}
-        .dr-all-board-list > ul > li > a {position: absolute; top:0; left:0; bottom:0; right:0;}
-        .dr-all-board-list > ul > li > span {color:#989CA1;}
-        .dr-all-board-list > ul .dr-all-vote > span {color:#1b83cf;}
-        .dr-all-board-list > ul .dr-all-vote .dr-all-board-txt > p span {background-image: url(../../img/icon/icon_vote.png);}
-        .dr-all-board-txt {position: relative;}
-        .dr-all-board-txt > p {margin:1rem 0 2rem; line-height: 25px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; max-height:100%; overflow: hidden;}
-        .dr-all-board-txt > p span{content:"";display: inline-block; width: 18px; height: 18px; background-image: url(../../img/icon/icon_best.png); background-size: cover;vertical-align: text-bottom; margin-right:5px;}
-        .dr-all-board-txt > span {line-height: 22px; color:#989CA1; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; max-height:100%; overflow: hidden; margin-bottom:2rem;}
-        .dr-all-date-wrap {display: flex; justify-content: space-between; align-items: center;}
-        .dr-all-date-wrap > p {color:#989ca1;}
-        .dr-banner-link {position: relative;}
-    </style>
 </head>
 <body>
     <!-- 컨테이너 -->
     <div class="container">
         <div class="row">
-            <div class="dr-community-main mx-auto d-xl-flex">
-                <div class="dr-all-board me-xl-5">
+            <div class="dr-community-main mx-auto">
+                <div class="dr-title-wrap d-flex justify-content-between align-items-center">
+                    <h2>자유 게시판</h2>
+                    <div class="dr-title-search-box d-flex">
+                        <input type="text" placeholder="검색어를 입력하세요"/>
+                        <button class="dr-button green">글 올리기</button>
+                    </div>
+                </div>
+                <div class="dr-all-board">
                     <div class="dr-all-board-box">
-                        <ul class="dr-cumunity-tab d-flex dr-fz-19">
+                        <ul class="dr-comunity-tab d-flex dr-fz-19">
                             <li class="dr_on" onclick="tabBtnClick(this)">전체보기</li>
                             <li onclick="tabBtnClick(this)">업무관련</li>
                             <li onclick="tabBtnClick(this)">잡담</li>
                         </ul>
-                        <ul class="dr-cumunity-tab-mini d-flex dr-fz-13">
+                        <ul class="dr-comunity-tab-mini d-flex dr-fz-13">
                             <li class="me-3 dr_on" onclick="tabBtnClick(this)">최신순</li>
                             <li onclick="tabBtnClick(this)">인기순</li>
                         </ul>
+                        <div class="dr-tab-mini-icon">
+                            <img src="../../img/icon/icon_filter.png" alt="filter-icon">
+                        </div>
                     </div>
 
                     <div class="dr-all-board-list">
@@ -214,6 +202,11 @@
                     </div>
                 </div>
             </div>
+            <!-- 로딩 s -->
+            <div class="dr-loading w-full text-center">
+                <img src="../../img/icon/icon_loader.png" alt="loading-icon">
+            </div>
+            <!-- 로딩 e -->
         </div>
     </div>
     <!--// 컨테이너 -->
