@@ -108,7 +108,7 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 .dr-community-vote ul li a::after{top: -4px;}
 .dr-community-vote ul li p{ text-indent: -4px; font-size: 1.4rem; font-weight: 500; color: #353839;}
 
-/* 커뮤니티-글상세 */
+/* 커뮤니티_글상세 s */
 .dr-details-tit::before{ content: "";display: inline-block;width: 20px;height: 20px;background-size: cover;vertical-align: bottom; background-image: url(../../img/icon/icon_vote.png);margin-right: 0.5rem;}
 .dr-details-wrap{max-width: 840px; overflow: hidden;border: 1px solid #E8E8EB;border-radius: 5px;padding: 2.5rem 3rem;background: #fff; margin-right: 3rem;}
 .dr-details-wrap .dr-delete-button{font-size: 1.2rem; color: #EA5555; margin-left: auto;}
@@ -139,6 +139,7 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 .dr-industry-cont-best ul li a{display: block; padding-top: 0.5rem; position: relative; line-height: 20px;}
 .dr-industry-cont-best ul li a::after{content: "";display: inline-block;width: 23px;height: 23px;background-image: url(../../img/icon/icon_arrow.png);background-size: contain;position: absolute;right: 0;top: 5px;}
 .dr-industry-cont-best ul li p{display: inline-block; width: calc(100% - 40px); font-size: 1.3rem; color: #505866; font-weight: 500; vertical-align: middle; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+/* 커뮤니티_글상세 e */
 
 /* 커뮤니티_게시판 s */
 .dr-all-board {max-width:1200px; border:1px; border-top:1px solid #e8e8eb; border-left:1px solid #e8e8eb;}
