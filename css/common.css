@@ -88,6 +88,7 @@ img{max-width:100%;}
 .dr-icon-txt:last-child { margin-right: 0; } 
 
 /* color */
+.dr-color-white {color: #fff !important;}
 .dr-color-main { color: #353839 !important; } 
 .dr-color-1 { color: #cc4040 !important; } 
 .dr-color-2 { color: #1c8f51 !important; } 
@@ -101,6 +102,8 @@ img{max-width:100%;}
 .dr-color-10 { color: #be9d29 !important; } 
 .dr-color-11 { color: #615af6 !important; } 
 .dr-color-12 { color: #e87a3c !important; } 
+.dr-color-13 { color: #1B83CF !important}
+.dr-color-14 { color: #505866 !important}
 
 /* bg-color */
 .dr-bg-main { background-color: #353839 !important; }
@@ -117,6 +120,7 @@ img{max-width:100%;}
 .dr-bg-10 { background-color: #be9d29 !important; } 
 .dr-bg-11 { background-color: #615af6 !important; } 
 .dr-bg-12 { background-color: #e87a3c !important; } 
+.dr-bg-12 { background-color: #1B83CF !important; } 
 
 /* button */
 .dr-button { position: relative; display: inline-block; width: auto; padding: 1.3rem 5.6rem; text-align: center; vertical-align: middle; font-size: 1.6rem; font-weight: 700; white-space: nowrap; text-decoration: none; overflow: hidden; box-sizing: border-box; border: 1px solid #989ca1; border-radius: 3px; color: #353839; line-height: 2.4rem; } 
@@ -127,6 +131,7 @@ img{max-width:100%;}
 .dr-button.green { color: #fff; background-color: #1c8f51; border-color: transparent; } 
 .dr-button.green.hover:hover { background-color: #177442; } 
 .dr-button.indigo { color: #fff; background-color: #353839; border-color: transparent; } 
+.dr-button.blue { background-color: #1B83CF; color: #fff; border-color: transparent;}
 .dr-button.disabled { color: #989ca1; background: #e8e8eb; border-color: transparent; } 
 
 /* Text field states s */
