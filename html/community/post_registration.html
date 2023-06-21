@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../..//css/layout.css">
+    <!-- js -->
+    <script src="../../js/jquery-3.6.3.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+    <script src="../../js/bootstrap/bootstrap.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <title>Dround : 글 등록</title>
+</head>
+<body class="dr-bg-white">
+    <!-- 컨테이너 -->
+    <div class="container mt-5"><!-- 나중에지워 mt-5 -->
+        <div class="row">
+            <div class="dr-registaer-wrap">
+                <form class="dr-fz-15" method="post">
+                    <div class="dr-input-wrap">
+                        <p class="mb-3">제목<span class="dr-important">*</span></p>
+                        <input type="text" class="dr-input" id="title" name="title" placeholder="ex) 서울시 오페스텔 사업 건">
+                    </div>
+                    <p class="dr-fz-15 mb-3">사업단계</p>
+                    <div class="d-flex">
+                        <div class="dr-checkbox">
+                            <input type="checkbox" id="drCheck2">
+                            <label for="drCheck2">업무관련</label>
+                        </div>
+                        <div class="dr-checkbox ms-5">
+                            <input type="checkbox" id="drCheck3">
+                            <label for="drCheck3">잡담</label>
+                        </div>    
+                    </div>
+                    
+                    <div class="dr-textarea-wrap">
+                        <p class="dr-fz-15">내용</p>
+                        <textarea name="" class="dr-textarea mt-2" id="" cols="10" rows="10" placeholder="내용을 입력해주세요."></textarea>
+                    </div>
+                </form>    
+            </div>
+        </div> 
+    </div>
+    <!--// 컨테이너 --> 
+    <style>
+        .dr-important{color:#CF2F2F; margin-left: 2px;}
+        .dr-registaer-wrap{position: relative; margin: 0 auto; width: 440px; max-width: 100%;}
+        .dr-registaer-wrap .dr-input-wrap{margin-bottom: 2.5rem;}
+        .dr-registaer-wrap .till{position: absolute;top: 58%;display: block;right: 4%;}
+    </style>
+</body>
+</html>
