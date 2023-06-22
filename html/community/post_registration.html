@@ -19,12 +19,13 @@
     <div class="container mt-5"><!-- 나중에지워 mt-5 -->
         <div class="row">
             <div class="dr-registaer-wrap">
+                <h1 class="text-center mb-5">커뮤니티 글올리기</h1>
                 <form class="dr-fz-15" method="post">
                     <div class="dr-input-wrap">
                         <p class="mb-3">제목<span class="dr-important">*</span></p>
                         <input type="text" class="dr-input" id="title" name="title" placeholder="ex) 서울시 오페스텔 사업 건">
                     </div>
-                    <p class="dr-fz-15 mb-3">사업단계</p>
+                    <p class="dr-fz-15 dr-fw-600 mb-3">사업단계</p>
                     <div class="d-flex">
                         <div class="dr-checkbox">
                             <input type="checkbox" id="drCheck2">
@@ -37,9 +38,14 @@
                     </div>
                     
                     <div class="dr-textarea-wrap">
-                        <p class="dr-fz-15">내용</p>
-                        <textarea name="" class="dr-textarea mt-2" id="" cols="10" rows="10" placeholder="내용을 입력해주세요."></textarea>
+                        <p class="dr-fz-15 dr-fw-600">내용</p>
+                        <textarea name="" class="dr-textarea mt-3" id="" cols="10" rows="10" placeholder="내용을 입력해주세요."></textarea>
                     </div>
+                    <div class="d-flex align-items-center">
+                        <button class="dr-vote-upload-button me-2">투표 올리기</button>
+                        <input type="file" value="이미지" name="이미지" style="max-width: 220px;">
+                    </div>
+                    <button class="dr-button indigo w-100">button</button>
                 </form>    
             </div>
         </div> 
@@ -50,6 +56,11 @@
         .dr-registaer-wrap{position: relative; margin: 0 auto; width: 440px; max-width: 100%;}
         .dr-registaer-wrap .dr-input-wrap{margin-bottom: 2.5rem;}
         .dr-registaer-wrap .till{position: absolute;top: 58%;display: block;right: 4%;}
+        .dr-registaer-wrap .dr-textarea-wrap {margin-top: 2.5rem;}
+        .dr-registaer-wrap .dr-textarea-wrap textarea{ height: 440px;}
+        .dr-vote-upload-button{position:relative; width: 97px; height: 34px; font-size: 13px; font-weight: 500; line-height: 18px; color: #989CA1; background-color: #fff; border: 1px solid #D7D7D7; border-radius: 4px;}
+        .dr-vote-upload-button::before{content: ""; display: inline-block; width: 16px; height: 16px; vertical-align: text-bottom; background: url(../../img/icon/icon_vote_g.png) no-repeat; background-size: contain; }
+        .dr-registaer-wrap .dr-button.indigo{margin-top: 6rem;}
     </style>
 </body>
 </html>
