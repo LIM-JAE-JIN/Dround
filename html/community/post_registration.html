@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- css -->
     <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="../..//css/layout.css">
+    <link rel="stylesheet" href="../../css/layout.css">
     <!-- js -->
     <script src="../../js/jquery-3.6.3.min.js"></script>
     <script src="../../js/jquery-ui.min.js"></script>
@@ -41,11 +41,14 @@
                         <p class="dr-fz-15 dr-fw-600">내용</p>
                         <textarea name="" class="dr-textarea mt-3" id="" cols="10" rows="10" placeholder="내용을 입력해주세요."></textarea>
                     </div>
-                    <div class="d-flex align-items-center">
+                    <div class="d-flex align-items-center mt-2">
                         <button class="dr-vote-upload-button me-2">투표 올리기</button>
-                        <input type="file" value="이미지" name="이미지" style="max-width: 220px;">
+                        <label class="dr-input-file-button" for="input-file">
+                            이미지
+                        </label>
+                        <input type="file" id="input-file" />
                     </div>
-                    <button class="dr-button indigo w-100">button</button>
+                    <button class="dr-button indigo w-100">글 올리기</button>
                 </form>    
             </div>
         </div> 
@@ -53,7 +56,7 @@
     <!--// 컨테이너 --> 
     <style>
         .dr-important{color:#CF2F2F; margin-left: 2px;}
-        .dr-registaer-wrap{position: relative; margin: 0 auto; width: 440px; max-width: 100%;}
+        .dr-registaer-wrap{position: relative; margin: 0 auto; width: 440px; max-width: 100%; padding: 0 20px;}
         .dr-registaer-wrap .dr-input-wrap{margin-bottom: 2.5rem;}
         .dr-registaer-wrap .till{position: absolute;top: 58%;display: block;right: 4%;}
         .dr-registaer-wrap .dr-textarea-wrap {margin-top: 2.5rem;}
@@ -61,6 +64,10 @@
         .dr-vote-upload-button{position:relative; width: 97px; height: 34px; font-size: 13px; font-weight: 500; line-height: 18px; color: #989CA1; background-color: #fff; border: 1px solid #D7D7D7; border-radius: 4px;}
         .dr-vote-upload-button::before{content: ""; display: inline-block; width: 16px; height: 16px; vertical-align: text-bottom; background: url(../../img/icon/icon_vote_g.png) no-repeat; background-size: contain; }
         .dr-registaer-wrap .dr-button.indigo{margin-top: 6rem;}
+        .dr-input-file-button{position:relative; display: flex; align-items: center; justify-content: center;width: 71px; height: 34px; font-size: 13px; font-weight: 500; line-height: 18px; color: #989CA1; background-color: #fff; border: 1px solid #D7D7D7; border-radius: 4px;}
+        .dr-input-file-button::before{content: ""; display: inline-block; width: 16px; height: 16px; vertical-align: text-bottom; background: url(../../img/icon/Img_box_fill.png) no-repeat; background-size: contain; }
+        .dr-input-file-button + input{display: none;}
+
     </style>
 </body>
 </html>
