@@ -16,19 +16,29 @@
 </head>
 <body>
     <header>
-        <div class="header_warp d-flex justify-content-start align-items-center">
-            <h1 class="d-flex"><a href="#none"><img src="../../img/icon_logo.png" alt="logo"></a></h1>
-            <div class="d-flex w-100">
-                <ul class="d-flex justify-content-start w-100">
+        <div class="header_wrap d-flex justify-content-start align-items-center">
+            <h1><a href="#none"><img src="../../img/icon_logo.png" alt="logo"></a></h1>
+            <div class="d-flex w-100 align-items-center">
+                <ul class="dr-hd-gnb justify-content-start w-100">
                     <li><a href="#none">파트너 협업</a></li>
                     <li><a href="#none">커뮤니티</a></li>
                     <li><a href="#none">전문가찾기</a></li>
                 </ul>
-                <ul class="d-flex justify-content-end w-100">
+                <ul class="dr-hd-log justify-content-end w-100">
                     <li><a href="#none">고객센터</a></li>
-                    <li><a href="#none">로그인</a></li>
-                    <li><a href="#none">회원가입</a></li>
+                    <li>
+                        <div class="dr-user-off d-flex">
+                            <a href="#none">로그인</a>
+                            <a href="#none">회원가입</a>
+                        </div>
+                        <div class="dr-user-on" style="display: none;">
+                            <a href="#none">마이페이지</a>
+                        </div>
+                    </li>
                 </ul>
+            </div>
+            <div class="dr-user-menu justify-content-end">
+                <img src="../../img/icon/icon_hambuger.png" alt="menu-icon">
             </div>
         </div>
         <div class="dr-header-box"></div>

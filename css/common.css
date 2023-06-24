@@ -48,12 +48,6 @@ body{
     font-family: 'Pretendard' !important;
 }
 
-/* header */
-header{position:relative;background:#fff;height:90px;overflow:hidden;}
-header .header_warp{max-width:1200px;height:90px;margin:0 auto;}
-header .header_warp h1{max-width:113px;}
-
-
 /* img */
 img{max-width:100%;}
 

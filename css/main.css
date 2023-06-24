@@ -36,6 +36,23 @@
 .dr-popup-complete .dr-popup-content p {font-size:1.5rem; line-height:2.1rem; color:#989ca1;}
 /* ------회원가입----- e */
 
+/* ------header------ s */
+header {position:relative;background:#fff;height:90px;overflow:hidden;}
+header .header_wrap {width:100%; max-width:1200px; height:100%; margin:0 auto;}
+header .header_wrap h1 {min-width:113px; width:113px;}
+header .header_wrap h1 img {width: 100%;}
+.dr-header-box {height:90px; margin-bottom: 40px;}
+.dr-hd-gnb {display: flex; margin-left:50px;}
+.dr-hd-gnb li {margin-right:23px; font-size:18px; font-weight:500; white-space: nowrap;}
+.dr-hd-gnb li:last-child {margin-right:0;}
+.dr-hd-log {display: flex;}
+.dr-hd-log li {margin-left: 25px;}
+.dr-hd-log li:first-child { margin-left:0;}
+.dr-hd-log li a {color:#8d94a0; font-size:15px; font-weight:600;}
+.dr-user-menu {cursor: pointer; min-width:22px; width: 22px; height: 22px; display: none;}
+.dr-user-menu img {width: 100%; height:100%;}
+/* ------header------ e */
+
 /* ------footer------ s */
 footer{background-color:#F2F2F2; margin-top: 12rem;}
 .dr-footer-wrap{max-width:1200px; margin:0 auto; padding:6rem 0rem;align-items: flex-start;}
@@ -188,12 +205,10 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 
 /* ------반응형------ s */
 @media (max-width: 1400px) {
-    /* ------footer------ s */
-    .dr-footer-wrap{max-width: 1140px;}
-    /* ------footer------ e */ 
 } 
 
 @media (max-width: 1200px) {
+    .dr-container {padding:0 30px;}
     /* ------커뮤니티------ s */
     .dr-free-board{width: 100%;}
     .dr-industry{display: flex; width: 100%; flex-wrap: wrap; flex-direction: row; margin-top: 2.5rem;}
@@ -209,14 +224,15 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 
     /* ------커뮤니티------ e */
 
+    /* ------header------ s */
+    header .header_wrap {padding:0 30px;}
+    /* ------header------ e */
+
     /* ------footer------ s */
-    .dr-footer-wrap{max-width: 960px;}
-    /* ------footer------ e */ 
+    footer {padding:0 30px;}
+    /* ------footer------ e */
 } 
 @media (max-width: 992px) {
-    /* ------footer------ s */
-    .dr-footer-wrap{max-width: 720px;}
-    /* ------footer------ e */
 } 
 @media (max-width: 768px) {
     /* ------팝업------ s */
@@ -246,16 +262,15 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 
     /* 커뮤니티_게시판 s */
     .dr-title-wrap {flex-wrap:wrap;}
-    .dr-title-wrap .dr-title-search-box {margin-top:15px;}
+    .dr-title-wrap .dr-title-search-box {width: 100%; margin-top:15px;}
+    .dr-title-wrap .dr-title-search-box input {width:calc(100% - 123px);}
     .dr-all-board-list > ul > li {width:100%;}
     .dr-comunity-tab-mini {display: none !important;}
     .dr-tab-mini-icon {display: block;}
     /* 커뮤니티_게시판 e */
     /* ------커뮤니티------ e*/
-    
-    /* ------footer------ s */
-    .dr-footer-wrap{max-width: 540px;}
 
+    /* ------footer------ s */
     .dr-footer-wrap .dr-footer-adress, .dr-footer-wrap .dr-footer-terms{margin-top: 2rem;}
     /* ------footer------ e */
 }
@@ -265,6 +280,12 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
     .dr-cont-wrap{width:100%;padding:1rem;border:0;}
     .dr-join {margin:5rem auto;}
     /* ------로그인------ e */
+
+    /* ------header------ s */
+    .dr-user-menu {display: block;}
+    .dr-hd-gnb {display: none;}
+    .dr-hd-log {display: none;}
+    /* ------header------ e */
 
     /* ------footer------ s */
     .dr-footer-wrap{padding:6rem 0.75rem; max-width:100%;}
