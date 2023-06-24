@@ -15,6 +15,69 @@
     <title>Dround : 자유게시판</title>
 </head>
 <body>
+    <!-- 헤더 s -->
+    <header>
+        <div class="dr-container header_wrap d-flex justify-content-start align-items-center">
+            <h1><a href="#none"><img src="../../img/icon_logo.png" alt="logo"></a></h1>
+            <div class="d-flex w-100 align-items-center">
+                <ul class="dr-hd-gnb justify-content-start w-100">
+                    <li onclick="tabBtnClick(this)"><a href="#none">파트너 협업</a></li>
+                    <li onclick="tabBtnClick(this)"><a href="#none">커뮤니티</a></li>
+                    <li onclick="tabBtnClick(this)"><a href="#none">전문가찾기</a></li>
+                </ul>
+                <ul class="dr-hd-log justify-content-end w-100">
+                    <li><a href="#none">고객센터</a></li>
+                    <li>
+                        <!-- 비로그인 시 s -->
+                        <div class="dr-user-off d-flex">
+                            <a href="#none">로그인</a>
+                            <a href="#none">회원가입</a>
+                        </div>
+                        <!-- 비로그인 시 e -->
+                        <!-- 로그인 시 s -->
+                        <div class="dr-user-on">
+                            <a href="#none">마이페이지</a>
+                        </div>
+                        <!-- 로그인 시 e -->
+                    </li>
+                </ul>
+            </div>
+            <div class="dr-user-menu justify-content-end" onclick="drPopupOpen('.dr-hd-m-menu')">
+                <img src="../../img/icon/icon_hambuger.png" alt="menu-icon">
+            </div>
+        </div>
+        
+        <!-- 모바일 메뉴 s -->
+        <div class="dr-dim"></div>
+        <div class="dr-popup-wrap dr-hd-m-menu">
+            <div class="dr-popup-close" onclick="drPopupClose(this)"></div>
+            <div class="dr-hd-m-gnb">
+                <h1><a href="#none"><img src="../../img/icon_logo.png" alt="logo"></a></h1>
+                <ul>
+                    <li onclick="tabBtnClick(this)"><a href="#none">파트너 협업</a></li>
+                    <li onclick="tabBtnClick(this)"><a href="#none">커뮤니티</a></li>
+                    <li onclick="tabBtnClick(this)"><a href="#none">전문가 찾기</a></li>
+                    <li onclick="tabBtnClick(this)"><a href="#none">고객센터</a></li>
+                </ul>
+            </div>
+            <div class="dr-hd-m-bottom">
+                <!-- 비로그인 시 s -->
+                <div class="dr-user-off">
+                    <a href="#none"><button class="dr-button indigo w-100">로그인 하기</button></a>
+                    <a href="#none"><button class="dr-button disabled w-100 mt-3">회원가입 하기</button></a>
+                </div>
+                <!-- 비로그인 시 e -->
+                <!-- 로그인 시 s -->
+                <div class="dr-user-on" style="display: none;">
+                    <a href="#none"><button class="dr-button indigo w-100">마이페이지</button></a>
+                </div>
+                <!-- 로그인 시 e -->
+            </div>
+        </div>
+        <!-- 모바일 메뉴 e -->
+    </header>
+    <div class="dr-header-box"></div>
+    <!-- 헤더 s -->
     <!-- 컨테이너 -->
     <div class="dr-container">
         <div class="dr-community-main mx-auto">
@@ -209,7 +272,7 @@
     </div>
     <!--// 컨테이너 -->
     <!-- 푸터 -->
-    <footer>
+    <footer class="dr-container">
         <div class="dr-footer-wrap row">
             <div class="col-md-2">
                 <div class="dr-footer-logo">
