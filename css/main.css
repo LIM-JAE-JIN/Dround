@@ -224,17 +224,11 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
      /* 커뮤니티-글상세 e */
 
     /* ------커뮤니티------ e */
-
-    /* ------header------ s */
-    header .header_wrap {padding:0 30px;}
-    /* ------header------ e */
-
-    /* ------footer------ s */
-    footer {padding:0 30px;}
-    /* ------footer------ e */
 } 
+
 @media (max-width: 992px) {
-} 
+}
+
 @media (max-width: 768px) {
     /* ------팝업------ s */
     .dr-popup-wrap {width:90% !important;}
@@ -290,12 +284,7 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
     .dr-join {margin:5rem auto;}
     /* ------로그인------ e */
 
-    /* ------header------ s */
-    header .header_wrap {padding:0 20px;}
-    /* ------header------ e */
-
     /* ------footer------ s */
-    footer {padding:0 20px;}
     .dr-footer-wrap{padding:6rem 0.75rem; max-width:100%;}
     .dr-footer-wrap.row > * {padding:0}
     /* ------footer------ e */
