@@ -209,6 +209,7 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 
 @media (max-width: 1200px) {
     .dr-container {padding:0 30px;}
+
     /* ------커뮤니티------ s */
     .dr-free-board{width: 100%;}
     .dr-industry{display: flex; width: 100%; flex-wrap: wrap; flex-direction: row; margin-top: 2.5rem;}
@@ -270,17 +271,6 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
     /* 커뮤니티_게시판 e */
     /* ------커뮤니티------ e*/
 
-    /* ------footer------ s */
-    .dr-footer-wrap .dr-footer-adress, .dr-footer-wrap .dr-footer-terms{margin-top: 2rem;}
-    /* ------footer------ e */
-}
-@media (max-width: 576px) {
-    .dr-bg-w {background-color: #fff;}
-    /* ------로그인------ s */
-    .dr-cont-wrap{width:100%;padding:1rem;border:0;}
-    .dr-join {margin:5rem auto;}
-    /* ------로그인------ e */
-
     /* ------header------ s */
     .dr-user-menu {display: block;}
     .dr-hd-gnb {display: none;}
@@ -288,6 +278,24 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
     /* ------header------ e */
 
     /* ------footer------ s */
+    .dr-footer-wrap .dr-footer-adress, .dr-footer-wrap .dr-footer-terms{margin-top: 2rem;}
+    /* ------footer------ e */
+}
+@media (max-width: 576px) {
+    .dr-container {padding:0 20px;}
+
+    .dr-bg-w {background-color: #fff;}
+    /* ------로그인------ s */
+    .dr-cont-wrap{width:100%;padding:1rem;border:0;}
+    .dr-join {margin:5rem auto;}
+    /* ------로그인------ e */
+
+    /* ------header------ s */
+    header .header_wrap {padding:0 20px;}
+    /* ------header------ e */
+
+    /* ------footer------ s */
+    footer {padding:0 20px;}
     .dr-footer-wrap{padding:6rem 0.75rem; max-width:100%;}
     .dr-footer-wrap.row > * {padding:0}
     /* ------footer------ e */
