@@ -86,7 +86,7 @@ footer{background-color:#F2F2F2; margin-top: 12rem;}
 
 /* ------커뮤니티------ s */
 .dr-community-main{max-width: 1200px;}
-/* 자유 게시판 s */
+/* 커뮤니티_메인 s */
 .dr-free-board{width: 840px; overflow: hidden; border:1px solid #E8E8EB; border-radius:5px; padding: 2.5rem 3rem; background: #fff;}
 .dr-free-board > div:nth-child(1){padding-bottom: 2.5rem;}
 .dr-tit-3 h3{font-size: 2.3rem; font-weight: 700;}
@@ -97,7 +97,7 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 .dr-free-cont{position:relative; margin-bottom: 2rem;}
 .dr-free-cont p {max-width: 524px; display: inline-block; overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
 .dr-free-icon{width: 108px;white-space: nowrap;}
-.dr-free-icon ul li{position: relative; width: 55px; padding-left: 2rem;display: inline-block;vertical-align:text-bottom}
+.dr-free-icon ul li{position: relative; width: 55px; padding-left: 1.7rem;display: inline-block;vertical-align:text-bottom}
 .dr-num{display: inline-block; width: 10px; line-height: 1.7rem; color: #989CA1; margin-right: 1.5rem;}
 
 /* 하트, 말풍선 아이콘 */
@@ -142,6 +142,7 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 .dr-community-vote ul li a{display: block; position: relative;}
 .dr-community-vote ul li a::after{top: -4px;}
 .dr-community-vote ul li p{ text-indent: -4px; font-size: 1.4rem; font-weight: 500; color: #353839;}
+/* 커뮤니티_메인 e */
 
 /* 커뮤니티_글상세 s */
 .dr-details-tit::before{ content: "";display: inline-block;width: 20px;height: 20px;background-size: cover;vertical-align: bottom; background-image: url(../../img/icon/icon_vote.png);margin-right: 0.5rem;}
@@ -170,7 +171,7 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 .dr-details-comment .dr-textarea-wrap textarea{height: 75px; padding-right: 10rem; border: 1px solid #505866;border-radius: 5px;resize: none;}
 .dr-details-comment .dr-textarea-wrap a{ position: absolute;top: 50%;transform: translateY(-50%);right: 24px;color: #989CA1;font-size: 1.3rem;font-weight: 500;border: 1px solid #D7D7D7;border-radius: 3px;padding: 1rem 2rem;}
 .dr-details-comment .dr-textarea-wrap textarea::placeholder{position: absolute; top: 50%; transform: translateY(-50%); color: #383A52;}
-.vector_10 img{width: 20px; height: 11px;}
+.vector_10{min-width: 15px; width: 15px; padding-top: 0.1rem;}
 .dr-writer .dr-participation i { color: #EA5555; border: 1px solid #EA5555; border-radius: 12.5px; padding: 0.2rem 0.4rem; font-style: normal;}
 .dr-writer{background-color: #F8F8F8; border-top: 1px solid #E9E9E9; border-bottom: 1px solid #E9E9E9; margin-top: 2rem; padding: 2rem 2rem 2rem 1rem; }
 .dr-writer-1{margin-top: 2.5rem;}
@@ -219,6 +220,25 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
     }
 }
 /* 커뮤니티_게시판 e */
+
+/* 커뮤니티_글올리기 s */
+.dr-registaer-wrap{position: relative; margin: 0 auto; width: 440px; max-width: 100%;}
+.dr-registaer-wrap .dr-input-wrap{margin-bottom: 2.5rem;}
+.dr-registaer-wrap .till{position: absolute;top: 58%;display: block;right: 4%;}
+.dr-registaer-wrap .dr-textarea-wrap {margin-top: 2.5rem;}
+.dr-registaer-wrap .dr-textarea-wrap textarea{ height: 440px;}
+.dr-vote-upload-button{position:relative; width: 97px; height: 34px; font-size: 13px; font-weight: 500; line-height: 18px; color: #989CA1; background-color: #fff; border: 1px solid #D7D7D7; border-radius: 4px; white-space: nowrap;}
+.dr-vote-upload-button::before{content: ""; display: inline-block; width: 16px; height: 16px; vertical-align: text-bottom; background: url(../../img/icon/icon_vote_g.png) no-repeat; background-size: contain; }
+.dr-registaer-wrap .dr-button.indigo{margin-top: 6rem;}
+.dr-input-file-button{position:relative; display: flex; align-items: center; justify-content: center;width: 71px; height: 34px; font-size: 13px; font-weight: 500; line-height: 18px; color: #989CA1; background-color: #fff; border: 1px solid #D7D7D7; border-radius: 4px;}
+.dr-input-file-button::before{content: ""; display: inline-block; width: 16px; height: 16px; vertical-align: text-bottom; background: url(../../img/icon/Img_box_fill.png) no-repeat; background-size: contain; }
+.dr-input-file-button + input{display: none;}
+.dr-button.dr-plus-button{ color:#1C8F51; border: 1px solid #1C8F51; font-weight: 500;}
+.dr-popup-wrap.dr-popup-vote{max-width: 388px; height: 467px;}
+.dr-popup-vote-complete{position: fixed; max-width: 440px; width: 100%; height: 440px; overflow-y: scroll; background-color: #fff; border-radius: 3px; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 1.2rem 1.5rem; color: #000; font-size: 1.5rem; font-weight: 500; z-index: 222; display: none;}
+.dr-popup-vote-complete > div{ background-color: #D4D3DA; padding: 3rem 1.5rem; border-radius: 3px; margin-bottom: 1rem;}
+.dr-important{color:#CF2F2F; margin-left: 2px;}
+/* 커뮤니티_글올리기 e */
 /* ------커뮤니티------ e */
 
 /* ------반응형------ s */
