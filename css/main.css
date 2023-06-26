@@ -37,10 +37,10 @@
 /* ------회원가입----- e */
 
 /* ------header------ s */
-header {position: fixed; top:0; left:0; right:0; width:100%; background:#fff; height:90px; z-index: 111; border-bottom:1px solid #eee;}
-header .header_wrap { max-width:1200px; height:90px; margin:0 auto;}
-header .header_wrap h1 {min-width:113px; width:113px;}
-header .header_wrap h1 img {width: 100%;}
+.header {position: fixed; top:0; left:0; right:0; width:100%; background:#fff; height:90px; z-index: 111; border-bottom:1px solid #eee;}
+.header .header_wrap { max-width:1200px; height:90px; margin:0 auto;}
+.header .header_wrap h1 {min-width:113px; width:113px;}
+.header .header_wrap h1 img {width: 100%;}
 .dr-header-box {height:90px; margin-bottom: 40px;}
 .dr-hd-gnb {display: flex; margin-left:50px;}
 .dr-hd-gnb li {margin-right:23px;}
