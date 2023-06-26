@@ -241,6 +241,17 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 /* 커뮤니티_글올리기 e */
 /* ------커뮤니티------ e */
 
+/* ------파트너협업------ s */
+/* 파트너협업_글올리기 s */
+.dr-partner-write-wrap{position: relative; margin:0 auto; width:440px; max-width:100%;}
+.dr-partner-write-wrap .dr-input-wrap{margin-bottom: 3rem;}
+.dr-partner-write-wrap .dr-business-check .dr-checkbox{display: inline-block; width: 24%; margin-top: 1.5rem;}
+.dr-partner-write-wrap .dr-textarea-wrap{margin-top: 2.5rem;}
+.dr-partner-write-wrap .dr-input-wrap .dr-date{position: absolute;right: 12px;top: 15.5px;}
+.dr-partner-write-wrap .dr-button{margin-top: 5rem;}
+/* 파트너협업_글올리기 e */
+/* ------파트너협업------ e */
+
 /* ------반응형------ s */
 @media (max-width: 1400px) {
 } 
@@ -312,6 +323,12 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
     /* ------footer------ s */
     .dr-footer-wrap .dr-footer-adress, .dr-footer-wrap .dr-footer-terms{margin-top: 2rem;}
     /* ------footer------ e */
+
+    /* ------파트너협업------ s */
+    /* 파트너협업_글올리기 s */
+    .dr-partner-write-wrap .dr-business-check .dr-checkbox{ width: 32%;}
+    /* 파트너협업_글올리기 e */
+    /* ------파트너협업------ e */
 }
 @media (max-width: 576px) {
     .dr-container {padding:0 20px;}

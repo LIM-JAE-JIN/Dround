@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/layout.css">
+    <!-- js -->
+    <script src="../../js/jquery-3.6.3.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+    <script src="../../js/bootstrap/bootstrap.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <title>Dround : 파트너 협업 - 글올리기</title>
+</head>
+<body class="dr-bg-white">
+    <!-- 컨테이너 -->
+    <div class="dr-container">
+        <div class="dr-partner-write-wrap">
+            <h1 class="text-center mb-5">파트너 협업 글올리기</h1>
+            <form class="dr-fz-15 dr-fw-600" method="post">
+                <div class="dr-input-wrap">
+                    <p class="mb-3">제목<span class="dr-important">*</span></p>
+                    <input type="text" class="dr-input" name="title" placeholder="ex) 서울시 오페스텔 사업 건">
+                </div>
+                <div class="dr-input-wrap">
+                    <p class="mb-3">위치<span class="dr-important">*</span></p>
+                    <input type="text" class="dr-input" name="title" placeholder="ex) 서울시 서초동 00번지 일원">
+                </div>
+                <div class="d-flex justify-content-between">
+                    <p class="mb-3">기한<span class="dr-important">*</span></p>
+                    <div class="dr-checkbox">
+                        <input type="checkbox" id="drCheck1">
+                        <label for="drCheck1" class="dr-selc-color dr-fw-500">기한 없음</label>
+                    </div>
+                </div>
+                <div class="dr-input-wrap position-relative">
+                    <input type="text" class="dr-input" name="title" maxlength="6" placeholder="YY/MM/DD">
+                    <span class="dr-date">까지</span>
+                </div>
+                <div class="dr-business-check">
+                    <p class="dr-fz-15 dr-fw-600">사업단계</p>
+                    <div class="dr-fw-500">
+                        <div class="dr-checkbox">
+                            <input type="checkbox" id="drCheck2">
+                            <label for="drCheck2">계약금 지급</label>
+                        </div>
+                        <div class="dr-checkbox">
+                            <input type="checkbox" id="drCheck3">
+                            <label for="drCheck3">BL</label>
+                        </div>
+                        <div class="dr-checkbox">
+                            <input type="checkbox" id="drCheck4">
+                            <label for="drCheck4">PF</label>
+                        </div>
+                        <div class="dr-checkbox">
+                            <input type="checkbox" id="drCheck5">
+                            <label for="drCheck5">담보 대출</label>
+                        </div>
+                        <div class="dr-checkbox">
+                            <input type="checkbox" id="drCheck6">
+                            <label for="drCheck6">매입/매각</label>
+                        </div>
+                        <div class="dr-checkbox">
+                            <input type="checkbox" id="drCheck7">
+                            <label for="drCheck7">임대/전대</label>
+                        </div>
+                        <div class="dr-checkbox">
+                            <input type="checkbox" id="drCheck8">
+                            <label for="drCheck8">기타</label>
+                        </div>
+                    </div>    
+                </div>
+                <div class="dr-textarea-wrap mb-3">
+                    <p>내용</p>
+                    <textarea class="dr-textarea mt-3" id="" cols="10" rows="10" placeholder="사업에 대해 설명해주세요."></textarea>
+                </div>
+                <div class="dr-business-check mt-4">
+                    <p>찾는 파트너<span class="dr-important">*</span><span class="dr-selc-color dr-fz-14 dr-fw-500 ms-2">(중복선택 가능)</span></p>
+                    <div class="dr-fw-500">
+                        <div class="dr-checkbox">
+                            <input type="checkbox" id="drCheck9">
+                            <label for="drCheck9">시행사</label>
+                        </div>
+                        <div class="dr-checkbox">
+                            <input type="checkbox" id="drCheck10">
+                            <label for="drCheck10">증권사</label>
+                        </div>
+                        <div class="dr-checkbox">
+                            <input type="checkbox" id="drCheck11">
+                            <label for="drCheck11">운용사</label>
+                        </div>
+                        <div class="dr-checkbox">
+                            <input type="checkbox" id="drCheck12">
+                            <label for="drCheck12">시공사</label>
+                        </div>
+                        <div class="dr-checkbox">
+                            <input type="checkbox" id="drCheck13">
+                            <label for="drCheck13">대주</label>
+                        </div>
+                        <div class="dr-checkbox">
+                            <input type="checkbox" id="drCheck14">
+                            <label for="drCheck14">MD/컨설팅</label>
+                        </div>
+                        <div class="dr-checkbox">
+                            <input type="checkbox" id="drCheck15">
+                            <label for="drCheck15">중개사</label>
+                        </div>
+                        <div class="dr-checkbox">
+                            <input type="checkbox" id="drCheck17">
+                            <label for="drCheck17">회계법인</label>
+                        </div>
+                        <div class="dr-checkbox">
+                            <input type="checkbox" id="drCheck18">
+                            <label for="drCheck18">신탁사</label>
+                        </div>
+                        <div class="dr-checkbox">
+                            <input type="checkbox" id="drCheck19">
+                            <label for="drCheck19">법무법인</label>
+                        </div>
+                        <div class="dr-checkbox">
+                            <input type="checkbox" id="drCheck20">
+                            <label for="drCheck20">감정평가법인</label>
+                        </div>
+                        <div class="dr-checkbox">
+                            <input type="checkbox" id="drCheck16">
+                            <label for="drCheck16">유관법인</label>
+                        </div>
+                    </div>    
+                </div>
+                <div class="d-flex">
+                    <button class="dr-button w-100 dr-bg-white dr-color-14">적용하기</button>
+                </div>
+            </form>    
+        </div>
+    </div>
+    <!--// 컨테이너 --> 
+</body>
+</html>
