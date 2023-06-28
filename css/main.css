@@ -189,7 +189,7 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 .dr-title-wrap .dr-title-search-box {position: relative;}
 .dr-title-wrap .dr-title-search-box::before {content:''; display: block; width: 16px; height: 16px; background:url(../../img/icon/zoom-in.png) no-repeat; background-size: cover; position: absolute; top:50%; left: 12px; transform: translateY(-50%);}
 .dr-title-wrap .dr-title-search-box input {width: 270px; font-size:14px; color:#989ca1; margin-right: 5px; text-indent:40px; border:0; border-radius: 3px; background-color: #e8e8eb;}
-.dr-title-wrap .dr-title-search-box .dr-button {font-size: 15px; font-weight: 600; padding:14px 30px;}
+.dr-title-wrap .dr-title-search-box .dr-button {font-size: 15px; font-weight: 600; padding:10px 30px;}
 .dr-comunity-tab li {margin-right:25px; font-weight: 500; color:#d2d2d2; position: relative; cursor: pointer;}
 .dr-comunity-tab li.dr_on {color: #353839; font-weight: 700;}
 .dr-comunity-tab li.dr_on::before {content: ''; display: block; position: absolute; bottom:-26px; width: 100%; height: 1px; background: #000;}
