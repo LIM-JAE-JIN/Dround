@@ -158,9 +158,9 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 .dr-vote-result .dr-persent-wrap .dr-persent{background-color: #1B83CF;position: absolute;width: 30%;border-radius: 3px;height: 6px;}
 .dr-vote-result button{margin-top: 4rem;}
 .dr-participation{font-size: 1.3rem; font-weight: 600; color: #383A52;}
-.dr-radio-wrap{position: relative;border: 1px solid #d7d7d7; height: 60px; line-height: 60px; border-radius: 3px; padding-left: 1.5rem;}
-.dr-radio-wrap label{font-size: 1.5rem; font-weight: 600; width: 100%;}
-.dr-radio-wrap input{width: 18px; height: 18px; margin-right: 1rem; vertical-align: middle;}
+.dr-radio-wrap-circle{position: relative;border: 1px solid #d7d7d7; height: 60px; line-height: 60px; border-radius: 3px; padding-left: 1.5rem;}
+.dr-radio-wrap-circle label{font-size: 1.5rem; font-weight: 600; width: 100%;}
+.dr-radio-wrap-circle input{width: 18px; height: 18px; margin-right: 1rem; vertical-align: middle;}
 .dr-like{position: relative; display: inline-block;width: 83px;height: 35px;font-size: 1.3rem;font-weight: 500;color: #989CA2;border: 1px solid #D7D7D7;border-radius: 3px;padding: 1.1rem 0rem 1rem 2.8rem;}
 .dr-like.dr-heart::before{left: 10px;}
 .dr-like.on{color:#EA5555; border: 1px solid #e9aaaa;} 
@@ -245,10 +245,13 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 /* 파트너협업_글올리기 s */
 .dr-partner-write-wrap{position: relative; margin:0 auto; width:440px; max-width:100%;}
 .dr-partner-write-wrap .dr-input-wrap{margin-bottom: 3rem;}
-.dr-partner-write-wrap .dr-business-check .dr-checkbox{display: inline-block; width: 24%; margin-top: 1.5rem;}
+.dr-partner-write-wrap .dr-business-check .dr-checkbox, .dr-partner-write-wrap .dr-business-check .dr-radio-wrap{display: inline-block; width: 24%; margin-top: 1.5rem; font-size: 1.5rem;}
 .dr-partner-write-wrap .dr-textarea-wrap{margin-top: 2.5rem;}
 .dr-partner-write-wrap .dr-input-wrap .dr-date{position: absolute;right: 12px;top: 15.5px;}
 .dr-partner-write-wrap .dr-button{margin-top: 5rem;}
+.dr-request{ margin-top: 10rem;}
+.dr-request h3{ background-color: #505866; color: #fff; font-weight: 700; font-size: 1.6rem; line-height: 16px; padding: 1.2rem; margin-bottom: 2.5rem;}
+.dr-request .dr-button{background-color: #131414; color: #fff; font-weight: 700; height: 50px;}
 /* 파트너협업_글올리기 e */
 /* ------파트너협업------ e */
 
@@ -335,7 +338,7 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
     
     /* ------파트너협업------ s */
     /* 파트너협업_글올리기 s */
-    .dr-partner-write-wrap .dr-business-check .dr-checkbox{ width: 32%;}
+    .dr-partner-write-wrap .dr-business-check .dr-checkbox, .dr-partner-write-wrap .dr-business-check .dr-radio-wrap{ width: 32%;}
     /* 파트너협업_글올리기 e */
     /* ------파트너협업------ e */
 }

@@ -15,6 +15,69 @@
     <title>Dround : 파트너 협업 - 글올리기</title>
 </head>
 <body class="dr-bg-white">
+    <!-- 헤더 s -->
+    <header class="header">
+        <div class="dr-container header_wrap d-flex justify-content-start align-items-center">
+            <h1><a href="#none"><img src="../../img/icon_logo.png" alt="logo"></a></h1>
+            <div class="d-flex w-100 align-items-center">
+                <ul class="dr-hd-gnb justify-content-start w-100">
+                    <li onclick="tabBtnClick(this)"><a href="#none">파트너 협업</a></li>
+                    <li onclick="tabBtnClick(this)"><a href="#none">커뮤니티</a></li>
+                    <li onclick="tabBtnClick(this)"><a href="#none">전문가찾기</a></li>
+                </ul>
+                <ul class="dr-hd-log justify-content-end w-100">
+                    <li><a href="#none">고객센터</a></li>
+                    <li>
+                        <!-- 비로그인 시 s -->
+                        <div class="dr-user-off d-flex">
+                            <a href="#none">로그인</a>
+                            <a href="#none">회원가입</a>
+                        </div>
+                        <!-- 비로그인 시 e -->
+                        <!-- 로그인 시 s -->
+                        <div class="dr-user-on">
+                            <a href="#none">마이페이지</a>
+                        </div>
+                        <!-- 로그인 시 e -->
+                    </li>
+                </ul>
+            </div>
+            <div class="dr-user-menu justify-content-end" onclick="drPopupOpen('.dr-hd-m-menu')">
+                <img src="../../img/icon/icon_hambuger.png" alt="menu-icon">
+            </div>
+        </div>
+        
+        <!-- 모바일 메뉴 s -->
+        <div class="dr-dim"></div>
+        <div class="dr-popup-wrap dr-hd-m-menu">
+            <div class="dr-popup-close" onclick="drPopupClose(this)"></div>
+            <div class="dr-hd-m-gnb">
+                <h1><a href="#none"><img src="../../img/icon_logo.png" alt="logo"></a></h1>
+                <ul>
+                    <li onclick="tabBtnClick(this)"><a href="#none">파트너 협업</a></li>
+                    <li onclick="tabBtnClick(this)"><a href="#none">커뮤니티</a></li>
+                    <li onclick="tabBtnClick(this)"><a href="#none">전문가 찾기</a></li>
+                    <li><a href="#none">고객센터</a></li>
+                </ul>
+            </div>
+            <div class="dr-hd-m-bottom">
+                <!-- 비로그인 시 s -->
+                <div class="dr-user-off">
+                    <a href="#none"><button class="dr-button indigo w-100">로그인 하기</button></a>
+                    <a href="#none"><button class="dr-button disabled w-100 mt-3">회원가입 하기</button></a>
+                </div>
+                <!-- 비로그인 시 e -->
+                <!-- 로그인 시 s -->
+                <div class="dr-user-on" style="display: none;">
+                    <a href="#none"><button class="dr-button indigo w-100">마이페이지</button></a>
+                </div>
+                <!-- 로그인 시 e -->
+            </div>
+        </div>
+        <!-- 모바일 메뉴 e -->
+    </header>
+    <div class="dr-header-box"></div>
+    <!-- 헤더 e -->
     <!-- 컨테이너 -->
     <div class="dr-container">
         <div class="dr-partner-write-wrap">
@@ -42,32 +105,32 @@
                 <div class="dr-business-check">
                     <p class="dr-fz-15 dr-fw-600">사업단계</p>
                     <div class="dr-fw-500">
-                        <div class="dr-checkbox">
-                            <input type="checkbox" id="drCheck2">
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck2" name="raido1">
                             <label for="drCheck2">계약금 지급</label>
                         </div>
-                        <div class="dr-checkbox">
-                            <input type="checkbox" id="drCheck3">
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck3" name="raido1">
                             <label for="drCheck3">BL</label>
                         </div>
-                        <div class="dr-checkbox">
-                            <input type="checkbox" id="drCheck4">
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck4" name="raido1">
                             <label for="drCheck4">PF</label>
                         </div>
-                        <div class="dr-checkbox">
-                            <input type="checkbox" id="drCheck5">
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck5" name="raido1">
                             <label for="drCheck5">담보 대출</label>
                         </div>
-                        <div class="dr-checkbox">
-                            <input type="checkbox" id="drCheck6">
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck6" name="raido1">
                             <label for="drCheck6">매입/매각</label>
                         </div>
-                        <div class="dr-checkbox">
-                            <input type="checkbox" id="drCheck7">
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck7" name="raido1">
                             <label for="drCheck7">임대/전대</label>
                         </div>
-                        <div class="dr-checkbox">
-                            <input type="checkbox" id="drCheck8">
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck8" name="raido1">
                             <label for="drCheck8">기타</label>
                         </div>
                     </div>    
@@ -108,6 +171,10 @@
                             <label for="drCheck15">중개사</label>
                         </div>
                         <div class="dr-checkbox">
+                            <input type="checkbox" id="drCheck16">
+                            <label for="drCheck16">유관법인</label>
+                        </div>
+                        <div class="dr-checkbox">
                             <input type="checkbox" id="drCheck17">
                             <label for="drCheck17">회계법인</label>
                         </div>
@@ -119,22 +186,81 @@
                             <input type="checkbox" id="drCheck19">
                             <label for="drCheck19">법무법인</label>
                         </div>
-                        <div class="dr-checkbox">
+                        <div class="dr-checkbox text-nowrap">
                             <input type="checkbox" id="drCheck20">
                             <label for="drCheck20">감정평가법인</label>
-                        </div>
-                        <div class="dr-checkbox">
-                            <input type="checkbox" id="drCheck16">
-                            <label for="drCheck16">유관법인</label>
                         </div>
                     </div>    
                 </div>
                 <div class="d-flex">
                     <button class="dr-button w-100 dr-bg-white dr-color-14">적용하기</button>
                 </div>
-            </form>    
+            </form>
+
+            <!-- '적용하기' 버튼 클릭시 생성 -->
+            <div class="dr-request">
+                <h3>시행사 요청사항</h3>
+                <form class="dr-fz-15 dr-fw-600" method="post">
+                    <div class="dr-business-check">
+                        <p class="dr-fz-15 dr-fw-600">요청 사항</p>
+                        <div class="dr-fw-500">
+                            <div class="dr-radio-wrap">
+                                <input type="radio" id="drCheck21" name="raido2">
+                                <label for="drCheck21">사업 검토</label>
+                            </div>
+                            <div class="dr-radio-wrap">
+                                <input type="radio" id="drCheck22" name="raido2">
+                                <label for="drCheck22">시행 대행</label>
+                            </div>
+                            <div class="dr-radio-wrap">
+                                <input type="radio" id="drCheck23" name="raido2">
+                                <label for="drCheck23">토지 용역</label>
+                            </div>
+                            <div class="dr-radio-wrap">
+                                <input type="radio" id="drCheck24" name="raido2">
+                                <label for="drCheck24">기타</label>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="dr-textarea-wrap mb-3">
+                        <p>내용</p>
+                        <textarea class="dr-textarea mt-3" id="" cols="10" rows="10" placeholder="구체적 필요사항을 기입해주세요."></textarea>
+                    </div>
+                    <div class="d-flex">
+                        <button class="dr-button w-100">내 정보 공개여부 선택하기</button>
+                    </div>
+                </form>
+            </div>
+            <!-- '적용하기' 버튼 클릭시 생성 -->
         </div>
     </div>
     <!--// 컨테이너 --> 
+    <!-- 푸터 -->
+    <footer class="dr-container">
+        <div class="dr-footer-wrap row">
+            <div class="col-md-2">
+                <div class="dr-footer-logo">
+                    <a href="#none">
+                        <img src="../../img/icon_logo_black.png" alt="logo이미지">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-5 dr-fz-14 mt-md-0 dr-footer-adress">
+                <div><b class="me-3">(주) 디라운더</b><span>(12345) 서울특별시 여의도 123-123</span></div>
+                <div class="mt-3"><b class="me-2">Enail.</b><span>info@drounder.com</span></div>
+            </div>
+            <div class="col-md-5 text-md-end mt-md-0 dr-footer-terms dr-fw-500">
+                <div>
+                    <ul>
+                        <li><a href="#none">문의하기</a></li>
+                        <li><a href="#none">개인정보처리방침</a></li>
+                        <li><a href="#none">이용약관</a></li>
+                    </ul>
+                </div>
+                <div class="dr-copy-right mt-3">Copyright ©2022 drounder Inc. All right reserved.</div>
+            </div>
+        </div>  
+    </footer>
+    <!-- 푸터 -->
 </body>
 </html>
