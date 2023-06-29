@@ -174,3 +174,6 @@ input::placeholder { color: #989ca1; font-weight: 400; }
 .dr-popup-wrap header p {font-size:1.5rem; color:#505866; padding-top: 3px;}
 .dr-popup-wrap .dr-popup-content {word-break: keep-all;}
 .dr-popup-wrap footer {margin-top: 4rem;}
+
+.dr-dim.on{display: block;}
+.dr-popup-wrap.on{display: block;}
