@@ -280,6 +280,7 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 /* 파트너협업_글올리기 e */
 
 /* 공개여부 팝업 s */
+.dr-popup-wrap.disclosure-popup{ max-width: 500px; width: 100%;}
 .disclosure-popup .dr-input-wrap .dr-input{ background-color: #F3F3F3; border:1px solid #505866; color: #505866;}   
 .disclosure-popup .dr-belong-name{position: absolute; top: 50%; transform: translateY(-50%); display: inline-block; left: 65px; color: #353839; font-size: 1.3rem; font-weight: 600;}
 .disclosure-popup .dr-pop-profile{padding: 1.5rem; background-color: #F3F3F3;}
