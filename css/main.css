@@ -239,6 +239,25 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 .dr-popup-vote-complete > div{ background-color: #D4D3DA; padding: 3rem 1.5rem; border-radius: 3px; margin-bottom: 1rem;}
 .dr-important{color:#CF2F2F; margin-left: 2px;}
 /* 커뮤니티_글올리기 e */
+
+/* 감정평가법인 s */
+.dr-feel .dr-industry {min-width: 330px;}
+.dr-feel-comm-box {width: 100%; background:#fff; border-radius: 5px; border:1px solid #e8e8eb; padding:2rem 3rem;}
+.dr-feel-comm-box p {line-height:140%; color:#76736b;}
+.dr-feel .dr-title-wrap .dr-title-search-box input {width:205px;}
+.dr-feel-partner-wrap {border:1px solid #e8e8eb; border-radius: 5px; background:#efefef; margin-top:25px;} 
+.dr-feel-partner-tit {padding:2.5rem;}
+.dr-feel-partner-tit img {width: 18px; height: 18px; margin-right: 5px;}
+.dr-feel-partner-tit p {font-size:18px; font-weight:700; color:#353839; display: inline-block; vertical-align: bottom;}
+.dr-feel-partner-list li {position: relative; padding: 1.5rem 2.5rem; border-bottom:1px solid #e4e4e4;}
+.dr-feel-partner-list li > div p {width:calc(100% - 20px); font-size:14px; font-weight:500; line-height:20px; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; max-height: 100%; overflow: hidden;}
+.dr-feel-partner-list li > div a {position: absolute; top:0; left:0; right:0; bottom:0;}
+.dr-feel-partner-list li > div .dr-allow-img-wrap {width: 20px; height: 20px;}
+.dr-feel-write-txt {color:#689e81; font-size:12px; font-weight:500; line-height:20px;}
+.dr-feel-write-txt span {margin:0 4px;}
+
+.dr-feel .dr-community-banner {margin-top:25px;}
+/* 감정평가법인 e */
 /* ------커뮤니티------ e */
 
 /* ------파트너협업------ s */
