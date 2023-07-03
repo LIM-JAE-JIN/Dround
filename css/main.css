@@ -240,7 +240,7 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 .dr-important{color:#CF2F2F; margin-left: 2px;}
 /* 커뮤니티_글올리기 e */
 
-/* 감정평가법인 s */
+/* 커뮤니티_감정평가법인 s */
 .dr-feel .dr-industry {min-width: 330px;}
 .dr-feel-comm-box {width: 100%; background:#fff; border-radius: 5px; border:1px solid #e8e8eb; padding:2rem 3rem;}
 .dr-feel-comm-box p {line-height:140%; color:#76736b;}
@@ -257,7 +257,7 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 .dr-feel-write-txt span {margin:0 4px;}
 
 .dr-feel .dr-community-banner {margin-top:25px;}
-/* 감정평가법인 e */
+/* 커뮤니티_감정평가법인 e */
 /* ------커뮤니티------ e */
 
 /* ------파트너협업------ s */
@@ -284,7 +284,7 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 
     /* ------커뮤니티------ s */
     .dr-free-board{width: 100%;}
-    .dr-industry{display: flex; width: 100%; flex-wrap: wrap; flex-direction: row; margin-top: 2.5rem;}
+    .dr-industry{display: flex; flex-wrap: wrap; flex-direction: row; margin-top: 2.5rem; width: 100%;}
     .dr-industry-cont, .dr-no-industry-cont{width: 49%; margin-right: 2%;}
     .dr-community-banner{width: 100%;}
     .dr-community-side{ width: 49%;}
@@ -313,7 +313,7 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
     
     /* ------커뮤니티------ s*/
     .dr-free-board{width: 100% ;}
-    .dr-industry{width: 100%;}
+    .dr-feel .dr-industry{width: 100%;}
     .dr-industry-cont, .dr-no-industry-cont{width: 100%; margin-right: 0;}
     .dr-community-banner{width: 100% ; margin-top: 2.5rem;}
     .dr-community-side{ width: 100%;}
@@ -334,6 +334,7 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
     
     /* 커뮤니티_게시판 s */
     .dr-title-wrap {flex-wrap:wrap;}
+    .dr-title-wrap h2 {font-size:25px;}
     .dr-title-wrap .dr-title-search-box {width: 100%; margin-top:15px;}
     .dr-title-wrap .dr-title-search-box input {width:calc(100% - 123px);}
     .dr-all-board-list > ul > li {width:100%;}
@@ -342,7 +343,8 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
     /* 커뮤니티_게시판 e */
     
     /* 커뮤니티-감정법인 s */
-    .dr-feel .dr-industry{margin-top:2.5rem;}
+    .dr-feel .dr-industry{margin-top:2.5rem; min-width: auto;}
+    .dr-feel .dr-title-wrap .dr-title-search-box input {width:calc(100% - 123px);}
     /* 커뮤니티-감정법인 e */
     /* ------커뮤니티------ e*/
     
