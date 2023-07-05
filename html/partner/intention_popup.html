@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/layout.css">
+    <!-- js -->
+    <script src="../../js/jquery-3.6.3.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+    <script src="../../js/bootstrap/bootstrap.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <title>Dround : 파트너 협업 - 내정보공개여부</title>
+</head>
+<body class="dr-bg-white">
+    <!-- 컨테이너 -->
+    <div class="dr-container">
+        <div class="dr-dim on"></div>
+        <div class="dr-popup-wrap on disclosure-popup dr-intention-popup">
+            <div class="dr-popup-close" onclick="drPopupClose(this)"></div>
+            <header>
+                <h1 class="mb-2">의향 보내기</h1>
+                <p>신청자의 소속 정보와 함께 제안이 요청됩니다.</p>
+                <p>승인 시 작성자와 신청자의 연락처가 서로 공개됩니다.</p>
+            </header>
+            <div class="dr-popup-content pt-4">
+                <form method="post">
+                    <div class="mb-4">
+                        <div class="dr-input-wrap mb-3">
+                            <input type="text" class="dr-input border-0" name="title" value="소속" readonly>
+                            <span class="dr-belong-name">B증권사-부-팀</span>
+                        </div>
+                    </div>
+                    <div class="dr-textarea-wrap mt-3 mb-3">
+                        <p class="dr-fz-15 dr-fw-600 dr-color-main">제안내용</p>
+                        <textarea class="dr-textarea mt-3" id="" cols="10" rows="10" placeholder="제안내용을 자유롭게 기재해주세요."></textarea>
+                    </div>
+                        <div class="d-flex mt-4">
+                            <button class="dr-button indigo w-100">제안하기</button>
+                        </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--// 컨테이너 -->
+</body>
+</html>

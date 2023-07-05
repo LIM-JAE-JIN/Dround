@@ -279,7 +279,7 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 .dr-request .dr-button{background-color: #131414; color: #fff; font-weight: 700; height: 50px;}
 /* 파트너협업_글올리기 e */
 
-/* 공개여부 팝업 s */
+/* 공개여부 팝업, 의향보내기 팝업 s */
 .dr-popup-wrap.disclosure-popup{ max-width: 500px; width: 100%;}
 .disclosure-popup .dr-input-wrap .dr-input{ background-color: #F3F3F3; border:1px solid #505866; color: #505866;}   
 .disclosure-popup .dr-belong-name{position: absolute; top: 50%; transform: translateY(-50%); display: inline-block; left: 65px; color: #353839; font-size: 1.3rem; font-weight: 600;}
@@ -287,7 +287,9 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 .disclosure-popup .dr-pop-profile ul li{ width:calc(50% - 30px); display: inline-block; line-height: 25px;}
 .disclosure-popup .dr-pop-profile ul li div{ color: #505866; display: inline-block; width: 34px;}
 .disclosure-popup .dr-pop-profile ul li span{ display: inline-block; color: #353839; font-weight: 600;}
-/* 공개여부 팝업 e */
+
+.disclosure-popup.dr-intention-popup .dr-textarea-wrap .dr-textarea{height: 155px;}
+/* 공개여부 팝업, 의향보내기 팝업 e */
 /* ------파트너협업------ e */
 
 /* ------반응형------ s */
