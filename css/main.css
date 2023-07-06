@@ -23,7 +23,7 @@
 .dr-selc-color {color:#989ca1;}
 .dr-join-chk-wrap {padding:40px 0;}
 .dr-join-chk-wrap .dr-checkbox:first-child {border-bottom:1px solid #e6e5ec;}
-.dr-join-chk-wrap .dr-checkbox .dr-bs-info-txt {font-size:1.2rem; color:#989ca1; font-weight:400; line-height:1.6rem; margin:6px 0 0 65px;}
+.dr-bs-info-txt {font-size:1.2rem; color:#989ca1; font-weight:400; line-height:1.6rem; margin:6px 0 0 65px;}
 
 /* 팝업 */
 .dr-popup-terms {width:500px;}
