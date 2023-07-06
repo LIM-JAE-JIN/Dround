@@ -287,8 +287,11 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 .disclosure-popup .dr-pop-profile ul li{ width:calc(50% - 30px); display: inline-block; line-height: 25px;}
 .disclosure-popup .dr-pop-profile ul li div{ color: #505866; display: inline-block; width: 34px;}
 .disclosure-popup .dr-pop-profile ul li span{ display: inline-block; color: #353839; font-weight: 600;}
-
 .disclosure-popup.dr-intention-popup .dr-textarea-wrap .dr-textarea{height: 155px;}
+.dr-popup-wrap.dr-phone-popup{ max-width: 500px; width: 100%; height: 386px;}
+.dr-popup-wrap.dr-phone-popup header p {max-width: 370px; line-height: 18px;}
+.dr-popup-wrap.dr-phone-popup .dr-imgbox{position: absolute; display: block; width: 188px; height: 211px; margin: 0 auto; bottom: 0; left: 50%; transform: translateX(-50%);}
+.dr-popup-wrap.dr-phone-popup .dr-imgbox img{width: 100%;}
 /* 공개여부 팝업, 의향보내기 팝업 e */
 /* ------파트너협업------ e */
 
