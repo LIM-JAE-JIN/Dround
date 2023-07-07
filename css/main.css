@@ -20,7 +20,7 @@
 .dr-job-selection .dr-job:nth-child(2n) {margin-right:0;}
 .dr-job-selection .dr-job label{width: 100%; border:1px solid #d7d7d7; border-radius:3px; line-height:2.5rem; padding:1rem 0; font-size:1.4rem; font-weight:500; text-align: center; cursor: pointer;}
 .dr-job-selection .dr-job input.btn-check:checked + label {background-color: #353839; border-color:#353839; color:#fff;}
-.dr-selc-color {color:#989ca1;}
+.dr-selc-color {color:#989ca1 !important;}
 .dr-join-chk-wrap {padding:40px 0;}
 .dr-join-chk-wrap .dr-checkbox:first-child {border-bottom:1px solid #e6e5ec;}
 .dr-bs-info-txt {font-size:1.2rem; color:#989ca1; font-weight:400; line-height:1.6rem; margin:6px 0 0 65px;}
@@ -79,7 +79,8 @@ footer{background-color:#F2F2F2; margin-top: 12rem;}
 .dr-footer-wrap span{color:#626262;line-height: 1.6rem;}
 .dr-footer-wrap > div {display: inline-block;}
 .dr-footer-wrap .dr-footer-adress span{color:#626262}
-.dr-footer-wrap .dr-footer-terms ul li{display:inline-block;}
+.dr-footer-wrap .dr-footer-terms ul li{display:inline-block; margin-right: 0.7rem;}
+.dr-footer-wrap .dr-footer-terms ul li:last-child{margin-right:0;}
 .dr-footer-wrap .dr-footer-terms ul li a{font-size:1.3rem; color:#626262;line-height: 1.6rem;}
 .dr-footer-wrap .dr-copy-right{color:#B7B7B7; white-space: nowrap;}
 /* ------footer------ e */
@@ -239,7 +240,7 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 .dr-input-file-button::before{content: ""; display: inline-block; width: 16px; height: 16px; vertical-align: text-bottom; background: url(../../img/icon/Img_box_fill.png) no-repeat; background-size: contain; }
 .dr-input-file-button + input{display: none;}
 .dr-button.dr-plus-button{ color:#1C8F51; border: 1px solid #1C8F51; font-weight: 500;}
-.dr-popup-wrap.dr-popup-vote{max-width: 388px; height: 467px;}
+.dr-popup-wrap.dr-popup-vote{max-width: 388px; height: 467px; overflow-y: scroll;}
 .dr-vote-complete{ background-color: #F3F3F3; padding: 2.8rem 1.5rem; border-radius: 3px; ;font-weight: 500; margin-top: 1.5rem; color: #000;}
 .dr-important{color:#CF2F2F; margin-left: 2px;}
 /* 커뮤니티_글올리기 e */
