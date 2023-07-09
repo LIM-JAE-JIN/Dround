@@ -134,39 +134,361 @@
                 </div>
             </form>
 
-            <!-- '적용하기' 버튼 클릭시 생성 -->
+            <!-- '적용하기' 버튼 클릭시 생성, 'dr-request', 'dr-disclosure' 클래스에 display:none 처리, 찾는파트너 체크박스 순서와 같이 나열하였음 -->
+
+            <!-- 시행사 -->
             <div class="dr-request">
                 <h3>시행사 요청사항</h3>
-                <form class="dr-fz-15 dr-fw-600" method="post">
-                    <div class="dr-business-check">
-                        <p class="dr-fz-15 dr-fw-600">요청 사항</p>
-                        <div class="dr-fw-500">
-                            <div class="dr-radio-wrap">
-                                <input type="radio" id="drCheck21" name="raido2">
-                                <label for="drCheck21">사업 검토</label>
-                            </div>
-                            <div class="dr-radio-wrap">
-                                <input type="radio" id="drCheck22" name="raido2">
-                                <label for="drCheck22">시행 대행</label>
-                            </div>
-                            <div class="dr-radio-wrap">
-                                <input type="radio" id="drCheck23" name="raido2">
-                                <label for="drCheck23">토지 용역</label>
-                            </div>
-                            <div class="dr-radio-wrap">
-                                <input type="radio" id="drCheck24" name="raido2">
-                                <label for="drCheck24">기타</label>
-                            </div>
-                        </div>    
-                    </div>
-                    <div class="dr-textarea-wrap mb-3">
-                        <p>내용</p>
-                        <textarea class="dr-textarea mt-3" id="" cols="10" rows="10" placeholder="구체적 필요사항을 기입해주세요."></textarea>
-                    </div>
-                    <div class="d-flex">
-                        <button class="dr-button w-100">내 정보 공개여부 선택하기</button>
-                    </div>
-                </form>
+                <div class="dr-business-check type2">
+                    <p>요청 사항</p>
+                    <div class="dr-fw-500">
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck21" name="raido2">
+                            <label for="drCheck21">사업 검토</label>
+                        </div>
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck22" name="raido2">
+                            <label for="drCheck22">시행 대행</label>
+                        </div>
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck23" name="raido2">
+                            <label for="drCheck23">토지 용역</label>
+                        </div>
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck24" name="raido2">
+                            <label for="drCheck24">기타</label>
+                        </div>
+                    </div>    
+                </div>
+                <div class="dr-textarea-wrap mb-3">
+                    <p>내용</p>
+                    <textarea class="dr-textarea mt-3" id="" cols="10" rows="10" placeholder="구체적 필요사항을 기입해주세요."></textarea>
+                </div>
+            </div>
+
+            <!-- 증권사 -->
+            <div class="dr-request">
+            <h3>증권사 요청사항</h3>
+                <div class="dr-business-check type2">
+                    <p>요청 사항</p>
+                    <div class="dr-fw-500">
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck25" name="raido3">
+                            <label for="drCheck25">사업초기 투자</label>
+                        </div>
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck26" name="raido3">
+                            <label for="drCheck26">금융 주선 및 자문</label>
+                        </div>
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck27" name="raido3">
+                            <label for="drCheck27">대출 검토</label>
+                        </div>
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck28" name="raido3">
+                            <label for="drCheck28">인수 및 매각 자문</label>
+                        </div>
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck29" name="raido3">
+                            <label for="drCheck29">기타</label>
+                        </div>
+                    </div>    
+                </div>
+                <div class="dr-textarea-wrap mb-3">
+                    <p>내용</p>
+                    <textarea class="dr-textarea mt-3" id="" cols="10" rows="10" placeholder="구체적 필요사항을 기입해주세요."></textarea>
+                </div>
+            </div>
+
+            <!-- 운용사 -->
+            <div class="dr-request">
+                <h3>운용사 요청사항</h3>
+                <div class="dr-business-check type2">
+                    <p>요청 사항</p>
+                    <div class="dr-fw-500">
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck30" name="raido4">
+                            <label for="drCheck30">사업초기 투자</label>
+                        </div>
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck31" name="raido4">
+                            <label for="drCheck31">금융 주선 및 자문</label>
+                        </div>
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck32" name="raido4">
+                            <label for="drCheck32">대출 검토</label>
+                        </div>
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck33" name="raido4">
+                            <label for="drCheck33">인수 및 매각 자문</label>
+                        </div>
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck34" name="raido4">
+                            <label for="drCheck34">기타</label>
+                        </div>
+                    </div>    
+                </div>
+                <div class="dr-textarea-wrap mb-3">
+                    <p>내용</p>
+                    <textarea class="dr-textarea mt-3" id="" cols="10" rows="10" placeholder="구체적 필요사항을 기입해주세요."></textarea>
+                </div>
+            </div>
+
+            <!-- 시공사 -->
+            <div class="dr-request">
+                <h3>시공사 요청사항</h3>
+                <div class="dr-business-check type2">
+                    <p>요청 사항</p>
+                    <div class="dr-fw-500">
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck35" name="raido5">
+                            <label for="drCheck35">공사 도급</label>
+                        </div>
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck36" name="raido5">
+                            <label for="drCheck36">사업 출자</label>
+                        </div>
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck37" name="raido5">
+                            <label for="drCheck37">기타</label>
+                        </div>
+                    </div>    
+                </div>
+                <div class="dr-textarea-wrap mb-3">
+                    <p>내용</p>
+                    <textarea class="dr-textarea mt-3" id="" cols="10" rows="10" placeholder="구체적 필요사항을 기입해주세요."></textarea>
+                </div>
+            </div> 
+
+            <!-- 대주 -->
+            <div class="dr-request">
+                <h3>대주 요청사항</h3>
+                <div class="dr-business-check type2">
+                    <p>요청 사항</p>
+                    <div class="dr-fw-500">
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck43" name="raido7">
+                            <label for="drCheck43">담보 대출</label>
+                        </div>
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck44" name="raido7">
+                            <label for="drCheck44">BF 대출</label>
+                        </div>
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck45" name="raido7">
+                            <label for="drCheck45">신용 대출</label>
+                        </div>
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck46" name="raido7">
+                            <label for="drCheck46">중도금 대출</label>
+                        </div>
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck47" name="raido7">
+                            <label for="drCheck47">리파이낸싱</label>
+                        </div>
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck48" name="raido7">
+                            <label for="drCheck48">셀다운</label>
+                        </div>
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck49" name="raido7">
+                            <label for="drCheck49">기타</label>
+                        </div>
+                    </div>    
+                </div>
+                <div class="dr-textarea-wrap mb-3">
+                    <p>내용</p>
+                    <textarea class="dr-textarea mt-3" id="" cols="10" rows="10" placeholder="구체적 필요사항을 기입해주세요."></textarea>
+                </div>
+            </div>
+
+            <!-- MD/컨설팅 -->
+            <div class="dr-request">
+                <h3>MD/컨설팅 요청사항</h3>
+                <div class="dr-business-check type2">
+                    <p>요청 사항</p>
+                    <div class="dr-fw-500">
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck50" name="raido8">
+                            <label for="drCheck50">부동산 매입 및 매각 자문</label>
+                        </div>
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck51" name="raido8">
+                            <label for="drCheck51">임대차</label>
+                        </div>
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck52" name="raido8">
+                            <label for="drCheck52">기타</label>
+                        </div>
+                    </div>    
+                </div>
+                <div class="dr-textarea-wrap mb-3">
+                    <p>내용</p>
+                    <textarea class="dr-textarea mt-3" id="" cols="10" rows="10" placeholder="구체적 필요사항을 기입해주세요."></textarea>
+                </div>
+            </div>
+
+            <!-- 중개사 -->
+            <div class="dr-request">
+                <h3>중개사 요청사항</h3>
+                <div class="dr-business-check type2">
+                    <p>요청 사항</p>
+                    <div class="dr-fw-500">
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck53" name="raido9">
+                            <label for="drCheck53">부동산 매입 및 매각 자문</label>
+                        </div>
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck54" name="raido9">
+                            <label for="drCheck54">임대차</label>
+                        </div>
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck55" name="raido9">
+                            <label for="drCheck55">기타</label>
+                        </div>
+                    </div>    
+                </div>
+                <div class="dr-textarea-wrap mb-3">
+                    <p>내용</p>
+                    <textarea class="dr-textarea mt-3" id="" cols="10" rows="10" placeholder="구체적 필요사항을 기입해주세요."></textarea>
+                </div>
+            </div>
+
+            <!-- 회계법인 -->
+            <div class="dr-request">
+                <h3>회계법인 요청사항</h3>
+                <div class="dr-business-check type2">
+                    <p>요청 사항</p>
+                    <div class="dr-fw-500">
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck56" name="raido10">
+                            <label for="drCheck56">세무 기장</label>
+                        </div>
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck57" name="raido10">
+                            <label for="drCheck57">사업성 평가</label>
+                        </div>
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck58" name="raido10">
+                            <label for="drCheck58">기타</label>
+                        </div>
+                    </div>    
+                </div>
+                <div class="dr-textarea-wrap mb-3">
+                    <p>내용</p>
+                    <textarea class="dr-textarea mt-3" id="" cols="10" rows="10" placeholder="구체적 필요사항을 기입해주세요."></textarea>
+                </div>
+            </div>
+            
+            <!-- 신탁사 -->
+            <div class="dr-request">
+                <h3>신탁사 요청사항</h3>
+                <div class="dr-business-check type2">
+                    <p>요청 사항</p>
+                    <div class="dr-fw-500">
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck38" name="raido6">
+                            <label for="drCheck38">개발형 신탁</label>
+                        </div>
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck39" name="raido6">
+                            <label for="drCheck39">담보 신탁</label>
+                        </div>
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck40" name="raido6">
+                            <label for="drCheck40">자금관리사무</label>
+                        </div>
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck41" name="raido6">
+                            <label for="drCheck41">처분신탁</label>
+                        </div>
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck42" name="raido6">
+                            <label for="drCheck42">기타</label>
+                        </div>
+                    </div>    
+                </div>
+                <div class="dr-textarea-wrap mb-3">
+                    <p>내용</p>
+                    <textarea class="dr-textarea mt-3" id="" cols="10" rows="10" placeholder="구체적 필요사항을 기입해주세요."></textarea>
+                </div>
+            </div>
+
+            <!-- 법무법인 -->
+            <div class="dr-request">
+                <h3>법무법인 요청사항</h3>
+                <div class="dr-business-check type2">
+                    <p>요청 사항</p>
+                    <div class="dr-fw-500">
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck59" name="raido11">
+                            <label for="drCheck59">법률 검토</label>
+                        </div>
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck60" name="raido11">
+                            <label for="drCheck60">계약서 의뢰</label>
+                        </div>
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck61" name="raido11">
+                            <label for="drCheck61">기타</label>
+                        </div>
+                    </div>    
+                </div>
+                <div class="dr-textarea-wrap mb-3">
+                    <p>내용</p>
+                    <textarea class="dr-textarea mt-3" id="" cols="10" rows="10" placeholder="구체적 필요사항을 기입해주세요."></textarea>
+                </div>
+            </div>
+
+            <!-- 감정평가법인 -->
+            <div class="dr-request">
+                <h3>감정평가법인 요청사항</h3>
+                <div class="dr-business-check type2">
+                    <p>요청 사항</p>
+                    <div class="dr-fw-500">
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck62" name="raido12">
+                            <label for="drCheck62">감정평가</label>
+                        </div>
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck63" name="raido12">
+                            <label for="drCheck63">기타</label>
+                        </div>
+                    </div>    
+                </div>
+                <div class="dr-textarea-wrap mb-3">
+                    <p>내용</p>
+                    <textarea class="dr-textarea mt-3" id="" cols="10" rows="10" placeholder="구체적 필요사항을 기입해주세요."></textarea>
+                </div>
+            </div>
+
+            <!-- 유관 법인 -->
+            <div class="dr-request">
+                <h3>유관 법인 요청사항</h3>
+                <div class="dr-business-check type2">
+                    <p>요청 사항</p>
+                    <div class="dr-fw-500">
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck64" name="raido13">
+                            <label for="drCheck64">대출</label>
+                        </div>
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck65" name="raido13">
+                            <label for="drCheck65">투자</label>
+                        </div>
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck66" name="raido13">
+                            <label for="drCheck66">기타</label>
+                        </div>
+                    </div>    
+                </div>
+                <div class="dr-textarea-wrap mb-3">
+                    <p>내용</p>
+                    <textarea class="dr-textarea mt-3" id="" cols="10" rows="10" placeholder="구체적 필요사항을 기입해주세요."></textarea>
+                </div>
+            </div>      
+            <div class="d-flex dr-disclosure">
+                <button class="dr-button w-100">내 정보 공개여부 선택하기</button>
             </div>
             <!-- '적용하기' 버튼 클릭시 생성 -->
         </div>

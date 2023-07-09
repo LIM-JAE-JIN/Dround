@@ -12,101 +12,15 @@
     <script src="../../js/jquery-ui.min.js"></script>
     <script src="../../js/bootstrap/bootstrap.min.js"></script>
     <script src="../../js/common.js"></script>
-    <title>Dround : 파트너 협업 - 글 선택</title>
-    <style>
-        .dr-partner-sub{max-width: 1200px;}
-        .dr-partner-sub .dr-tit{font-size: 2.5rem; line-height: 37.5px; font-weight: 700;}
-        .dr-partner-sub .dr-txt span{display:inline-block; font-size: 1.3rem; font-weight: 500;}
-        .dr-partner-sub .dr-txt span.dr-date{ color:#D2D2D2;}
-        .dr-partner-sub .dr-txt span.dr-progress{padding: 0.2rem 0.6rem; color: #0F4CEA; border: 1px solid #397FE9;}
-        .dr-partner-sub .dr-txt span.dr-deadline{padding: 0.2rem 0.6rem; color: #505866; border: 1px solid #B3BAC5;}
-
-        .dr-partner-sub .dr-content-wrap{max-width: 795px;width: 100%; margin-right: 25px; } 
-        .dr-partner-sub .dr-information{width: 380px;padding: 2.5rem 3rem;background: blue;} 
-        .dr-partner-sub main{display: flex;}
-        .dr-partner-sub main h4{ font-size: 1.8rem; font-weight: 600; line-height: 18px; color: #353839;}
-        .dr-business-overview { padding: 2.5rem 3rem 2rem; border: 1px solid #E8E8EB; border-radius: 3px;}
-        .dr-business-overview h4::before{content: ""; display: inline-block; width: 18px; height: 18px; background-image: url(../../img/icon/icon_info.png); background-size: cover; vertical-align: bottom; margin-right: 10px;}
-        
-        .dr-partner-find{padding: 2.5rem 3rem 2rem; border: 1px solid #E8E8EB; border-radius: 3px; margin-top: 2.5rem;}
-        .dr-partner-find h4::before{content: ""; display: inline-block; width: 18px; height: 18px; background-image: url(../../img/icon/icon_search.png); background-size: cover; vertical-align: bottom; margin-right: 10px;}
-
-        dt, dd{ display: inline-block; line-height: 19px; margin-bottom: 1.5rem;}
-        dt{width: 100px; vertical-align:top; color: #989CA1; font-weight: 500; font-size: 1.5rem; }
-        dd{width: 625px; max-width: 100%; font-size: 1.6rem; font-weight: 600;}
-        dd p { line-height: 24px;}
-   </style>
+    <title>Dround : 파트너 협업 - 글 상세</title>
 </head>
 <body class="dr-bg-white">
-    <!-- 헤더 s -->
-    <header class="header"> 
-        <div class="dr-container header_wrap d-flex justify-content-start align-items-center">
-            <h1><a href="#none"><img src="../../img/icon_logo.png" alt="logo"></a></h1>
-            <div class="d-flex w-100 align-items-center">
-                <ul class="dr-hd-gnb justify-content-start w-100">
-                    <li onclick="tabBtnClick(this)"><a href="#none">파트너 협업</a></li>
-                    <li onclick="tabBtnClick(this)"><a href="#none">커뮤니티</a></li>
-                    <li onclick="tabBtnClick(this)"><a href="#none">전문가찾기</a></li>
-                </ul>
-                <ul class="dr-hd-log justify-content-end w-100">
-                    <li><a href="#none">고객센터</a></li>
-                    <li>
-                        <!-- 비로그인 시 s -->
-                        <div class="dr-user-off d-flex">
-                            <a href="#none">로그인</a>
-                            <a href="#none">회원가입</a>
-                        </div>
-                        <!-- 비로그인 시 e -->
-                        <!-- 로그인 시 s -->
-                        <div class="dr-user-on">
-                            <a href="#none">마이페이지</a>
-                        </div>
-                        <!-- 로그인 시 e -->
-                    </li>
-                </ul>
-            </div>
-            <div class="dr-user-menu justify-content-end" onclick="drPopupOpen('.dr-hd-m-menu')">
-                <img src="../../img/icon/icon_hambuger.png" alt="menu-icon">
-            </div>
-        </div>
-        
-        <!-- 모바일 메뉴 s -->
-        <div class="dr-dim"></div>
-        <div class="dr-popup-wrap dr-hd-m-menu">
-            <div class="dr-popup-close" onclick="drPopupClose(this)"></div>
-            <div class="dr-hd-m-gnb">
-                <h1><a href="#none"><img src="../../img/icon_logo.png" alt="logo"></a></h1>
-                <ul>
-                    <li onclick="tabBtnClick(this)"><a href="#none">파트너 협업</a></li>
-                    <li onclick="tabBtnClick(this)"><a href="#none">커뮤니티</a></li>
-                    <li onclick="tabBtnClick(this)"><a href="#none">전문가 찾기</a></li>
-                    <li><a href="#none">고객센터</a></li>
-                </ul>
-            </div>
-            <div class="dr-hd-m-bottom">
-                <!-- 비로그인 시 s -->
-                <div class="dr-user-off">
-                    <a href="#none"><button class="dr-button indigo w-100">로그인 하기</button></a>
-                    <a href="#none"><button class="dr-button disabled w-100 mt-3">회원가입 하기</button></a>
-                </div>
-                <!-- 비로그인 시 e -->
-                <!-- 로그인 시 s -->
-                <div class="dr-user-on" style="display: none;">
-                    <a href="#none"><button class="dr-button indigo w-100">마이페이지</button></a>
-                </div>
-                <!-- 로그인 시 e -->
-            </div>
-        </div>
-        <!-- 모바일 메뉴 e -->
-    </header> 
-    <div class="dr-header-box"></div>
-    <!-- 헤더 e -->
     <!-- 컨테이너 -->
     <div class="dr-container">
         <div class="dr-partner-sub mx-auto">
             <div class="mb-5">
                 <h1 class="dr-tit">서울 역세권 담보대출 가능한 금융기관 있으신가요?</h1>
-                <div class="dr-txt">
+                <div class="dr-txt mt-3">
                     <span class="dr-fw-600 me-2">시공사</span>
                     <span class="dr-date me-2">03.01 00:00</span>
                     <span class="dr-progress">진행중</span>
@@ -121,16 +35,20 @@
                             <dl>
                                 <dt>위치</dt>
                                 <dd>부산광역시 남영동 123-2</dd>
-
+                            </dl>
+                            <dl>
                                 <dt>기한</dt>
                                 <dd><span class="dr-fw-500 dr-fz-15 dr-selc-color">~2023.03.0.3</span></dd>
-
+                            </dl>
+                            <dl>
                                 <dt>사업단계</dt>
                                 <dd>-</dd>
-
+                            </dl>    
+                            <dl>
                                 <dt>찾는 파트너</dt>
                                 <dd></dd>
-
+                            </dl>
+                            <dl>
                                 <dt>내용</dt>
                                 <dd>
                                     <p>
@@ -142,26 +60,81 @@
                                         대형마트들, 병원 등 근린생활시설이 밀집해 있어 주거쾌적성 및 주거편의성이 높습니다. 또한, 도보 1분이내에 지하철역(망미역)이 위치하여 교통 편의성이 우수합니다.
                                     </p>
                                 </dd>
-                            </dl>
+                            </dl>    
                         </div>
                     </div>
                     <div class="dr-partner-find">
                         <h4>찾는 파트너</h4> 
                         <div class="pt-5">
-                            <dl>
-                                <dt>위치</dt>
-                                <dd>부산광역시 남영동 123-2</dd>
-
-                                <dt>기한</dt>
-                                <dd><span class="dr-fw-500 dr-fz-15 dr-selc-color">~2023.03.0.3</span></dd>
-
-                            </dl>
+                            <p>시행사</p>
+                            <table>
+                                <caption>위치, 기한에 관한 테이블 입니다.</caption>
+                                <tbody>
+                                    <tr>
+                                        <th>요청사항</th>
+                                        <td>토지 용역</td>
+                                    </tr>
+                                    <tr>
+                                        <th>내용</th>
+                                        <td>개인사업자, 법인 대출 40억 이내 취급 요청 물건 의뢰 요청 드립니다. 
+                                            가능하신 금융기관 있으시면 관심 부탁드립니다</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>  
-                <div class="dr-information">
-                    작성자 정보보기
+                <div  class="dr-information"> 
+                    <h4>작성자 정보 보기</h4>
+                    <div>
+                        <div class="d-flex justify-content-between">
+                            <span>소속</span>
+                            <span>A홀딩스 운영 본부 기획팀</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span>이름</span>
+                            <span>이용훈</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span>연락처</span>
+                            <span>010-1234-1234</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span>이메일</span>
+                            <span class="text-decoration-underline">asdfg@gmail.com</span>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- 협업 의향 보내기 --> 
+                <!-- <div  class="dr-information"> 
+                    <h4>작성자 정보 보기</h4>
+                    <div>
+                        <div class="d-flex justify-content-between">
+                            <span>소속</span>
+                            <span>A홀딩스 운영 본부 기획팀</span>
+                        </div>
+                        <div class="d-flex">
+                            <button class="dr-button green w-100">협업 의향 보내기</button>
+                        </div>
+                        <p class="txt">연락처가 어떻게 요청되나요?</p>
+                    </div>
+                </div> -->
+
+                <!-- 마감 일시 --> 
+                <!-- <div  class="dr-information"> 
+                    <h4>작성자 정보 보기</h4>
+                    <div>
+                        <div class="d-flex justify-content-between">
+                            <span>소속</span>
+                            <span>A홀딩스 운영 본부 기획팀</span>
+                        </div>
+                        <div class="d-flex">
+                            <button class="dr-button deadline w-100">마감된 글입니다</button>
+                        </div>
+                        <p class="txt dr-selc-color">연락처가 어떻게 요청되나요?</p>
+                    </div>
+                </div> -->
             </main>    
         </div>
     </div>
