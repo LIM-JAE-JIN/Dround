@@ -337,6 +337,8 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 .dr-partner-sub main .dr-information > div > div span:last-child{text-align: right;  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis;}
 .dr-partner-sub main .dr-information .txt{margin-top: 2rem; font-size: 1.4rem; font-weight: 400; color: #7bdda8; text-align: center;}
 .dr-partner-sub main .dr-information .dr-button.deadline{font-weight: 500; background-color: #505866; border: 0; color: #989CA1;}
+.dr-content-wrap .dr-button{padding: 0.7rem 2.7rem;font-size: 1.3rem;font-weight: 500;color: #989CA1;border: 1px solid #D7D7D7;background-color: #fff;margin-right: 0.8rem;}
+.dr-content-wrap .dr-button.dr-delete-button{color: #EA5555; border: 1px solid #EA5555; margin-left: auto; margin-right: 0;}
 /* 파트너협업_글 상세 e*/
 /* ------파트너협업------ e */
 
@@ -450,7 +452,7 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
     /* ------footer------ e */
 
     /* ------파트너협업------ s */
-    
+
     /* 공개여부팝업 s */
     .disclosure-popup .dr-pop-profile ul li{width: 100%;}
     /* 공개여부팝업 e */

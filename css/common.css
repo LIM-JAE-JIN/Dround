@@ -156,7 +156,7 @@ input::placeholder { color: #989ca1; font-weight: 400; }
 /* radio_circle */
 .dr-radio-wrap-circle input{display: none;}
 .dr-radio-wrap-circle input[type="radio"] + label span.round{display:inline-block;width: 18px;height: 18px;margin: -2px 9px 0 4px;font-size: 0;vertical-align: middle;background: url(../../img/btn/icon/Ellipse_190.png) no-repeat;cursor:pointer; background-size: contain;}
-.dr-radio-wrap-circle input[type="radio"]:checked + label span.round { background: url(../../img/btn/icon/icon_vote_on.png) no-repeat; background-size: contain;}
+.dr-radio-wrap-circle input[type="radio"]:checked + label span.round { background: url(../img/btn/icon/icon_vote_on.png) no-repeat; background-size: contain;}
 
 /* Text field states e */
 
