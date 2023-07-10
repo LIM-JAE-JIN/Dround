@@ -12,13 +12,7 @@
     <script src="/js/jquery-ui.min.js"></script>
     <script src="/js/bootstrap/bootstrap.min.js"></script>
     <script src="/js/common.js"></script>
-    <title>Dround : 이메일</title> 
-    <style>
-    .dr-email-search-tit {font-size:30px; font-weight:700; margin-bottom:20px;}
-    .dr-email-search-tit p {color:#989CA1; font-size:14px; font-weight:400; margin-top:10px;}
-    .dr-no-email-btn-wrap button {width:48%; margin-right:2%;}
-    .dr-no-email-btn-wrap button:last-child {margin-right:0;}
-    </style>
+    <title>Dround : 이메일 찾기</title> 
 </head>
 <body class="dr-bg-w">
     <!-- 컨테이너 -->
@@ -39,7 +33,7 @@
                         <p class="dr-fz-15 mb-3">휴대폰 번호</p>
                         <input type="text" class="dr-input" id="phonenum" name="phonenum" placeholder="번호를 입력해주세요">
                     </div>
-                    <button type="submit" class="dr-button w-100 disabled " disabled="true">이메일 찾기</button> 
+                    <button type="submit" class="dr-button w-100 disabled">이메일 찾기</button> 
                 </form>
                 <p class="dr-bs-info-txt mt-3 ms-0">
                     휴대폰 번호가 변경되었을 경우, <span class="text-decoration-underline">contact@drounder.com</span>로<br/> 문의주세요. 
@@ -52,8 +46,8 @@
                     <p class="dr-fz-18 dr-fw-600 text-center mb-5">해당정보와 일치하는 계정이 없습니다.</p>
                 </div>
                 <div class="d-flex dr-no-email-btn-wrap">
-                    <button type="submit" class="dr-button disabled px-0" disabled="true">이메일 찾기</button> 
-                    <button type="submit" class="dr-button indigo px-0" disabled="true">로그인</button> 
+                    <button type="button" class="dr-button disabled px-0" disabled="true">이메일 찾기</button> 
+                    <button type="button" class="dr-button indigo px-0" disabled="true">로그인</button> 
                 </div>
             </div>
             <!-- 일치하는 계정 없음 e -->
@@ -66,7 +60,7 @@
                 <form class="dr-fw-600 fs-5" method="post">
                     <div class="mb-5 dr-input-wrap">
                         <p class="dr-fz-15 mb-3">이메일 정보</p>
-                        <input type="text" class="dr-input" id="emailinfo" name="emailinfo" placeholder="sdf@naver.com">
+                        <input type="text" class="dr-input bg-black bg-opacity-10" id="emailinfo" name="emailinfo" value="sdf@naver.com" disabled>
                     </div>
                     <button type="submit" class="dr-button w-100 indigo" disabled="true">로그인 하기</button> 
                 </form>
