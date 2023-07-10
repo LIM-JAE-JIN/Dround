@@ -297,7 +297,7 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 
 /* 파트너협업-글올리기 s*/
 .dr-partner-sub{max-width: 1200px;}
-.dr-partner-sub .dr-tit{font-size: 2.5rem; line-height: 37.5px; font-weight: 700;}
+.dr-partner-sub .dr-tit{width: 67.75%; font-size: 2.5rem; line-height: 37.5px; font-weight: 700;}
 .dr-partner-sub .dr-txt span{display:inline-block; font-size: 1.3rem; font-weight: 500;}
 .dr-partner-sub .dr-txt span.dr-date{ color:#D2D2D2;}
 .dr-partner-sub .dr-txt span.dr-progress{padding: 0.2rem 0.6rem; color: #0F4CEA; border: 1px solid #397FE9;}
@@ -417,10 +417,11 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
     /* ------footer------ e */
     
     /* ------파트너협업------ s */
-    /* 파트너 협업 글선택 s */  
+    /* 파트너 협업 글 상세 s */  
     .dr-partner-sub main{display: block}
-    .dr-partner-sub .dr-information{width: 100%;} 
-    /* 파트너 협업 글선택 e */
+    .dr-partner-sub .dr-information{width: 100%; margin-top: 2rem;} 
+    .dr-partner-sub .dr-tit{width: 100%;}
+    /* 파트너 협업 글 상세 e */
 
     /* 글올리기 s */
     .dr-partner-write-wrap .dr-business-check .dr-checkbox, .dr-partner-write-wrap .dr-business-check .dr-radio-wrap{ width: 32%;}
