@@ -302,7 +302,7 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 .dr-popup-wrap.dr-phone-popup .dr-imgbox img{width: 100%;}
 /* 공개여부 팝업, 의향보내기 팝업 e */
 
-/* 파트너협업-글올리기 s*/
+/* 파트너협업_글 상세 s*/
 .dr-partner-sub{max-width: 1200px;}
 .dr-partner-sub .dr-tit{width: 67.75%; font-size: 2.5rem; line-height: 37.5px; font-weight: 700;}
 .dr-partner-sub .dr-txt span{display:inline-block; font-size: 1.3rem; font-weight: 500;}
@@ -337,7 +337,7 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 .dr-partner-sub main .dr-information > div > div span:last-child{text-align: right;  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis;}
 .dr-partner-sub main .dr-information .txt{margin-top: 2rem; font-size: 1.4rem; font-weight: 400; color: #7bdda8; text-align: center;}
 .dr-partner-sub main .dr-information .dr-button.deadline{font-weight: 500; background-color: #505866; border: 0; color: #989CA1;}
-/* 파트너협업-글올리기 e*/
+/* 파트너협업_글 상세 e*/
 /* ------파트너협업------ e */
 
 /* ------반응형------ s */
@@ -355,14 +355,14 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
     .dr-community-side{ width: 49%;}
     .dr-community-vote{ width: 100%;}
 
-    /* 커뮤니티-글상세 s */
+    /* 커뮤니티_글상세 s */
     .dr-details-wrap{max-width: 600px;}
     .dr-industry-cont-best{max-width: 290px;}
-     /* 커뮤니티-글상세 e */
+     /* 커뮤니티_글상세 e */
 
-    /* 커뮤니티-감정법인 s */
+    /* 커뮤니티_감정법인 s */
     .dr-feel .dr-industry{margin-top:0; flex-direction: column;}
-    /* 커뮤니티-감정법인 e */
+    /* 커뮤니티_감정법인 e */
     /* ------커뮤니티------ e */
 } 
 
@@ -390,12 +390,12 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
     .dr-free-cont .dr-free-icon{margin-left: 0 !important;}
     .dr-industry-cont ul li p{max-width: 360px; width: calc(100% - 80px)}
     
-    /* 커뮤니티-글상세 s */
+    /* 커뮤니티_글상세 s */
     .dr-community-main.details{display: block !important;} 
     .dr-details-wrap{max-width: 100%;}
     .dr-industry-cont-best{max-width: 100%; margin-top: 2.5rem;}
     .dr-details-wrap{margin-right: 0rem;}
-    /* 커뮤니티-글상세 e */
+    /* 커뮤니티_글상세 e */
     
     /* 커뮤니티_게시판 s */
     .dr-title-wrap {flex-wrap:wrap;}
@@ -407,10 +407,10 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
     .dr-tab-mini-icon {display: block;}
     /* 커뮤니티_게시판 e */
     
-    /* 커뮤니티-감정법인 s */
+    /* 커뮤니티_감정법인 s */
     .dr-feel .dr-industry{margin-top:2.5rem; min-width: auto;}
     .dr-feel .dr-title-wrap .dr-title-search-box input {width:calc(100% - 123px);}
-    /* 커뮤니티-감정법인 e */
+    /* 커뮤니티_감정법인 e */
     /* ------커뮤니티------ e*/
     
     /* ------header------ s */
@@ -424,11 +424,11 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
     /* ------footer------ e */
     
     /* ------파트너협업------ s */
-    /* 파트너 협업 글 상세 s */  
+    /* 파트너 협업_글 상세 s */  
     .dr-partner-sub main{display: block}
     .dr-partner-sub .dr-information{width: 100%; margin-top: 2rem;} 
     .dr-partner-sub .dr-tit{width: 100%;}
-    /* 파트너 협업 글 상세 e */
+    /* 파트너 협업_글 상세 e */
 
     /* 글올리기 s */
     .dr-partner-write-wrap .dr-business-check .dr-checkbox, .dr-partner-write-wrap .dr-business-check .dr-radio-wrap{ width: 32%;}
@@ -450,6 +450,7 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
     /* ------footer------ e */
 
     /* ------파트너협업------ s */
+    
     /* 공개여부팝업 s */
     .disclosure-popup .dr-pop-profile ul li{width: 100%;}
     /* 공개여부팝업 e */
