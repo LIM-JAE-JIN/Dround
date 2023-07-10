@@ -130,10 +130,37 @@
                     </div>    
                 </div>
                 <div class="d-flex">
-                    <button class="dr-button w-100 dr-bg-white dr-color-14">적용하기</button>
+                    <button class="dr-button w-100 dr-bg-white dr-color-14 dr-apply-button">적용하기</button>
                 </div>
             </form>
-
+            <script>
+                document.querySelector('.dr-apply-button').addEventListener('click', function(e) {
+                    e.preventDefault();
+                    var checkboxes = document.querySelectorAll('.dr-business-check .dr-checkbox input[type="checkbox"]');
+                    var checkedIndexes = [];
+            
+                    for (var i = 0; i < checkboxes.length; i++) {
+                        if (checkboxes[i].checked) {
+                            checkedIndexes.push(i);
+                        }
+                    }
+            
+                    if (checkedIndexes.length > 0) {
+                        alert("선택된 체크박스의 인덱스: " + checkedIndexes.join(", "));
+            
+                        var drRequestDivs = document.querySelectorAll('.dr-request');
+                        for (var j = 0; j < drRequestDivs.length; j++) {
+                            if (checkedIndexes.includes(j)) {
+                                drRequestDivs[j].style.display = "block";
+                            } else {
+                                drRequestDivs[j].style.display = "none";
+                            }
+                        }
+                    } else {
+                        alert("선택된 체크박스가 없습니다.");
+                    }
+                });
+                            </script>
             <!-- '적용하기' 버튼 클릭시 생성, 'dr-request', 'dr-disclosure' 클래스에 display:none 처리, 찾는파트너 체크박스 순서와 같이 나열하였음 -->
 
             <!-- 시행사 -->
@@ -354,6 +381,33 @@
                 </div>
             </div>
 
+            
+            <!-- 법무법인 -->
+            <div class="dr-request">
+                <h3>법무법인 요청사항</h3>
+                <div class="dr-business-check type2">
+                    <p>요청 사항</p>
+                    <div class="dr-fw-500">
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck56" name="raido10">
+                            <label for="drCheck56">법률 검토</label>
+                        </div>
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck57" name="raido10">
+                            <label for="drCheck57">계약서 의뢰</label>
+                        </div>
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="drCheck58" name="raido10">
+                            <label for="drCheck58">기타</label>
+                        </div>
+                    </div>    
+                </div>
+                <div class="dr-textarea-wrap mb-3">
+                    <p>내용</p>
+                    <textarea class="dr-textarea mt-3" id="" cols="10" rows="10" placeholder="구체적 필요사항을 기입해주세요."></textarea>
+                </div>
+            </div>
+
             <!-- 회계법인 -->
             <div class="dr-request">
                 <h3>회계법인 요청사항</h3>
@@ -361,16 +415,16 @@
                     <p>요청 사항</p>
                     <div class="dr-fw-500">
                         <div class="dr-radio-wrap">
-                            <input type="radio" id="drCheck56" name="raido10">
-                            <label for="drCheck56">세무 기장</label>
+                            <input type="radio" id="drCheck59" name="raido11">
+                            <label for="drCheck59">세무 기장</label>
                         </div>
                         <div class="dr-radio-wrap">
-                            <input type="radio" id="drCheck57" name="raido10">
-                            <label for="drCheck57">사업성 평가</label>
+                            <input type="radio" id="drCheck60" name="raido11">
+                            <label for="drCheck60">사업성 평가</label>
                         </div>
                         <div class="dr-radio-wrap">
-                            <input type="radio" id="drCheck58" name="raido10">
-                            <label for="drCheck58">기타</label>
+                            <input type="radio" id="drCheck61" name="raido11">
+                            <label for="drCheck61">기타</label>
                         </div>
                     </div>    
                 </div>
@@ -387,50 +441,24 @@
                     <p>요청 사항</p>
                     <div class="dr-fw-500">
                         <div class="dr-radio-wrap">
-                            <input type="radio" id="drCheck38" name="raido6">
+                            <input type="radio" id="drCheck38" name="raido12">
                             <label for="drCheck38">개발형 신탁</label>
                         </div>
                         <div class="dr-radio-wrap">
-                            <input type="radio" id="drCheck39" name="raido6">
+                            <input type="radio" id="drCheck39" name="raido12">
                             <label for="drCheck39">담보 신탁</label>
                         </div>
                         <div class="dr-radio-wrap">
-                            <input type="radio" id="drCheck40" name="raido6">
+                            <input type="radio" id="drCheck40" name="raido12">
                             <label for="drCheck40">자금관리사무</label>
                         </div>
                         <div class="dr-radio-wrap">
-                            <input type="radio" id="drCheck41" name="raido6">
+                            <input type="radio" id="drCheck41" name="raido12">
                             <label for="drCheck41">처분신탁</label>
                         </div>
                         <div class="dr-radio-wrap">
-                            <input type="radio" id="drCheck42" name="raido6">
+                            <input type="radio" id="drCheck42" name="raido12">
                             <label for="drCheck42">기타</label>
-                        </div>
-                    </div>    
-                </div>
-                <div class="dr-textarea-wrap mb-3">
-                    <p>내용</p>
-                    <textarea class="dr-textarea mt-3" id="" cols="10" rows="10" placeholder="구체적 필요사항을 기입해주세요."></textarea>
-                </div>
-            </div>
-
-            <!-- 법무법인 -->
-            <div class="dr-request">
-                <h3>법무법인 요청사항</h3>
-                <div class="dr-business-check type2">
-                    <p>요청 사항</p>
-                    <div class="dr-fw-500">
-                        <div class="dr-radio-wrap">
-                            <input type="radio" id="drCheck59" name="raido11">
-                            <label for="drCheck59">법률 검토</label>
-                        </div>
-                        <div class="dr-radio-wrap">
-                            <input type="radio" id="drCheck60" name="raido11">
-                            <label for="drCheck60">계약서 의뢰</label>
-                        </div>
-                        <div class="dr-radio-wrap">
-                            <input type="radio" id="drCheck61" name="raido11">
-                            <label for="drCheck61">기타</label>
                         </div>
                     </div>    
                 </div>
@@ -447,11 +475,11 @@
                     <p>요청 사항</p>
                     <div class="dr-fw-500">
                         <div class="dr-radio-wrap">
-                            <input type="radio" id="drCheck62" name="raido12">
+                            <input type="radio" id="drCheck62" name="raido13">
                             <label for="drCheck62">감정평가</label>
                         </div>
                         <div class="dr-radio-wrap">
-                            <input type="radio" id="drCheck63" name="raido12">
+                            <input type="radio" id="drCheck63" name="raido13">
                             <label for="drCheck63">기타</label>
                         </div>
                     </div>    
@@ -469,15 +497,15 @@
                     <p>요청 사항</p>
                     <div class="dr-fw-500">
                         <div class="dr-radio-wrap">
-                            <input type="radio" id="drCheck64" name="raido13">
+                            <input type="radio" id="drCheck64" name="raido14">
                             <label for="drCheck64">대출</label>
                         </div>
                         <div class="dr-radio-wrap">
-                            <input type="radio" id="drCheck65" name="raido13">
+                            <input type="radio" id="drCheck65" name="raido14">
                             <label for="drCheck65">투자</label>
                         </div>
                         <div class="dr-radio-wrap">
-                            <input type="radio" id="drCheck66" name="raido13">
+                            <input type="radio" id="drCheck66" name="raido14">
                             <label for="drCheck66">기타</label>
                         </div>
                     </div>    
