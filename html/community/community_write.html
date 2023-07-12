@@ -47,10 +47,10 @@
                     </label>
                     <input type="file" id="input-file" />
                 </div> -->
-                <!-- 2023-07-12 ui 변경 추가된 부분 -->
+                <!-- 2023-07-12 ui 변경 추가된 부분 s -->
                 <div class="d-flex mt-2">
                     <a class="d-block w-100" href="javascript:void(0);" onclick="drPopupOpen('.dr-popup-vote')">
-                        <button class="dr-vote-upload-button me-2 dr-selc-color">투표 올리기</button>
+                        <button type="button" class="dr-vote-upload-button me-2 dr-selc-color">투표 올리기</button>
                     </a>
                 </div>
                 <div class="d-flex mt-2 position-relative">
@@ -59,16 +59,39 @@
                     </label>
                     <input type="file" id="input-file" />
                 </div>
-                <!--// 2023-07-12 ui 변경 추가된 부분 -->
-                <div class="dr-vote-complete">
-                    <div class="d-flex justify-content-between">
-                        <p class="opacity-50">투표가 등록되었습니다.</p>
-                        <a href="#none" class="opacity-50 dr-underline">수정하기</a>
+
+                <div class="dr-vote-complete dr-tooltop">
+                    <div class="d-flex justify-content-between align-content-center">
+                        <p class="opacity-50">투표가 등록되었습니다.<a href="#none" class="dr-arr" onclick="drPopupOpen('.dr-popup-vote')"></a></p>
+                        <a href="#none" class="dr-vote-close" onclick="tooltip('.dr-tooltop')"></a>
                     </div>
                 </div>   
-                <div>
-                    img 박스 들어가는곳
+                <div class="dr-picture-wrap mt-3">
+                    <div class="dr-picture-box">
+                        <div class="inner">
+                            <div>
+                                <img src="../../img/hairy_boy.png" alt="털보이미지">
+                            </div>
+                            <div>
+                                <img src="../../img/hairy_boy.png" alt="털보이미지">
+                            </div>
+                            <div>
+                                <img src="../../img/hairy_boy.png" alt="털보이미지">
+                            </div>
+                            <div>
+                                <img src="../../img/hairy_boy.png" alt="털보이미지">
+                            </div>
+                            <div>
+                                <img src="../../img/hairy_boy.png" alt="털보이미지">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dr-camera">                  
+                        <label for="input-file-1"></label>
+                        <input type="file" id="input-file-1" />
+                    </div>
                 </div>
+                <!--// 2023-07-12 ui 변경 추가된 부분 e -->
                 <button class="dr-button indigo w-100">글 올리기</button>
             </form>    
         </div>

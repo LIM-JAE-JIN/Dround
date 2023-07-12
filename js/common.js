@@ -36,3 +36,8 @@ function tabBtnClick(im){
     $(im).addClass('dr_on');
     $(im).siblings().removeClass('dr_on');
 }
+// 툴팁 제거 
+function tooltip(tooltip){
+    if(!$(this).closest(tooltip)) return false;
+    $(tooltip).hide();
+}
