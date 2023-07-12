@@ -40,19 +40,35 @@
                     <p>내용</p>
                     <textarea class="dr-textarea mt-3" id="" cols="10" rows="10" placeholder="내용을 입력해주세요."></textarea>
                 </div>
-                <div class="d-flex align-items-center mt-2">
+                <!-- 2023-07-12 주석처리 <div class="d-flex align-items-center mt-2">
                     <button class="dr-vote-upload-button me-2"><a href="javascript:void(0);" class="dr-selc-color" onclick="drPopupOpen('.dr-popup-vote')">투표 올리기</a></button>
                     <label class="dr-input-file-button" for="input-file">
                         이미지
                     </label>
                     <input type="file" id="input-file" />
+                </div> -->
+                <!-- 2023-07-12 ui 변경 추가된 부분 -->
+                <div class="d-flex mt-2">
+                    <a class="d-block w-100" href="javascript:void(0);" onclick="drPopupOpen('.dr-popup-vote')">
+                        <button class="dr-vote-upload-button me-2 dr-selc-color">투표 올리기</button>
+                    </a>
                 </div>
+                <div class="d-flex mt-2 position-relative">
+                    <label class="dr-input-file-button" for="input-file">
+                        이미지
+                    </label>
+                    <input type="file" id="input-file" />
+                </div>
+                <!--// 2023-07-12 ui 변경 추가된 부분 -->
                 <div class="dr-vote-complete">
                     <div class="d-flex justify-content-between">
                         <p class="opacity-50">투표가 등록되었습니다.</p>
                         <a href="#none" class="opacity-50 dr-underline">수정하기</a>
                     </div>
                 </div>   
+                <div>
+                    img 박스 들어가는곳
+                </div>
                 <button class="dr-button indigo w-100">글 올리기</button>
             </form>    
         </div>
