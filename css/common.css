@@ -146,7 +146,15 @@ input::placeholder { color: #989ca1; font-weight: 400; }
 .dr-checkbox input[type="checkbox"] + label::after { content:''; display: block; position: absolute; width:18px; height:18px; top:0; left:0; background:url(../img/icon/toggle_off.png) no-repeat; background-size:cover;} 
 .dr-checkbox input[type="checkbox"]:checked + label::after { content:''; background:url(../img/icon/toggle_on.png) no-repeat; background-size:cover; } 
 
-/* radio*/
+/* check_circle */
+.dr-checkbox-wrap-circle input{display: none;}
+.dr-checkbox-wrap-circle input[type="checkbox"] + label span.round{display:inline-block;width: 18px;height: 18px;margin: -2px 9px 0 4px;font-size: 0;vertical-align: middle;background: url(../../img/btn/icon/Ellipse_190.png) no-repeat;cursor:pointer; background-size: contain;}
+.dr-checkbox-wrap-circle input[type="checkbox"]:checked + label span.round { background: url(../img/btn/icon/icon_vote_on.png) no-repeat; background-size: contain;}
+.dr-checkbox-wrap-circle{position: relative;border: 1px solid #d7d7d7; height: 60px; line-height: 60px; border-radius: 3px; padding-left: 1.5rem;}
+.dr-checkbox-wrap-circle label{font-size: 1.5rem; font-weight: 600; width: 100%;}
+.dr-checkbox-wrap-circle input{width: 18px; height: 18px; margin-right: 1rem; vertical-align: middle;}
+
+/* radio */
 .dr-radio-wrap {position: relative;}
 .dr-radio-wrap input[type="radio"] { display: none; }
 .dr-radio-wrap input[type="radio"] + label {line-height:18px; padding-left:25px; font-size:1.4rem;}
@@ -157,6 +165,9 @@ input::placeholder { color: #989ca1; font-weight: 400; }
 .dr-radio-wrap-circle input{display: none;}
 .dr-radio-wrap-circle input[type="radio"] + label span.round{display:inline-block;width: 18px;height: 18px;margin: -2px 9px 0 4px;font-size: 0;vertical-align: middle;background: url(../../img/btn/icon/Ellipse_190.png) no-repeat;cursor:pointer; background-size: contain;}
 .dr-radio-wrap-circle input[type="radio"]:checked + label span.round { background: url(../img/btn/icon/icon_vote_on.png) no-repeat; background-size: contain;}
+.dr-radio-wrap-circle{position: relative;border: 1px solid #d7d7d7; height: 60px; line-height: 60px; border-radius: 3px; padding-left: 1.5rem;}
+.dr-radio-wrap-circle label{font-size: 1.5rem; font-weight: 600; width: 100%;}
+.dr-radio-wrap-circle input{width: 18px; height: 18px; margin-right: 1rem; vertical-align: middle;}
 
 /* Text field states e */
 
