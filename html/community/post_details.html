@@ -15,6 +15,20 @@
     <title>Dround : 글 상세</title>
 </head>  
 <body>
+    <!-- 2023-07-13 글삭제 팝업 s -->
+    <div class="dr-dim"></div>
+    <div class="dr-popup-wrap dr-popup-delete">
+        <header>
+            <h1 class="text-center">게시글을 삭제하시겠습니까?</h1>
+        </header>
+        <footer>
+            <div class="d-flex">
+                <button class="dr-button disabled w-100">삭제하기</button>
+                <button class="dr-button indigo w-100" onclick="drPopupClose(this)">취소</button>
+            </div>
+        </footer>
+    </div>
+    <!--// 2023-07-13 글삭제 팝업 e -->
     <!-- 컨테이너 -->
     <div class="dr-container mt-5"><!-- 나중에지워 mt-5 -->
         <div class="dr-community-main details mx-auto d-flex justify-content-center">
@@ -22,7 +36,7 @@
                 <div class="dr-details-header"><!-- 디테일 헤더부분 -->
                     <div class="d-flex align-items-center">
                         <div class="dr-selc-color dr-fz-15">[업무질문]</div>
-                        <a href="#none" class="dr-delete-button dr-fw-500">글 삭제</a>
+                        <a href="#none" class="dr-delete-button dr-fw-500" onclick="drPopupOpen('.dr-popup-delete')">글 삭제</a>
                     </div>
                     <p class="dr-fz-20 my-3 dr-details-tit">개인사업자, 법인 대출 40억 이내 취급 요청 물건 의뢰 요청 드립니다.</p>
                     <div class="d-flex justify-content-between dr-fz-12">

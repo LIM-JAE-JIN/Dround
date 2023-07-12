@@ -37,7 +37,7 @@ function tabBtnClick(im){
     $(im).siblings().removeClass('dr_on');
 }
 // 툴팁 제거 
-function tooltip(tooltip){
+function tooltipClose(tooltip){
     if(!$(this).closest(tooltip)) return false;
     $(tooltip).hide();
 }
