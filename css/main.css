@@ -349,7 +349,8 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 .dr-content-wrap .dr-button{padding: 0.7rem 2.7rem;font-size: 1.3rem;font-weight: 500;color: #989CA1;border: 1px solid #D7D7D7;background-color: #fff;margin-right: 0.8rem;}
 .dr-content-wrap .dr-button.dr-delete-button{color: #EA5555; border: 1px solid #EA5555; margin-left: auto; margin-right: 0;}
 .dr-popup-wrap.dr-popup-delete{width: 388px;}
-.dr-popup-wrap.dr-popup-delete button{margin: 0 5px;}
+.dr-popup-wrap.dr-popup-delete footer{background-color: transparent;}
+.dr-popup-wrap.dr-popup-delete button{margin: 0 5px; display: flex;justify-content: space-around;}
 
 /* 파트너협업_글 상세 e*/
 /* ------파트너협업------ e */
