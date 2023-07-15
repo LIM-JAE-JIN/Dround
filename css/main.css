@@ -305,8 +305,7 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 .dr-partner-list-bottom {display: flex; justify-content: space-between;}
 .dr-partner-list-ci {width:calc(100% - 130px)}
 .dr-partner-list-date span {margin-left:10px; color:#d2d2d2; font-weight:500;}
-.dr-partenr-list-wrap > li.dr-partner-deadline .dr-partner-close-area {display: block;}
-.dr-partner-close-area {position: absolute; top: 0; right: 0; bottom: 0; left: 0; background-color: rgba(0,0,0,.4); border-radius: 5px; display: none;}
+.dr-partner-close-area {position: absolute; top: 0; right: 0; bottom: 0; left: 0; background-color: rgba(0,0,0,.3); border-radius: 5px; display: none;}
 .dr-partner-close-area p {position: absolute; top:20px; right:30px; padding:5px 11px; border:0; font-size: 14px; font-weight: 600; background-color: #fff; border-radius: 3px;}
 /* 파트너 협업_메인 e */
 
