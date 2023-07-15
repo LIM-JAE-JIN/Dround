@@ -108,6 +108,10 @@
                             </ul>
                             <div class="dr-tab-mini-icon">
                                 <img src="../../img/icon/icon_filter.png" alt="filter-icon">
+                                <ul class="dr-mini-tab-comm">
+                                    <li class="dr_on"onclick="tabBtnClick(this)">최신순</li>
+                                    <li onclick="tabBtnClick(this)">인기순</li>
+                                </ul>
                             </div>
                         </div>
                         <div class="dr-all-board-list">
@@ -217,5 +221,18 @@
         </div>
     </div>
     <!--// 컨테이너 -->
+    <script>
+        // 230703 탭팝업 기능 추가
+        $('.dr-tab-mini-icon img').on('click',function(){
+            $('.dr-mini-tab-comm').addClass('dr_on');
+        })
+        $(window).click(function (e){
+            if(e.target.alt !== 'filter-icon' ){
+                setTimeout(function(){
+                    $('.dr-mini-tab-comm').removeClass('dr_on');
+                },500)
+            }
+        });
+        </script>
 </body>
 </html>
