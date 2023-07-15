@@ -14,14 +14,43 @@
     <script src="../../js/common.js"></script>
     <title>Dround : 전문가 찾기</title>
     <style>
+        .dr-container.dr-bg-type{margin-top: -45px;background: #fff;padding-top: 90px;} /* 배경색 2개일시 */
         .dr-expert-main{max-width: 1200px; width: 100%;}
-        .dr-expert-main .dr-expert-banner{position: relative; width: 100%; height: 253px; background-color: #151B2A; padding: 6rem 0 0 6rem; border-radius: 5px;}
-        .dr-expert-main .dr-expert-banner h1{font-size: 3rem; color: #fff; line-height: 48px; font-weight: 500;}
+        .dr-expert-main .dr-expert-banner{position: relative; height: 253px; background-color: #151B2A; padding: 6rem 1rem 5rem 6rem; border-radius: 5px;}
+        .dr-expert-main .dr-expert-banner h1{font-size: 3rem; color: #fff; line-height: 48px; font-weight: 700;}
         .dr-expert-main .dr-expert-banner .dr-txt{font-size:1.6rem; font-weight: 700; color: #72E0FC;}
         
+        .dr-expert-main .dr-expert-select-wrap{ font-size: 1.5rem; padding-bottom: 2.5rem;}
+        .dr-expert-main .dr-expert-select-wrap .dr-select{border: 1px solid #989CA1;padding: 1.4rem 3.8rem 1.4rem 1.75rem; border-radius: 3px;}
+        .dr-expert-main .dr-expert-select-wrap .dr-select a{position: relative;}
+        .dr-expert-main .dr-expert-select-wrap .dr-select a::after{content: ""; position: absolute; top: -3px; display: inline-block; width: 23px; height: 23px; background-image: url(../../img/icon/icon_arrow_down.png); background-size: contain;vertical-align: sub;}
+        .dr-expert-main .dr-expert-select-wrap .dr-select.on a::after{transform: rotate(180deg);}
+        .dr-expert-main .dr-expert-select-wrap div:nth-of-type(2){display: block;}
+        .dr-expert-main .dr-expert-select-wrap .dr-button{height: 45px; display: flex; width: 144px; justify-content: space-around; align-items: center;}
+        .dr-expert-main .dr-expert-cont{display: flex;justify-content: space-between;flex-wrap: wrap;}
+        .dr-expert-main .dr-expert-cont > div{margin-top: 3rem; display: inline-block; width: calc(33% - 15px); padding: 2.5rem 3rem; background-color: #fff; border-radius: 5px;}
+        .dr-expert-main .dr-expert-cont h5{display: inline-block; padding: 1rem; background-color: #353839; border-radius: 1px; color: #fff; text-align: center; margin-bottom: 4rem;}
+        .dr-expert-main .dr-expert-cont .dr-cont {margin-bottom: 1.5rem;}
+        .dr-expert-main .dr-expert-cont .dr-cont span{margin-right: 0.5rem;}
+        .dr-expert-main .dr-expert-cont .dr-cont span:nth-child(1){font-size: 1.7rem; font-weight: 700; color: #353839;}
+        .dr-expert-main .dr-expert-cont .dr-cont span:nth-child(3){font-size: 1.5rem; color: #989CA1;}
+        .dr-expert-main .dr-expert-cont p{font-size: 1.6rem; font-weight: 500; color: #505866;}
+        @media (max-width: 1200px) {
+            .dr-expert-main .dr-expert-cont > div{width: calc(50% - 15px);}
+        }
+        @media (max-width: 768px) {
+            .dr-expert-main .dr-expert-cont > div{width: 100%;}
+            .dr-expert-main .dr-expert-banner h1{font-size: 2.5rem;}
+            .dr-expert-main .dr-expert-banner{padding: 4rem 1rem 5rem 3rem;;}
+            .dr-expert-main .dr-expert-select-wrap div:nth-of-type(2){display: none;}
+        }
+        @media (max-width: 350px) {
+            .dr-expert-main .dr-expert-select-wrap .dr-button{width: 125px;}
+        }
+
     </style>
 </head>
-<body class="dr-bg-white">
+<body>
         <!-- 헤더 s -->
         <header class="header">
             <div class="dr-container header_wrap d-flex justify-content-start align-items-center">
@@ -85,24 +114,90 @@
         </header>
         <div class="dr-header-box"></div>
         <!-- 헤더 e -->
-    <!-- 컨테이너 -->
-    <div class="dr-container">
+    <!-- 컨테이너 1-->
+    <div class="dr-container dr-bg-type">
         <div class="dr-expert-main mx-auto">
             <div class="dr-expert-banner">
                 <h1>부동산 업 전반의<br>원하는 전문가를 찾아보세요</h1>
                 <p class="dr-txt mt-4">다양한 전문가의 포트폴리오</p>
             </div>
-            <div class="dr-expert-select d-flex">
-                <div>직무전체보기</div>
-                <div>최근 등록순</div>
+            <div class="dr-expert-select-wrap d-flex align-items-center mt-5">
+                <div class="dr-select me-4">
+                    <a href="#none">직무 전체보기</a>
+                </div>
                 <div>
-                    버튼
+                    <a href="#none" class="dr-selc-color dr-fw-500">최근 등록순</a>
+                </div>
+                <div class="ms-auto">
+                    <button class="dr-button green">전문가 등록하기</button>
                 </div>
             </div>
-            <div>컨텐츠</div>
         </div>
     </div>
-    <!--// 컨테이너 -->
+    <!--// 컨테이너 1-->
+    <!-- 컨테이너 2-->
+    <div class="dr-container">
+        <div class="dr-expert-main mx-auto">
+            <!-- 직군명 에시 <span class="dr-icon-txt dr-color-1">시행사</span> dr-color-1 ~ dr-color-12 까지 있음-->
+            <div class="dr-expert-cont">
+                <div> 
+                    <h5>신한투자 증권</h5>
+                    <div class="dr-cont">
+                        <span>김환우</span>
+                        <span class="dr-icon-txt dr-color-1">시행사</span>
+                        <span>금융본부</span>
+                    </div>
+                    <p>계약금 대출, 선순위 대출등 다양한 대출을 중개합니다. 다양하고 빠른 대출 가능.</p>
+                </div>
+                <div>
+                    <h5>신한투자 증권</h5>
+                    <div class="dr-cont">
+                        <span>김환우</span>
+                        <span class="dr-icon-txt dr-color-7">MD/컨설팅</span>
+                        <span>금융본부</span>
+                    </div>
+                    <p>계약금 대출, 선순위 대출등 다양한 대출을 중개합니다. 다양하고 빠른 대출 가능.</p>
+                </div>
+                <div>
+                    <h5>신한투자 증권</h5>
+                    <div class="dr-cont">
+                        <span>김환우</span>
+                        <span class="dr-icon-txt dr-color-1">시행사</span>
+                        <span>금융본부</span>
+                    </div>
+                    <p>계약금 대출, 선순위 대출등 다양한 대출을 중개합니다. 다양하고 빠른 대출 가능.</p>
+                </div>
+                <div> 
+                    <h5>신한투자 증권</h5>
+                    <div class="dr-cont">
+                        <span>김환우</span>
+                        <span class="dr-icon-txt dr-color-1">시행사</span>
+                        <span>금융본부</span>
+                    </div>
+                    <p>계약금 대출, 선순위 대출등 다양한 대출을 중개합니다. 다양하고 빠른 대출 가능.</p>
+                </div>
+                <div>
+                    <h5>신한투자 증권</h5>
+                    <div class="dr-cont">
+                        <span>김환우</span>
+                        <span class="dr-icon-txt dr-color-7">MD/컨설팅</span>
+                        <span>금융본부</span>
+                    </div>
+                    <p>계약금 대출, 선순위 대출등 다양한 대출을 중개합니다. 다양하고 빠른 대출 가능.</p>
+                </div>
+                <div>
+                    <h5>신한투자 증권</h5>
+                    <div class="dr-cont">
+                        <span>김환우</span>
+                        <span class="dr-icon-txt dr-color-1">시행사</span>
+                        <span>금융본부</span>
+                    </div>
+                    <p>계약금 대출, 선순위 대출등 다양한 대출을 중개합니다. 다양하고 빠른 대출 가능.</p>
+                </div>
+            </div>
+        </div>    
+    </div>
+    <!--// 컨테이너 2-->
     <!-- 푸터 -->
     <footer class="dr-container">
         <div class="dr-footer-wrap row">

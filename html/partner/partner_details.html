@@ -98,9 +98,9 @@
                     </div>
                     <!-- *작성자 일시 보이는 버튼 -->
                     <div class="d-flex mt-4">
-                        <button class="dr-button">수정하기</button>
-                        <button class="dr-button">협업마감</button>
-                        <button class="dr-button dr-delete-button">글 삭제하기</button>
+                        <a href="#none" class="dr-button">수정하기</a>
+                        <a href="#none" class="dr-button">협업마감</a>
+                        <a href="#none" class="dr-button dr-delete-button" onclick="drPopupOpen('.dr-popup-delete')">글 삭제하기</a>
                     </div>
                 </div>  
                 <div  class="dr-information"> 
@@ -158,5 +158,18 @@
         </div>
     </div>
     <!--// 컨테이너 --> 
+    <!-- 삭제하기 팝업 -->
+    <div class="dr-dim"></div>
+    <div class="dr-popup-wrap dr-popup-delete">
+        <header>
+            <h1 class="text-center">게시글을 삭제하시겠습니까?</h1>
+        </header>
+        <footer>
+            <div class="d-flex">
+                <button class="dr-button disabled w-100 ">삭제하기</button>
+                <button class="dr-button indigo w-100 mx-0" onclick="drPopupClose(this)">취소</button>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
