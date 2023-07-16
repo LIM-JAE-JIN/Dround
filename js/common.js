@@ -1,4 +1,15 @@
 $(document).ready( function(){
+    // 페이지 배경색 제어
+    $('.dr-container').hasClass('dr-bg-white') && $('body').css('background-color','#fff');
+
+    // 화면 크기를 확인하여 조건에 맞는 경우에만 실행
+    if ($(window).width() <= 576) {
+    $('.dr-container').hasClass('dr-bg-w') && $('body').css('background-color', 'white');
+    } else {
+    // 화면 크기가 576px보다 큰 경우, 백그라운드 색상을 초기화
+    $('body').css('background-color', '');
+    }
+
     // 회원가입 동의 체크 기능
     $('#allAgreeCheck').on('change',function() {
         if ($('#allAgreeCheck').is(":checked")) {

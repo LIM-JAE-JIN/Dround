@@ -21,12 +21,15 @@
         .dr-expert-main .dr-expert-banner .dr-txt{font-size:1.6rem; font-weight: 700; color: #72E0FC;}
         
         .dr-expert-main .dr-expert-select-wrap{ font-size: 1.5rem; padding-bottom: 2.5rem;}
-        .dr-expert-main .dr-expert-select-wrap .dr-select{border: 1px solid #989CA1;padding: 1.4rem 3.8rem 1.4rem 1.75rem; border-radius: 3px;}
+        .dr-expert-main .dr-expert-select-wrap .dr-select{position: relative; border: 1px solid #989CA1;padding: 1.4rem 3.8rem 1.4rem 1.75rem; border-radius: 3px;}
         .dr-expert-main .dr-expert-select-wrap .dr-select a{position: relative; color: #43464B; font-weight: 500;}
         .dr-expert-main .dr-expert-select-wrap .dr-select a::after{content: ""; position: absolute; top: -3px; display: inline-block; width: 23px; height: 23px; background-image: url(../../img/icon/icon_arrow_down.png); background-size: contain;vertical-align: sub;}
         .dr-expert-main .dr-expert-select-wrap .dr-select.on a::after{transform: rotate(180deg);}
-        .dr-expert-main .dr-expert-select-wrap div:nth-of-type(2){display: block;}
-        .dr-expert-main .dr-expert-select-wrap .dr-button{height: 45px; display: flex; width: 144px; justify-content: space-around; align-items: center;}
+        .dr-combobox{position: absolute; top:50px; left:0; width: 238px;height: 345px;background-color: #fff;border-radius: 4px; padding: 2.5rem 2.5rem 3rem 2.5rem;}
+        .dr-combobox > .dr-checkbox:first-child{ border-bottom: 1px solid #E0E3E9; padding-bottom: 1.5rem;}
+        .dr-combobox .dr-checkbox{ width: 50%;}
+        .dr-expert-main .dr-expert-select-wrap .dr-recent{display: block;}
+        .dr-expert-main .dr-expert-select-wrap .dr-button{height: 45px; display: flex; width: 144px; justify-content: space-around; align-items: center; font-weight: 600;}
         .dr-expert-main .dr-expert-cont{display: flex;justify-content: space-between;flex-wrap: wrap;}
         .dr-expert-main .dr-expert-cont > div{margin-top: 3rem; display: inline-block; width: calc(33% - 15px); padding: 2.5rem 3rem; background-color: #fff; border-radius: 5px;}
         .dr-expert-main .dr-expert-cont h5{display: inline-block; padding: 1rem; background-color: #353839; border-radius: 1px; color: #fff; text-align: center; margin-bottom: 4rem;}
@@ -42,7 +45,7 @@
             .dr-expert-main .dr-expert-cont > div{width: 100%;}
             .dr-expert-main .dr-expert-banner h1{font-size: 2.5rem;}
             .dr-expert-main .dr-expert-banner{padding: 4rem 1rem 5rem 3rem;;}
-            .dr-expert-main .dr-expert-select-wrap div:nth-of-type(2){display: none;}
+            .dr-expert-main .dr-expert-select-wrap .dr-recent{display: none;}
         }
         @media (max-width: 350px) {
             .dr-expert-main .dr-expert-select-wrap .dr-button{width: 125px;}
@@ -51,69 +54,6 @@
     </style>
 </head>
 <body>
-        <!-- 헤더 s -->
-        <header class="header">
-            <div class="dr-container header_wrap d-flex justify-content-start align-items-center">
-                <h1><a href="#none"><img src="../../img/icon_logo.png" alt="logo"></a></h1>
-                <div class="d-flex w-100 align-items-center">
-                    <ul class="dr-hd-gnb justify-content-start w-100">
-                        <li onclick="tabBtnClick(this)"><a href="#none">파트너 협업</a></li>
-                        <li onclick="tabBtnClick(this)"><a href="#none">커뮤니티</a></li>
-                        <li onclick="tabBtnClick(this)"><a href="#none">전문가찾기</a></li>
-                    </ul>
-                    <ul class="dr-hd-log justify-content-end w-100">
-                        <li><a href="#none">고객센터</a></li>
-                        <li>
-                            <!-- 비로그인 시 s -->
-                            <div class="dr-user-off d-flex">
-                                <a href="#none">로그인</a>
-                                <a href="#none">회원가입</a>
-                            </div>
-                            <!-- 비로그인 시 e -->
-                            <!-- 로그인 시 s -->
-                            <div class="dr-user-on">
-                                <a href="#none">마이페이지</a>
-                            </div>
-                            <!-- 로그인 시 e -->
-                        </li>
-                    </ul>
-                </div>
-                <div class="dr-user-menu justify-content-end" onclick="drPopupOpen('.dr-hd-m-menu')">
-                    <img src="../../img/icon/icon_hambuger.png" alt="menu-icon">
-                </div>
-            </div>
-            
-            <!-- 모바일 메뉴 s -->
-            <div class="dr-dim"></div>
-            <div class="dr-popup-wrap dr-hd-m-menu">
-                <div class="dr-popup-close" onclick="drPopupClose(this)"></div>
-                <div class="dr-hd-m-gnb">
-                    <h1><a href="#none"><img src="../../img/icon_logo.png" alt="logo"></a></h1>
-                    <ul>
-                        <li onclick="tabBtnClick(this)"><a href="#none">파트너 협업</a></li>
-                        <li onclick="tabBtnClick(this)"><a href="#none">커뮤니티</a></li>
-                        <li onclick="tabBtnClick(this)"><a href="#none">전문가 찾기</a></li>
-                        <li><a href="#none">고객센터</a></li>
-                    </ul>
-                </div>
-                <div class="dr-hd-m-bottom">
-                    <!-- 비로그인 시 s -->
-                    <div class="dr-user-off">
-                        <a href="#none"><button class="dr-button indigo w-100">로그인 하기</button></a>
-                        <a href="#none"><button class="dr-button disabled w-100 mt-3">회원가입 하기</button></a>
-                    </div>
-                    <!-- 비로그인 시 e -->
-                    <!-- 로그인 시 s -->
-                    <div class="dr-user-on" style="display: none;">
-                        <a href="#none"><button class="dr-button indigo w-100">마이페이지</button></a>
-                    </div>
-                    <!-- 로그인 시 e -->
-                </div>
-            </div>
-            <!-- 모바일 메뉴 e -->
-        </header>
-        <div class="dr-header-box"></div>
-        <!-- 헤더 e -->
     <!-- 컨테이너 1-->
     <div class="dr-container dr-bg-type">
         <div class="dr-expert-main mx-auto">
@@ -124,9 +64,65 @@
             <div class="dr-expert-select-wrap d-flex align-items-center mt-5">
                 <div class="dr-select me-4">
                     <a href="#none">직무 전체보기</a>
+                    <div class="dr-combobox dr-fw-500">
+                        <div class="dr-checkbox">
+                            <input type="checkbox" id="drAllCheck1">
+                            <label for="drAllCheck1">전체보기</label>
+                        </div>
+                        <div class="d-flex flex-wrap">
+                            <div class="dr-checkbox">
+                                <input type="checkbox" id="drCheck1">
+                                <label for="drCheck1">시행사</label>
+                            </div>
+                            <div class="dr-checkbox">
+                                <input type="checkbox" id="drCheck2">
+                                <label for="drCheck2">MD/컨설팅</label>
+                            </div>
+                            <div class="dr-checkbox">
+                                <input type="checkbox" id="drCheck3">
+                                <label for="drCheck3">증권사</label>
+                            </div>
+                            <div class="dr-checkbox">
+                                <input type="checkbox" id="drCheck4">
+                                <label for="drCheck4">중개사</label>
+                            </div>
+                            <div class="dr-checkbox">
+                                <input type="checkbox" id="drCheck5">
+                                <label for="drCheck5">운용사</label>
+                            </div>
+                            <div class="dr-checkbox">
+                                <input type="checkbox" id="drCheck6">
+                                <label for="drCheck6">회계법인</label>
+                            </div>
+                            <div class="dr-checkbox">
+                                <input type="checkbox" id="drCheck7">
+                                <label for="drCheck7">시공사</label>
+                            </div>
+                            <div class="dr-checkbox">
+                                <input type="checkbox" id="drCheck8">
+                                <label for="drCheck8">법무법인</label>
+                            </div>
+                            <div class="dr-checkbox">
+                                <input type="checkbox" id="drCheck9">
+                                <label for="drCheck9">신탁사</label>
+                            </div>
+                            <div class="dr-checkbox text-nowrap">
+                                <input type="checkbox" id="drCheck10">
+                                <label for="drCheck10">감정평가법인</label>
+                            </div>
+                            <div class="dr-checkbox text-nowrap">
+                                <input type="checkbox" id="drCheck11">
+                                <label for="drCheck11">대주</label>
+                            </div>
+                            <div class="dr-checkbox">
+                                <input type="checkbox" id="drCheck12">
+                                <label for="drCheck12">유관법인</label>
+                            </div>
+                        </div>  
+                    </div>  
                 </div>
                 <div>
-                    <a href="#none" class="dr-selc-color dr-fw-500">최근 등록순</a>
+                    <a href="#none" class="dr-selc-color dr-fw-500 dr-recent">최근 등록순</a>
                 </div>
                 <div class="ms-auto">
                     <button class="dr-button green">전문가 등록하기</button>
@@ -198,6 +194,9 @@
         </div>    
     </div>
     <!--// 컨테이너 2-->
+    <script>
+
+    </script>
     <!-- 푸터 -->
     <footer class="dr-container">
         <div class="dr-footer-wrap row">

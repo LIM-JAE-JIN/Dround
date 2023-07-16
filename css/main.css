@@ -491,7 +491,7 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 @media (max-width: 576px) {
     .dr-container {padding:0 20px;}
     
-    .dr-bg-w {background-color: #fff;}
+    /* .dr-bg-w {background-color: #fff;} */
     /* ------로그인------ s */
     .dr-cont-wrap{width:100%;padding:1rem;border:0;}
     .dr-join {margin:5rem auto;}
