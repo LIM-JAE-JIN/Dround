@@ -246,7 +246,8 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 .dr-button.dr-plus-button{ color:#1C8F51; border: 1px solid #1C8F51; font-weight: 500;}
 .dr-popup-wrap.dr-popup-vote{max-width: 388px; height: 467px; overflow-y: scroll;}
 .dr-vote-complete{ background-color: #F3F3F3; padding: 1.5rem 1.5rem; border-radius: 3px; ;font-weight: 500; margin-top: 1.5rem; color: #000;}
-.dr-vote-complete .dr-arr{display: inline-block; width: 19px; height: 19px; background: url(../img/icon/icon_arrow_19.png); background-size: 100% auto; vertical-align: sub;}
+.dr-vote-complete .dr-arr{position: relative;}
+.dr-vote-complete .dr-arr:after{content: "";position:relative;display: inline-block;width: 19px;height: 19px;background: url(../img/icon/icon_arrow_19.png);background-size: 100% auto;vertical-align: sub;}
 .dr-vote-complete .dr-vote-close{display: inline-block; width: 19px; height: 19px; background: url(../img/icon/icon_delete.png); background-size: 100% auto; vertical-align: sub;}
 .dr-important{color:#CF2F2F; margin-left: 2px;}
 .dr-picture-wrap{position: relative; border:1px solid #D4D3DA; border-radius: 3px; padding: 1rem 4rem 1rem 1.5rem;}

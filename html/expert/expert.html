@@ -25,9 +25,10 @@
         .dr-expert-main .dr-expert-select-wrap .dr-select a{position: relative; color: #43464B; font-weight: 500;}
         .dr-expert-main .dr-expert-select-wrap .dr-select a::after{content: ""; position: absolute; top: -3px; display: inline-block; width: 23px; height: 23px; background-image: url(../../img/icon/icon_arrow_down.png); background-size: contain;vertical-align: sub;}
         .dr-expert-main .dr-expert-select-wrap .dr-select.on a::after{transform: rotate(180deg);}
-        .dr-combobox{position: absolute; top:50px; left:0; width: 238px;height: 345px;background-color: #fff;border-radius: 4px; padding: 2.5rem 2.5rem 3rem 2.5rem;}
-        .dr-combobox > .dr-checkbox:first-child{ border-bottom: 1px solid #E0E3E9; padding-bottom: 1.5rem;}
-        .dr-combobox .dr-checkbox{ width: 50%;}
+        .dr-combobox{display: none; position: absolute; top: 55px; left: 0; width: 238px; height: 345px; background-color: #fff; border-radius: 4px; padding: 2.5rem 2.5rem 3rem 2.5rem; box-shadow: 0px 0px 40px 0px #C2C6C9;}
+        .dr-combobox.on{display: block;}
+        .dr-combobox > .dr-checkbox.dr-all{ border-bottom: 1px solid #E0E3E9; padding-bottom: 1.5rem; width: 100%; margin-bottom: 1.5rem;}
+        .dr-combobox .dr-checkbox{ width: 50%; margin-bottom: 1.2rem;}
         .dr-expert-main .dr-expert-select-wrap .dr-recent{display: block;}
         .dr-expert-main .dr-expert-select-wrap .dr-button{height: 45px; display: flex; width: 144px; justify-content: space-around; align-items: center; font-weight: 600;}
         .dr-expert-main .dr-expert-cont{display: flex;justify-content: space-between;flex-wrap: wrap;}
@@ -65,7 +66,7 @@
                 <div class="dr-select me-4">
                     <a href="#none">직무 전체보기</a>
                     <div class="dr-combobox dr-fw-500">
-                        <div class="dr-checkbox">
+                        <div class="dr-checkbox dr-all">
                             <input type="checkbox" id="drAllCheck1">
                             <label for="drAllCheck1">전체보기</label>
                         </div>
@@ -118,6 +119,7 @@
                                 <input type="checkbox" id="drCheck12">
                                 <label for="drCheck12">유관법인</label>
                             </div>
+                            <button type="button" class="dr-button indigo w-100 mt-5">글 올리기</button>
                         </div>  
                     </div>  
                 </div>
@@ -194,9 +196,6 @@
         </div>    
     </div>
     <!--// 컨테이너 2-->
-    <script>
-
-    </script>
     <!-- 푸터 -->
     <footer class="dr-container">
         <div class="dr-footer-wrap row">
@@ -225,5 +224,15 @@
         </div>  
     </footer>
     <!-- 푸터 -->
+    <script>
+        $('.dr-select a').on('click', function(e){
+            e.preventDefault();
+            console.log(this)
+            if(!$(this).closest('dr-select').find().hasClass('on')){
+                $('.dr-select, .dr-combobox').toggleClass('on');
+            } 
+
+        })
+    </script>
 </body>
 </html>

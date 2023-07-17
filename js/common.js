@@ -1,6 +1,9 @@
 $(document).ready( function(){
     // 페이지 배경색 제어
-    $('.dr-container').hasClass('dr-bg-white') && $('body').css('background-color','#fff');
+    if($('.dr-container').hasClass('dr-bg-white')){
+        $('body').addClass('dr-bg-white');
+    }
+    // $('.dr-container').hasClass('dr-body-white') && $('body').css('background-color','#fff');
 
     // 화면 크기를 확인하여 조건에 맞는 경우에만 실행
     if ($(window).width() <= 576) {
