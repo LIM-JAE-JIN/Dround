@@ -494,7 +494,60 @@
         </div>
     </div>
     <!--// 컨테이너 --> 
-
+    <!-- 내 정보 공개 여부 선택 23-07-19 내부 페이지에서 띄우기로 협의 -->
+    <div class="dr-dim on"></div>
+    <div class="dr-popup-wrap on disclosure-popup">
+        <div class="dr-popup-close" onclick="drPopupClose(this)"></div>
+        <header>
+            <h1 class="mb-2">내 정보 공개 여부 선택</h1>
+            <p>글 업로드 시 공개될 내 정보 양식을 선택해 주세요.</p>
+        </header>
+        <div class="dr-popup-content">
+            <form method="post">
+                <div class="mb-5">
+                    <div class="dr-checkbox dr-fw-500 mb-3">
+                        <input type="checkbox" id="drCheck1">
+                        <label for="drCheck1">필수 정보만 공개</label>
+                    </div>
+                    <div class="dr-input-wrap mb-3">
+                        <input type="text" class="dr-input" name="title" value="소속" readonly>
+                        <span class="dr-belong-name">B증권사-부-팀</span>
+                    </div>
+                    <p class="dr-selc-color dr-fz-14">*필수 공개 선택 시, 협업 요청을 승인한 파트너만 내 정보를 볼 수 있습니다.</p>
+                </div>
+                <div>    
+                    <div class="dr-checkbox mb-3 dr-fw-500">
+                        <input type="checkbox" id="drCheck2">
+                        <label for="drCheck2">전체 공개</label>
+                    </div>
+                    <div class="dr-pop-profile">
+                        <ul class="dr-fz-13">
+                            <li>
+                                <div>이름</div>
+                                <span>이영훈</span>
+                            </li>
+                            <li>
+                                <div>소속</div>
+                                <span>B증권사-부-팀</span>
+                            </li>
+                            <li>
+                                <div>번호</div>
+                                <span>010-1234-1234</span>
+                            </li>
+                            <li>
+                                <div>이메일</div>
+                                <span>asdf@round.com</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>    
+                    <div class="d-flex mt-5">
+                        <button class="dr-button indigo w-100">글 업로드 하기</button>
+                    </div>
+            </form>
+        </div>
+    </div>
+    <!--// 내 정보 공개 여부 선택 23-07-19 내부 페이지에서 띄우기로 협의 -->
     <script>
         // 적용하기 버튼 클릭시 '찾는 파트너' 중 체크된 인덱스에 맞게 요청사항 나옴
         function applyFn(){
