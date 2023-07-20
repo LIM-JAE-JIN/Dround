@@ -84,15 +84,15 @@ img{max-width:100%;}
 /* color */
 .dr-color-white {color: #fff !important;}
 .dr-color-main { color: #353839 !important; } 
-.dr-color-1 { color: #cc4040 !important; } 
-.dr-color-2 { color: #1c8f51 !important; } 
-.dr-color-3 { color: #411c8f !important; } 
-.dr-color-4 { color: #38aed3 !important; } 
-.dr-color-5 { color: #eb8989 !important; } 
-.dr-color-6 { color: #1c4ecd !important; } 
-.dr-color-7 { color: #894040 !important; } 
-.dr-color-8 { color: #585e19 !important; } 
-.dr-color-9 { color: #979797 !important; } 
+.dr-color-01 { color: #cc4040 !important; } 
+.dr-color-02 { color: #1c8f51 !important; } 
+.dr-color-03 { color: #411c8f !important; } 
+.dr-color-04 { color: #38aed3 !important; } 
+.dr-color-05 { color: #eb8989 !important; } 
+.dr-color-06 { color: #1c4ecd !important; } 
+.dr-color-07 { color: #894040 !important; } 
+.dr-color-08 { color: #585e19 !important; } 
+.dr-color-09 { color: #979797 !important; } 
 .dr-color-10 { color: #be9d29 !important; } 
 .dr-color-11 { color: #615af6 !important; } 
 .dr-color-12 { color: #e87a3c !important; } 
@@ -102,15 +102,15 @@ img{max-width:100%;}
 /* bg_color */
 .dr-bg-main { background-color: #353839 !important; }
 .dr-bg-white {background-color: #fff !important; }
-.dr-bg-1 { background-color: #cc4040 !important; } 
-.dr-bg-2 { background-color: #1c8f51 !important; } 
-.dr-bg-3 { background-color: #411c8f !important; } 
-.dr-bg-4 { background-color: #38aed3 !important; } 
-.dr-bg-5 { background-color: #eb8989 !important; } 
-.dr-bg-6 { background-color: #1c4ecd !important; } 
-.dr-bg-7 { background-color: #894040 !important; } 
-.dr-bg-8 { background-color: #585e19 !important; } 
-.dr-bg-9 { background-color: #979797 !important; } 
+.dr-bg-01 { background-color: #cc4040 !important; } 
+.dr-bg-02 { background-color: #1c8f51 !important; } 
+.dr-bg-03 { background-color: #411c8f !important; } 
+.dr-bg-04 { background-color: #38aed3 !important; } 
+.dr-bg-05 { background-color: #eb8989 !important; } 
+.dr-bg-06 { background-color: #1c4ecd !important; } 
+.dr-bg-07 { background-color: #894040 !important; } 
+.dr-bg-08 { background-color: #585e19 !important; } 
+.dr-bg-09 { background-color: #979797 !important; } 
 .dr-bg-10 { background-color: #be9d29 !important; } 
 .dr-bg-11 { background-color: #615af6 !important; } 
 .dr-bg-12 { background-color: #e87a3c !important; } 
