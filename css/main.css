@@ -521,6 +521,7 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
     .dr-partner-sub main{display: block}
     .dr-partner-sub .dr-information{width: 100%; margin-top: 2rem;} 
     .dr-partner-sub .dr-tit{width: 100%;}
+    .dr-partner-find{padding: 2.5rem 0 0; border: 0; }
     /* 파트너 협업_글 상세 e */
 
     /* 글올리기 s */
