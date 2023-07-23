@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/layout.css">
+    <!-- js -->
+    <script src="../../js/jquery-3.6.3.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+    <script src="../../js/bootstrap/bootstrap.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <title>Dround : 전문가 상세</title>
+</head>
+<body>
+    <!-- 컨테이너 -->
+    <div class="dr-container dr-bg-white">
+        <div class="dr-expert-sub mx-auto">
+            <div>
+                <h1 class="dr-tit">계약금 대출, 선순위 대출등 다양한 계약금 대출, 선순위 대출등 다양한 대출을 중개합니다.대출을 중개합니다.</h1>
+                <div class="mt-4">
+                    <p class="dr-name">김환우 대리</p>
+                </div>
+            </div>
+            <main class="mt-2">
+                <div class="dr-content-wrap">
+                    <div class="dr-business-overview">
+                        <div>
+                            <dl>
+                                <dt>소속</dt>
+                                <dd>A홀딩스 지원 본부</dd>
+                            </dl>
+                            <dl>
+                                <dt>직무</dt>
+                                <dd><span class="dr-icon-txt dr-color-01">시행사</span></dd>
+                            </dl>
+                            <dl>
+                                <dt>직급</dt>
+                                <dd>대리</dd>
+                            </dl>    
+                            <dl>
+                                <dt>자격</dt>
+                                <dd>라이센스 01</dd>
+                            </dl>    
+                            <dl>
+                                <dt>경력</dt>
+                                <dd>-</dd>
+                            </dl>    
+                            <dl>
+                                <dt>수행사업</dt>
+                                <dd>수행사업 01 / 수행사업 02
+                                    수행사업</dd>
+                            </dl>    
+                            <div class="dr-line"></div>
+                            <dl>
+                                <dt>내용</dt>
+                                <dd>
+                                    <p>
+                                        개인사업자, 법인 대출 40억 이내 취급 요청 물건 의뢰 요청 드립니다. 
+                                        가능하신 금융기관 있으시면 관심 부탁드립니다
+
+                                        부산 수영구 수영동에 위치하고 있으며 반경 1km 이내에 초, 중, 고교 등 교육시설이 입지하였으며 수영사적공원, 광안리해수욕장 등 공원시설과 관광지가 가까이 위치해 있습니다. 
+
+                                        대형마트들, 병원 등 근린생활시설이 밀집해 있어 주거쾌적성 및 주거편의성이 높습니다. 또한, 도보 1분이내에 지하철역(망미역)이 위치하여 교통 편의성이 우수합니다.
+                                    </p>
+                                </dd>
+                            </dl>    
+                        </div>
+                    </div>
+                </div>  
+                <div class="dr-expert-information"> 
+                    <div class="dr-adress">
+                        <h4>전문가에게 연락하기</h4>
+                        <div class="d-flex justify-content-between">
+                            <span>연락처</span>
+                            <span>010-1234-1234</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span>이메일</span>
+                            <span class="text-decoration-underline">asdfg@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="dr-expert-banner">
+                        Banner image link
+                    </div>
+                </div>
+            </main>   
+            <!-- *작성자 일시 보이는 버튼 -->
+            <div class="dr-writer-button-wrap d-flex mt-4">
+                <div class="dr-writer-button d-flex">
+                    <a href="#none" class="dr-button">수정하기</a>
+                    <a href="#none" class="dr-button dr-delete-button" onclick="drPopupOpen('.dr-popup-delete')">글 삭제하기</a>
+                </div>
+                <div class="dr-area">
+
+                </div>
+            </div> 
+        </div>
+    </div>
+    <!--// 컨테이너 --> 
+    <!-- 삭제하기 팝업 -->
+    <div class="dr-dim"></div>
+    <div class="dr-popup-wrap dr-popup-delete">
+        <header>
+            <h1 class="text-center">게시글을 삭제하시겠습니까?</h1>
+        </header>
+        <footer>
+            <div class="d-flex">
+                <button class="dr-button disabled w-100 ">삭제하기</button>
+                <button class="dr-button indigo w-100 mx-0" onclick="drPopupClose(this)">취소</button>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
