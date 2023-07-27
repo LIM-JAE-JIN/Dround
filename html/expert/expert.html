@@ -157,37 +157,14 @@
     </div>
     <!--// 컨테이너 2-->
     <script>
-    // 콤보박스 스크립트
-    $(window).on('resize', function() {
-        // 1200px 이하(모바일 일때) 터치적용 
-        if ($(window).width() <= 1200) {
-            $('.dr-select').on('click', function() {
+    // 2023-07-27 콤보박스 스크립트 수정 : pc일떄 호버 기능 제거, 클릭버튼으로 통일 
+        $('.dr-select').on('click', function() {
             if (!$('.dr-select').hasClass('on')) {
                 $('.dr-select, .dr-combobox').addClass('on');
             } else {
                 $('.dr-select, .dr-combobox').removeClass('on');
             }
-            });
-        $(document).on('click touchstart', function(event) {
-            var target = $(event.target);
-            if (!target.closest('.dr-select').length && !target.closest('.dr-combobox').length) {
-                $('.dr-select, .dr-combobox').removeClass('on');
-            }
         });
-        } else {
-        // 1200px 이상(PC 일때) 호버로 변경 
-            $('.dr-select').off('click'); //모바일 일때 스크립트 제거 
-            $(document).off('click touchstart'); //모바일 일때 스크립트 제거
-            $('.dr-select').on('mouseenter', function() {
-                $('.dr-select, .dr-combobox').addClass('on');
-            });
-            $('.dr-combobox').on('mouseleave', function() {
-                $('.dr-select, .dr-combobox').removeClass('on');
-            });
-        }
-    });
-    // 초기 로드 시에도 스크립트를 적용하기 위해 resize 이벤트를 트리거
-    $(window).trigger('resize');
     </script>
 </body>
 </html>
