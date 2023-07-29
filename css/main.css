@@ -618,6 +618,7 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
     /* ------전문가찾기------ s */
     /* 전문가 글등록 s */
     .dr-expert-write-wrap .dr-expert-writer .dr-txt{display: block !important;}
+    .dr-expert-write-wrap .dr-expert-writer .dr-txt div{width:100% !important;}
     /* 전문가 글등록 e */
     /* ------전문가찾기------ e */
 } 
