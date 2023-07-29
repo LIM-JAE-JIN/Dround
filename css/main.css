@@ -417,6 +417,7 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 .dr-expert-write-wrap .text-end a{font-size: 1.3rem; color: #989ca1; line-height: 15px;}
 .dr-expert-write-wrap .text-end a::after{content: "";position:relative;display: inline-block;width: 15px;height: 15px;background: url(../img/icon/icon_arrow_19.png);background-size: 100% auto;vertical-align: bottom;}
 .dr-expert-write-wrap .dr-expert-writer h3{font-size: 1.7rem; font-weight: 600; line-height: 26px; color: #fff; margin-bottom: 2rem;}
+.dr-expert-write-wrap .dr-expert-writer .dr-txt{line-height:30px;}
 .dr-expert-write-wrap .dr-expert-writer .dr-txt div span:nth-of-type(1){color: #D2D2D2; margin-right: 2rem;}
 .dr-expert-write-wrap .dr-expert-writer .dr-txt div span:nth-of-type(1):nth-last-col{margin-right: 1.1rem;}
 .dr-expert-write-wrap .dr-expert-writer .dr-txt div span:nth-of-type(2){color: #fff; font-weight: 600;}
@@ -613,6 +614,12 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
     /* 공개여부팝업 e */
     
     /* ------파트너협업------ e */
+
+    /* ------전문가찾기------ s */
+    /* 전문가 글등록 s */
+    .dr-expert-write-wrap .dr-expert-writer .dr-txt{display: block !important;}
+    /* 전문가 글등록 e */
+    /* ------전문가찾기------ e */
 } 
 @media (max-width: 350px) {
     /* ------파트너협업------ s */
