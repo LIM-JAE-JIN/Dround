@@ -4,9 +4,138 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/layout.css">
+    <!-- js -->
+    <script src="../../js/jquery-3.6.3.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+    <script src="../../js/bootstrap/bootstrap.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <title>Dround : 메인페이지</title>
 </head>
 <body>
-    
+    <!-- 헤더 s -->
+    <header class="header">
+        <div class="dr-container header_wrap d-flex justify-content-start align-items-center">
+            <h1><a href="#none"><img src="../../img/icon_logo.png" alt="logo"></a></h1>
+            <div class="d-flex w-100 align-items-center">
+                <ul class="dr-hd-gnb justify-content-start w-100">
+                    <li onclick="tabBtnClick(this)"><a href="#none">파트너 협업</a></li>
+                    <li onclick="tabBtnClick(this)"><a href="#none">커뮤니티</a></li>
+                    <li onclick="tabBtnClick(this)"><a href="#none">전문가찾기</a></li>
+                </ul>
+                <ul class="dr-hd-log justify-content-end w-100">
+                    <li><a href="#none">고객센터</a></li>
+                    <li>
+                        <!-- 비로그인 시 s -->
+                        <div class="dr-user-off d-flex">
+                            <a href="#none">로그인</a>
+                            <a href="#none">회원가입</a>
+                        </div>
+                        <!-- 비로그인 시 e -->
+                    </li>
+                </ul>
+            </div>
+            <div class="dr-user-menu justify-content-end" onclick="drPopupOpen('.dr-hd-m-menu')">
+                <img src="../../img/icon/icon_hambuger.png" alt="menu-icon">
+            </div>
+        </div>
+        
+        <!-- 모바일 메뉴 s -->
+        <div class="dr-dim"></div>
+        <div class="dr-popup-wrap dr-hd-m-menu">
+            <div class="dr-popup-close" onclick="drPopupClose(this)"></div>
+            <div class="dr-hd-m-gnb">
+                <h1><a href="#none"><img src="../../img/icon_logo.png" alt="logo"></a></h1>
+                <ul>
+                    <li onclick="tabBtnClick(this)"><a href="#none">파트너 협업</a></li>
+                    <li onclick="tabBtnClick(this)"><a href="#none">커뮤니티</a></li>
+                    <li onclick="tabBtnClick(this)"><a href="#none">전문가 찾기</a></li>
+                    <li><a href="#none">고객센터</a></li>
+                </ul>
+            </div>
+            <div class="dr-hd-m-bottom">
+                <!-- 비로그인 시 s -->
+                <div class="dr-user-off">
+                    <a href="#none"><button class="dr-button indigo w-100">로그인 하기</button></a>
+                    <a href="#none"><button class="dr-button disabled w-100 mt-3">회원가입 하기</button></a>
+                </div>
+                <!-- 비로그인 시 e -->
+                <!-- 로그인 시 s -->
+                <div class="dr-user-on" style="display: none;">
+                    <a href="#none"><button class="dr-button indigo w-100">마이페이지</button></a>
+                </div>
+                <!-- 로그인 시 e -->
+            </div>
+        </div>
+        <!-- 모바일 메뉴 e -->
+    </header>
+    <div class="dr-header-box"></div>
+    <!-- 헤더 e -->
+    <div class="dr-container dr-bg-white"> 
+        <div class="dr-main">
+            <div class="dr-main-banner"> <!-- 모바일일때 마진값 - 추가 -->
+                <div class="dr-tit-wrap">
+                    <h1><strong>D</strong>evelop all <strong>rounder</strong></h1>
+                    <p><span>부동산 업 전반의</span> 전문가들을 위한 필수 플랫폼 디라운더</p>
+                </div>
+            </div> 
+            <div class="dr-main-explanation"> <!-- 모바일일때 마진값 수정 -->
+                <div class="dr-txt">디라운더란?</div>
+                <h2>디라운더는 다양한 전문가들이 모여<br> 소통할 수 있는 공간입니다.</h2>
+            </div>
+            <!-- 직업군 이미지 들어갈곳(이미지 미완성) s -->
+            <div class="dr-job-photo">
+                이미지 영역
+            </div>
+            <!-- 직업군 이미지 들어갈곳(이미지 미완성) e -->
+            <div class="dr-main-partner mx-auto"> 
+                <span class="dr-fw-700 dr-color-02 dr-fz-15">파트너 협업 서비스</span>
+                <p class="dr-txt">전국 각지의 부동산 전문가들과<br>합께하는 협업의 장</p>
+                <div class="dr-wrap">
+                    <p class="dr-fw-500 dr-fz-17">파트너 협업 서비스는 여러 부동산 전문가들이 모여 딜을 올리고,
+                        내가 원하는 파트너를 찾을 수 있는 기능을 제공합니다.
+                    </p>
+                    <a hre f="#none" class="dr-button">파트너 협업 바로가기</a>
+                </div>
+                <div class="dr-box-wrap"><!--  반응형일때 플렉스 제거 -->
+                    <div>
+                        <img src="" alt="이미지">
+                        <p>전국 각지의 <strong>부동산 전문가와<br> 협업</strong>을 할 수 있습니다.</p>
+                    </div>
+                    <div>
+                        <img src="" alt="이미지">
+                        <p>내가 <strong>선택한 직무의 파트너만</strong><br> 글을 볼 수 있습니다.</p>
+                    </div>
+                    <div>
+                        <img src="" alt="이미지">
+                        <p>협업 승인 절차를 통해 <strong>내 정보<br> 노출을 막을 수 있습니다.</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="dr-main-community"> <!-- 반응형일때 배경이미지 변경 -->
+                <div class="dr-tit-wrap">
+                    <p>업계 사람들과 <strong>공통된 관심사로</strong></p>
+                    <p><strong>다양한 의견</strong>을 공유해보세요.</p>
+                    <a href="#none" class="dr-button mx-auto">커뮤니티 바로가기</a>
+                </div>
+            </div>
+            <div class="dr-main-expert mx-auto">
+                <div class="dr-tit-wrap">
+                    <p>전문가 찾기를 통해<br>나를 브랜딩 해보세요.</p>
+                    <a href="#none" class="dr-button">전문가 찾기 바로 가기</a>
+                </div> 
+                <img src="./img/main/keyring.png" alt="증권사, D.kim, 키링"> <!-- 모바일 일떄 오른쪽 -130px -->
+            </div>
+            <div class="dr-main-cscenter mx-auto">
+                <div class="dr-tit-wrap">
+                    <span>Contact Us</span>
+                    <p>디라운드 서비스가 궁금하시다면 언제든 문의해주세요</p>
+                    <a href="#none" class="dr-button mx-auto">1:1 문의하기</a>
+                </div> 
+            </div>
+        </div>    
+    </div>
 </body>
 </html>
