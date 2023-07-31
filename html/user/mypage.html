@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../..//css/layout.css">
+    <!-- js -->
+    <script src="../../js/jquery-3.6.3.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+    <script src="../../js/bootstrap/bootstrap.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <title>마이페이지</title>
+</head>
+<body>
+    <!-- 컨테이너 -->
+    <div class="dr-container dr-bg-white">
+        <div class="dr-community-main mx-auto">
+            <div class="dr-title-wrap">
+                <h2>마이페이지</h2>
+            </div> 
+            <div class="dr-my-tab-wrap">
+                <ul class="dr-my-tab">
+                    <li class="dr-my-list-tab dr_on me-4" onclick="tabBtnClick(this)">활동 현황 보기</li>
+                    <li class="dr-my-use-tab" onclick="tabBtnClick(this)">회원 정보 수정</li>
+                </ul>
+            </div>
+        </div>
+        <div class="dr-my-list-wrap">
+            123123123
+        </div>
+        <div class="dr-my-use-wrap" style="display: none;">
+                asdsdfsdfsdf
+        </div>
+    </div>
+    <!--// 컨테이너 -->
+    <script>
+        // 고객센터 탭
+        $('.dr-my-tab li').on('click',function(){
+            if($('.dr-my-list-tab').hasClass('dr_on')){
+                $('.dr-my-list-wrap').css('display', 'block');
+            }else{
+                $('.dr-my-list-wrap').css('display', 'none');
+            }
+            if($('.dr-my-use-tab').hasClass('dr_on')){
+                $('.dr-my-use-wrap').css('display', 'block');
+            }else{
+                $('.dr-my-use-wrap').css('display', 'none');
+            }
+        });
+    </script>
+</body>
+</html>
