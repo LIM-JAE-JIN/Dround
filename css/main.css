@@ -533,6 +533,15 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 .dr-cs-use-partner-box li:nth-child(2n) {margin-right:0;}
 .dr-cs-use-partner-box li p {font-size:20px; line-height: 30px; font-weight: 600; color:#1c8f51; margin-top:25px;}
 .dr-cs-use-partner-box li span {display: block; margin-top:15px; color:#989CA1; font-size:16px; line-height: 24px; font-weight:500;}
+
+.dr-cs-detail-wrap {margin:0 auto; max-width:1046px;}
+.dr-cs-detail-tit-wrap {padding-bottom:25px; border-bottom:1px solid #989CA1;}
+.dr-cs-detail-tit-wrap h2 {font-size:23px; line-height:35px;}
+.dr-cs-detail-tit-wrap .dr-cs-detail-date {font-size:15px; line-height:18px; font-weight:500; color:#c2c2c2; margin-top:4px;}
+.dr-cs-detail-txt-area {padding:60px 0; font-size:16px; line-height:25px; color:#505866;}
+.dr-cs-detail-btn-wrap {display: flex; align-items: center;}
+.dr-cs-detail-btn-wrap button {font-size:15px; line-height:18px; font-weight:500; color:#c2c2c2; border:0; background-color: #fff;}
+.dr-cs-detail-btn-wrap .dr-cs-detail-delete {margin-left:12px; color:#ea5555;}
 /* ------고객센터------ e */
 
 /* ------반응형------ s */

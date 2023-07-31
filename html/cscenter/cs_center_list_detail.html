@@ -12,58 +12,43 @@
     <script src="../../js/jquery-ui.min.js"></script>
     <script src="../../js/bootstrap/bootstrap.min.js"></script>
     <script src="../../js/common.js"></script>
-    <title>고객센터</title>
-    <style>
-        .dr-cs-tab-wrap {display: flex; justify-content: space-between; align-items: center;}
-        .dr-cs-tab {display: flex;}
-        .dr-cs-tab li {position: relative; font-size: 18px; font-style: normal; font-weight: 600; cursor:pointer; line-height: 28px;}
-        .dr-cs-tab li.dr_on {color: #1C8F51;}
-        .dr-cs-tab li.dr_on::before {content:''; width: 100%; height: 2px; background-color:#1C8F51; position: absolute; bottom:-3px;}
-        .dr-cs-btn a {display: block; font-size: 13px; font-weight: 500; line-height: 20px; color:#989CA1; padding:8px 26px; border:1px solid #d2d2d2; border-radius:3px;}
-        .dr-cs-list-wrap {margin:30px auto 0; border-top:1px solid #989CA1; max-width:1200px;}
-        .dr-cs-list-wrap ul li {display: flex; justify-content:space-between; align-items: center; padding:40px 30px;}
-        .dr-cs-list-wrap ul .dr-cs-list-top {background-color:#f3f3f3; padding:6px 30px; font-size:12px; color:#989CA1; line-height: 20px; font-weight:500;}
-    </style>
+    <title>고객센터 글</title>
 </head>
 <body>
     <!-- 컨테이너 -->
-    <div class="dr-container">
-        <div class="dr-community-main mx-auto">
-            <div class="dr-title-wrap">
-                <h2>고객센터</h2>
-            </div> 
-            <div class="dr-cs-tab-wrap">
-                <ul class="dr-cs-tab">
-                    <li class="dr-cs-list-tab dr_on me-4" onclick="tabBtnClick(this)">공지사항</li>
-                    <li class="dr-cs-use-tab" onclick="tabBtnClick(this)">서비스 이용안내</li>
-                </ul>
-                <div class="dr-cs-btn">
-                    <a href="#none">공지 등록하기</a>
-                </div>
+    <div class="dr-container dr-bg-white">
+        <div class="dr-cs-detail-wrap">
+            <div class="dr-cs-detail-tit-wrap">
+                <h2>[중요] '이지스부산특구부동산투자신탁제1호' 2기 배당금 지급 안내</h2>
+                <p class="dr-cs-detail-date">22.03.02</p>
+            </div>
+            <div class="dr-cs-detail-txt-area">
+                <p>
+                    안녕하세요.<br/>
+                    운영진입니다.<br/>
+                    <br/>
+                    투자정보 메인카드의 '평가금액 및 평가손익'의 기준이 변경됨을 안내 드립니다.<br/>
+                    기존의 상품 평가는 고객님이 보유한 브릭(좌수)에서 펀드 평가 기준이 적용되지 않음에 따라 정정하고자 합니다.<br/>
+                    <br/>
+                    2022년 10월24일(월) 기준으로 비브릭앱 서비스를 통해서 확인하실 수 있습니다.<br/>
+                    문의사항이 있으실 경우 고객센터(1688-3279) / 비브릭 앱 1:1문의를 이용해 주시기 바랍니다.<br/>
+                    감사합니다.<br/>
+                    ================================================================<br/>
+                    변경 적용 예정일 : 2022년 10월 24일(월)<br/>
+                    <br/>
+                    변경사항 : 평가금액 및 평가손익 기준 정보 변경<br/>
+                    <br/>
+                    변경내용(홈 화면> 메인카드)<br/>
+                    <br/>
+                    1. 평가금액 [기존] 평가금액 = 보유좌수*개인간거래 최종 거래금액(장마감시 평균가) [변경] 평가금액 = 보유좌수* 최종 펀드 기준가
+                </p>
+            </div>
+            <div class="dr-cs-detail-btn-wrap">
+                <button class="dr-cs-detail-edit">수정하기</button>
+                <button class="dr-cs-detail-delete">삭제하기</button>
             </div>
         </div>
-        <div class="dr-cs-list-wrap">
-            <ul>
-                <li class="dr-cs-list-top">
-                    <div class="d-flex">
-                        <p class="me-5">NO.</p>
-                        <p>제목</p>
-                    </div>
-                    <p>등록일</p>
-                </li>
-                <li>
-                    <div class="d-flex">
-                        <p class="me-5">04</p>
-                        <p>[중요] '이지스부산특구부동산투자신탁제1호' 2기 배당금 지급 안내</p>
-                    </div>
-                    <p>22.03.02</p>
-                </li>
-            </ul>
-        </div>
-        <div class="dr-cs-use-wrap"></div>
     </div>
     <!--// 컨테이너 -->
-    <script>
-    </script>
 </body>
 </html>
