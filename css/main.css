@@ -17,7 +17,8 @@
 .dr-main .dr-main-partner > .dr-wrap{margin-top: 2.5rem; display: flex; justify-content: space-between;}
 .dr-main .dr-main-partner .dr-button{width: 159px; height: 50px; color: #131414; font-size: 1.5rem;}
 .dr-main .dr-main-partner .dr-box-wrap{display: flex; text-align: center; justify-content: space-between; margin-top: 5rem;}
-.dr-main .dr-main-partner .dr-box-wrap > div{width: 33%; border-radius: 5px; box-shadow: 0px 0px 40px 5px rgba(201, 201, 201, 0.25);}
+.dr-main .dr-main-partner .dr-box-wrap > div{width: 33%; border-radius: 5px; margin-right: 2rem; box-shadow: 0px 0px 40px 5px rgba(201, 201, 201, 0.25);}
+.dr-main .dr-main-partner .dr-box-wrap > div:last-child{margin-right:0;}
 .dr-main .dr-main-partner .dr-box-wrap > div img{height: 252px; background-color: #2DAF6E; display: block; border-radius: 5px 5px 0 0;}
 .dr-main .dr-main-partner .dr-box-wrap > div:nth-of-type(2) img{background-color: #222524;}
 .dr-main .dr-main-partner .dr-box-wrap > div:nth-of-type(3) img{background-color: #A3D3DD;}
@@ -645,7 +646,7 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
     .dr-main .dr-main-partner .dr-button{margin-top: 2rem;}
 
     .dr-main .dr-main-partner .dr-box-wrap{display: block;}
-    .dr-main .dr-main-partner .dr-box-wrap > div{width: 100%; margin-top: 2rem;}
+    .dr-main .dr-main-partner .dr-box-wrap > div{width: 100%; margin-top: 2rem; margin-right: 0;}
     .dr-main .dr-main-community{margin-top: 10rem; height: 205px; background-size: 100% 100%;}
     .dr-main .dr-main-community .dr-tit-wrap p{font-size: 2rem;}
 
