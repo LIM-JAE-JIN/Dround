@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../..//css/layout.css">
+    <!-- js -->
+    <script src="../../js/jquery-3.6.3.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+    <script src="../../js/bootstrap/bootstrap.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <title>admin관리자</title>
+</head>
+<body>
+    <!-- 컨테이너 -->
+    <div class="dr-container">
+        <div class="dr-admin-main">
+            <header>
+                <div class="dr-fz-18 dr-fw-600"><img src="../../img/icon_logo_black.png" alt="logo" style="width:160px;"> Admin</div>
+                <div class="d-flex dr-fz-16 align-items-center">
+                    <a href="#none" class="me-5" onclick="tabBtnClick(this)">내정보</a>
+                    <a href="#none">로그아웃</a>
+                </div>
+            </header>
+            <div class="dr-admin-cont-wrap">
+                <div class="dr-admin-left-cont">
+                    <ul>
+                        <li class="dr-admin-tit mb-5 dr_on" onclick="tabBtnClick(this)"><a href="#none">관리자 메인</a></li>
+                        <li class="dr-admin-tit mb-4">회원관리</li>
+                        <li onclick="tabBtnClick(this)"><a href="#none">회원 현황</a></li>
+                        <li onclick="tabBtnClick(this)"><a href="#none">탈퇴 회원 관리</a></li>
+                        <li class="dr-admin-tit mb-4 mt-5">전체 기능</li>
+                        <li onclick="tabBtnClick(this)"><a href="#none">파트너 협업</a></li>
+                        <li onclick="tabBtnClick(this)"><a href="#none">커뮤니티</a></li>
+                        <li onclick="tabBtnClick(this)"><a href="#none">전문가 찾기</a></li>
+                    </ul>
+                </div>
+                <div class="dr-admin-right-cont">
+                    <article>
+                        <h2>Today</h2>
+                        <ul class="dr-admin-row-list">
+                            <li>
+                                <div class="dr-admin-tit">총 방문</div>
+                                <div class="dr-admin-txt"><span class="dr-fw-600">0</span></div>
+                            </li>
+                            <li>
+                                <div class="dr-admin-tit">회원</div>
+                                <div class="dr-admin-txt">
+                                    신규회원 <span class="dr-color-01 dr-fw-600 pe-4">0</span>
+                                    승인 전 회원 <a href="#none" class="dr-color-06 dr-fw-600 text-decoration-underline">0</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dr-admin-tit">파트너 협업</div>
+                                <div class="dr-admin-txt">
+                                    신규 글 <span class="dr-color-01 dr-fw-600 pe-4">0</span>
+                                    의향서 요청 <span class="dr-color-01 dr-fw-600 pe-4">0</span>
+                                    요청서 승인 <span class="dr-color-01 dr-fw-600 pe-4">0</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dr-admin-tit">커뮤니티</div>
+                                <div class="dr-admin-txt">
+                                    신규 글 <span class="dr-color-01 dr-fw-600 pe-4">0</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dr-admin-tit">전문가</div>
+                                <div class="dr-admin-txt">
+                                    신규 글 <span class="dr-color-01 dr-fw-600 pe-4">0</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </article>
+                    <article>
+                        <h2>관리자 계정 관리</h2>
+                        <button class="dr-admin-add-btn">관리자 추가하기</button>
+                        <ul class="dr-admin-col-list">
+                            <li>
+                                <div class="dr-col-1">이름</div>
+                                <div class="dr-col-2">계정</div>
+                                <div class="dr-col-3">권한</div>
+                            </li>
+                            <li>
+                                <div class="dr-col-1">이지연</div>
+                                <div class="dr-col-2">asdf@naver.com</div>
+                                <div class="dr-col-3">관리자</div>
+                                <div class="dr-col-btn-wrap">
+                                    <button class="dr-color-06">수정하기</button>
+                                    <button class="dr-color-01">삭제하기</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--// 컨테이너 -->
+</body>
+</html>

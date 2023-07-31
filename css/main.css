@@ -544,6 +544,39 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 .dr-cs-detail-btn-wrap .dr-cs-detail-delete {margin-left:12px; color:#ea5555;}
 /* ------고객센터------ e */
 
+/* ------어드민 관리자------ s */
+
+/* 메인 s */
+.dr-admin-main {border:1px solid #000; max-width:1200px; margin:0 auto;}
+.dr-admin-main header {padding:20px 30px; display: flex; justify-content: space-between; align-items: center; border-bottom:1px solid #000;}
+.dr-admin-main header a.dr_on {font-weight: bold; font-size:18px; color:darkred;}
+.dr-admin-cont-wrap {display: flex;}
+.dr-admin-left-cont {width: 220px; flex-shrink: 0; padding:50px 18px;}
+.dr-admin-left-cont ul {margin-bottom: 30px;}
+.dr-admin-left-cont ul li.dr-admin-tit {margin-left:0; margin-bottom:20px; font-size:20px; font-weight:500;}
+.dr-admin-left-cont ul li {font-size:16px; margin-left:20px; margin-bottom:10px;}
+.dr-admin-left-cont ul li.dr_on a {font-weight:600; color:darkred;}
+.dr-admin-right-cont {width: 100%; border-left:1px solid #000; padding:50px 30px;}
+.dr-admin-right-cont article {margin-bottom:60px; position: relative;}
+.dr-admin-right-cont article .dr-admin-add-btn {position: absolute; top:5px; right:0; background-color: #363739; color:#fff; border:0; padding:5px 10px; font-size:14px; border-radius:3px;}
+.dr-admin-right-cont h2 {font-size:24px; font-weight:bold; margin-bottom:20px;}
+.dr-admin-row-list {display: flex; flex-wrap:wrap; border-top:1px solid #ddd;}
+.dr-admin-row-list li {display: flex; align-items: center; width: 50%; font-size:14px; border-bottom:1px solid #ddd; border-right:1px solid #ddd;}
+.dr-admin-row-list li .dr-admin-tit {width: 150px; background-color: #f3f3f3; padding:8px 15px; font-weight:600;}
+.dr-admin-row-list li .dr-admin-txt { padding:8px 15px;}
+.dr-admin-col-list {width: 100%; border-top:1px solid #ddd;}
+.dr-admin-col-list li {position: relative; display: flex; padding:14px 20px; font-size:14px; font-weight:bold; border-bottom:1px solid #ddd;}
+.dr-admin-col-list li:first-child {background-color: #f3f3f3; font-size:13px; color:#aaa;}
+.dr-admin-col-list li > div {flex-shrink: 0;}
+.dr-admin-col-list li .dr-col-1 {width: 100px;}
+.dr-admin-col-list li .dr-col-2 {width: 250px;}
+.dr-admin-col-list li .dr-col-3 {width: 100px;}
+.dr-admin-col-list li .dr-col-btn-wrap {position: absolute; right:20px;}
+.dr-admin-col-list li .dr-col-btn-wrap button {border:0; background-color: transparent; font-weight: bold;}
+/* 메인 e */
+
+/* ------어드민 관리자------ e */
+
 /* ------반응형------ s */
 @media (max-width: 1400px) {
 } 
