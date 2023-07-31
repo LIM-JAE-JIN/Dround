@@ -5,83 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- css -->
-    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="../../css/layout.css">
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/layout.css">
     <!-- js -->
-    <script src="../../js/jquery-3.6.3.min.js"></script>
-    <script src="../../js/jquery-ui.min.js"></script>
-    <script src="../../js/bootstrap/bootstrap.min.js"></script>
-    <script src="../../js/common.js"></script>
+    <script src="./js/jquery-3.6.3.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/bootstrap/bootstrap.min.js"></script>
+    <script src="./js/common.js"></script>
     <title>Dround : 메인페이지</title>
 </head>
 <body>
-    <!-- 헤더 s -->
-    <header class="header">
-        <div class="dr-container header_wrap d-flex justify-content-start align-items-center">
-            <h1><a href="#none"><img src="../../img/icon_logo.png" alt="logo"></a></h1>
-            <div class="d-flex w-100 align-items-center">
-                <ul class="dr-hd-gnb justify-content-start w-100">
-                    <li onclick="tabBtnClick(this)"><a href="#none">파트너 협업</a></li>
-                    <li onclick="tabBtnClick(this)"><a href="#none">커뮤니티</a></li>
-                    <li onclick="tabBtnClick(this)"><a href="#none">전문가찾기</a></li>
-                </ul>
-                <ul class="dr-hd-log justify-content-end w-100">
-                    <li><a href="#none">고객센터</a></li>
-                    <li>
-                        <!-- 비로그인 시 s -->
-                        <div class="dr-user-off d-flex">
-                            <a href="#none">로그인</a>
-                            <a href="#none">회원가입</a>
-                        </div>
-                        <!-- 비로그인 시 e -->
-                    </li>
-                </ul>
-            </div>
-            <div class="dr-user-menu justify-content-end" onclick="drPopupOpen('.dr-hd-m-menu')">
-                <img src="../../img/icon/icon_hambuger.png" alt="menu-icon">
-            </div>
-        </div>
-        
-        <!-- 모바일 메뉴 s -->
-        <div class="dr-dim"></div>
-        <div class="dr-popup-wrap dr-hd-m-menu">
-            <div class="dr-popup-close" onclick="drPopupClose(this)"></div>
-            <div class="dr-hd-m-gnb">
-                <h1><a href="#none"><img src="../../img/icon_logo.png" alt="logo"></a></h1>
-                <ul>
-                    <li onclick="tabBtnClick(this)"><a href="#none">파트너 협업</a></li>
-                    <li onclick="tabBtnClick(this)"><a href="#none">커뮤니티</a></li>
-                    <li onclick="tabBtnClick(this)"><a href="#none">전문가 찾기</a></li>
-                    <li><a href="#none">고객센터</a></li>
-                </ul>
-            </div>
-            <div class="dr-hd-m-bottom">
-                <!-- 비로그인 시 s -->
-                <div class="dr-user-off">
-                    <a href="#none"><button class="dr-button indigo w-100">로그인 하기</button></a>
-                    <a href="#none"><button class="dr-button disabled w-100 mt-3">회원가입 하기</button></a>
-                </div>
-                <!-- 비로그인 시 e -->
-                <!-- 로그인 시 s -->
-                <div class="dr-user-on" style="display: none;">
-                    <a href="#none"><button class="dr-button indigo w-100">마이페이지</button></a>
-                </div>
-                <!-- 로그인 시 e -->
-            </div>
-        </div>
-        <!-- 모바일 메뉴 e -->
-    </header>
-    <div class="dr-header-box"></div>
-    <!-- 헤더 e -->
     <div class="dr-container dr-bg-white"> 
         <div class="dr-main">
-            <div class="dr-main-banner"> <!-- 모바일일때 마진값 - 추가 -->
+            <div class="dr-main-banner">
                 <div class="dr-tit-wrap">
                     <h1><strong>D</strong>evelop all <strong>rounder</strong></h1>
                     <p><span>부동산 업 전반의</span> 전문가들을 위한 필수 플랫폼 디라운더</p>
                 </div>
             </div> 
-            <div class="dr-main-explanation"> <!-- 모바일일때 마진값 수정 -->
+            <div class="dr-main-explanation">
                 <div class="dr-txt">디라운더란?</div>
                 <h2>디라운더는 다양한 전문가들이 모여<br> 소통할 수 있는 공간입니다.</h2>
             </div>
@@ -99,7 +41,7 @@
                     </p>
                     <a hre f="#none" class="dr-button">파트너 협업 바로가기</a>
                 </div>
-                <div class="dr-box-wrap"><!--  반응형일때 플렉스 제거 -->
+                <div class="dr-box-wrap">
                     <div>
                         <img src="" alt="이미지">
                         <p>전국 각지의 <strong>부동산 전문가와<br> 협업</strong>을 할 수 있습니다.</p>
@@ -114,7 +56,7 @@
                     </div>
                 </div>
             </div>
-            <div class="dr-main-community"> <!-- 반응형일때 배경이미지 변경 -->
+            <div class="dr-main-community">
                 <div class="dr-tit-wrap">
                     <p>업계 사람들과 <strong>공통된 관심사로</strong></p>
                     <p><strong>다양한 의견</strong>을 공유해보세요.</p>
@@ -125,8 +67,11 @@
                 <div class="dr-tit-wrap">
                     <p>전문가 찾기를 통해<br>나를 브랜딩 해보세요.</p>
                     <a href="#none" class="dr-button">전문가 찾기 바로 가기</a>
-                </div> 
-                <img src="./img/main/keyring.png" alt="증권사, D.kim, 키링"> <!-- 모바일 일떄 오른쪽 -130px -->
+                </div>
+                <!-- 2023-07-31 수정 이미지 추가 s -->
+                <img src="./img/main/img_section5_02.png" class="dr-green-circle" alt="반투명 초록색 반원">
+                <img src="./img/main/keyring.png" class="dr-keyring" alt="증권사, D.kim, 키링">
+                <!-- 2023-07-31 수정 이미지 추가 e -->
             </div>
             <div class="dr-main-cscenter mx-auto">
                 <div class="dr-tit-wrap">
