@@ -403,7 +403,7 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 .dr-partner-find div > p {background-color: #E8E8EB; font-size: 1.5rem; padding: 1rem 2.5rem; font-weight: 700;}
 .dr-partner-sub caption{position: absolute;top:auto;left:-10000px; width:1px;height:1px;overflow:hidden;}
 .dr-partner-sub table{width: 100%; border-collapse: collapse;}
-.dr-partner-sub table, th, td{border: 1px solid #e8e8e8;}
+.dr-partner-sub table, .dr-partner-sub th, .dr-partner-sub td{border: 1px solid #e8e8e8;}
 .dr-partner-sub th{width: 100px; text-align: center; color: #989CA1; font-weight: 500; font-size: 1.5rem; padding: 2rem 0; border-right: 0;}
 .dr-partner-sub td{font-size: 1.6rem; font-weight: 600; padding: 2rem 2rem 2rem 0; border-left: 0; line-height: 21px;}
 .dr-information{width: 380px; height: 228px; padding: 2.5rem 3rem 3rem 3rem; color: #fff; background: #353839; border-radius: 3px;} 
