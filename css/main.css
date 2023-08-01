@@ -548,9 +548,7 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 /* ------고객센터------ e */
 
 /* ------어드민 관리자------ s */
-
-/* 메인 s */
-.dr-admin-main {border:1px solid #000; max-width:1200px; margin:0 auto;}
+.dr-admin-main {border:1px solid #000; max-width:1280px; margin:0 auto;}
 .dr-admin-main header {padding:20px 30px; display: flex; justify-content: space-between; align-items: center; border-bottom:1px solid #000;}
 .dr-admin-main header a.dr_on {font-weight: bold; font-size:18px; color:darkred;}
 .dr-admin-cont-wrap {display: flex;}
@@ -565,19 +563,24 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 .dr-admin-right-cont h2 {font-size:24px; font-weight:bold; margin-bottom:20px;}
 .dr-admin-row-list {display: flex; flex-wrap:wrap; border-top:1px solid #ddd;}
 .dr-admin-row-list li {display: flex; align-items: center; width: 50%; font-size:14px; border-bottom:1px solid #ddd; border-right:1px solid #ddd;}
-.dr-admin-row-list li .dr-admin-tit {width: 150px; background-color: #f3f3f3; padding:8px 15px; font-weight:600;}
+.dr-admin-row-list.dr-w-100 li {width: 100%; font-weight:500; border-right:0;}
+.dr-admin-row-list li .dr-admin-tit {width: 150px; background-color: #f3f3f3; padding:8px 15px; font-weight:600; height: 100%;}
 .dr-admin-row-list li .dr-admin-txt { padding:8px 15px;}
 .dr-admin-col-list {width: 100%; border-top:1px solid #ddd;}
-.dr-admin-col-list li {position: relative; display: flex; padding:14px 20px; font-size:14px; font-weight:bold; border-bottom:1px solid #ddd;}
-.dr-admin-col-list li:first-child {background-color: #f3f3f3; font-size:13px; color:#aaa;}
+.dr-admin-col-list li {position: relative; display: flex; padding:14px 20px; font-size:14px; font-weight:bold; border-bottom:1px solid #ddd; word-break:keep-all;}
+.dr-admin-col-list li:first-child {background-color: #f3f3f3; font-size:13px; color:#aaa; padding:8px 20px;}
 .dr-admin-col-list li > div {flex-shrink: 0;}
+.dr-admin-col-list li .dr-col {width: 50px;}
 .dr-admin-col-list li .dr-col-1 {width: 100px;}
-.dr-admin-col-list li .dr-col-2 {width: 250px;}
-.dr-admin-col-list li .dr-col-3 {width: 100px;}
+.dr-admin-col-list li .dr-col-2 {width: 150px;}
+.dr-admin-col-list li .dr-col-3 {width: 200px;}
+.dr-admin-col-list li .dr-col-4 {width: 250px;}
+.dr-admin-col-list li .dr-col-5 {width: 300px;}
 .dr-admin-col-list li .dr-col-btn-wrap {position: absolute; right:20px;}
 .dr-admin-col-list li .dr-col-btn-wrap button {border:0; background-color: transparent; font-weight: bold;}
-/* 메인 e */
-
+.dr-pw-edit-btn {background-color: transparent; border:0; font-weight:bold; padding:0;}
+.dr-title-search-box.dr-admin-search {position: absolute; top:-6px; right:0;}
+.dr-drop-btn {border:0; background: url(../img/icon/icon_arrow_up.png) no-repeat center; background-size:cover; width:24px; height:24px; padding:0; position: absolute; top:50%; transform:translateY(-50%); right:0;}
 /* ------어드민 관리자------ e */
 
 /* ------반응형------ s */
