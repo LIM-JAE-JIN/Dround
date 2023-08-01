@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../..//css/layout.css">
+    <!-- js -->
+    <script src="../../js/jquery-3.6.3.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+    <script src="../../js/bootstrap/bootstrap.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <title>admin관리자_전문가찾기</title>
+</head>
+<body>
+    <!-- 컨테이너 -->
+    <div class="dr-container">
+        <div class="dr-admin-main">
+            <header>
+                <div class="dr-fz-18 dr-fw-600"><img src="../../img/icon_logo_black.png" alt="logo" style="width:160px;"> Admin</div>
+                <div class="d-flex dr-fz-16 align-items-center">
+                    <a href="#none" class="me-5" onclick="tabBtnClick(this)">내정보</a>
+                    <a href="#none">로그아웃</a>
+                </div>
+            </header>
+            <div class="dr-admin-cont-wrap">
+                <div class="dr-admin-left-cont">
+                    <ul>
+                        <li class="dr-admin-tit mb-5" onclick="tabBtnClick(this)"><a href="#none">관리자 메인</a></li>
+                        
+                        <li class="dr-admin-tit mb-4">회원관리</li>
+                        <li onclick="tabBtnClick(this)"><a href="#none">회원 현황</a></li>
+                        <li onclick="tabBtnClick(this)"><a href="#none">탈퇴 회원 관리</a></li>
+
+                        <li class="dr-admin-tit mb-4 mt-5">전체 기능</li>
+                        <li onclick="tabBtnClick(this)"><a href="#none">파트너 협업</a></li>
+                        <li onclick="tabBtnClick(this)"><a href="#none">커뮤니티</a></li>
+                        <li class="dr_on" onclick="tabBtnClick(this)"><a href="#none">전문가 찾기</a></li>
+                    </ul>
+                </div>
+                <!-- 오른쪽 컨텐츠 s -->
+                <div class="dr-admin-right-cont">
+                    <article>
+                        <h2>전문가 찾기 현황</h2>
+                        <ul class="dr-admin-row-list dr-w-100">
+                            <li>
+                                <div class="dr-admin-tit">글 현황</div>
+                                <div class="dr-admin-txt">전체 글 <span class="dr-color-01 dr-fw-600">0</span></div>
+                            </li>
+                            <li>
+                                <div class="dr-admin-tit">직군 전문가</div>
+                                <div class="dr-admin-txt">
+                                    시행사 <span class="dr-color-01 dr-fw-600 pe-5">0</span>
+                                    증권사 <span class="dr-color-01 dr-fw-600 pe-5">0</span>
+                                    운용사 <span class="dr-color-01 dr-fw-600 pe-5">0</span>
+                                    시공사 <span class="dr-color-01 dr-fw-600 pe-5">0</span>
+                                    신탁사 <span class="dr-color-01 dr-fw-600 pe-5">0</span>
+                                    대주 <span class="dr-color-01 dr-fw-600 pe-5">0</span>
+                                    MD/컨설팅 <span class="dr-color-01 dr-fw-600 pe-5">0</span>
+                                    중개사 <span class="dr-color-01 dr-fw-600 pe-5">0</span>
+                                    <br/>
+                                    <br/>
+                                    회계법인 <span class="dr-color-01 dr-fw-600 pe-5">0</span>
+                                    법무법인 <span class="dr-color-01 dr-fw-600 pe-5">0</span>
+                                    감정평가법인 <span class="dr-color-01 dr-fw-600 pe-5">0</span>
+                                    유관법인 <span class="dr-color-01 dr-fw-600 pe-5">0</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </article>
+                    <article>
+                        <h2>전문가 찾기 등록 리스트</h2>
+                        <ul class="dr-admin-col-list">
+                            <li>
+                                <div class="dr-col-1">생성일</div>
+                                <div class="dr-col-1">이름</div>
+                                <div class="dr-col-3">
+                                    <div class="position-relative d-inline-block pe-5">
+                                        회사
+                                        <button class="dr-drop-btn"></button>
+                                    </div>
+                                </div>
+                                <div class="dr-col-2">소속</div>
+                                <div class="dr-col-2">
+                                    <div class="position-relative d-inline-block pe-5">
+                                        직무
+                                        <button class="dr-drop-btn"></button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dr-col-1">2023.08.01</div>
+                                <div class="dr-col-1">이지연</div>
+                                <div class="dr-col-3">현대 중공 공인중개사</div>
+                                <div class="dr-col-2">감정평가법인</div>
+                                <div class="dr-col-2">감정평가법인</div>
+                                <div class="dr-col-btn-wrap">
+                                    <button class="dr-color-06">수정하기</button>
+                                    <button class="dr-color-01">삭제하기</button>
+                                    <a href="#none"><img src="../../img/icon/icon_arrow.png" alt="arrow" style="width: 24px; height: 24px; display: inline-block; vertical-align:middle;"></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+                <!-- 오른쪽 컨텐츠 e -->
+            </div>
+        </div>
+    </div>
+    <!--// 컨테이너 -->
+</body>
+</html>
