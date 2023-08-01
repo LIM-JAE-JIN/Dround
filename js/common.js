@@ -13,6 +13,16 @@ $(document).ready( function(){
     $('body').css('background-color', '');
     }
 
+    // 토글 드롭버튼
+    $('.dr-drop-btn').on('click',function(e){
+        $(e.target).toggleClass('dr_drop');
+        if($('.dr-drop-btn').hasClass('dr_drop')){
+            $('.dr-drop-list').addClass('dr_off')
+        }else{
+            $('.dr-drop-list').removeClass('dr_off')
+        }
+    });
+
     // 회원가입 동의 체크 기능
     $('#allAgreeCheck').on('change',function() {
         if ($('#allAgreeCheck').is(":checked")) {

@@ -580,7 +580,12 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 .dr-admin-col-list li .dr-col-btn-wrap button {border:0; background-color: transparent; font-weight: bold;}
 .dr-pw-edit-btn {background-color: transparent; border:0; font-weight:bold; padding:0;}
 .dr-title-search-box.dr-admin-search {position: absolute; top:-6px; right:0;}
-.dr-drop-btn {border:0; background: url(../img/icon/icon_arrow_up.png) no-repeat center; background-size:cover; width:24px; height:24px; padding:0; position: absolute; top:50%; transform:translateY(-50%); right:0;}
+.dr-drop-btn {border:0; background: url(../img/icon/icon_arrow_down.png) no-repeat center; background-size:cover; width:24px; height:24px; padding:0; position: absolute; top:50%; transform:translateY(-50%); right:0;}
+.dr-drop-btn.dr_drop {transform: rotate(180deg)translateY(50%);}
+.dr-drop-list {flex-wrap:wrap; padding:0 !important;}
+.dr-drop-list.dr_off {display: none;}
+.dr-drop-list p {width: 100%; padding:10px 0 10px 30px; border-bottom:1px solid #ddd; background-color: #f3f3f3;}
+.dr-drop-list p:last-child {border-bottom:0;}
 /* ------어드민 관리자------ e */
 
 /* ------반응형------ s */
