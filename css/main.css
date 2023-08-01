@@ -550,7 +550,7 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 /* ------어드민 관리자------ s */
 .dr-admin-main {border:1px solid #000; max-width:1280px; margin:0 auto;}
 .dr-admin-main header {padding:20px 30px; display: flex; justify-content: space-between; align-items: center; border-bottom:1px solid #000;}
-.dr-admin-main header a.dr_on {font-weight: bold; font-size:18px; color:darkred;}
+.dr-admin-main header a.dr_on {font-weight: bold; font-size:17px; color:darkred;}
 .dr-admin-cont-wrap {display: flex;}
 .dr-admin-left-cont {width: 220px; flex-shrink: 0; padding:50px 18px;}
 .dr-admin-left-cont ul {margin-bottom: 30px;}
@@ -562,7 +562,7 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 .dr-admin-right-cont article .dr-admin-add-btn {position: absolute; top:5px; right:0; background-color: #363739; color:#fff; border:0; padding:5px 10px; font-size:14px; border-radius:3px;}
 .dr-admin-right-cont h2 {font-size:24px; font-weight:bold; margin-bottom:20px;}
 .dr-admin-row-list {display: flex; flex-wrap:wrap; border-top:1px solid #ddd;}
-.dr-admin-row-list li {display: flex; align-items: center; width: 50%; font-size:14px; border-bottom:1px solid #ddd; border-right:1px solid #ddd;}
+.dr-admin-row-list li {display: flex; align-items: center; width: 50%; font-size:14px; border-bottom:1px solid #ddd;}
 .dr-admin-row-list.dr-w-100 li {width: 100%; font-weight:500; border-right:0;}
 .dr-admin-row-list li .dr-admin-tit {width: 150px; background-color: #f3f3f3; padding:8px 15px; font-weight:600; height: 100%;}
 .dr-admin-row-list li .dr-admin-txt { padding:8px 15px;}
