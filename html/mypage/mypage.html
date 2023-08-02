@@ -33,11 +33,12 @@
 
         .dr-my-partner{margin-top: 8rem;}
         .dr-my-partner h3{font-size: 2.5rem;}
-        .dr-my-partner table.dr-all th{font-size: 1.2rem; font-weight: 500; line-height: 19px; color: #989ca1; background-color: #F3F3F3; padding-top: 0.5rem; padding-bottom: 0.5rem;}
+
+
         .dr-my-partner table.dr-all td{font-size: 1.6rem; font-weight: 600;  padding-top: 2rem; padding-bottom: 2rem;}
-        .dr-my-partner table.dr-all th, .dr-my-partner table.dr-all td{border: 1px solid #E8E8EB;}
-        .dr-my-partner table.dr-all th:first-child, .dr-my-partner table.dr-all td:first-child{text-align: left; padding-left: 2rem; border-right: 0;}
-        .dr-my-partner table.dr-all th:last-child, .dr-my-partner table.dr-all td:last-child{text-align: right; padding-right: 4.5rem; border-left: 0;}
+        .dr-my-partner table.dr-all td{border: 1px solid #E8E8EB;}
+        .dr-my-partner table.dr-all td:first-child{text-align: left; padding-left: 2rem; border-right: 0;}
+        .dr-my-partner table.dr-all td:last-child{text-align: right; padding-right: 4.5rem; border-left: 0;}
         @media (max-width: 1200px) {
             .dr-my-main{display: block;}
             .dr-my-tab-wrap {all: unset;}
@@ -93,25 +94,49 @@
                     </div>
                     <div class="dr-my-partner">
                         <h3>나의 파트너 협업 글</h3>
-                        <table width="100%" class="dr-all mt-4">
-                            <colgroup>
-                                <col style="width: 80%" />
-                                <col style="width: 20%" />
-
-                            </colgroup>
-                            <tr>
-                                <th>작성글</th>
-                                <th>팝업 의향 현황</th>
-                            </tr>
-                            <tr>
-                                <td>부산 광역시 PF 대출 구합니다</td>
-                                <td class="dr-fz-14">전체공개</td>
-                            </tr>
-                            <tr>
-                                <td>부산 광역시 PF 대출 구합니다</td>
-                                <td class="dr-fz-14">전체공개</td>
-                            </tr>
-                        </table>
+                        <div class="dr-thead type1 mt-4">
+                            <div class="dr-th text-start">작성글</div>
+                            <div class="dr-th text-end">팝업 의향 현황</div>
+                        </div>
+                        <div class="dr-scroll-y type1">    
+                            <table width="100%" class="dr-all">
+                                <colgroup>
+                                    <col style="width: 80%" />
+                                    <col style="width: 20%" />
+                                </colgroup>
+                                <tr>
+                                    <td>부산 광역시 PF 대출 구합니다</td>
+                                    <td class="dr-fz-14">전체공개</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="folding-list mt-4">
+                            <div class="dr-folding-head">
+                                <p>서울시 오피스텔 사업 건</p>
+                                <a href="#none" class="dr-folding-btn open">받은 협업 <span>03</span></a>
+                            </div>
+                            <div class="dr-folding-panel">
+                                <h2>내용입니다.</h2>
+                                <h2>내용입니다.</h2>
+                                <h2>내용입니다.</h2>
+                            </div>
+                        </div>
+                        <style>
+                            .dr-thead.type1{background-color: #F3F3F3; padding: 0.5rem 4.5rem 0.5rem 2rem; border: 1px solid #E8E8EB; border-bottom: 0; display: flex;}
+                            .dr-thead.type1 .dr-th{background-color: #F3F3F3; font-size: 1.2rem;font-weight: 500;line-height: 19px;color: #989ca1;}
+                            .dr-thead.type1 .dr-th:first-child{width: 80%;}
+                            .dr-thead.type1 .dr-th:last-child{width: 20%;}
+                            .dr-scroll-y{overflow-y: auto;}
+                            .dr-my-partner .dr-scroll-y.type1 {max-height: 286px;}
+                            .dr-my-partner .dr-folding-head{display: flex;justify-content: space-between; align-items: center; background-color: #505866;padding: 2rem 4.5rem 2rem 2rem;color: #fff; border: 1px solid #E8E8EB;}
+                            .dr-my-partner .dr-folding-head p{font-size: 1.6rem; font-weight: 600; line-height: 22px;}
+                            .dr-folding-btn{position: relative; color: #fff; font-size: 1.4rem;}
+                            .dr-folding-btn.open::before{content: ""; display: inline-block; width: 8px; height: 8px; background-color: #EA5555; border-radius: 50%; margin-right: 8px;}
+                            .dr-folding-btn::after{position: absolute;content: "";background: url(../../img/icon/icon_arrow_down.png) no-repeat;width: 23px;height: 23px;background-size: contain;top: -5px;right: -25px;}
+                            .dr-folding-btn.open::after{position: absolute;content: "";background: url(../../img/icon/icon_arrow_up_w.png) no-repeat;width: 23px;height: 23px;background-size: contain;top: -4px;right: -25px;}
+                            .dr-folding-btn span {font-weight: 700;}
+                            .dr-folding-panel{background-color:#F3F3F3;padding:2rem;} 
+                        </style>
                     </div>
                 </div>
                 <!-- 회원 정보 수정 탭 -->
@@ -129,6 +154,17 @@
             $(e.target).parent().addClass('dr_on').siblings().removeClass('dr_on');
             const idx = $('.dr-my-tab').index($(this).closest('.dr-my-tab'));
             $('.dr-my-tab-panel').eq(idx).addClass('dr_on').siblings('.dr-my-tab-panel').removeClass('dr_on');
+        });
+        // 나의 파트너 협업글 아코디언 
+        $('.dr-folding-btn').on('click', function (e) {
+            e.preventDefault();
+            if ($(this).hasClass('open')) {
+                $(this).removeClass('open').closest('.folding-list').find('.dr-folding-panel').stop().slideUp(300);
+                $('.dr-folding-head, .dr-folding-btn').css({"background-color": "#fff","color": "#353839"});
+            } else {
+                $(this).addClass('open').closest('.folding-list').find('.dr-folding-panel').stop().slideDown(300);
+                $('.dr-folding-head, .dr-folding-btn').css({"background-color": "#505866","color": "#fff"});
+            }
         });
     </script>
 </body>
