@@ -35,7 +35,7 @@
         .dr-my-partner h3{font-size: 2.5rem;}
 
 
-        .dr-my-partner table.dr-all td{font-size: 1.6rem; font-weight: 600;  padding-top: 2rem; padding-bottom: 2rem;}
+        .dr-my-partner table.dr-all td{font-size: 1.6rem; font-weight: 600;  padding-top: 2rem; padding-bottom: 2rem; white-space: nowrap;}
         .dr-my-partner table.dr-all td{border: 1px solid #E8E8EB;}
         .dr-my-partner table.dr-all td:first-child{text-align: left; padding-left: 2rem; border-right: 0;}
         .dr-my-partner table.dr-all td:last-child{text-align: right; padding-right: 4.5rem; border-left: 0;}
@@ -116,14 +116,81 @@
                                 <a href="#none" class="dr-folding-btn open">받은 협업 <span>03</span></a>
                             </div>
                             <div class="dr-folding-panel">
-                                <h2>내용입니다.</h2>
-                                <h2>내용입니다.</h2>
-                                <h2>내용입니다.</h2>
+                                <div class="dr-scroll-y">
+                                    <div class="dr-table">
+                                        <ul class="dr-th-wrap">
+                                            <li class="dr-col-1">요청자 소속</li>
+                                            <li class="dr-col-2">이름</li>
+                                            <li class="dr-col-3">휴대폰 번호</li>
+                                            <li class="dr-col-4">이메일</li>
+                                            <li class="dr-col-5">요청 일시</li> 
+                                            <li class="dr-col-6">승인 일시</li>
+                                        </ul>
+                                        <div class="dr-td-wrap">
+                                            <ul>
+                                                <li class="dr-col-1 dr-fw-600 dr-fz-14">
+                                                    <div class="dr-mo-block mb-2">요청자 소속</div>
+                                                    신한증권 기획부서 기획팀
+                                                </li>
+                                                <li class="dr-col-2 dr-fz-14">
+                                                    <div class="dr-mo-block mt-4"><span>이름</span></div>
+                                                    이지훈
+                                                </li> 
+                                                <li class="dr-col-3 dr-fz-14">
+                                                    <div class="dr-mo-block"><span>휴대폰번호</span></div>
+                                                    010-1234-1324
+                                                </li> 
+                                                <li class="dr-col-4 dr-fz-14"> 
+                                                    <div class="dr-mo-block mt-4">이메일</div>
+                                                    ntksjd@naver.com
+                                                </li> 
+                                                <li class="dr-col-5">
+                                                    <div class="dr-mo-block mt-4">요청일시</div>
+                                                    23.01.05<div class="dr-my-timer">00:00</div> 
+                                                </li> 
+                                                <li class="dr-col-6">
+                                                    <div class="dr-mo-block mt-4">승인일시</div>
+                                                    23.01.05<div class="dr-my-timer">00:00</div>
+                                                </li>
+                                            </ul>
+                                            <div class="dr-complete"><a href="#none" class="dr-approve">승인완료<i></i></a></div>
+                                        </div>
+                                        <div class="dr-td-wrap">
+                                            <ul>
+                                                <li class="dr-col-1 dr-fw-600 dr-fz-14">
+                                                    <div class="dr-mo-block mb-2">요청자 소속</div>
+                                                    신한증권 기획부서 기획팀
+                                                </li>
+                                                <li class="dr-col-2 dr-fz-14">
+                                                    <div class="dr-mo-block mt-4"><span>이름</span></div>
+                                                    -
+                                                </li> 
+                                                <li class="dr-col-3 dr-fz-14">
+                                                    <div class="dr-mo-block"><span>휴대폰번호</span></div>
+                                                    -
+                                                </li> 
+                                                <li class="dr-col-4 dr-fz-14"> 
+                                                    <div class="dr-mo-block mt-4">이메일</div>
+                                                    -
+                                                </li> 
+                                                <li class="dr-col-5">
+                                                    <div class="dr-mo-block mt-4">요청일시</div>
+                                                    
+                                                </li> 
+                                                <li class="dr-col-6">
+                                                    <div class="dr-mo-block mt-4">승인일시</div>
+                                                
+                                                </li>
+                                            </ul>
+                                            <div class="dr-complete"><a href="#none">승인완료<i></i></a></div>
+                                        </div>
+                                    </div>
+                                </div> 
                             </div>
                         </div>
                         <style>
                             .dr-thead.type1{background-color: #F3F3F3; padding: 0.5rem 4.5rem 0.5rem 2rem; border: 1px solid #E8E8EB; border-bottom: 0; display: flex;}
-                            .dr-thead.type1 .dr-th{background-color: #F3F3F3; font-size: 1.2rem;font-weight: 500;line-height: 19px;color: #989ca1;}
+                            .dr-thead.type1 .dr-th{background-color: #F3F3F3; font-size: 1.2rem;font-weight: 500;line-height: 19px;color: #989ca1; white-space: nowrap;}
                             .dr-thead.type1 .dr-th:first-child{width: 80%;}
                             .dr-thead.type1 .dr-th:last-child{width: 20%;}
                             .dr-scroll-y{overflow-y: auto;}
@@ -136,6 +203,49 @@
                             .dr-folding-btn.open::after{position: absolute;content: "";background: url(../../img/icon/icon_arrow_up_w.png) no-repeat;width: 23px;height: 23px;background-size: contain;top: -4px;right: -25px;}
                             .dr-folding-btn span {font-weight: 700;}
                             .dr-folding-panel{background-color:#F3F3F3;padding:2rem;} 
+                            .dr-folding-panel .dr-scroll-y{height: 400px;}
+                        
+                            .dr-table .dr-th-wrap{display: flex; margin-bottom: 10px; padding: 0 20px;}
+                            .dr-table .dr-th-wrap li{display: inline-block; color:#989CA1;opacity: 0.9; font-size: 1.2rem; font-weight: 500;}
+                            .dr-col-1{width: 23%;}
+                            .dr-col-2{width: 8%;}
+                            .dr-col-3{width: 16%;}
+                            .dr-col-4{width: 21%;}
+                            .dr-col-5{width: 10%;}
+                            .dr-col-6{width: auto;}
+
+                            .dr-td-wrap{position:relative; background-color: #fff; padding: 20px; margin-bottom: 20px;}
+                            .dr-td-wrap:last-child{margin-bottom:0px;}
+                            .dr-td-wrap ul{display: flex; align-items: center;}
+                            .dr-td-wrap .dr-col-5, .dr-td-wrap .dr-col-6{color: #c2c2c2; font-size: 1.1rem;}
+                            .dr-td-wrap .dr-complete{position: absolute;top: 50%;right: 47px; transform: translateY(-50%); font-size: 20px;}
+                            .dr-td-wrap .dr-complete a{position: relative; display: flex;justify-content: space-around; width: 95px; font-size: 1.3rem;font-weight: 500;background-color: #f1f8f4; border-radius: 3px; padding: 1rem 2.5rem; color: #6EA386; cursor:unset ;}
+                            .dr-td-wrap .dr-complete a.dr-approve{color: #fff; background-color: #353839; cursor:pointer;}
+                            .dr-td-wrap .dr-complete a i{background: url(../../img/icon/icon_trash.png) no-repeat; background-size: contain; width: 22px; height: 22px; position: absolute; cursor: pointer; z-index: 1; top:50%;transform: translateY(-50%); right: -33px;}
+                            .dr-mo-block{display: none;}
+
+                            @media all and (max-width: 1200px){
+                            .dr-td-wrap .dr-complete{position: unset; transform: unset; margin-left: 80%; margin-top: 1.5rem;}
+                            .dr-col-1{width: 30%;}
+                            .dr-col-2{width: 10%;}
+                            .dr-col-3{width: 20%;}
+                            .dr-col-4{width: 20%;}
+                            .dr-col-5{width: 10%;}
+                            .dr-col-6{width: auto;}
+                            }
+                            @media all and (max-width: 768px){
+                            .dr-folding-panel{border: 1px solid #E8E8EB;}
+                            .dr-th-wrap{display: none !important;}
+                            .dr-table .dr-td-wrap li{width: 100%;}
+                            .dr-td-wrap ul{display: block;}
+                            .dr-mo-block{display: block; font-size: 1.2rem; color: #989CA1; font-weight: 500; opacity: 0.9; line-height: 19px;}
+                            .dr-table .dr-td-wrap li.dr-col-2, .dr-table .dr-td-wrap li.dr-col-3, .dr-table .dr-td-wrap li.dr-col-5, .dr-table .dr-td-wrap li.dr-col-6{display: inline-block;width:calc(50% - 2px);} 
+                            .dr-my-timer{display: inline-block;}
+                            .dr-td-wrap .dr-complete{margin-left: 0;}
+                            .dr-td-wrap.dr-complete{margin-left: 0; width: 100%; text-align: right;}
+                            .dr-td-wrap .dr-complete a{margin-left: auto; margin-right: 30px; margin-top: 2.5rem;}
+                            .dr-folding-panel .dr-scroll-y{height: 420px;}
+                            }
                         </style>
                     </div>
                 </div>
