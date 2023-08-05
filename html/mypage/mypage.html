@@ -25,7 +25,7 @@
         .dr-my-tab-panel.dr_on{display: block;}
 
         .dr-my-main h3{font-size: 2rem; font-weight: 700;}
-        .dr-my-situation{}
+        .dr-my-situation{} 
         .dr-my-situation .dr-cont{display: flex; background-color:#F8F8F8; box-sizing: border-box;}
         .dr-my-situation .dr-cont li{width: 25%; padding: 2.5rem 2rem 3rem 2rem; box-sizing: border-box; border: 1px solid #e8e8e8; }
         .dr-my-situation .dr-cont li p{ font-size: 1.4rem; font-weight: 500; color: #21794C; text-align: left;  line-height: 19px;}
@@ -37,7 +37,10 @@
 
         .dr-my-partner table.dr-all td{font-size: 1.6rem; font-weight: 600;  padding-top: 2rem; padding-bottom: 2rem; white-space: nowrap;}
         .dr-my-partner table.dr-all td{border: 1px solid #E8E8EB;}
-        .dr-my-partner table.dr-all td:first-child{text-align: left; padding-left: 2rem; border-right: 0;}
+        .dr-my-partner table.dr-all td:first-child{text-align: left; padding-left: 2rem; border-right: 0; padding-right: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;}
         .dr-my-partner table.dr-all td:last-child{text-align: right; padding-right: 4.5rem; border-left: 0;}
         @media (max-width: 1200px) {
             .dr-my-main{display: block;}
@@ -111,10 +114,10 @@
                             </table>
                         </div>
                         <div class="folding-list mt-4">
-                            <div class="dr-folding-head">
+                            <a href="#none" class="dr-folding-head">
                                 <p>서울시 오피스텔 사업 건</p>
-                                <a href="#none" class="dr-folding-btn open">받은 협업 <span>03</span></a>
-                            </div>
+                                <button href="#none" class="dr-folding-btn open">받은 협업 <span>03</span></button>
+                            </a>
                             <div class="dr-folding-panel">
                                 <div class="dr-scroll-y">
                                     <div class="dr-table">
@@ -153,8 +156,8 @@
                                                     23.01.05<div class="dr-my-timer">00:00</div>
                                                 </li>
                                             </ul>
-                                            <div class="dr-complete"><a href="#none" class="dr-approve">승인완료<i></i></a></div>
-                                        </div>
+                                            <div class="dr-complete"><a href="#none" class="dr-approve" onclick="drPopupOpen('.dr-popup-letter-received')">승인하기<i></i></a></div>
+                                        </div> 
                                         <div class="dr-td-wrap">
                                             <ul>
                                                 <li class="dr-col-1 dr-fw-600 dr-fz-14">
@@ -197,23 +200,21 @@
                             .dr-my-partner .dr-scroll-y.type1 {max-height: 286px;}
                             .dr-my-partner .dr-folding-head{display: flex;justify-content: space-between; align-items: center; background-color: #505866;padding: 2rem 4.5rem 2rem 2rem;color: #fff; border: 1px solid #E8E8EB;}
                             .dr-my-partner .dr-folding-head p{font-size: 1.6rem; font-weight: 600; line-height: 22px;}
-                            .dr-folding-btn{position: relative; color: #fff; font-size: 1.4rem;}
+                            .dr-folding-btn{position: relative;background-color: transparent; border: 0;color: #fff; font-size: 1.4rem;}
                             .dr-folding-btn.open::before{content: ""; display: inline-block; width: 8px; height: 8px; background-color: #EA5555; border-radius: 50%; margin-right: 8px;}
                             .dr-folding-btn::after{position: absolute;content: "";background: url(../../img/icon/icon_arrow_down.png) no-repeat;width: 23px;height: 23px;background-size: contain;top: -5px;right: -25px;}
                             .dr-folding-btn.open::after{position: absolute;content: "";background: url(../../img/icon/icon_arrow_up_w.png) no-repeat;width: 23px;height: 23px;background-size: contain;top: -4px;right: -25px;}
                             .dr-folding-btn span {font-weight: 700;}
                             .dr-folding-panel{background-color:#F3F3F3;padding:2rem;} 
-                            .dr-folding-panel .dr-scroll-y{height: 400px;}
-                        
+                            .dr-folding-panel .dr-scroll-y{max-height: 400px;}
                             .dr-table .dr-th-wrap{display: flex; margin-bottom: 10px; padding: 0 20px;}
                             .dr-table .dr-th-wrap li{display: inline-block; color:#989CA1;opacity: 0.9; font-size: 1.2rem; font-weight: 500;}
-                            .dr-col-1{width: 23%;}
-                            .dr-col-2{width: 8%;}
-                            .dr-col-3{width: 16%;}
-                            .dr-col-4{width: 21%;}
-                            .dr-col-5{width: 10%;}
-                            .dr-col-6{width: auto;}
-
+                            .dr-table .dr-col-1{width: 23%;}
+                            .dr-table .dr-col-2{width: 8%;}
+                            .dr-table .dr-col-3{width: 16%;}
+                            .dr-table .dr-col-4{width: 21%;}
+                            .dr-table .dr-col-5{width: 10%;}
+                            .dr-table .dr-col-6{width: auto;}
                             .dr-td-wrap{position:relative; background-color: #fff; padding: 20px; margin-bottom: 20px;}
                             .dr-td-wrap:last-child{margin-bottom:0px;}
                             .dr-td-wrap ul{display: flex; align-items: center;}
@@ -223,15 +224,74 @@
                             .dr-td-wrap .dr-complete a.dr-approve{color: #fff; background-color: #353839; cursor:pointer;}
                             .dr-td-wrap .dr-complete a i{background: url(../../img/icon/icon_trash.png) no-repeat; background-size: contain; width: 22px; height: 22px; position: absolute; cursor: pointer; z-index: 1; top:50%;transform: translateY(-50%); right: -33px;}
                             .dr-mo-block{display: none;}
-
+                            .dr-table.type1 .dr-scroll-y{max-height: 370px;}
+                            .dr-table.type1 .dr-th-wrap{margin-bottom: 0;}
+                            .dr-th-wrap.dr-bg{background-color: #f3f3f3;margin-top: 2rem; padding-top:0.8rem;padding-bottom: 0.8rem; border-top: 1px solid #e8e8e8; border-bottom: 1px solid #e8e8e8;}
+                            .dr-table.type1 .dr-th-wrap .dr-col-1, .dr-table.type1 .dr-th-wrap .dr-col-2{width: 35%;}
+                            .dr-table.type1 .dr-th-wrap .dr-col-3,.dr-table.type1 .dr-th-wrap .dr-col-4{ width: 15%; text-align: right;}
+                            .dr-table.type1 .dr-td-wrap{margin-bottom: 0; border-bottom: 1px solid #e8e8e8;}
+                            .dr-table.type1 .dr-td-wrap .dr-col-1{padding-right: 20px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+                            .dr-table.type1 .dr-td-wrap .dr-col-1, .dr-table.type1 .dr-td-wrap .dr-col-2{width: 35%;}
+                            .dr-table.type1 .dr-td-wrap .dr-col-3,.dr-table.type1 .dr-td-wrap .dr-col-4{ width: 15%; text-align: right;}
+                            .dr-table.type1 .dr-td-wrap .dr-my-timer{color: #c2c2c2; font-size: 1.1rem;}
+                            .dr-view-letter{font-size: 1.4rem; font-weight: 600; color: #0F4CEA; text-decoration: underline;}
+                            .dr-mix-cont{ min-height: 16px;}
+                            .dr-mix-cont span{line-height: 19px;}
+                            .dr-mix-cont span::after{content: ""; margin: 0 5px;display: inline-block;width: 1px;height: 11px;border-right: 1px solid #989CA1;}
+                            .dr-mix-cont span:last-child::after{content: ""; border-right: 0;}
+                            .dr-table.type2 .dr-scroll-y{max-height: 280px;}
+                            .dr-table.type2 .dr-th-wrap .dr-col-1, .dr-table.type2 .dr-td-wrap .dr-col-1{ width: 15%;}
+                            .dr-table.type2 .dr-th-wrap .dr-col-2, .dr-table.type2 .dr-td-wrap .dr-col-2{ width: 10%;}
+                            .dr-table.type2 .dr-th-wrap .dr-col-3, .dr-table.type2 .dr-td-wrap .dr-col-3{ width: 75%;}
+                            .dr-table.type2 .dr-td-wrap{margin-bottom: 0; border-bottom: 1px solid #e8e8e8;}
+                            .dr-table.type2 .dr-td-wrap .dr-col-3{display: flex; justify-content: space-between;}
+                            .dr-table.type2 .dr-td-wrap .dr-my-timer{font-size: 1.1rem;  color: #c2c2c2; }
+                            /* tab1 끝 */
+                            .dr-my-privacy .dr-my-input-cont{display: flex;}
+                            .dr-my-privacy .dr-my-input-cont .dr-input-wrap{margin-bottom: 2.5rem;}
+                            .dr-my-privacy .dr-my-input-cont .dr-input-wrap p{color: #383A52; font-weight: 600;}
+                            .dr-my-privacy .dr-my-input-cont .dr-input-wrap:nth-of-type(1){margin-right: 5%;}
+                            .dr-my-privacy .dr-my-input-cont .dr-input-wrap input[readonly]{background-color: #F3F3F3; color: #989CA1;}
+                            .dr-my-privacy .dr-my-input-cont .dr-input-wrap .dr-phone_btn{border-color: #d7d7d7; color: #989CA1; }
+                            .dr-my-privacy .dr-my-input-cont .dr-input-wrap .dr-button.dr-my-phone{padding: 0.9rem 5.6rem;border-color: #d7d7d7;color: #989CA1; font-weight: 500; font-size: 1.3rem;} 
+                            .dr-my-privacy .dr-my-email{font-size: 1.4rem; font-weight: 500; color: #0F4CEA; text-decoration: underline;}
+                            .dr-my-privacy .dr-kakao-agree h4{font-size: 1.5rem; font-weight: 600; color: #383a52; display: inline-block;}
+                            .dr-my-privacy .dr-kakao-agree p{font-size: 1.4rem; color: #505866; line-height: 21px; margin-top: 0.5rem;}
+                            .dr-checkboxwrap{width: 50px; height: 10px; position: relative; display: inline-block;}
+                            .dr-checkboxwrap input{ position: absolute; top: 50%; right: 0; transform: translateY(-50%); height: 20px;}
+                            .dr-checkboxwrap input[type="checkbox"]{background-color: #989CA1; -webkit-appearance: none; width: 40px; border-radius: 20px; transition: .5s;}
+                            .dr-checkboxwrap input:checked[type="checkbox"]{background-color: #1c8f51; }
+                            .dr-checkboxwrap input[type="checkbox"]::before{ transform: scale(1.5); content: ""; display: inline-block; position: absolute; top: 5px; left: 5px; width: 10px; height: 10px; background: #fff; border-radius: 50%; transition: .5s;}
+                            .dr-checkboxwrap input:checked[type="checkbox"]::before{ left: 25px;}
+                            .withdrawal{margin-top: 8rem;}
+                            .withdrawal a{padding-top: 20px; border-top: 1px solid #E8E8EB; display: block; font-size: 1.5rem; font-weight: 600;}
+                            .dr-button.dr-button-edit{width: 50%;padding: 0.9rem 5.6rem; margin-top: 4rem;}
+                            .dr-popup-wrap.type{max-width: 440px; width: 100%; padding-top: 3rem;}
+                            .dr-popup-wrap.type h1{font-size: 3rem; font-weight: 700;}
+                            .dr-popup-wrap.type .dr-popup-content p.txt{font-size: 1.6rem; line-height: 22px; opacity: 0.9; color: #667080;}
+                            .dr-popup-wrap.type .dr-input-wrap .dr-input{background-color: #F3F3F3; color: #505866;}
+                            .dr-popup-wrap.type .dr-input-wrap .dr-belong-name{position: absolute;top: 50%;transform: translateY(-50%);display: inline-block;left: 65px;color: #353839;font-size: 1.3rem;font-weight: 600;}
+                            .dr-popup-wrap.type .dr-cont{line-height: 21px; font-size: 1.4rem; padding: 1.5rem 2rem; border: 1px solid #d7d7d7; border-radius: 5px;}
+                            .dr-popup-wrap.type footer{background-color: #fff;}
+                            .dr-popup-wrap.type footer .dr-button{padding: 1.2rem 6rem;}
                             @media all and (max-width: 1200px){
                             .dr-td-wrap .dr-complete{position: unset; transform: unset; margin-left: 80%; margin-top: 1.5rem;}
-                            .dr-col-1{width: 30%;}
-                            .dr-col-2{width: 10%;}
-                            .dr-col-3{width: 20%;}
-                            .dr-col-4{width: 20%;}
-                            .dr-col-5{width: 10%;}
-                            .dr-col-6{width: auto;}
+                            .dr-table .dr-col-1{width: 30%;}
+                            .dr-table .dr-col-2{width: 10%;}
+                            .dr-table .dr-col-3{width: 20%;}
+                            .dr-table .dr-col-4{width: 20%;}
+                            .dr-table .dr-col-5{width: 10%;}
+                            .dr-table .dr-col-6{width: auto;}
+
+                            .dr-table.type1 .dr-th-wrap .dr-col-1, .dr-table.type1 .dr-th-wrap .dr-col-2{width: 50%;}
+                            .dr-table.type1 .dr-th-wrap .dr-col-3,.dr-table.type1 .dr-th-wrap .dr-col-4{display: none;}
+                            .dr-table.type1 .dr-td-wrap ul{display: block;}
+                            .dr-table.type1 .dr-td-wrap ul li{display: inline-block;}
+                            .dr-table.type1 .dr-td-wrap .dr-col-1{width: 50%; vertical-align: top;}
+                            .dr-table.type1 .dr-td-wrap .dr-col-2{width: 49%;}
+                            .dr-table.type1 .dr-td-wrap .dr-col-3{width: 50%; margin-left: 39px; margin-top: 1.5rem;}
+                            .dr-table.type1 .dr-td-wrap .dr-col-4{width: auto; text-align: left; margin-top: 1.5rem; margin-left: 3rem;}
+                            .dr-table.type1 .dr-td-wrap .dr-my-timer{display: inline-block; margin-left: 0.5rem;}
                             }
                             @media all and (max-width: 768px){
                             .dr-folding-panel{border: 1px solid #E8E8EB;}
@@ -245,34 +305,265 @@
                             .dr-td-wrap.dr-complete{margin-left: 0; width: 100%; text-align: right;}
                             .dr-td-wrap .dr-complete a{margin-left: auto; margin-right: 30px; margin-top: 2.5rem;}
                             .dr-folding-panel .dr-scroll-y{height: 420px;}
+                            .dr-table.type1 .dr-scroll-y{max-height: 270px;}
+                            .dr-table.dr-top-boder{margin-top: 2.5rem;border-top: 1px solid #C2C2C2;padding-top: 2.5rem;}
+                            .dr-table.type1 .dr-td-wrap{padding-left:0;}
+                            .dr-table.type1 .dr-td-wrap li:not(.dr-table.type1 .dr-td-wrap .dr-col-3, .dr-table.type1 .dr-td-wrap .dr-col-4){width: 100% !important;}
+                            .dr-table.type1 .dr-td-wrap .dr-col-3{width: auto; margin-left: 0; text-align: left;}
+
+                            .dr-table.type2 .dr-scroll-y{max-height: 170px;}
+                            .dr-table.type2 .dr-td-wrap .dr-col-1, .dr-table.type2 .dr-td-wrap .dr-col-2 , .dr-table.type2 .dr-td-wrap .dr-col-3{ width: 100%;}
+                            .dr-table.type2 .dr-td-wrap:first-child{padding-top: 0;}
+                            .dr-table.type2 .dr-td-wrap{padding-left: 0;}
+                            .dr-table.type2 .dr-td-wrap .dr-col-2{margin-top: 1.5rem; margin-bottom: 0.5rem;}
+                            .dr-table.type2 .dr-td-wrap .dr-col-3:not(.dr-free-icon ul li){width: 100%; margin-top: 0.5rem; display: block;}
+                            .dr-table.type2 .dr-td-wrap .dr-col-3{margin-top: 1.5rem;}
+                            .dr-table.type2 .dr-td-wrap li .dr-free-icon ul{display: flex; margin-top: 1.5rem;}
+                            .dr-table.type2 .dr-td-wrap li .dr-free-icon ul li{width: 55px;}
+
+                            .dr-my-privacy .dr-my-input-cont{display: block;}
+                            .dr-my-privacy .dr-my-email{display: block; margin-top: 1rem;}
+                            .dr-button.dr-button-edit{width: 100%;}
                             }
                         </style>
+                        <div class="dr-my-partner">
+                            <h3>보낸 협업 의향</h3>
+                            <div class="dr-table type1 dr-top-boder">
+                                <ul class="dr-th-wrap dr-bg">
+                                    <li class="dr-col-1">요청 글</li>
+                                    <li class="dr-col-2">작성자 정보</li>
+                                    <li class="dr-col-3">내가 보낸 의향서 보기</li>
+                                    <li class="dr-col-4">승인 상태</li>
+                                </ul>
+                                <div class="dr-scroll-y">
+                                    <div class="dr-td-wrap type1">
+                                        <ul class="align-items-lg-start">
+                                            <li class="dr-col-1 dr-fw-600 dr-fz-16">
+                                                <div class="dr-mo-block mb-2">요청 글</div>
+                                                부산 광역시 PF 대출 구합니다 부산 광역시 PF 대출 구합니다
+                                            </li>
+                                            <li class="dr-col-2 dr-fz-14">
+                                                <div class="dr-mo-block mt-4"><span>작성자 정보</span></div>
+                                                <p class="dr-fw-600 mt-2 mt-md-0">신한증권 기획부서 기획팀</p> 
+                                                <div class="dr-mix-cont mt-1"><span>이지훈</span><span>010-1234 -1234</span><span>asdfasdf@mail.com</span></div>
+                                            </li> 
+                                            <li class="dr-col-3 dr-fz-14">
+                                                <a href="#none" class="dr-view-letter" onclick="drPopupOpen('.dr-popup-letter-send')">의향서</a>
+                                            </li> 
+                                            <li class="dr-col-4 dr-fz-14"> 
+                                                <span class="dr-color-02 dr-fz-14 dr-fw-600">승인완료</span>
+                                                <div class="dr-my-timer mt-2">22.01.0100:00</div>
+                                            </li> 
+                                        </ul>
+                                    </div>
+                                    <div class="dr-td-wrap type1">
+                                        <ul class="align-items-lg-start">
+                                            <li class="dr-col-1 dr-fw-600 dr-fz-16">
+                                                <div class="dr-mo-block mb-2">요청 글</div>
+                                                서울시
+                                            </li>
+                                            <li class="dr-col-2 dr-fz-14">
+                                                <div class="dr-mo-block mt-4"><span>작성자 정보</span></div>
+                                                <p class="dr-fw-600 mt-2 mt-md-0">신한증권 기획부서 기획팀</p> 
+                                                <!-- 미승인 상태일시 미노출
+                                                    <div class="dr-mix-cont mt-1"><span>이지훈</span><span>010-1234 -1234</span><span>asdfasdf@mail.com</span></div>
+                                                -->
+                                            </li> 
+                                            <li class="dr-col-3 dr-fz-14">
+                                                <a href="#none" class="dr-view-letter" onclick="drPopupOpen('.dr-popup-letter-send')">의향서</a>
+                                            </li> 
+                                            <li class="dr-col-4 dr-fz-14"> 
+                                                <span class="dr-selc-color dr-fz-14 dr-fw-600">미승인</span>
+                                                <!-- 미승인 상태일시 미노출
+                                                    <div class="dr-my-timer mt-2">22.01.0100:00</div> 
+                                                -->
+                                            </li> 
+                                        </ul>
+                                    </div>
+                                </div>    
+                            </div>    
+                        </div>
+                        <div class="dr-my-partner">
+                            <h3>커뮤니티 작성글</h3>
+                            <div class="dr-table type2 dr-top-boder">
+                                <ul class="dr-th-wrap dr-bg">
+                                    <li class="dr-col-1">일시</li>
+                                    <li class="dr-col-2">게시판</li>
+                                    <li class="dr-col-3">작성글</li>
+                                </ul>
+                                <div class="dr-scroll-y">
+                                    <div class="dr-td-wrap">
+                                        <ul class="align-items-lg-start">
+                                            <li class="dr-col-1">
+                                                <div class="dr-my-timer">22.01.0100:00</div>
+                                            </li>
+                                            <li class="dr-col-2 dr-fz-14"> 
+                                                업무관련
+                                            </li> 
+                                            <li class="dr-col-3">
+                                                <p class="dr-fz-16 dr-fw-600">서울시 오피스텔 사업 건</p>
+                                                <div class="dr-free-icon">
+                                                    <ul>
+                                                        <li class="dr-selc-color dr-heart dr-heart-d">440</li>
+                                                        <li class="dr-selc-color dr-coment dr-coment-d">4430</li>
+                                                        <!-- 하트, 말풍선 컬러버전 <li class="dr-selc-color dr-heart dr-heart-d">4420</li>
+                                                        <li class="dr-selc-color dr-coment dr-coment-d">443</li> -->
+                                                    </ul>
+                                                </div>
+                                            </li> 
+                                        </ul>
+                                    </div>
+                                </div>    
+                            </div>    
+                        </div>
                     </div>
                 </div>
                 <!-- 회원 정보 수정 탭 -->
                 <div class="dr-my-tab-panel">
-                        asdsdfsdfsdf
+                    <div class="dr-my-privacy">
+                        <h3 class="mb-4 pb-3">개인정보</h3>
+                        <div class="dr-my-input-cont">
+                            <div class="dr-input-wrap">
+                                <p class="dr-fz-15 mb-3">이름</p>
+                                <input type="text" class="dr-input" id="name" name="name" readonly>
+                            </div>
+                            <div class="dr-input-wrap">
+                                <p class="dr-fz-15 mb-3">닉네임</p>
+                                <div class="dr-input-wrap mb-2">
+                                    <div class="dr-phone-wrap">
+                                        <input type="text" class="dr-input">
+                                        <button type="button" class="dr-phone_btn dr-fw-500 dr-fz-13">변경하기</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="dr-my-input-cont"> 
+                            <div class="dr-input-wrap">
+                                <p class="dr-fz-15 mb-3">휴대폰 번호</p>
+                                <div class="dr-input-wrap mb-2">
+                                    <div class="dr-phone-wrap">
+                                        <input type="tel" class="dr-input" id="phone" name="phone" maxlength="11" readonly >
+                                        <button type="button" class="dr-phone_btn dr-fw-500 dr-fz-13">변경하기</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dr-input-wrap">
+                                <p class="dr-fz-15 mb-3">비밀번호 변경</p>
+                                <a href="#nome" class="dr-button dr-my-phone">변경하기</a>
+                            </div>
+                        </div>
+                        <h3>회사 정보</h3>
+                        <p class="dr-fz-14 dr-fw-500 dr-selc-color mt-3">이메일 및 회사 변경 희망 시 재인증이 필요합니다.<a href="#none" class="dr-my-email">변경 문의하기</a></p>
+                        <div class="dr-my-input-cont mt-5">
+                            <div class="mb-5 dr-input-wrap">
+                                <p class="dr-fz-15 mb-3">이메일</p>
+                                <input type="email" class="dr-input" id="email" name="email" readonly>
+                            </div>
+                            <div class="mb-5 dr-input-wrap">
+                                <p class="dr-fz-15 mb-3">회사명</p>
+                                <input type="text" class="dr-input" id="companyName" name="companyName" readonly>
+                            </div>
+                        </div> 
+                        <div class="dr-my-input-cont">
+                            <div class="dr-input-wrap">
+                                <p class="dr-fz-15 mb-3">직무</p>
+                                <input type="text" class="dr-input" readonly>
+                            </div>
+                            <div class="mb-5 dr-input-wrap">
+                                <p class="dr-fz-15 mb-3">소속</p>
+                                <input type="text" class="dr-input" id="company" name="company">
+                            </div>
+                        </div> 
+                        <div class="dr-kakao-agree mt-2">
+                            <h4>카카오톡 알림 동의</h4>
+                            <div class="dr-checkboxwrap">
+                                <input type="checkbox">
+                            </div>
+                            <p>협업 의향 현황 등 다양한 정보를 받아보실 수 있습니다</p>
+                        </div>
+                        <div class="dr-my-input-cont">
+                            <div class="dr-input-wrap">
+                                <a href="#none" class="dr-button indigo dr-button-edit">수정하기</a>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="withdrawal">
+                        <a href="#none">회원탈퇴</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!--// 컨테이너 -->
+    <!--// 컨테이너 --> 
+    <div class="dr-dim"></div>
+
+    <!-- 받은 협업 의향서 팝업 -->
+    <div class="dr-popup-wrap dr-popup-letter-received type">
+        <p class="dr-color-02 dr-fw-700 dr-fz-16 mb-4">받은 협업 의향서</p>
+        <header class="mb-3">
+            <h1>협업 의향 승인하기</h1>
+        </header>
+        <div class="dr-popup-content">
+            <p class="txt">
+                승인 시 내 정보와 요청자의 정보가 동시에 공개됩니다.<br/>
+                (공개 정보 : 이름 / 소속 / 휴대폰 번호 / 이메일)
+            </p>
+            <div class="dr-input-wrap mt-5 mb-5">
+                <input type="text" class="dr-input" name="title" value="요청자" readonly>
+                <span class="dr-belong-name">B증권사-부-팀</span>
+            </div>
+            <h3 class="dr-fw-600 dr-fz-15">제안내용</h3>
+            <div class="dr-cont mt-3">안녕하세요 요즘 금투협 보면 작년과 비교했을때 채용 공고가 거의 없는듯 한데 1분기이후 5~6월즘엔 채용이 진행될 요즘 금투협 보면 작년과 비교했을때 채용 공고가 거의 없는듯 한데 1분기이후 5~6월즘엔 채용이 진행될</div>
+        </div>
+        <footer>
+            <div class="d-flex justify-content-between">
+                <a href="#none" class="dr-button disabled" onclick="drPopupClose(this)">보류하기</a>
+                <a href="#none" class="dr-button indigo" onclick="drPopupClose(this)">승인하기</a>
+            </div>
+        </footer>
+    </div>
+    <!-- 받은 협업 의향서 팝업 -->
+
+    <!-- 보낸 협업 의향서 팝업 -->
+    <div class="dr-dim"></div>
+
+    <div class="dr-popup-wrap dr-popup-letter-send type">
+        <div class="dr-popup-close" onclick="drPopupClose(this)"></div>
+        <p class="dr-color-02 dr-fw-700 dr-fz-16 mb-4">보낸 협업 의향서</p>
+        <header class="mb-3">
+            <h1>나의 협업 의향서</h1>
+        </header>
+        <div class="dr-popup-content">
+            <p class="txt">
+                승인 시 내 정보와 요청자의 정보가 동시에 공개됩니다.<br/>
+                (공개 정보 : 이름 / 소속 / 휴대폰 번호 / 이메일)
+            </p>
+            <div class="dr-input-wrap mt-5 mb-5">
+                <input type="text" class="dr-input" name="title" value="요청자" readonly>
+                <span class="dr-belong-name">B증권사-부-팀</span>
+            </div>
+            <h3 class="dr-fw-600 dr-fz-15">제안내용</h3>
+            <div class="dr-cont mt-3">안녕하세요 요즘 금투협 보면 작년과 비교했을때 채용 공고가 거의 없는듯 한데 1분기이후 5~6월즘엔 채용이 진행될 요즘 금투협 보면 작년과 비교했을때 채용 공고가 거의 없는듯 한데 1분기이후 5~6월즘엔 채용이 진행될</div>
+        </div>
+    </div>
+    <!-- 보낸 협업 의향서 팝업 -->
     <script>
         // 마이페이지 탭
-        $('.dr-my-tab a').click(function (e) {
+        $('.dr-my-tab a').click(function (e) { 
             e.preventDefault();
             $(e.target).parent().addClass('dr_on').siblings().removeClass('dr_on');
             const idx = $('.dr-my-tab').index($(this).closest('.dr-my-tab'));
             $('.dr-my-tab-panel').eq(idx).addClass('dr_on').siblings('.dr-my-tab-panel').removeClass('dr_on');
         });
         // 나의 파트너 협업글 아코디언 
-        $('.dr-folding-btn').on('click', function (e) {
+        $('.dr-folding-head').on('click', function (e) {
             e.preventDefault();
-            if ($(this).hasClass('open')) {
-                $(this).removeClass('open').closest('.folding-list').find('.dr-folding-panel').stop().slideUp(300);
+            const $this = $('.dr-folding-btn');
+            if ($this.hasClass('open')) {
+                $this.removeClass('open').closest('.folding-list').find('.dr-folding-panel').stop().slideUp(300);
                 $('.dr-folding-head, .dr-folding-btn').css({"background-color": "#fff","color": "#353839"});
             } else {
-                $(this).addClass('open').closest('.folding-list').find('.dr-folding-panel').stop().slideDown(300);
+                $this.addClass('open').closest('.folding-list').find('.dr-folding-panel').stop().slideDown(300);
                 $('.dr-folding-head, .dr-folding-btn').css({"background-color": "#505866","color": "#fff"});
             }
         });
