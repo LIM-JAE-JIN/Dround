@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/layout.css">
+    <!-- js -->
+    <script src="../../js/jquery-3.6.3.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+    <script src="../../js/bootstrap/bootstrap.min.js"></script>
+    <script defer src="../../js/common.js"></script>
+    <title>Dround : 회원 탈퇴</title>
+</head>
+<body>
+    <!-- 컨테이너 -->
+    <div class="dr-container dr-bg-white">
+        <div class="dr-registaer-wrap membership">
+            <h1 class="text-center mb-5">회원 탈퇴</h1>
+            <form class="dr-fz-15 dr-fw-600" method="post">
+                <p class="dr-participation dr-fz-15">디라운드를 떠나는 이유를 알려주세요.</p>
+                <div class="dr-join-chk-wrap">
+                    <div class="dr-radio-wrap mb-4">
+                        <input type="radio" id="radio1" name="radio">
+                        <label class="dr-fw-400" for="radio1"><a href="javascript:void(0);">이용하고 싶은 서비스가 없어요.</a></label>
+                    </div>
+                    <div class="dr-radio-wrap mb-4">
+                        <input type="radio" id="radio2" name="radio">
+                        <label class="dr-fw-400" for="radio2"><a href="javascript:void(0);">서비스 퀄리티가 낮아요.</a></label>
+                    </div>
+                    <div class="dr-radio-wrap mb-4">
+                        <input type="radio" id="radio3" name="radio">
+                        <label class="dr-fw-400" for="radio3">잦은 오류가 발생해요.</label>
+                    </div>
+                    <div class="dr-radio-wrap mb-4">
+                        <input type="radio" id="radio4" name="radio">
+                        <label class="dr-fw-400" for="radio4">대체할 만한 서비스를 찾았어요.</label>
+                    </div>
+                    <div class="dr-radio-wrap mb-4">
+                        <input type="radio" id="radio5" name="radio">
+                        <label class="dr-fw-400" for="radio5">기타</label>
+                    </div>
+                    <div class="mb-5 dr-input-wrap dr-etc">
+                        <input type="text" class="dr-input" id="company" name="company" placeholder="직접 입력">
+                    </div>
+                    <div class="dr-input-wrap pt-3">
+                        <p class="dr-fz-15 mb-3">비밀번호 입력</p>
+                        <input type="password" class="dr-input" id="password" name="password" placeholder="비밀번호를 입력해주세요.">
+                        <p class="dr-err-txt dr-fz-12 dr-fw-400 " id="password-status" style="display: none;">영문/숫자/특수문자 모두 사용(8~15자 이하)</p>
+                    </div>
+                    <div class="dr-withdrawal-information">
+                        <ul>
+                            <li>현재 사용중인 계정 정보는 회원 탈퇴 후 복구가 불가합니다.</li>
+                            <li>진행 중인 거래건이 있거나 페널티 조치 중인 경우 탈퇴 신청이 불가합니다.</li>
+                            <li>탈퇴 후 회원님의 정보는 전자상거래 소비자보호법에 의거한 크몽 개인정보처리방침에 따라 관리됩니다.</li>
+                            <li>게시글 및 답글은 탈퇴 시 자동 삭제되지 않습니다. 탈퇴 후에는 계정 정보가 삭제되어 본인 확인이 불가하므로, 탈퇴 신청 전에 게시글 삭제를 해주시기 바랍니다.</li>
+                        </ul>
+                    </div>
+                    <div class="dr-checkbox mt-3">
+                        <input type="checkbox" id="checkbox" name="checkbox">
+                        <label class="dr-fw-500 dr-fz-15" for="checkbox">주의사항을 모두 확인하였습니다.</label>
+                    </div>
+                </div>
+                <a href="#none" class="dr-button indigo w-100 dr-withdrawal-button">회원 탈퇴</a>
+            </form>    
+        </div>
+    </div>
+    <!--// 컨테이너 --> 
+
+    <!-- 투표 만들기 팝업  s -->
+    <div class="dr-dim"></div>
+    <div class="dr-popup-wrap dr-popup-vote">
+        <div class="dr-popup-close" onclick="drPopupClose(this)"></div>
+        <header>
+            <h1>투표 만들기</h1>
+        </header>
+        <div class="dr-popup-content">
+            <form method="post">
+                <div class="dr-input-wrap mb-4">
+                    <input type="text" class="dr-input" id="popTitle" name="title" placeholder="제목을 입력해주세요.">
+                </div>
+                <div class="dr-checkbox mt-2 mb-3">
+                    <input type="checkbox" id="drCheck4">
+                    <label for="drCheck4">복수선택 허용</label>
+                </div>
+                <div class="dr-input-wrap">
+                    <input type="text" class="dr-input mb-2" placeholder="보기 1">
+                    <input type="text" class="dr-input" placeholder="보기 2">
+                </div>
+                <div class="d-flex mt-2">
+                    <button class="dr-button dr-plus-button w-100 dr-bg-white">보기 추가하기</button>
+                </div>
+                <div class="d-flex mt-5">
+                    <button class="dr-button indigo w-100">투표 등록하기</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- 투표 만들기 팝업  e -->
+</body>
+</html>
