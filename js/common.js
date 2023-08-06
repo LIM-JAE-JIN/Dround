@@ -44,7 +44,7 @@ $(document).ready( function(){
 
     // footer 짧을 때 fixed
     $(window).scroll(function() {
-        var footer = $("footer");
+        var footer = $("footer.dr-container");
 
         if ($(document).height() > $(window).height()) {
             footer.removeClass("dr-fixed");
