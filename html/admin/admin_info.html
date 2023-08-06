@@ -15,6 +15,29 @@
     <title>admin관리자_내정보</title>
 </head>
 <body>
+    <!-- 관리자 추가 팝업 s -->
+    <div class="dr-dim"></div>
+    <div class="dr-popup-wrap dr-popup-add-manager">
+        <div class="dr-popup-close" onclick="drPopupClose(this)"></div>
+        <header>
+            <h1>비밀번호 변경</h1>
+        </header>
+        <div class="dr-popup-content">
+            <div class="mb-5 dr-input-wrap">
+                <input type="password" class="dr-input" id="password" name="password" placeholder="비밀번호">
+            </div>
+            <div class="dr-input-wrap">
+                <input type="password" class="dr-input" id="passwordChk" name="passwordChk" placeholder="비밀번호 확인">
+            </div>
+        </div>
+        <footer>
+            <div class="d-flex justify-content-between dr-bg-white">
+                <a href="#none" class="dr-button disabled me-2" onclick="drPopupClose(this)">취소</a>
+                <a href="#none" class="dr-button indigo ms-2" onclick="drPopupClose(this)">저장</a>
+            </div>
+        </footer>
+    </div>
+    <!-- 관리자 추가 팝업 e -->
     <!-- 컨테이너 -->
     <div class="dr-container">
         <div class="dr-admin-main">
@@ -56,7 +79,7 @@
                             <li>
                                 <div class="dr-admin-tit">비밀번호</div>
                                 <div class="dr-admin-txt">
-                                    <button class="dr-pw-edit-btn dr-color-06">변경하기</button>
+                                    <button class="dr-pw-edit-btn dr-color-06" onclick="drPopupOpen('.dr-popup-add-manager')">변경하기</button>
                                 </div>
                             </li>
                             <li>

@@ -15,6 +15,53 @@
     <title>admin관리자_파트너협업</title>
 </head>
 <body>
+    <!-- 관리자 추가 팝업 s -->
+    <div class="dr-dim"></div>
+    <div class="dr-popup-wrap dr-popup-collabo-req">
+        <div class="dr-popup-close" onclick="drPopupClose(this)"></div>
+        <header>
+            <h1>협업 요청 현황</h1>
+        </header>
+        <div class="dr-popup-content">
+            <ul class="dr-admin-row-list border-0">
+                <li class="w-100 border-0">
+                    <div class="dr-admin-txt p-0">
+                        총 요청/승인 <span class="dr-color-01 dr-fw-600 pe-4">0/0</span>
+                        시행사 요청/승인 <span class="dr-color-01 dr-fw-600 pe-4">0/0</span>
+                        증권사 요청/승인 <span class="dr-color-01 dr-fw-600 pe-4">0/0</span>
+                        대주 요청/승인 <span class="dr-color-01 dr-fw-600 pe-4">0/0</span>
+                    </div>
+                </li>
+            </ul>
+            <ul class="dr-admin-col-list mt-5">
+                <li>
+                    <div class="dr-col-1">요청일</div>
+                    <div class="dr-col-1">이름</div>
+                    <div class="dr-col-2">회사</div>
+                    <div class="dr-col-2">소속</div>
+                    <div class="dr-col-2">직무</div>
+                    <div class="dr-col-1">승인 현황</div>
+                </li>
+                <li>
+                    <div class="dr-col-1">2023.08.01</div>
+                    <div class="dr-col-1">임재진</div>
+                    <div class="dr-col-2">애드캡슐소프트</div>
+                    <div class="dr-col-2">감정평가법인</div>
+                    <div class="dr-col-2">감정평가법인</div>
+                    <div class="dr-col-1">승인완료</div>
+                </li>
+                <li>
+                    <div class="dr-col-1">2023.08.01</div>
+                    <div class="dr-col-1">임재진</div>
+                    <div class="dr-col-2">애드캡슐소프트</div>
+                    <div class="dr-col-2">감정평가법인</div>
+                    <div class="dr-col-2">감정평가법인</div>
+                    <div class="dr-col-1">미 승인</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 관리자 추가 팝업 e -->
     <!-- 컨테이너 -->
     <div class="dr-container">
         <div class="dr-admin-main">
@@ -79,7 +126,7 @@
                                 <div class="dr-col-2">제목</div>
                                 <div class="dr-col-1">wowlswowls<br/>감정평가법인</div>
                                 <div class="dr-col-1">진행중</div>
-                                <div class="dr-col-1"><a href="javascript:void(0);" class="dr-color-06 dr-fw-600 text-decoration-underline">0/0</a></div>
+                                <div class="dr-col-1"><a href="javascript:void(0);" class="dr-color-06 dr-fw-600 text-decoration-underline" onclick="drPopupOpen('.dr-popup-collabo-req')">0/0</a></div>
                                 <div class="dr-col-1">1123</div>
                                 <div class="dr-col-btn-wrap">
                                     <button class="dr-color-06">수정하기</button>
@@ -93,7 +140,7 @@
                                 <div class="dr-col-2">제목</div>
                                 <div class="dr-col-1">wowlswowls<br/>감정평가법인</div>
                                 <div class="dr-col-1">완료</div>
-                                <div class="dr-col-1"><a href="javascript:void(0);" class="dr-color-06 dr-fw-600 text-decoration-underline">0/0</a></div>
+                                <div class="dr-col-1"><a href="javascript:void(0);" class="dr-color-06 dr-fw-600 text-decoration-underline" onclick="drPopupOpen('.dr-popup-collabo-req')">0/0</a></div>
                                 <div class="dr-col-1">112311</div>
                                 <div class="dr-col-btn-wrap">
                                     <button class="dr-color-06">수정하기</button>
