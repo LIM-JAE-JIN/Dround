@@ -443,8 +443,9 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 .dr-combobox .dr-checkbox{ width: 50%; margin-bottom: 1.2rem;}
 .dr-expert-main .dr-expert-select-wrap .dr-recent{display: block;}
 .dr-expert-main .dr-expert-select-wrap .dr-button{height: 45px; display: flex; width: 144px; justify-content: space-around; align-items: center; font-weight: 600;}
-.dr-expert-main .dr-expert-cont{display: flex;justify-content: space-between;flex-wrap: wrap;}
-.dr-expert-main .dr-expert-cont > div{margin-top: 3rem; display: inline-block; width: calc(33% - 15px); padding: 2.5rem 3rem; background-color: #fff; border-radius: 5px;}
+.dr-expert-main .dr-expert-cont{display: flex; flex-wrap: wrap;}
+.dr-expert-main .dr-expert-cont > div {margin-right:2%; margin-top: 3rem; display: inline-block; width: 32%; padding: 2.5rem 3rem; background-color: #fff; border-radius: 5px;}
+.dr-expert-main .dr-expert-cont > div:nth-child(3n) {margin-right: 0;}
 .dr-expert-main .dr-expert-cont h5{display: inline-block; padding: 1rem; background-color: #353839; border-radius: 1px; color: #fff; text-align: center; margin-bottom: 4rem;}
 .dr-expert-main .dr-expert-cont .dr-cont {margin-bottom: 1.5rem;}
 .dr-expert-main .dr-expert-cont .dr-cont span{margin-right: 0.5rem;}
@@ -747,7 +748,9 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 
     /* ------전문가찾기------ s */
     /* 전문가 찾기_메인 s */
-    .dr-expert-main .dr-expert-cont > div{width: calc(50% - 15px);}
+    .dr-expert-main .dr-expert-cont > div{width: 49%;}
+    .dr-expert-main .dr-expert-cont > div:nth-child(3n){ margin-right: 2%;}
+    .dr-expert-main .dr-expert-cont > div:nth-child(2n) {margin-right: 0;}
     /* 전문가 찾기_메인 e */
     /* ------전문가찾기------ e */
 
@@ -890,7 +893,9 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 
     /* ------전문가찾기------ s */
     /* 전문가 찾기_메인 s */
-    .dr-expert-main .dr-expert-cont > div{width: 100%;}
+    .dr-expert-main .dr-expert-cont > div{width: 100%; margin-right: 0;}
+    .dr-expert-main .dr-expert-cont > div:nth-child(3n){ margin-right: 0;}
+    .dr-expert-main .dr-expert-cont > div:nth-child(2n) {margin-right: 0;}
     .dr-expert-main .dr-expert-banner h1{font-size: 2.5rem;}
     .dr-expert-main .dr-expert-banner{padding: 4rem 1rem 5rem 3rem;;}
     .dr-expert-main .dr-expert-select-wrap .dr-recent{display: none;}
