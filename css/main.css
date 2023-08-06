@@ -642,7 +642,7 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 .dr-td-wrap ul{display: flex; align-items: center;}
 .dr-td-wrap .dr-col-5, .dr-td-wrap .dr-col-6{color: #c2c2c2; font-size: 1.1rem;}
 .dr-td-wrap .dr-complete{position: absolute;top: 50%;right: 47px; transform: translateY(-50%); font-size: 20px;}
-.dr-td-wrap .dr-complete a{position: relative; display: flex;justify-content: space-around; width: 95px; font-size: 1.3rem;font-weight: 500;background-color: #f1f8f4; border-radius: 3px; padding: 1rem 2.5rem; color: #6EA386; cursor:unset ;}
+.dr-td-wrap .dr-complete a{position: relative; display: flex;justify-content: space-around; white-space: nowrap; width: 95px; font-size: 1.3rem;font-weight: 500;background-color: #f1f8f4; border-radius: 3px; padding: 1rem 2.5rem; color: #6EA386; cursor:unset ;}
 .dr-td-wrap .dr-complete a.dr-approve{color: #fff; background-color: #353839; cursor:pointer;}
 .dr-td-wrap .dr-complete a i{background: url(../../img/icon/icon_trash.png) no-repeat; background-size: contain; width: 22px; height: 22px; position: absolute; cursor: pointer; z-index: 1; top:50%;transform: translateY(-50%); right: -33px;}
 .dr-mo-block{display: none;}
