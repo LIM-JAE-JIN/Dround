@@ -15,6 +15,41 @@
     <title>admin관리자</title>
 </head>
 <body>
+    <!-- 관리자 추가 팝업 s -->
+    <div class="dr-dim"></div>
+    <div class="dr-popup-wrap dr-popup-add-manager">
+        <div class="dr-popup-close" onclick="drPopupClose(this)"></div>
+        <header>
+            <h1>관리자 추가</h1>
+        </header>
+        <div class="dr-popup-content">
+            <div class="mb-5 dr-input-wrap">
+                <input type="text" class="dr-input" id="name" name="name" placeholder="이름을 입력해주세요.">
+            </div>
+            <div class="mb-5 dr-input-wrap">
+                <input type="text" class="dr-input" id="idEmail" name="idEmail" placeholder="계정을 입력해주세요.">
+            </div>
+            <!-- 비밀번호 유지하라고 하면 필요없는거 아닌지 s -->
+            <div class="mb-5 dr-input-wrap">
+                <input type="password" class="dr-input" id="password" name="password" placeholder="비밀번호를 입력하세요">
+            </div>
+            <!-- 비밀번호 유지하라고 하면 필요없는거 아닌지 e -->
+            <div class="d-flex align-items-center">
+                <p class="me-5 dr-fw-600 dr-fz-16">권한</p>
+                <div class="dr-checkbox">
+                    <input type="checkbox" id="allAgreeCheck" checked>
+                    <label class="dr-fz-15 dr-fw-600" for="allAgreeCheck">관리자</label>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="d-flex justify-content-between dr-bg-white">
+                <a href="#none" class="dr-button disabled me-2" onclick="drPopupClose(this)">취소</a>
+                <a href="#none" class="dr-button indigo ms-2" onclick="drPopupClose(this)">추가</a>
+            </div>
+        </footer>
+    </div>
+    <!-- 관리자 추가 팝업 e -->
     <!-- 컨테이너 -->
     <div class="dr-container">
         <div class="dr-admin-main">
@@ -80,7 +115,7 @@
                     </article>
                     <article>
                         <h2>관리자 계정 관리</h2>
-                        <button class="dr-admin-add-btn">관리자 추가하기</button>
+                        <button class="dr-admin-add-btn" onclick="drPopupOpen('.dr-popup-add-manager')">관리자 추가하기</button>
                         <ul class="dr-admin-col-list">
                             <li>
                                 <div class="dr-col-1">이름</div>

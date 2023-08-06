@@ -586,6 +586,7 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 .dr-drop-list.dr_off {display: none;}
 .dr-drop-list p {width: 100%; padding:10px 0 10px 30px; border-bottom:1px solid #ddd; background-color: #f3f3f3;}
 .dr-drop-list p:last-child {border-bottom:0;}
+.dr-popup-wrap.dr-popup-add-manager {width:320px;}
 /* ------어드민 관리자------ e */
 
 /* ------반응형------ s */
