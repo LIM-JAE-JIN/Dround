@@ -40,7 +40,20 @@ $(document).ready( function(){
         }else{
             $('#allAgreeCheck').prop('checked',false);
         }
-    }); 
+    });
+
+    // 푸터 짧을 때 fixed
+    $(window).scroll(function() {
+        var footer = $("footer");
+
+        if ($(document).height() > $(window).height()) {
+            footer.addClass("sticky");
+        } else {
+            footer.removeClass("sticky");
+        }
+    });
+    $(window).scroll();
+
 })
 //팝업 열기
 function drPopupOpen(popName){
