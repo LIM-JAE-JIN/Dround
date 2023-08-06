@@ -42,14 +42,14 @@ $(document).ready( function(){
         }
     });
 
-    // 푸터 짧을 때 fixed
+    // footer 짧을 때 fixed
     $(window).scroll(function() {
         var footer = $("footer");
 
         if ($(document).height() > $(window).height()) {
-            footer.addClass("sticky");
+            footer.removeClass("dr-fixed");
         } else {
-            footer.removeClass("sticky");
+            footer.addClass("dr-fixed");
         }
     });
     $(window).scroll();

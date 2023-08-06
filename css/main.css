@@ -131,6 +131,7 @@ footer{background-color:#F2F2F2; margin-top: 12rem;}
 .dr-footer-wrap .dr-footer-terms ul li:last-child{margin-right:0;}
 .dr-footer-wrap .dr-footer-terms ul li a{font-size:1.3rem; color:#626262;line-height: 1.6rem;}
 .dr-footer-wrap .dr-copy-right{color:#B7B7B7; white-space: nowrap;}
+footer.dr-fixed {position: fixed; bottom:0; left:0; right:0;}
 /* ------footer------ e */
 
 /* ------커뮤니티------ s */
