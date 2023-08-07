@@ -69,10 +69,12 @@
                             </div>
                         </div>
                         <div class="folding-list mt-4">
-                            <a href="#none" class="dr-folding-head">
-                                <p>서울시 오피스텔 사업 건</p>
-                                <button href="#none" class="dr-folding-btn open">받은 협업 <span>03</span></button>
-                            </a>
+                            <!-- 2023-08-07 수정 s -->
+                            <div class="dr-folding-head">
+                                <a href="#none"><p>서울시 오피스텔 사업 건</p></a>
+                                <a href="#none" class="dr-folding-btn">받은 협업 <span>03</span></a>
+                            </div>
+                            <!-- 2023-08-07 수정 e -->
                             <div class="dr-folding-panel">
                                 <div class="dr-scroll-y">
                                     <div class="dr-table">
@@ -111,7 +113,7 @@
                                                     <div class="dr-mo-block mt-4">승인일시</div>
                                                     <div class="dr-my-timer">23.01.05 00:00</div> 
                                                 </li>
-                                            </ul>
+                                            </ul>   
                                             <div class="dr-complete"><a href="#none" class="dr-approve" onclick="drPopupOpen('.dr-popup-letter-received')">승인하기<i></i></a></div> <!-- 승인 전 일시 -->
                                         </div> 
                                         <!-- 나의 파트너 협업글 받은협업 e -->
@@ -381,16 +383,15 @@
             const idx = $('.dr-my-tab').index($(this).closest('.dr-my-tab'));
             $('.dr-my-tab-panel').eq(idx).addClass('dr_on').siblings('.dr-my-tab-panel').removeClass('dr_on');
         });
-        // 나의 파트너 협업글 아코디언 
-        $('.dr-folding-head').on('click', function (e) {
+        // 나의 파트너 협업글 아코디언 2023-08-07
+        $('.dr-folding-btn').on('click', function (e) {
             e.preventDefault();
-            const $this = $('.dr-folding-btn');
-            if ($this.hasClass('open')) {
-                $this.removeClass('open').closest('.folding-list').find('.dr-folding-panel').stop().slideUp(300);
-                $('.dr-folding-head, .dr-folding-btn').css({"background-color": "#fff","color": "#353839"});
+            if ($(this).hasClass('open')) {
+                $(this).removeClass('open').closest('.folding-list').find('.dr-folding-panel').stop().slideUp(300);
+                $(this).closest('.folding-list').find('.dr-folding-head, .dr-folding-head a:first-child, .dr-folding-btn').css({"background-color": "#fff","color": "#353839"});
             } else {
-                $this.addClass('open').closest('.folding-list').find('.dr-folding-panel').stop().slideDown(300);
-                $('.dr-folding-head, .dr-folding-btn').css({"background-color": "#505866","color": "#fff"});
+                $(this).addClass('open').closest('.folding-list').find('.dr-folding-panel').stop().slideDown(300);
+                $(this).closest('.folding-list').find('.dr-folding-head, .dr-folding-head a:first-child, .dr-folding-btn').css({"background-color": "#505866","color": "#fff"});
             }
         });
     </script>

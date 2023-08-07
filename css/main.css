@@ -117,6 +117,10 @@
 .dr-hd-m-gnb ul li:last-child a {color:#8d94a0;}
 .dr-hd-m-bottom {position: absolute; bottom:50px; left:30px; right:30px;}
 .dr-hd-m-bottom .dr-button {padding:1.3rem 0;}
+
+.dr-red-dot{position: relative;}
+.dr-red-dot::after{content: "";position: absolute; top: -4px; right: -8px; width: 8px;height: 8px;background-color: #EA5555;border-radius: 50%;}
+.dr-hd-m-bottom .dr-red-dot{top: -6px;}
 /* ------header------ e */
 
 /* ------footer------ s */
@@ -621,14 +625,15 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 .dr-thead.type1 .dr-th:last-child{width: 20%;}
 .dr-scroll-y{overflow-y: auto;}
 .dr-my-partner .dr-scroll-y.type1 {max-height: 286px;}
-.dr-my-partner .dr-folding-head{display: flex;justify-content: space-between; align-items: center; background-color: #505866;padding: 2rem 4.5rem 2rem 2rem;color: #fff; border: 1px solid #E8E8EB;}
+.dr-my-partner .dr-folding-head{display: flex;justify-content: space-between; align-items: center; background-color: #fff;padding: 2rem 4.5rem 2rem 2rem;color: #fff; border: 1px solid #E8E8EB;}
+.dr-my-partner .dr-folding-head a{color: #505866;}
 .dr-my-partner .dr-folding-head p{font-size: 1.6rem; font-weight: 600; line-height: 22px;}
-.dr-folding-btn{position: relative;background-color: transparent; border: 0;color: #fff; font-size: 1.4rem; white-space: nowrap;}
+.dr-folding-btn{position: relative;background-color: transparent; border: 0;color: #505866; font-size: 1.4rem; white-space: nowrap;}
 .dr-folding-btn.open::before{content: ""; display: inline-block; width: 8px; height: 8px; background-color: #EA5555; border-radius: 50%; margin-right: 8px;}
 .dr-folding-btn::after{position: absolute;content: "";background: url(../../img/icon/icon_arrow_down.png) no-repeat;width: 23px;height: 23px;background-size: contain;top: -5px;right: -25px;}
 .dr-folding-btn.open::after{position: absolute;content: "";background: url(../../img/icon/icon_arrow_up_w.png) no-repeat;width: 23px;height: 23px;background-size: contain;top: -4px;right: -25px;}
 .dr-folding-btn span {font-weight: 700;}
-.dr-folding-panel{background-color:#F3F3F3;padding:2rem;} 
+.dr-folding-panel{background-color:#F3F3F3;padding:2rem; display: none;} 
 .dr-folding-panel .dr-scroll-y{max-height: 400px;}
 .dr-table .dr-th-wrap{display: flex; margin-bottom: 10px; padding: 0 20px;}
 .dr-table .dr-th-wrap li{display: inline-block; color:#989CA1;opacity: 0.9; font-size: 1.2rem; font-weight: 500;}
