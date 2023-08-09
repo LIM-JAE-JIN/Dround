@@ -15,6 +15,7 @@
     <title>마이페이지</title>
 </head>
 <body> 
+    <div class="dr-dim"></div> <!-- 2023-08-09 -->
     <!-- 컨테이너 -->
     <div class="dr-container dr-bg-white">
         <div class="dr-community-main mx-auto">
@@ -261,6 +262,7 @@
                                     <div class="dr-phone-wrap">
                                         <input type="text" class="dr-input">
                                         <button type="button" class="dr-phone_btn dr-fw-500 dr-fz-13">변경하기</button>
+                                        <p class="dr-err-txt dr-fz-12 dr-fw-400 " id="nickname-status" style="display: none;">중복된 닉네임 입니다.</p><!-- 2023-08-09 -->
                                     </div>
                                 </div>
                             </div>
@@ -271,7 +273,7 @@
                                 <div class="dr-input-wrap mb-2">
                                     <div class="dr-phone-wrap">
                                         <input type="tel" class="dr-input" id="phone" name="phone" maxlength="11" readonly >
-                                        <button type="button" class="dr-phone_btn dr-fw-500 dr-fz-13">변경하기</button>
+                                        <button type="button" class="dr-phone_btn dr-fw-500 dr-fz-13" onclick="drPopupOpen('.dr-popup-phone-1')">변경하기</button>
                                     </div>
                                 </div>
                             </div>
@@ -323,7 +325,6 @@
         </div>
     </div>
     <!--// 컨테이너 --> 
-    <div class="dr-dim"></div>  
 
     <!-- 받은 협업 의향서 팝업 s -->
     <div class="dr-popup-wrap dr-popup-letter-received type">
@@ -353,8 +354,6 @@
     <!-- 받은 협업 의향서 팝업 e -->
 
     <!-- 보낸 협업 의향서 팝업 s -->
-    <div class="dr-dim"></div>
-
     <div class="dr-popup-wrap dr-popup-letter-send type">
         <div class="dr-popup-close" onclick="drPopupClose(this)"></div>
         <p class="dr-color-02 dr-fw-700 dr-fz-16 mb-4">보낸 협업 의향서</p>
@@ -375,8 +374,8 @@
         </div>
     </div>
     <!-- 보낸 협업 의향서 팝업 e -->
-    <!-- 2023-08-09 작성자 마감글 팝업 -->
-    <div class="dr-dim"></div>
+
+    <!-- 2023-08-09 작성자 마감글 팝업 s -->
     <div class="dr-popup-wrap dr-popup-delete dr-popup-deadline">
         <header>
             <h1 class="text-center dr-fz-18">작성자가 마감한 글입니다.</h1>
@@ -387,24 +386,19 @@
             </div>
         </footer>
     </div>
-    <style>
-        .dr-popup-wrap.dr-popup-password{max-width: 388px; width: 100%;}
-        .dr-popup-wrap.dr-popup-password h1 {font-size: 3rem;}
-        .dr-popup-wrap.dr-popup-password h1 p{color: #989ca1; font-size: 1.4rem; margin-top: 0.5rem;}
-        .dr-popup-wrap.dr-popup-password footer{margin-top: 2.5rem;}
-    </style>
-    <!-- 비밀번호 변경 팝업 111 s -->
-    <div class="dr-dim"></div>
+    <!-- 2023-08-09 작성자 마감글 팝업 e -->
+
+    <!-- 2023-08-09 비밀번호 변경 팝업 1번 s -->
     <div class="dr-popup-wrap dr-popup-password dr-popup-password-1">
         <header>
             <h1>
-                비밀번호 변경
+                비밀번호 재설정
                 <p>기존 비밀번호를 입력해주세요.</p>
             </h1>
         </header>
         <div class="dr-popup-content">
-            <div class="mb-5 dr-input-wrap">
-                <p class="dr-fz-15 mb-3">비밀번호</p>
+            <div class="dr-input-wrap">
+                <p class="dr-fz-15 mb-3 dr-fw-600">비밀번호</p>
                 <input type="password" class="dr-input" id="password1" name="password" placeholder="기존 비밀번호를 입력해주세요.">
                 <p class="dr-err-txt dr-fz-12 dr-fw-400 " id="password-status1" style="display: none;">영문/숫자/특수문자 모두 사용(8~15자 이하)</p>
             </div>
@@ -415,24 +409,24 @@
             </div>
         </footer>
     </div>
-    <!-- 비밀번호 변경 팝업 111 e -->
-    <!-- 비밀번호 변경 팝업 222 s -->
-    <div class="dr-dim"></div>
+    <!-- 2023-08-09 비밀번호 변경 팝업 1번 e -->
+
+    <!-- 2023-08-09 비밀번호 변경 팝업 2번 s -->
     <div class="dr-popup-wrap dr-popup-password dr-popup-password-2">
         <header>
             <h1>
-                비밀번호 변경
+                비밀번호 재설정
                 <p>비밀번호를 재설정 해주세요.</p>
             </h1>
         </header>
         <div class="dr-popup-content">
             <div class="mb-5 dr-input-wrap">
-                <p class="dr-fz-15 mb-3">비밀번호</p>
+                <p class="dr-fz-15 mb-3 dr-fw-600">비밀번호</p>
                 <input type="password" class="dr-input" id="password2" name="password" placeholder="비밀번호를 입력하세요.">
                 <p class="dr-err-txt dr-fz-12 dr-fw-400" style="display: none;">영문/숫자/특수문자 모두 사용(8~15자 이하)</p>
             </div>
-            <div class="mb-5 dr-input-wrap">
-                <p class="dr-fz-15 mb-3">비밀번호 확인</p>
+            <div class="dr-input-wrap">
+                <p class="dr-fz-15 mb-3 dr-fw-600">비밀번호 확인</p>
                 <input type="password" class="dr-input" id="password3" name="password2" placeholder="비밀번호를 다시 한번 입력해주세요">
                 <p class="dr-err-txt dr-fz-12 dr-fw-400" style="display: none;">비밀번호가 일치하지 않습니다.</p>
             </div>
@@ -443,11 +437,12 @@
             </div>
         </footer>
     </div>
-    <!-- 비밀번호 변경 팝업 3333 e -->
-    <div class="dr-dim"></div>
+    <!-- 2023-08-09 비밀번호 변경 팝업 2번 e -->
+
+    <!-- 2023-08-09 비밀번호 변경 팝업 3번 s -->
     <div class="dr-popup-wrap dr-popup-password dr-popup-password-3">
         <div class="dr-popup-content">
-            <p class="dr-fz-18 dr-fw-600">비밀번호 재설정이 완료되었습니다.</p>
+            <p class="dr-txt">비밀번호 재설정이 완료되었습니다.</p>
         </div>
         <footer>
             <div class="d-flex dr-bg-white">
@@ -455,7 +450,53 @@
             </div>
         </footer>
     </div>
-    <!-- 비밀번호 변경 팝업 3333 e -->
+    <!-- 2023-08-09 비밀번호 변경 팝업 3번 e --> 
+
+    <!-- 2023-08-09 휴대폰 변경 팝업 1번 s -->
+    <div class="dr-popup-wrap dr-popup-phone dr-popup-phone-1">
+        <header>
+            <h1>
+                휴대폰 번호 변경
+                <p>기존 휴대폰 번호를 입력해주세요.</p>
+            </h1>
+        </header>
+        <div class="dr-popup-content">
+            <div class="dr-input-wrap mb-2">
+                <div class="dr-phone-wrap">
+                    <input type="tel" class="dr-input" name="phone" placeholder="번호를 입력해주세요" maxlength="11">
+                    <button type="button" class="dr-phone_btn dr-fw-500 dr-fz-13" id="cert_send">인증번호</button>
+                </div>
+            </div>
+            <div class="dr-input-wrap">
+                <div class="dr-phone-wrap">
+                    <input type="tel" class="dr-input" id="cert_num" name="cert_num" placeholder="인증번호 입력" maxlength="6">
+                    <span id="timer"></span>
+                    <button type="button" class="dr-phone_btn disabled dr-fw-500 dr-fz-13" id="cert_check">확인</button> <!-- disabled 추가 시 비활성화 -->
+                </div>
+                <p class="dr-err-txt dr-fz-12 dr-fw-400 " id="phone-status" style="display: none;">유효시간이 지났습니다. 다시 전송해주세요</p>
+            </div>
+        </div>
+        <footer>
+            <div class="d-flex dr-bg-white">
+                <a href="#none" class="dr-button disabled w-100" onclick="drPopupClose(this),drPopupOpen('.dr-popup-phone-2')">변경하기</a>
+            </div>
+        </footer>
+    </div>
+    <!-- 2023-08-09 비밀번호 변경 팝업 1번 e --> 
+
+    <!-- 2023-08-09 휴대폰 변경 팝업 2번 s -->
+    <div class="dr-popup-wrap dr-popup-phone dr-popup-phone-2">
+        <div class="dr-popup-content">
+            <p class="dr-txt">휴대폰 번호 변경이 완료되었습니다.</p>
+        </div>
+        <footer>
+            <div class="d-flex dr-bg-white">
+                <a href="#none" class="dr-button indigo w-100" onclick="drPopupClose(this)">확인</a>
+            </div>
+        </footer>
+    </div>
+    <!-- 2023-08-09 비밀번호 변경 팝업 2번 e --> 
+
     <script>
         // 마이페이지 탭
         $('.dr-my-tab a').click(function (e) { 

@@ -60,7 +60,7 @@
 .dr-phone-wrap .dr-input {width:calc(100% - 90px);}
 .dr-phone-wrap .dr-phone_btn {width:83px; margin-left:7px; border:1px solid #d3d4da; border-radius:3px; background-color:#fff;}
 .dr-phone-wrap .dr-phone_btn.disabled {border-color:#e8e8e8; color:#d2d2d2; cursor:default;}
-.dr-err-txt {color:#E94B4B; position: absolute; bottom:-17px;}
+.dr-err-txt {color:#E94B4B !important; position: absolute; bottom:-17px;}
 .dr-suc-txt {color:#1C8F51; position: absolute; bottom:-17px;}
 .dr-job-selection{display: flex; flex-wrap:wrap}
 .dr-job-selection .btn-check + .btn{border-color: #999; color: #999;}
@@ -705,6 +705,11 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 .dr-popup-wrap.type footer{background-color: #fff;}
 .dr-popup-wrap.type footer .dr-button{padding: 1.2rem 6.3rem;}
 .dr-table .dr-td-wrap .dr-col-5 .dr-my-timer, .dr-table .dr-td-wrap .dr-col-6 .dr-my-timer{width: 44px; word-break: break-all;}
+.dr-popup-wrap.dr-popup-password, .dr-popup-wrap.dr-popup-phone{max-width: 388px; width: 100%;}
+.dr-popup-wrap.dr-popup-password h1, .dr-popup-wrap.dr-popup-phone h1  {font-size: 3rem;}
+.dr-popup-wrap.dr-popup-password h1 p, .dr-popup-wrap.dr-popup-phone h1 p{color: #989ca1; font-size: 1.4rem; font-weight: 400; margin-top: 0.5rem;}
+.dr-popup-wrap.dr-popup-password .dr-popup-content .dr-txt, .dr-popup-wrap.dr-popup-phone .dr-popup-content .dr-txt{font-size: 1.8rem; font-weight: 600;}
+.dr-popup-wrap.dr-popup-password footer, .dr-popup-wrap.dr-popup-phone footer{margin-top: 2.5rem;}
 /* 회원탈퇴 s */
 .dr-registaer-wrap.membership h1{font-size: 3rem; font-weight: 700;}
 .dr-registaer-wrap.membership .dr-join-chk-wrap{padding: 2.5rem 0 0;}
@@ -962,6 +967,8 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
     .dr-my-privacy .dr-my-input-cont{display: block;}
     .dr-my-privacy .dr-my-email{display: block; margin-top: 1rem;}
     .dr-button.dr-button-edit{width: 100%;}
+    .dr-popup-wrap.dr-popup-password h1, .dr-popup-wrap.dr-popup-phone h1  {font-size: 2.3rem;}
+    .dr-popup-wrap.dr-popup-password .dr-popup-content .dr-txt, .dr-popup-wrap.dr-popup-phone .dr-popup-content .dr-txt{font-size: 1.6rem; font-weight: 600;}
     /* ------마이페이지------ e */
 }
 @media (max-width: 576px) {
