@@ -72,7 +72,7 @@
                             <!-- 2023-08-07 수정 s -->
                             <div class="dr-folding-head">
                                 <a href="#none"><p>서울시 오피스텔 사업 건</p></a>
-                                <a href="#none" class="dr-folding-btn">받은 협업 <span>03</span></a>
+                                <a href="#none" class="dr-folding-btn dr-red-dot-left">받은 협업 <span>03</span></a>
                             </div>
                             <!-- 2023-08-07 수정 e -->
                             <div class="dr-folding-panel">
@@ -277,7 +277,7 @@
                             </div>
                             <div class="dr-input-wrap">
                                 <p class="dr-fz-15 mb-3">비밀번호 변경</p>
-                                <a href="#nome" class="dr-button dr-my-phone">변경하기</a>
+                                <a href="#nome" class="dr-button dr-my-phone" onclick="drPopupOpen('.dr-popup-password-1')">변경하기</a>
                             </div>
                         </div>
                         <h3>회사 정보</h3>
@@ -375,6 +375,87 @@
         </div>
     </div>
     <!-- 보낸 협업 의향서 팝업 e -->
+    <!-- 2023-08-09 작성자 마감글 팝업 -->
+    <div class="dr-dim"></div>
+    <div class="dr-popup-wrap dr-popup-delete dr-popup-deadline">
+        <header>
+            <h1 class="text-center dr-fz-18">작성자가 마감한 글입니다.</h1>
+        </header>
+        <footer>
+            <div class="d-flex">
+                <button class="dr-button indigo w-100" onclick="drPopupClose(this)">확인</button>
+            </div>
+        </footer>
+    </div>
+    <style>
+        .dr-popup-wrap.dr-popup-password{max-width: 388px; width: 100%;}
+        .dr-popup-wrap.dr-popup-password h1 {font-size: 3rem;}
+        .dr-popup-wrap.dr-popup-password h1 p{color: #989ca1; font-size: 1.4rem; margin-top: 0.5rem;}
+        .dr-popup-wrap.dr-popup-password footer{margin-top: 2.5rem;}
+    </style>
+    <!-- 비밀번호 변경 팝업 111 s -->
+    <div class="dr-dim"></div>
+    <div class="dr-popup-wrap dr-popup-password dr-popup-password-1">
+        <header>
+            <h1>
+                비밀번호 변경
+                <p>기존 비밀번호를 입력해주세요.</p>
+            </h1>
+        </header>
+        <div class="dr-popup-content">
+            <div class="mb-5 dr-input-wrap">
+                <p class="dr-fz-15 mb-3">비밀번호</p>
+                <input type="password" class="dr-input" id="password1" name="password" placeholder="기존 비밀번호를 입력해주세요.">
+                <p class="dr-err-txt dr-fz-12 dr-fw-400 " id="password-status1" style="display: none;">영문/숫자/특수문자 모두 사용(8~15자 이하)</p>
+            </div>
+        </div>
+        <footer>
+            <div class="d-flex dr-bg-white">
+                <a href="#none" class="dr-button disabled w-100" onclick="drPopupClose('.dr-popup-password-1'),drPopupOpen('.dr-popup-password-2')">다음</a>
+            </div>
+        </footer>
+    </div>
+    <!-- 비밀번호 변경 팝업 111 e -->
+    <!-- 비밀번호 변경 팝업 222 s -->
+    <div class="dr-dim"></div>
+    <div class="dr-popup-wrap dr-popup-password dr-popup-password-2">
+        <header>
+            <h1>
+                비밀번호 변경
+                <p>비밀번호를 재설정 해주세요.</p>
+            </h1>
+        </header>
+        <div class="dr-popup-content">
+            <div class="mb-5 dr-input-wrap">
+                <p class="dr-fz-15 mb-3">비밀번호</p>
+                <input type="password" class="dr-input" id="password2" name="password" placeholder="비밀번호를 입력하세요.">
+                <p class="dr-err-txt dr-fz-12 dr-fw-400" style="display: none;">영문/숫자/특수문자 모두 사용(8~15자 이하)</p>
+            </div>
+            <div class="mb-5 dr-input-wrap">
+                <p class="dr-fz-15 mb-3">비밀번호 확인</p>
+                <input type="password" class="dr-input" id="password3" name="password2" placeholder="비밀번호를 다시 한번 입력해주세요">
+                <p class="dr-err-txt dr-fz-12 dr-fw-400" style="display: none;">비밀번호가 일치하지 않습니다.</p>
+            </div>
+        </div>
+        <footer>
+            <div class="d-flex dr-bg-white">
+                <a href="#none" class="dr-button disabled w-100" onclick="drPopupClose('.dr-popup-password-2'),drPopupOpen('.dr-popup-password-3')">재설정</a>
+            </div>
+        </footer>
+    </div>
+    <!-- 비밀번호 변경 팝업 3333 e -->
+    <div class="dr-dim"></div>
+    <div class="dr-popup-wrap dr-popup-password dr-popup-password-3">
+        <div class="dr-popup-content">
+            <p class="dr-fz-18 dr-fw-600">비밀번호 재설정이 완료되었습니다.</p>
+        </div>
+        <footer>
+            <div class="d-flex dr-bg-white">
+                <a href="#none" class="dr-button indigo w-100" onclick="drPopupClose(this)">로그인 하기</a>
+            </div>
+        </footer>
+    </div>
+    <!-- 비밀번호 변경 팝업 3333 e -->
     <script>
         // 마이페이지 탭
         $('.dr-my-tab a').click(function (e) { 

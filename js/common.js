@@ -60,6 +60,9 @@ function drPopupOpen(popName){
     $('body').css('overflow','hidden');
     $('.dr-dim').css('display','block');
     $(popName).css('display','block');
+        if($('.dr-popup-wrap').hasClass('dr-popup-password')){
+        $(popName).prev().siblings('.dr-dim').css('display','none');
+    }
 }
 //팝업 닫기
 function drPopupClose(im){
