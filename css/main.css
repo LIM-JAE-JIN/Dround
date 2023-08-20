@@ -342,7 +342,8 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 .dr-partner-main .dr-tab-mini-icon {width: 100%; text-align: right; margin:15px 0 10px;}
 .dr-partner-main .dr-tab-mini-icon img {width: 20px;}
 .dr-partner-main .dr-comunity-tab-mini {position: absolute; right:0; top:-25px;}
-.dr-partenr-list-wrap > li {position: relative; padding:25px 30px; border-radius: 5px; background-color: #fff; border:1px solid #e8e8e8;}
+.dr-partenr-list-wrap > li {position: relative; padding:25px 30px; border-radius: 5px; background-color: #fff; border:1px solid transparent; box-shadow:0px 4px 15px 0px rgba(120, 120, 120, 0.06);}
+.dr-partenr-list-wrap > li:hover {border-color:#1C8F51;}
 .dr-partenr-list-wrap > li > a {position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index:10;}
 .dr-partner-list-tit {display:-webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; max-height: 100%; overflow: hidden;}
 .dr-partner-list-dt {margin-top:10px; color:#989CA1;display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; max-height: 100%; overflow: hidden;}
@@ -352,8 +353,8 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 .dr-partner-list-bottom {display: flex; justify-content: space-between;}
 .dr-partner-list-ci {width:calc(100% - 200px)}
 .dr-partner-list-date span {margin-left:10px; color:#d2d2d2; font-weight:500;}
-.dr-partner-close-area {position: absolute; top: 0; right: 0; bottom: 0; left: 0; background-color: rgba(0,0,0,.3); border-radius: 5px; display: none;}
-.dr-partner-close-area p {position: absolute; top:20px; right:30px; padding:5px 11px; border:0; font-size: 14px; font-weight: 600; background-color: #fff; border-radius: 3px;}
+.dr-partner-close-area {position: absolute; top: 0; right: 0; bottom: 0; left: 0; background-color: #c1c1c1; opacity: 0.5; border-radius: 5px; display: none;}
+.dr-partner-close-area p {position: absolute; top:20px; right:30px; padding:5px 11px; border:0; font-size: 14px; font-weight: 600; background-color: #8692B0; color:#fff; border-radius: 3px;}
 /* 파트너 협업_메인 e */
 
 /* 파트너협업_글올리기 s */
