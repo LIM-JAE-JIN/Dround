@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/layout.css">
+    <!-- js -->
+    <script src="../../js/jquery-3.6.3.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+    <script src="../../js/bootstrap/bootstrap.min.js"></script>
+    <script defer src="../../js/common.js"></script>
+    <title>Dround : 글 올리기</title>
+</head>
+<body>
+    <!-- 컨테이너 -->
+    <div class="dr-container dr-bg-white">
+        <div class="dr-registaer-wrap">
+            <h1 class="text-center mb-5">고객센터 글 글올리기</h1>
+            <form class="dr-fz-15 dr-fw-600" method="post">
+                <div class="dr-input-wrap">
+                    <p class="mb-3">제목<span class="dr-important">*</span></p>
+                    <input type="text" class="dr-input" id="title" name="title" placeholder="ex) 서울시 오페스텔 사업 건">
+                </div>
+                <div class="dr-textarea-wrap mt-0">
+                    <p>내용</p>
+                    <textarea class="dr-textarea mt-3" id="" cols="10" rows="10" placeholder="내용을 입력해주세요."></textarea>
+                </div>
+                <div class="d-flex mt-2 position-relative">
+                    <label class="dr-input-file-button" for="input-file">
+                        이미지
+                    </label>
+                    <input type="file" id="input-file" />
+                </div>
+                <!--// 2023-07-12 ui 변경 추가된 부분 e -->
+                <button class="dr-button indigo w-100 dr-withdrawal-button">글 올리기</button>
+            </form>    
+        </div>
+    </div>
+    <!--// 컨테이너 --> 
+</body>
+</html>
