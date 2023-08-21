@@ -73,9 +73,17 @@
                     </div>
                 </div>
                 <div class="w-100 position-relative">
-                    <ul class="dr-comunity-tab-mini d-flex dr-fz-13">
-                        <li class="dr_on">최신순</li>
-                    </ul>
+                    <!-- 230820 수정 s -->
+                    <div class="dr-comunity-tab-mini d-flex justify-content-between align-items-center w-100">
+                        <div class="dr-list-view-wrap">
+                            <a href="javascript:void(0);" class="dr-mylist-view-btn dr_on">나의 작성 글 보기<img src="../../img/icon/ic_arrow_g.png" alt="ic-arrow"></a>
+                            <a href="javascript:void(0);" class="dr-alllist-view-btn">협업 글 보기<img src="../../img/icon/ic_arrow_g.png" alt="ic-arrow"></a>
+                        </div>
+                        <ul class="d-flex dr-fz-13">
+                            <li class="dr_on">최신순</li>
+                        </ul>
+                    </div>
+                    <!-- 230820 수정 e -->
                     <ul class="dr-partenr-list-wrap">
                         <li class="mb-4">
                             <p class="dr-partner-list-tit dr-fz-18 dr-fw-600">서울시 오피스텔 사업 건</p>
@@ -185,6 +193,18 @@
                 setTimeout(function(){
                     $('.dr-partner-chk-wrap').removeClass('dr_on');
                 },500)
+            }
+        });
+
+        //230820 작성글보기 기능 추가
+        $('.dr-list-view-wrap > a').on('click',function(){
+            $('.dr-list-view-wrap > a').toggleClass('dr_on');
+            if($('.dr-list-view-wrap .dr-alllist-view-btn').hasClass('dr_on')){
+                $('.dr-partner-comm-box').css('opacity', 0.3);
+                $('.dr-partner-chk-wrap').css('display','none');
+            }else{          
+                $('.dr-partner-comm-box').css('opacity', 1);
+                $('.dr-partner-chk-wrap').css('display','block');
             }
         });
         </script>
