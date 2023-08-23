@@ -15,6 +15,32 @@
     <title>admin관리자_회원현황</title>
 </head>
 <body>
+    <!-- 회원정보 수정 팝업 s -->
+    <div class="dr-dim"></div>
+    <div class="dr-popup-wrap dr-popup-edit-member" style="width:320px">
+        <div class="dr-popup-close" onclick="drPopupClose(this)"></div>
+        <header>
+            <h1>회원정보 수정</h1>
+        </header>
+        <div class="dr-popup-content">
+            <div class="mb-5 dr-input-wrap">
+                <input type="text" class="dr-input" id="name" name="name" placeholder="기존 회사 표기">
+            </div>
+            <div class="mb-5 dr-input-wrap">
+                <input type="text" class="dr-input" id="idEmail" name="idEmail" placeholder="기존 소속 표기">
+            </div>
+            <div class="mb-5 dr-input-wrap">
+                <input type="password" class="dr-input" id="password" name="password" placeholder="기존 직무 표기">
+            </div>
+        </div>
+        <footer>
+            <div class="d-flex justify-content-between dr-bg-white">
+                <a href="#none" class="dr-button disabled me-2" onclick="drPopupClose(this)">취소</a>
+                <a href="#none" class="dr-button indigo ms-2" onclick="drPopupClose(this)">수정하기</a>
+            </div>
+        </footer>
+    </div>
+    <!-- 회원정보 수정 팝업 e -->
     <!-- 컨테이너 -->
     <div class="dr-container">
         <div class="dr-admin-main">
@@ -95,10 +121,42 @@
                                 <div class="dr-col-1">감정평가법인</div>
                                 <div class="dr-col-1">2023.08.01</div>
                                 <div class="dr-col-4">0/0/0/0/0</div>
+                                <!-- 230820 승인하기 버튼 추가 s -->
                                 <div class="dr-col-btn-wrap">
-                                    <button class="dr-color-06">수정하기</button>
-                                    <button class="dr-color-01">삭제하기</button>
+                                    <button class="dr-color-02">승인하기</button>
+                                    <button class="dr-color-06" onclick="drPopupOpen('.dr-popup-edit-member')">수정</button>
+                                    <button class="dr-color-01">삭제</button>
                                 </div>
+                                <!-- 230820 승인하기 버튼 추가 e -->
+                            </li>
+                        </ul>
+                        <ul class="dr-admin-col-list">
+                            <li>
+                                <div class="dr-col">이름</div>
+                                <div class="dr-col-2">계정</div>
+                                <div class="dr-col-1">닉네임</div>
+                                <div class="dr-col-1">회사</div>
+                                <div class="dr-col-1">소속</div>
+                                <div class="dr-col-1">직무</div>
+                                <div class="dr-col-1">가입일</div>
+                                <div class="dr-col-4">파트너글/커뮤니티글/전문가글/요청/댓글</div>
+                            </li>
+                            <li>
+                                <div class="dr-col">이지연</div>
+                                <div class="dr-col-2">asdf@naver.com</div>
+                                <div class="dr-col-1">아리아리동동</div>
+                                <div class="dr-col-1">현대 중공 공인중개사</div>
+                                <div class="dr-col-1">감정평가법인</div>
+                                <div class="dr-col-1">감정평가법인</div>
+                                <div class="dr-col-1">2023.08.01</div>
+                                <div class="dr-col-4">0/0/0/0/0</div>
+                                <!-- 230820 승인하기 버튼 추가 s -->
+                                <div class="dr-col-btn-wrap">
+                                    <button class="dr-color-09">승인완료</button>
+                                    <button class="dr-color-06" onclick="drPopupOpen('.dr-popup-edit-member')">수정</button>
+                                    <button class="dr-color-01">삭제</button>
+                                </div>
+                                <!-- 230820 승인하기 버튼 추가 e -->
                             </li>
                         </ul>
                     </article>

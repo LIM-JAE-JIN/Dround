@@ -582,7 +582,7 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 .dr-admin-row-list li .dr-admin-tit {width: 150px; background-color: #f3f3f3; padding:8px 15px; font-weight:600; height: 100%;}
 .dr-admin-row-list li .dr-admin-txt { padding:8px 15px;}
 .dr-admin-col-list {width: 100%; border-top:1px solid #ddd;}
-.dr-admin-col-list li {position: relative; display: flex; padding:14px 20px; font-size:14px; font-weight:bold; border-bottom:1px solid #ddd; word-break:keep-all;}
+.dr-admin-col-list li {position: relative; display: flex; padding:14px 20px; font-size:14px; font-weight:bold; border-bottom:1px solid #ddd; word-break:break-all;}
 .dr-admin-col-list li:first-child {background-color: #f3f3f3; font-size:13px; color:#aaa; padding:8px 20px;}
 .dr-admin-col-list li > div {flex-shrink: 0;}
 .dr-admin-col-list li .dr-col {width: 50px;}
