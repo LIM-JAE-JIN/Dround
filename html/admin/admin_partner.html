@@ -108,8 +108,65 @@
                             </li>
                         </ul>
                     </article>
+                    <!-- 230823 수정 s -->
                     <article class="position-relative">
-                        <div class="position-absolute end-0 dr-fz-14 d-flex align-items-center" style="cursor:pointer;" >전체보기 <img src="../../img/icon/icon_arrow_down.png" alt="arrow-down" style="width:24px;"></div>
+                        <div class="position-relative">
+                            <div class="dr-admin-drop-menu-btn position-absolute end-0 dr-fz-14 d-flex align-items-center dr-fw-500 dr-color-09" style="cursor:pointer;" >전체보기 <img src="../../img/icon/icon_arrow_down.png" alt="arrow-down" style="width:24px;"></div>
+                            <div class="dr-admin-drop-menu" style="position: absolute; background: #fff; right:0; z-index: 11; top:24px; padding:20px; border-radius: 5px; border:1px solid #ddd;">
+                                <div class="dr-radio-wrap mb-2">
+                                    <input type="radio" id="adminPartnerChk0" name="adminPartnerChk" checked>
+                                    <label class="dr-fw-400 ms-2" for="adminPartnerChk0">전체 보기</label>
+                                </div>
+                                <div class="dr-radio-wrap mb-2">
+                                    <input type="radio" id="adminPartnerChk1" name="adminPartnerChk">
+                                    <label class="dr-fw-400 ms-2" for="adminPartnerChk1">시행사</label>
+                                </div>
+                                <div class="dr-radio-wrap mb-2">
+                                    <input type="radio" id="adminPartnerChk2" name="adminPartnerChk">
+                                    <label class="dr-fw-400 ms-2" for="adminPartnerChk2">증권사</label>
+                                </div>
+                                <div class="dr-radio-wrap mb-2">
+                                    <input type="radio" id="adminPartnerChk3" name="adminPartnerChk">
+                                    <label class="dr-fw-400 ms-2" for="adminPartnerChk3">운용사</label>
+                                </div>
+                                <div class="dr-radio-wrap mb-2">
+                                    <input type="radio" id="adminPartnerChk4" name="adminPartnerChk">
+                                    <label class="dr-fw-400 ms-2" for="adminPartnerChk4">시공사</label>
+                                </div>
+                                <div class="dr-radio-wrap mb-2">
+                                    <input type="radio" id="adminPartnerChk5" name="adminPartnerChk">
+                                    <label class="dr-fw-400 ms-2" for="adminPartnerChk5">신탁사</label>
+                                </div>
+                                <div class="dr-radio-wrap mb-2">
+                                    <input type="radio" id="adminPartnerChk6" name="adminPartnerChk">
+                                    <label class="dr-fw-400 ms-2" for="adminPartnerChk6">대주</label>
+                                </div>
+                                <div class="dr-radio-wrap mb-2">
+                                    <input type="radio" id="adminPartnerChk7" name="adminPartnerChk">
+                                    <label class="dr-fw-400 ms-2" for="adminPartnerChk7">MD/컨설팅</label>
+                                </div>
+                                <div class="dr-radio-wrap mb-2">
+                                    <input type="radio" id="adminPartnerChk8" name="adminPartnerChk">
+                                    <label class="dr-fw-400 ms-2" for="adminPartnerChk8">중개사</label>
+                                </div>
+                                <div class="dr-radio-wrap mb-2">
+                                    <input type="radio" id="adminPartnerChk9" name="adminPartnerChk">
+                                    <label class="dr-fw-400 ms-2" for="adminPartnerChk9">회계법인</label>
+                                </div>
+                                <div class="dr-radio-wrap mb-2">
+                                    <input type="radio" id="adminPartnerChk10" name="adminPartnerChk">
+                                    <label class="dr-fw-400 ms-2" for="adminPartnerChk10">법무법인</label>
+                                </div>
+                                <div class="dr-radio-wrap mb-2">
+                                    <input type="radio" id="adminPartnerChk11" name="adminPartnerChk">
+                                    <label class="dr-fw-400 ms-2" for="adminPartnerChk11">감정평가법인</label>
+                                </div>
+                                <div class="dr-radio-wrap"> 
+                                    <input type="radio" id="adminPartnerChk12" name="adminPartnerChk">
+                                    <label class="dr-fw-400 ms-2" for="adminPartnerChk12">유관법인</label>
+                                </div>
+                            </div>
+                        </div>
                         <h2>파트너 협업 글 리스트</h2>
                         <ul class="dr-admin-col-list">
                             <li>
@@ -151,11 +208,19 @@
                             </li>
                         </ul>
                     </article>
+                    <!-- 230823 수정 e -->
                 </div>
                 <!-- 오른쪽 컨텐츠 e -->
             </div>
         </div>
     </div>
     <!--// 컨테이너 -->
+    
+    <script>
+        // 탭팝업 기능 추가
+        $('.dr-admin-drop-menu-btn').on('click',function(){
+            $('.dr-admin-drop-menu').toggleClass('dr_on');
+        });
+    </script>
 </body>
 </html>

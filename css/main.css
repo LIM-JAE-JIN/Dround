@@ -603,6 +603,8 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 .dr-drop-list p:last-child {border-bottom:0;}
 .dr-popup-wrap.dr-popup-add-manager {width:320px;}
 .dr-popup-wrap.dr-popup-collabo-req {width: 800px;}
+.dr-admin-drop-menu {display: none;}
+.dr-admin-drop-menu.dr_on {display: block;}
 /* ------어드민 관리자------ e */
 
 /* ------마이페이지------ s */
