@@ -4,7 +4,7 @@
 .dr-main .dr-main-banner{position: relative; width: 100%; max-width: 1374px; background: url(../img/main/main_background.png) no-repeat; height: 638px; margin-left: auto; margin-right: auto; background-size: 100% 100%;}
 .dr-main .dr-main-banner .dr-tit-wrap{position: absolute; width: 100%; top: 50%; left: 50%; transform: translate(-50%,-50%); text-align: center;}
 .dr-main .dr-main-banner .dr-tit-wrap h1{font-family: 'Euclid-Circular-A-Light', sans-serif;letter-spacing: -5.5px;font-size: 8rem; line-height: 104px; color: #1F2027;}
-.dr-main .dr-main-banner .dr-tit-wrap h1 strong{ font-weight: 800; }
+.dr-main .dr-main-banner .dr-tit-wrap h1 strong{ font-weight: 800; font-family: 'Euclid-Circular-A-Medium', sans-serif;}
 .dr-main .dr-main-banner .dr-tit-wrap p{font-size: 2rem; line-height: 20px; letter-spacing: -1px; margin-top: 2.5rem;}
 .dr-main .dr-main-banner .dr-tit-wrap p span{font-weight: 600; color: #393939;}
 .dr-main .dr-main-explanation {text-align: center;font-weight:700;letter-spacing: -1px; margin-top: 24rem;}
@@ -816,18 +816,47 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 @media (max-width: 768px) {
     /* ------메인------ s */
     .dr-main .dr-main-banner{height: 293px;width: calc(100% + 60px);margin-left: -30px;}
-    .dr-main .dr-main-banner .dr-tit-wrap h1{font-size: 3.5rem; letter-spacing: -3.5px;}
+    .dr-main .dr-main-banner .dr-tit-wrap h1{font-size: 3.3rem; letter-spacing: -3.5px;}
     .dr-main .dr-main-banner .dr-tit-wrap p{width: 220px; font-size: 1.7rem; margin: 0 auto;}
 
     .dr-main .dr-main-explanation{margin-top: 10rem;}
     .dr-main .dr-main-explanation h2{font-size: 2.3rem;}
-
+    .dr-main .dr-job-photo{margin-left: -20px; margin-right: -20px;}
     .dr-main .dr-job-photo-tablet{display: none;}
     .dr-main .dr-job-photo-mobile{position: relative; display: block;}
-    .dr-main .dr-job-photo-mobile .dr-mobile-ani-wrap{}
-    .dr-mobile-ani-wrap .dr-mobile-ani{}
-    .dr-mobile-ani-wrap .dr-mobile-ani img{}
-
+    .dr-main .dr-job-photo-mobile .dr-mobile-ani-wrap{position: absolute; top: 23%; width: 100%; height: 100%; overflow: hidden;}
+    .dr-mobile-ani-wrap .dr-mobile-ani{position: absolute; width: 100%;}
+    .dr-mobile-ani-wrap .dr-mobile-ani img{ position: absolute;width: 100%;left: 0;top: 0;}
+    img.dr-left{transform: translateX(103%);}
+    img.dr-right{transform: translateX(-100%);}
+    .dr-mobile-ani-wrap .dr-mobile-ani .dr-ani1_img1{ animation: dr-left-arrow-1 20s linear infinite;}
+    .dr-mobile-ani-wrap .dr-mobile-ani .dr-ani1_img2{ animation: dr-left-arrow-2 20s 10s linear infinite;}
+    .dr-mobile-ani-wrap .dr-mobile-ani .dr-ani3_img1{ animation: dr-left-arrow-1 20s linear infinite;}
+    .dr-mobile-ani-wrap .dr-mobile-ani .dr-ani3_img2{ animation: dr-left-arrow-2 20s 10s linear infinite;}
+    .dr-mobile-ani-wrap .dr-mobile-ani.ani2{margin-top: 19%;}
+    .dr-mobile-ani-wrap .dr-mobile-ani.ani3{margin-top: 38%;}
+    .dr-mobile-ani-wrap .dr-mobile-ani .dr-ani2_img1{ animation: dr-right-arrow-1 20s linear infinite;}
+    .dr-mobile-ani-wrap .dr-mobile-ani .dr-ani2_img2{ animation: dr-right-arrow-2 20s 10s linear infinite;}
+    @keyframes dr-left-arrow-1 {
+        0%{transform: translateX(103%)}
+        50%{transform: translateX(0)}
+        100%{transform: translateX(-103%)}
+    }
+    @keyframes dr-left-arrow-2 {
+        0%{transform: translateX(101%)}
+        50%{transform: translateX(0)}
+        100%{transform: translateX(-101%)}
+    }
+    @keyframes dr-right-arrow-1 {
+        0%{transform: translateX(-100%)}
+        50%{transform: translateX(0)}
+        100%{transform: translateX(100%)}
+    }
+    @keyframes dr-right-arrow-2 {
+        0%{transform: translateX(-102%)}
+        50%{transform: translateX(0)}
+        100%{transform: translateX(102%)}
+    }
     .dr-main .dr-main-partner{margin-top: 10rem;}
     .dr-main .dr-main-partner .dr-txt{font-size: 2.3rem; line-height: 34.5px;}
     .dr-main .dr-main-partner > .dr-wrap{display: block;}
@@ -1019,7 +1048,8 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 } 
 @media (max-width: 350px) {
     /* ------메인------ s */
-    .dr-main .dr-main-explanation h2{font-size: 2.1rem;}
+    .dr-main .dr-main-explanation h2{font-size: 1.9rem;}
+    .dr-main .dr-main-banner .dr-tit-wrap h1{font-size: 2.9rem;}
     /* ------메인------ e */
     /* ------파트너협업------ s */
     /* 글올리기 s */
