@@ -22,7 +22,7 @@
             <form class="dr-fz-15 dr-fw-600" method="post">
                 <div class="dr-input-wrap">
                     <p class="mb-3">제목<span class="dr-important">*</span></p>
-                    <input type="text" class="dr-input" name="title" placeholder="ex) 서울시 오페스텔 사업 건">
+                    <input type="text" class="dr-input" name="title" placeholder="ex) 서울시 오피스텔 사업 건"><!-- 2023-09-04 placeholder 값 수정 -->
                 </div>
                 <div class="dr-input-wrap">
                     <p class="mb-3">위치<span class="dr-important">*</span></p>
@@ -42,7 +42,7 @@
                 <div class="dr-business-check">
                     <p class="dr-fz-15 dr-fw-600">사업단계</p>
                     <div class="dr-fw-500">
-                        <div class="dr-radio-wrap">
+                        <div class="dr-radio-wrap dr-radio"> <!-- 2023-09-04 class 'dr-radio' 추가 -->
                             <input type="radio" id="drCheck2" name="raido1">
                             <label for="drCheck2">계약금 지급</label>
                         </div>
@@ -579,6 +579,23 @@
                 }
             });
         }
+        // 2023-09-04 공개여부 선택팝업 체크박크 체크 시 border값 제어 스크립트 추가 
+        $('.disclosure-popup #drCheck1_0').click(function(){
+            if($(this).is(':checked') == true){
+                $('.disclosure-popup .dr-input').css('border', '1px solid #353839')
+            }else{
+                $('.disclosure-popup .dr-input').css('border', 'transparent')
+            }
+        })
+        $('.disclosure-popup #drCheck2_0').click(function(){
+            if($(this).is(':checked') == true){
+                $('.disclosure-popup .dr-pop-profile').css('border', '1px solid #353839')
+            }else{
+                $('.disclosure-popup .dr-pop-profile').css('border', 'transparent')
+            }
+        })
+        //
+        
     </script>
 </body>
 </html>
