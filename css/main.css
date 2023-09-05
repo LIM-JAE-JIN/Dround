@@ -378,7 +378,7 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 
 /* 공개여부 팝업, 의향보내기 팝업 s */
 .dr-popup-wrap.disclosure-popup{ max-width: 500px; width: 100%;}
-.disclosure-popup .dr-input-wrap .dr-input{ background-color: #F3F3F3; color: #505866; border-color: transparent;}   
+.disclosure-popup .dr-input-wrap .dr-input{ background-color: #F3F3F3; color: #505866; border: 1px solid rgb(53, 56, 57);}   
 .disclosure-popup .dr-input-wrap .dr-input:focus-visible{outline:transparent}
 .disclosure-popup .dr-belong-name{position: absolute; top: 50%; transform: translateY(-50%); display: inline-block; left: 65px; color: #353839; font-size: 1.3rem; font-weight: 600;}
 .disclosure-popup .dr-pop-profile{padding: 1.5rem; background-color: #F3F3F3; border-radius: 3px;}

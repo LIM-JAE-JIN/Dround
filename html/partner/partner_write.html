@@ -42,7 +42,7 @@
                 <div class="dr-business-check">
                     <p class="dr-fz-15 dr-fw-600">사업단계</p>
                     <div class="dr-fw-500">
-                        <div class="dr-radio-wrap dr-radio"> <!-- 2023-09-04 class 'dr-radio' 추가 -->
+                        <div class="dr-radio-wrap"> 
                             <input type="radio" id="drCheck2" name="raido1">
                             <label for="drCheck2">계약금 지급</label>
                         </div>
@@ -70,7 +70,13 @@
                             <input type="radio" id="drCheck8" name="raido1">
                             <label for="drCheck8">기타</label>
                         </div>
-                    </div>    
+                        <!-- 2023-09-04 '선택안함 추가' s -->
+                        <div class="dr-radio-wrap">
+                            <input type="radio" id="NoSelect" name="raido1">
+                            <label for="NoSelect">선택안함</label>
+                        </div>
+                        <!-- 2023-09-04 '선택안함 추가' e -->
+                    </div>
                 </div>
                 <div class="dr-textarea-wrap mb-3">
                     <p>내용</p>
@@ -506,7 +512,7 @@
             <form method="post">
                 <div class="mb-5">
                     <div class="dr-checkbox dr-fw-500 mb-3">
-                        <input type="checkbox" id="drCheck1_0">
+                        <input type="checkbox" id="drCheck1_0" checked >
                         <label for="drCheck1_0">필수 정보만 공개</label>
                     </div>
                     <div class="dr-input-wrap mb-3">
