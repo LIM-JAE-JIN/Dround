@@ -815,6 +815,9 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 }
 
 @media (max-width: 768px) {
+    input:focus {
+        border-color: #353839;
+      }
     /* ------메인------ s */
     .dr-main .dr-main-banner{height: 293px;width: calc(100% + 60px);margin-left: -30px;}
     .dr-main .dr-main-banner .dr-tit-wrap h1{font-size: 3.3rem; letter-spacing: -3.5px;}
@@ -910,7 +913,9 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
     .dr-title-wrap .dr-title-search-box {width: 100%; margin-top:15px;}
     .dr-title-wrap .dr-title-search-box input {width:calc(100% - 123px);}
     .dr-all-board-list > ul > li {width:100%;}
-    .dr-comunity-tab-mini {display: none !important;}
+    .dr-comunity-tab-mini .dr-alllist-view-btn {display: none !important;}
+    .dr-comunity-tab-mini .dr-mylist-view-btn.dr_on{display: blcok !important;}
+    .dr-comunity-tab-mini .mobile{display: none;}
     .dr-tab-mini-icon {display: block;}
     /* 커뮤니티_게시판 e */
     
