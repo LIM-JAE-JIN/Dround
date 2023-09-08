@@ -816,7 +816,7 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 
 @media (max-width: 768px) {
     input:focus {
-        border-color: #353839;
+        border-color: #353839; 
       }
     /* ------메인------ s */
     .dr-main .dr-main-banner{height: 293px;width: calc(100% + 60px);margin-left: -30px;}
