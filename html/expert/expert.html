@@ -179,14 +179,16 @@
     </div>
     <!--// 컨테이너 2-->
     <script>
-    // 2023-07-27 콤보박스 스크립트 수정 : pc일떄 호버 기능 제거, 클릭버튼으로 통일 
-        $('.dr-select').on('click', function() {
+    // 2023-07-27, 콤보박스 스크립트 수정 : pc일떄 호버 기능 제거, 클릭버튼으로 통일 // 2023-09-04 선택자 '.dr-select a'로 변경 
+        $('.dr-select a').on('click', function() {
+            if(!$(this)) return false;
             if (!$('.dr-select').hasClass('on')) {
                 $('.dr-select, .dr-combobox').addClass('on');
             } else {
                 $('.dr-select, .dr-combobox').removeClass('on');
             }
         });
+        
     </script>
 </body>
 </html>

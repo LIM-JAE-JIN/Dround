@@ -20,11 +20,9 @@
 .dr-main .dr-main-partner > .dr-wrap{margin-top: 2.5rem; display: flex; justify-content: space-between;}
 .dr-main .dr-main-partner .dr-button{width: 159px; height: 50px; color: #131414; font-size: 1.5rem;}
 .dr-main .dr-main-partner .dr-box-wrap{display: flex; text-align: center; justify-content: space-between; margin-top: 5rem;}
-.dr-main .dr-main-partner .dr-box-wrap > div{width: 33%; border-radius: 5px; margin-right: 2rem; box-shadow: 0px 0px 40px 5px rgba(201, 201, 201, 0.25);}
+.dr-main .dr-main-partner .dr-box-wrap > div{width: 33%; border-radius: 15px; margin-right: 2rem; box-shadow: 0px 0px 40px 5px rgba(201, 201, 201, 0.25); padding: 20px 20px 0 20px;}
 .dr-main .dr-main-partner .dr-box-wrap > div:last-child{margin-right:0;}
-.dr-main .dr-main-partner .dr-box-wrap > div img{height: 252px; background-color: #2DAF6E; display: block; border-radius: 5px 5px 0 0;}
-.dr-main .dr-main-partner .dr-box-wrap > div:nth-of-type(2) img{background-color: #222524;}
-.dr-main .dr-main-partner .dr-box-wrap > div:nth-of-type(3) img{background-color: #A3D3DD;}
+.dr-main .dr-main-partner .dr-box-wrap > div img{display: block;}
 .dr-main .dr-main-partner .dr-box-wrap > div p{background: #fff; padding: 35px 0 22px; margin: auto; letter-spacing: -1px; font-size: 1.8rem; font-weight: 500; line-height: 27px;}
 .dr-main .dr-main-partner .dr-box-wrap > div p strong{ font-weight: 800;}
 .dr-main .dr-main-community{position: relative;width: calc(100% + 60px);background: url(../img/main/img_section4.png) no-repeat;height: 310px;background-size: 100% 100%;text-align: center;margin-top: 24rem;margin-left: -30px;}
@@ -337,7 +335,7 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 .dr-partner-main .dr-title-wrap .dr-button {padding:13px 24px;}
 .dr-partner-main .dr-industry {width: 270px; min-width:270px; margin-top:0;}
 .dr-partner-comm-box {background-color: #353839; padding:25px 30px; border-radius: 5px;}
-.dr-partner-comm-box .dr-button-worker {background-color:#f3f3f3; color:#353839; padding:10px; width:auto; border:0;}
+.dr-partner-comm-box .dr-button-worker {background-color:#f3f3f3; color:#353839; padding:10px; width:auto; border:0; cursor: none;}
 .dr-partner-comm-box .dr-button-worker::before {background-image: url(../../img/icon/green_check_white.png);}
 .dr-partner-comm-box > p {margin-top:10px; color:#fff; line-height:22px;}
 .dr-partner-chk-wrap {padding:25px 30px; border-radius: 5px; border: 1px solid#E8E8EB; background:#FFF;}
@@ -816,7 +814,10 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 
 @media (max-width: 768px) {
     input:focus {
-        border-color: #353839; 
+        border-color: #353839 !important; 
+      }
+      input:focus-visible {
+        border-color: #353839 !important; 
       }
     /* ------메인------ s */
     .dr-main .dr-main-banner{height: 293px;width: calc(100% + 60px);margin-left: -30px;}
@@ -913,9 +914,7 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
     .dr-title-wrap .dr-title-search-box {width: 100%; margin-top:15px;}
     .dr-title-wrap .dr-title-search-box input {width:calc(100% - 123px);}
     .dr-all-board-list > ul > li {width:100%;}
-    .dr-comunity-tab-mini .dr-alllist-view-btn {display: none !important;}
-    .dr-comunity-tab-mini .dr-mylist-view-btn.dr_on{display: blcok !important;}
-    .dr-comunity-tab-mini .mobile{display: none;}
+    .dr-all-board .dr-comunity-tab-mini {display: none !important;}
     .dr-tab-mini-icon {display: block;}
     /* 커뮤니티_게시판 e */
     
@@ -939,8 +938,10 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
     /* 파트너협업_메인 s */
     .dr-partner-main .dr-industry {width: 100%; min-width:auto; margin-top:0;}
     .dr-partner-main .dr-title-search-box input {width: 100%;}
-    .dr-partner-chk-wrap {display: none; width: 270px; position: absolute; z-index: 11; top:24px; right:0;}
-    .dr-partner-chk-wrap.dr_on {display: block;}
+    .dr-partner-main .dr-partner-chk-wrap {display: none; width: 270px; position: absolute; z-index: 11; top:24px; right:0;}
+    .dr-partner-main .dr-partner-chk-wrap.dr_on {display: block;}
+    .dr-partner-main .dr-list-view-wrap > a.dr_on{display: flex !important;}
+    .dr-partner-main .dr-comunity-tab-mini .mobile{display: none;}
     /* 파트너협업_메인 e */
     /* 파트너 협업_글 상세 s */  
     .dr-partner-sub main{display: block}
