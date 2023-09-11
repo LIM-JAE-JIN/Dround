@@ -174,7 +174,7 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 .dr-industry-cont ul li:nth-child(even) span{color: #505866;}
 .dr-industry-cont ul li p{display: inline-block; max-width: 190px; font-size: 1.3rem;color:#505866; font-weight: 500; vertical-align: middle; overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
 .dr-industry-cont .dr-button-view{position: relative; width: 100%; bottom: -2rem;}
-.dr-button-worker{width: 118px; height: 35px; position: relative; background-color: #353839; border-radius: 4px; padding: 0.8rem 1rem; color: #fff; font-size: 1.4rem; font-weight: 600; white-space: nowrap;}
+.dr-button-worker{width: 118px; height: 35px; position: relative; background-color: #353839; border-radius: 4px; padding: 0.8rem 1rem; color: #fff; font-size: 1.4rem; font-weight: 600; white-space: nowrap; border-color: transparent; cursor: unset !important;}
 .dr-button-worker::before{content: ""; display: inline-block; width: 14px; height: 14px; background-image: url(../../img/icon/green_check.png); background-size: contain; margin-right: 0.7rem; vertical-align: bottom; background-repeat: no-repeat;}
 .dr-no-industry-cont{padding: 2.5rem 3rem; border: 1px solid #e8e8e8; background-color: #fff; min-height: 350px; max-height: 350px; position: relative;}
 .dr-no-industry-cont .dr-line{padding-top: 2rem;}
@@ -335,7 +335,7 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 .dr-partner-main .dr-title-wrap .dr-button {padding:13px 24px;}
 .dr-partner-main .dr-industry {width: 270px; min-width:270px; margin-top:0;}
 .dr-partner-comm-box {background-color: #353839; padding:25px 30px; border-radius: 5px;}
-.dr-partner-comm-box .dr-button-worker {background-color:#f3f3f3; color:#353839; padding:10px; width:auto; border:0; cursor: none;}
+.dr-partner-comm-box .dr-button-worker {background-color:#f3f3f3; color:#353839; padding:10px; width:auto; border:0;}
 .dr-partner-comm-box .dr-button-worker::before {background-image: url(../../img/icon/green_check_white.png);}
 .dr-partner-comm-box > p {margin-top:10px; color:#fff; line-height:22px;}
 .dr-partner-chk-wrap {padding:25px 30px; border-radius: 5px; border: 1px solid#E8E8EB; background:#FFF;}
@@ -450,9 +450,10 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 .dr-combobox.on{display: block;}
 .dr-combobox > .dr-checkbox.dr-all{ border-bottom: 1px solid #E0E3E9; padding-bottom: 1.5rem; width: 100%; margin-bottom: 1.5rem;}
 .dr-combobox .dr-checkbox{ width: 50%; margin-bottom: 1.2rem;}
+.dr-combobox .dr-button{padding: 6px 0;}
 .dr-expert-main .dr-expert-select-wrap .dr-recent{display: block;}
-.dr-expert-main .dr-expert-select-wrap .dr-button{height: 45px; display: flex; width: 144px; justify-content: space-around; align-items: center; font-weight: 600;padding: 1.3rem 7rem 1.3rem 9rem;}
-.dr-expert-main .dr-expert-select-wrap .dr-button::before{content: "";display: inline-block;background: url(../../img/icon/address-card-solid.svg) no-repeat;width: 18px;height: 16px;background-size: cover;position: absolute;left: 16px;}
+.dr-expert-main .dr-expert-select-wrap .dr-button.green{height: 45px; display: flex; width: 144px; justify-content: space-around; align-items: center; font-weight: 600;padding: 1.3rem 7rem 1.3rem 9rem;}
+.dr-expert-main .dr-expert-select-wrap .dr-button.green::before{content: "";display: inline-block;background: url(../../img/icon/address-card-solid.svg) no-repeat;width: 18px;height: 16px;background-size: cover;position: absolute;left: 16px;}
 .dr-expert-main .dr-expert-cont{display: flex; flex-wrap: wrap;}
 .dr-expert-main .dr-expert-cont > div {margin-right:2%; margin-top: 3rem; display: inline-block; width: 32%; padding: 2.5rem 3rem; background-color: #fff; border-radius: 5px;}
 .dr-expert-main .dr-expert-cont > div:nth-child(3n) {margin-right: 0;}
@@ -832,16 +833,21 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
     .dr-main .dr-job-photo-mobile .dr-mobile-ani-wrap{position: absolute; top: 23%; width: 100%; height: 100%; overflow: hidden;}
     .dr-mobile-ani-wrap .dr-mobile-ani{position: absolute; width: 100%;}
     .dr-mobile-ani-wrap .dr-mobile-ani img{ position: absolute;width: 100%;left: 0;top: 0; pointer-events: none;}
-    img.dr-left{transform: translateX(103%);}
-    img.dr-right{transform: translateX(-100%);}
+    img.dr-left{transform: translateX(0%);}
+    img.dr-right{transform: translateX(0%);}
     .dr-mobile-ani-wrap .dr-mobile-ani .dr-ani1_img1{ animation: dr-left-arrow-1 20s linear infinite;}
-    .dr-mobile-ani-wrap .dr-mobile-ani .dr-ani1_img2{ animation: dr-left-arrow-2 20s 10s linear infinite;}
+    .dr-mobile-ani-wrap .dr-mobile-ani .dr-ani1_img2{ animation: dr-left-arrow-start 10.1s linear forwards, dr-left-arrow-2 20s 10s linear infinite; }
     .dr-mobile-ani-wrap .dr-mobile-ani .dr-ani3_img1{ animation: dr-left-arrow-1 20s linear infinite;}
-    .dr-mobile-ani-wrap .dr-mobile-ani .dr-ani3_img2{ animation: dr-left-arrow-2 20s 10s linear infinite;}
+    .dr-mobile-ani-wrap .dr-mobile-ani .dr-ani3_img2{ animation: dr-left-arrow-start 10.1s linear forwards, dr-left-arrow-2 20s 10s linear infinite; }
     .dr-mobile-ani-wrap .dr-mobile-ani.ani2{margin-top: 19%;}
     .dr-mobile-ani-wrap .dr-mobile-ani.ani3{margin-top: 38%;}
     .dr-mobile-ani-wrap .dr-mobile-ani .dr-ani2_img1{ animation: dr-right-arrow-1 20s linear infinite;}
-    .dr-mobile-ani-wrap .dr-mobile-ani .dr-ani2_img2{ animation: dr-right-arrow-2 20s 10s linear infinite;}
+    .dr-mobile-ani-wrap .dr-mobile-ani .dr-ani2_img2{ animation: dr-right-arrow-start 10s linear forwards,dr-right-arrow-2 20s 10s linear infinite;}
+    @keyframes dr-left-arrow-start {
+        0%{transform: translateX(2%)}
+        100%{transform: translateX(-103%)}
+    }
+
     @keyframes dr-left-arrow-1 {
         0%{transform: translateX(103%)}
         50%{transform: translateX(0)}
@@ -851,6 +857,10 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
         0%{transform: translateX(101%)}
         50%{transform: translateX(0)}
         100%{transform: translateX(-101%)}
+    }
+    @keyframes dr-right-arrow-start {
+        0%{transform: translateX(1%)}
+        100%{transform: translateX(100%)}
     }
     @keyframes dr-right-arrow-1 {
         0%{transform: translateX(-100%)}
