@@ -33,7 +33,7 @@
 .dr-main .dr-main-expert{position: relative; max-width: 1200px; width: 100%; margin-top: 24rem; background: url(../img/main/greenbg.png) no-repeat; height: 400px; background-size: 100% 100%; border-radius: 10px;}
 .dr-main .dr-main-expert .dr-tit-wrap{position: absolute;top: 11rem;left: 9rem;z-index: 5;}
 .dr-main .dr-main-expert .dr-tit-wrap p{font-size: 3.5rem; font-weight: 700; line-height: 52.5px; color: #fff;}
-.dr-main .dr-main-expert .dr-tit-wrap .dr-button{color: #198D4E; width:159px; height: 50px; font-size: 1.5rem; background-color: #D3EADE; margin-top: 2.5rem;}
+.dr-main .dr-main-expert .dr-tit-wrap .dr-button{color: #198D4E; width:159px; height: 50px; font-size: 1.5rem; background-color: #D3EADE; margin-top: 2.5rem; border-color: transparent;}
 .dr-main .dr-main-expert img{position: absolute;}
 .dr-main .dr-main-expert img.dr-keyring{top: 0px; right: 140px; width: 419px;}
 .dr-main .dr-main-expert img.dr-green-circle{width: 628px; bottom: 0; right: 60px;}
