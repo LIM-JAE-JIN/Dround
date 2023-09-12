@@ -430,8 +430,12 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 .dr-popup-wrap.dr-popup-delete{width: 388px;}
 .dr-popup-wrap.dr-popup-delete footer{background-color: transparent;}
 .dr-popup-wrap.dr-popup-delete button{margin: 0 5px; display: flex;justify-content: space-around;}
-
 /* 파트너협업_글 상세 e*/
+
+/* 삭제하기 팝업 */
+.dr-popup-wrap.dr-popup-delete.type1 header h1{font-size: 1.8rem; color: #000; font-weight: 600; margin: 0 -20px; line-height: 26px; text-align: center;}
+.dr-popup-wrap.dr-popup-delete.type1 header p{font-size: 1.6rem; color: #000; line-height: 24px; padding-top: 0; text-align: center;}
+
 /* ------파트너협업------ e */
 
 /* ------전문가찾기------ s */
