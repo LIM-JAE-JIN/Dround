@@ -152,7 +152,7 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 .dr-free-cont{position:relative; margin-bottom: 2rem;}
 .dr-free-cont p {max-width: 524px; display: inline-block; overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
 .dr-free-icon{width: 108px;white-space: nowrap;}
-.dr-free-icon ul li{position: relative; width: 55px; padding-left: 1.7rem;display: inline-block;vertical-align:text-bottom}
+.dr-free-icon ul li{position: relative; width: 55px; padding-left: 1.7rem;display: inline-block;vertical-align:text-bottom; font-size: 1.3rem;}
 .dr-num{display: inline-block; width: 10px; line-height: 1.7rem; color: #989CA1; margin-right: 1.5rem;}
 
 /* 하트, 말풍선 아이콘 */
@@ -223,6 +223,7 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 .dr-details-comment .dr-textarea-wrap textarea{height: 75px; padding-right: 10rem; border: 1px solid #505866;border-radius: 5px;resize: none;}
 .dr-details-comment .dr-textarea-wrap a{ position: absolute;top: 50%;transform: translateY(-50%);right: 24px;color: #989CA1;font-size: 1.3rem;font-weight: 500;border: 1px solid #D7D7D7;border-radius: 3px;padding: 1rem 2rem;}
 .dr-details-comment .dr-textarea-wrap textarea::placeholder{position: absolute; top: 50%; transform: translateY(-50%); color: #383A52;}
+.dr-details-comment .dr-textarea-wrap textarea:focus::placeholder{color: transparent;}
 .vector_10{min-width: 15px; width: 15px; padding-top: 0.1rem;}
 .dr-writer-1 .dr-participation i, .dr-writer .dr-participation i { color: #EA5555; border: 1px solid #EA5555; border-radius: 12.5px; padding: 0.2rem 0.4rem; font-style: normal;}
 .dr-writer{background-color: #F8F8F8; border-top: 1px solid #E9E9E9; border-bottom: 1px solid #E9E9E9;padding: 2rem; }
