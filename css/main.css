@@ -18,11 +18,12 @@
 .dr-main .dr-main-partner .dr-txt{font-size: 3.5rem; font-weight: 700; line-height: 52.5px; letter-spacing: -1px; color: #000; margin-top: 1rem;}
 .dr-main .dr-main-partner p{max-width: 420px; line-height: 25.5px;}
 .dr-main .dr-main-partner > .dr-wrap{margin-top: 2.5rem; display: flex; justify-content: space-between;}
-.dr-main .dr-main-partner .dr-button{width: 159px; height: 50px; color: #131414; font-size: 1.5rem;}
+.dr-main .dr-main-partner .dr-button{width: 159px; height: 50px; color: #131414; font-size: 1.5rem; border: 1px solid #505866;}
 .dr-main .dr-main-partner .dr-box-wrap{display: flex; text-align: center; justify-content: space-between; margin-top: 5rem;}
 .dr-main .dr-main-partner .dr-box-wrap > div{width: 33%; border-radius: 15px; margin-right: 2rem; box-shadow: 0px 0px 40px 5px rgba(201, 201, 201, 0.25); padding: 20px 20px 0 20px;}
 .dr-main .dr-main-partner .dr-box-wrap > div:last-child{margin-right:0;}
 .dr-main .dr-main-partner .dr-box-wrap > div img{display: block;}
+.dr-main .dr-main-partner .dr-box-wrap > div img.dr-mobible{display: none;}
 .dr-main .dr-main-partner .dr-box-wrap > div p{background: #fff; padding: 35px 0 22px; margin: auto; letter-spacing: -1px; font-size: 1.8rem; font-weight: 500; line-height: 27px;}
 .dr-main .dr-main-partner .dr-box-wrap > div p strong{ font-weight: 800;}
 .dr-main .dr-main-community{position: relative;width: calc(100% + 60px);background: url(../img/main/img_section4.png) no-repeat;height: 310px;background-size: 100% 100%;text-align: center;margin-top: 24rem;margin-left: -30px;}
@@ -375,7 +376,7 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
 .dr-request{ margin-top: 10rem; font-size: 1.5rem; font-weight: 600; display: none;}
 .dr-request h3{ background-color: #505866; color: #fff; font-weight: 700; font-size: 1.6rem; line-height: 16px; padding: 1.2rem; margin-bottom: 2.5rem;}
 .dr-partner-write-wrap .dr-request .dr-business-check.type2 .dr-radio-wrap{width: fit-content; padding-right: 10px;}
-.dr-disclosure .dr-button{background-color: #131414; color: #fff;height: 50px; display: none;}
+.dr-disclosure .dr-button{background-color: #131414; color: #fff;height: 50px; display: none; border-color: transparent;}
 /* 파트너협업_글올리기 e */
 
 /* 공개여부 팝업, 의향보내기 팝업 s */
@@ -837,20 +838,20 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
     .dr-main .dr-main-explanation h2{font-size: 2.3rem;}
     .dr-main .dr-job-photo{margin-left: -20px; margin-right: -20px;}
     .dr-main .dr-job-photo-tablet{display: none;}
-    .dr-main .dr-job-photo-mobile{position: relative; display: block;}
-    .dr-main .dr-job-photo-mobile .dr-mobile-ani-wrap{position: absolute; top: 23%; width: 100%; height: 100%; overflow: hidden;}
+    .dr-main .dr-job-photo-mobile{position: relative; display: block; padding-top: 63%;}
+    .dr-main .dr-job-photo-mobile .dr-mobile-ani-wrap{position: absolute; top: 10%; width: 100%; height: 100%; overflow: hidden;}
     .dr-mobile-ani-wrap .dr-mobile-ani{position: absolute; width: 100%;}
     .dr-mobile-ani-wrap .dr-mobile-ani img{ position: absolute;width: 100%;left: 0;top: 0; pointer-events: none;}
     img.dr-left{transform: translateX(0%);}
     img.dr-right{transform: translateX(0%);}
-    .dr-mobile-ani-wrap .dr-mobile-ani .dr-ani1_img1{ animation: dr-left-arrow-1 20s linear infinite;}
-    .dr-mobile-ani-wrap .dr-mobile-ani .dr-ani1_img2{ animation: dr-left-arrow-start 10.1s linear forwards, dr-left-arrow-2 20s 10s linear infinite; }
-    .dr-mobile-ani-wrap .dr-mobile-ani .dr-ani3_img1{ animation: dr-left-arrow-1 20s linear infinite;}
-    .dr-mobile-ani-wrap .dr-mobile-ani .dr-ani3_img2{ animation: dr-left-arrow-start 10.1s linear forwards, dr-left-arrow-2 20s 10s linear infinite; }
+    .dr-mobile-ani-wrap .dr-mobile-ani .dr-ani1_img1{ animation: dr-left-arrow-1 40s linear infinite;}
+    .dr-mobile-ani-wrap .dr-mobile-ani .dr-ani1_img2{ animation: dr-left-arrow-start 20.1s linear forwards, dr-left-arrow-2 40s 20s linear infinite; }
+    .dr-mobile-ani-wrap .dr-mobile-ani .dr-ani3_img1{ animation: dr-left-arrow-1 40s linear infinite;}
+    .dr-mobile-ani-wrap .dr-mobile-ani .dr-ani3_img2{ animation: dr-left-arrow-start 20.1s linear forwards, dr-left-arrow-2 40s 20s linear infinite; }
     .dr-mobile-ani-wrap .dr-mobile-ani.ani2{margin-top: 19%;}
     .dr-mobile-ani-wrap .dr-mobile-ani.ani3{margin-top: 38%;}
-    .dr-mobile-ani-wrap .dr-mobile-ani .dr-ani2_img1{ animation: dr-right-arrow-1 20s linear infinite;}
-    .dr-mobile-ani-wrap .dr-mobile-ani .dr-ani2_img2{ animation: dr-right-arrow-start 10s linear forwards,dr-right-arrow-2 20s 10s linear infinite;}
+    .dr-mobile-ani-wrap .dr-mobile-ani .dr-ani2_img1{ animation: dr-right-arrow-1 40s linear infinite;}
+    .dr-mobile-ani-wrap .dr-mobile-ani .dr-ani2_img2{ animation: dr-right-arrow-start 20s linear forwards,dr-right-arrow-2 40s 20s linear infinite;}
     @keyframes dr-left-arrow-start {
         0%{transform: translateX(2%)}
         100%{transform: translateX(-103%)}
@@ -884,9 +885,11 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
     .dr-main .dr-main-partner .dr-txt{font-size: 2.3rem; line-height: 34.5px;}
     .dr-main .dr-main-partner > .dr-wrap{display: block;}
     .dr-main .dr-main-partner .dr-button{margin-top: 2rem;}
-
+    .dr-main .dr-main-partner .dr-box-wrap > div img{display: none;}
+    .dr-main .dr-main-partner .dr-box-wrap > div img.dr-mobible{display: block;}
     .dr-main .dr-main-partner .dr-box-wrap{display: block;}
     .dr-main .dr-main-partner .dr-box-wrap > div{width: 100%; margin-top: 2rem; margin-right: 0;}
+    .dr-main .dr-main-partner .dr-box-wrap > div p{padding: 15px 0 22px;}
     .dr-main .dr-main-community{margin-top: 10rem; height: 205px; background-size: 100% 100%;}
     .dr-main .dr-main-community .dr-tit-wrap p{font-size: 2rem;}
 
