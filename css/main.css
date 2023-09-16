@@ -148,7 +148,7 @@ footer.dr-container.dr-fixed {position: fixed; bottom:0; left:0; right:0;}
 button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1px solid #E8E8EB; border-radius: 3px;color: #989CA2; background-color: #fff; padding: 0.8rem 2.6rem;}
 .dr-line{height: 1px; border-bottom: 1px solid #e9e9e9; margin: 0 -3rem;}
 .dr-free-wrap{margin-top: 2rem;}
-.dr-free-wrap h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inline-block; width: 20px; height: 20px; background-image: url(../../img/icon/icon_best.png); background-size: cover;vertical-align: bottom; margin-left: -0.5rem; margin-right: 1rem;}
+h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inline-block; width: 20px; height: 20px; background-image: url(../../img/icon/icon_best.png); background-size: cover;vertical-align: bottom; margin-left: -0.5rem; margin-right: 1rem;}
 .dr-free-cont{position:relative; margin-bottom: 2rem;}
 .dr-free-cont p {max-width: 524px; display: inline-block; overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
 .dr-free-icon{width: 108px;white-space: nowrap;}
@@ -200,11 +200,14 @@ button.dr-button-view{font-size:1.3rem;font-weight:500; height: 35px; border: 1p
 /* 커뮤니티_메인 e */
 
 /* 커뮤니티_글상세 s */
+.dr-details-tit{font-weight: 700;}
 .dr-details-tit::before{ content: "";display: inline-block;width: 20px;height: 20px;background-size: cover;vertical-align: bottom; background-image: url(../../img/icon/icon_vote.png);margin-right: 0.5rem;}
 .dr-details-wrap{width: 100%; max-width: 840px; overflow: hidden;border: 1px solid #E8E8EB;border-radius: 5px;padding: 2.5rem 3rem;background: #fff; margin-right: 3rem;}
-.dr-details-wrap .dr-delete-button{font-size: 1.2rem; color: #EA5555; margin-left: auto;}
+.dr-details-wrap .dr-delete-button{font-size: 1.2rem; color: #EA5555; margin-left: auto; border-bottom: 1px solid #EA5555;}
 .dr-details-wrap .details-wrap-txt p{line-height: 25px; letter-spacing: -0.25px; padding-bottom: 3rem;}
+.dr-community-main.details .dr-industry-cont-best h4.dr-icon-best::before{margin-right: 6px;}
 .dr-details-header{margin-bottom: 2.5rem;}
+.dr-details-header .dr-delete{color: #c2c2c2; vertical-align: middle; margin-left: 8px;}
 .dr-vote-select-wrap {padding: 3rem; box-sizing: border-box; border: 1px solid #f3f3f3; border-radius: 5px; margin-bottom: 7rem;}
 .dr-vote-select-wrap .dr-vote-preview{display: flex;}
 .dr-vote-select-wrap .dr-vote-preview::after{content: "";display: inline-block;width: 23px;height: 23px;background: url(../../img/icon/icon_arrow.png) 0 -6px no-repeat;background-size: contain;}
