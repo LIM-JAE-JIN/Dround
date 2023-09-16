@@ -206,7 +206,7 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
 .dr-details-wrap{width: 100%; max-width: 840px; overflow: hidden;border: 1px solid #E8E8EB;border-radius: 5px;padding: 2.5rem 3rem;background: #fff; margin-right: 3rem;}
 .dr-details-wrap .dr-delete-button{font-size: 1.2rem; color: #EA5555; margin-left: auto; border-bottom: 1px solid #EA5555;}
 .dr-details-wrap .details-wrap-txt p{line-height: 25px; letter-spacing: -0.25px; padding-bottom: 3rem;}
-.dr-community-main.details h4.dr-icon-best::before{margin-right: 6px;}
+.dr-community-main.details h4.dr-icon-best::before{margin-right: 6px; vertical-align: text-top;}
 .dr-details-header{margin-bottom: 2.5rem;}
 .dr-details-header .dr-delete{color: #c2c2c2; vertical-align: middle; margin-left: 8px;}
 .dr-vote-select-wrap {padding: 3rem; box-sizing: border-box; border: 1px solid #f3f3f3; border-radius: 5px; margin-bottom: 7rem;}
