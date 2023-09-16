@@ -18,7 +18,7 @@
 .dr-main .dr-main-partner .dr-txt{font-size: 3.5rem; font-weight: 700; line-height: 52.5px; letter-spacing: -1px; color: #000; margin-top: 1rem;}
 .dr-main .dr-main-partner p{max-width: 420px; line-height: 25.5px;}
 .dr-main .dr-main-partner > .dr-wrap{margin-top: 2.5rem; display: flex; justify-content: space-between;}
-.dr-main .dr-main-partner .dr-button{width: 159px; height: 50px; color: #131414; font-size: 1.5rem; border: 1px solid #505866;}
+.dr-main .dr-main-partner .dr-button{width: 159px; height: 50px; color: #131414; font-size: 1.5rem; border: 1px solid #505866; font-weight: 700;}
 .dr-main .dr-main-partner .dr-box-wrap{display: flex; text-align: center; justify-content: space-between; margin-top: 5rem;}
 .dr-main .dr-main-partner .dr-box-wrap > div{width: 33%; border-radius: 15px; margin-right: 2rem; box-shadow: 0px 0px 40px 5px rgba(201, 201, 201, 0.25); padding: 20px 20px 0 20px;}
 .dr-main .dr-main-partner .dr-box-wrap > div:last-child{margin-right:0;}
@@ -30,18 +30,18 @@
 .dr-main .dr-main-community .dr-tit-wrap{position: absolute; width: 100%; top: 50%; left: 50%; transform: translate(-50%,-50%); color: #fff;}
 .dr-main .dr-main-community .dr-tit-wrap p{ font-size: 2.5rem; line-height: 37.5px;}
 .dr-main .dr-main-community .dr-tit-wrap p strong{font-weight: 700;}
-.dr-main .dr-main-community .dr-tit-wrap .dr-button{width: 159px; font-size: 1.5rem; color: #EAEAEA; margin-top: 2.5rem; border:1px solid #7E7E7E;}
+.dr-main .dr-main-community .dr-tit-wrap .dr-button{width: 159px; font-size: 1.5rem; color: #EAEAEA; margin-top: 2.5rem; border:1px solid #7E7E7E; font-weight: 700;}
 .dr-main .dr-main-expert{position: relative; max-width: 1200px; width: 100%; margin-top: 24rem; background: url(../img/main/greenbg.png) no-repeat; height: 400px; background-size: 100% 100%; border-radius: 10px;}
 .dr-main .dr-main-expert .dr-tit-wrap{position: absolute;top: 11rem;left: 9rem;z-index: 5;}
 .dr-main .dr-main-expert .dr-tit-wrap p{font-size: 3.5rem; font-weight: 700; line-height: 52.5px; color: #fff;}
-.dr-main .dr-main-expert .dr-tit-wrap .dr-button{color: #198D4E; width:159px; height: 50px; font-size: 1.5rem; background-color: #D3EADE; margin-top: 2.5rem; border-color: transparent; letter-spacing: -1.5px;}
+.dr-main .dr-main-expert .dr-tit-wrap .dr-button{color: #198D4E; width:159px; height: 50px; font-size: 1.5rem; background-color: #D3EADE; margin-top: 2.5rem; border-color: transparent; letter-spacing: -1.5px; font-weight: 700;}
 .dr-main .dr-main-expert img{position: absolute;}
 .dr-main .dr-main-expert img.dr-keyring{top: 0px; right: 140px; width: 419px;}
 .dr-main .dr-main-expert img.dr-green-circle{width: 628px; bottom: 0; right: 60px;}
 .dr-main .dr-main-cscenter{max-width: 1200px; width: 100%; height: 249px; margin-top: 24rem; padding: 5.7rem 0 4.7rem 0; text-align: center; background-color: #373737; border-radius: 10px;}
 .dr-main .dr-main-cscenter span{font-size: 1.5rem; font-weight: 700; color: #35BB73;}
 .dr-main .dr-main-cscenter p{font-size: 2.3rem; font-weight: 600; color: #fff; line-height: 34.5px; margin-top: 0.5rem;}
-.dr-main .dr-main-cscenter .dr-button{color: #fff; width: 146px; height: 50px; background-color: transparent; border: 1px solid #959697; margin-top: 3rem;}
+.dr-main .dr-main-cscenter .dr-button{color: #fff; width: 146px; height: 50px; background-color: transparent; border: 1px solid #959697; margin-top: 3rem; font-weight: 700;}
 /* ------메인------ e */
 /* ------로그인------ s */
 .dr-login{width:388px; position:fixed; top:50%;left:50%;transform:translate(-50%, -50%);}
@@ -472,7 +472,7 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
 .dr-expert-main .dr-expert-cont .dr-cont span:nth-child(1){font-size: 1.7rem; font-weight: 700; color: #353839;}
 .dr-expert-main .dr-expert-cont .dr-cont span:nth-child(3){font-size: 1.5rem; color: #989CA1;}
 .dr-expert-main .dr-expert-cont p{font-size: 1.6rem; font-weight: 500; line-height: 24px; color: #505866;}
-.dr-no-write{text-align:center;font-size:1.4 rem;color:#A0A4A6;margin-top: 6.5rem; font-weight: 500;}
+.dr-no-write{text-align:center;font-size:1.4rem;color:#A0A4A6;margin-top: 6.5rem; font-weight: 500;}
 /* 전문가 찾기_메인 e */
 
 /* 전문가 찾기_등록하기 s */
