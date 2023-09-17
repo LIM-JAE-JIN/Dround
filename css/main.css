@@ -3,7 +3,7 @@
 /* ------메인------ s */
 .dr-main .dr-main-banner{position: relative; width: 100%; max-width: 1374px; background: url(../img/main/main_background.png) no-repeat; height: 638px; margin-left: auto; margin-right: auto; background-size: 100% 100%;}
 .dr-main .dr-main-banner .dr-tit-wrap{position: absolute; width: 100%; top: 50%; left: 50%; transform: translate(-50%,-50%); text-align: center;}
-.dr-main .dr-main-banner .dr-tit-wrap h1{font-family: 'Euclid-Circular-A-Light', sans-serif;letter-spacing: -5.5px;font-size: 8rem; line-height: 104px; color: #1F2027;}
+.dr-main .dr-main-banner .dr-tit-wrap h1{font-family: 'Euclid-Circular-A-Light', sans-serif;letter-spacing: -1.5px;font-size: 8rem; line-height: 104px; color: #1F2027; word-spacing: 8px;}
 .dr-main .dr-main-banner .dr-tit-wrap h1 strong{ font-weight: 800; font-family: 'Euclid-Circular-A-Medium', sans-serif;}
 .dr-main .dr-main-banner .dr-tit-wrap p{font-size: 2rem; line-height: 20px; letter-spacing: -1px; margin-top: 2.5rem;}
 .dr-main .dr-main-banner .dr-tit-wrap p span{font-weight: 600; color: #393939;}
@@ -405,9 +405,9 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
 .dr-partner-sub .dr-content-wrap{max-width: 795px;width: 100%; margin-right: 25px; } 
 .dr-partner-sub main{display: flex;}
 .dr-partner-sub main h4{ font-size: 1.8rem; font-weight: 600; line-height: 18px; color: #353839;}
-.dr-business-overview { padding: 2.5rem 3rem 2rem; border: 1px solid #E8E8EB; border-radius: 3px;}
+.dr-business-overview { padding: 2.5rem 3rem 2rem; border: 1px solid #E8E8EB; border-radius: 3px; background: #fff;}
 .dr-business-overview h4::before{content: ""; display: inline-block; width: 18px; height: 18px; background-image: url(../../img/icon/icon_info.png); background-size: cover; vertical-align: bottom; margin-right: 10px;}
-.dr-partner-find{padding: 2.5rem 3rem 4rem; border: 1px solid #E8E8EB; border-radius: 3px; margin-top: 2.5rem;}
+.dr-partner-find{padding: 2.5rem 3rem 4rem; border: 1px solid #E8E8EB; border-radius: 3px; margin-top: 2.5rem; background: #fff;}
 .dr-partner-find h4::before{content: ""; display: inline-block; width: 18px; height: 18px; background-image: url(../../img/icon/icon_search.png); background-size: cover; vertical-align: bottom; margin-right: 10px;}
 .dr-partner-sub dl{display: table; margin-bottom: 2rem;}
 .dr-partner-sub dl:last-child{margin-bottom: 0;}
@@ -428,7 +428,7 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
 .dr-partner-sub main .dr-information > div > div{margin-bottom: 2rem;}
 .dr-partner-sub main .dr-information > div > div span:first-child{width: 20%; color: #d7d7d7; white-space: nowrap;}
 .dr-partner-sub main .dr-information > div > div span:last-child{text-align: right;  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis;}
-.dr-partner-sub main .dr-information .txt{margin-top: 2rem; font-size: 1.4rem; font-weight: 400; color: #7bdda8; text-align: center;}
+.dr-partner-sub main .dr-information .txt{margin-top: 2rem; font-size: 1.4rem; font-weight: 400; color: #7bdda8; text-align: center; cursor: pointer;}
 .dr-partner-sub main .dr-information .dr-button.deadline{background-color: #505866; border: 0; color: #989CA1;}
 .dr-content-wrap .dr-button{padding: 0.7rem 2.7rem;font-size: 1.3rem;color: #989CA1;border: 1px solid #D7D7D7;background-color: #fff;margin-right: 0.8rem;}
 .dr-content-wrap .dr-button.dr-delete-button{color: #EA5555; border: 1px solid #EA5555; margin-left: auto; margin-right: 0;}
@@ -464,7 +464,7 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
 .dr-expert-main .dr-expert-select-wrap .dr-button.green{height: 45px; display: flex; width: 144px; justify-content: space-around; align-items: center;padding: 1.3rem 7rem 1.3rem 9rem;}
 .dr-expert-main .dr-expert-select-wrap .dr-button.green::before{content: "";display: inline-block;background: url(../../img/icon/address-card-solid.svg) no-repeat;width: 18px;height: 16px;background-size: cover;position: absolute;left: 16px;}
 .dr-expert-main .dr-expert-cont{display: flex; flex-wrap: wrap;}
-.dr-expert-main .dr-expert-cont > div {margin-right:2%; margin-top: 3rem; display: inline-block; width: 32%; padding: 2.5rem 3rem; background-color: #fff; border-radius: 5px;}
+.dr-expert-main .dr-expert-cont > div {margin-right:2%; margin-top: 3rem; display: inline-block; width: 32%; padding: 2.5rem 3rem; background-color: #fff; border-radius: 5px; cursor: pointer;}
 .dr-expert-main .dr-expert-cont > div:nth-child(3n) {margin-right: 0;}
 .dr-expert-main .dr-expert-cont h5{display: inline-block; padding: 1rem; background-color: #353839; border-radius: 1px; color: #fff; text-align: center; margin-bottom: 4rem;}
 .dr-expert-main .dr-expert-cont .dr-cont {margin-bottom: 1.5rem;}
@@ -918,9 +918,10 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
     .dr-free-wrap > div a {display: block; margin-bottom: 2rem;}
     .dr-num{margin-right: 0.5rem;}
     .dr-free-cont{display: unset !important;}
-    .dr-free-cont p{max-width: unset ; white-space: unset ; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; max-height: 30px; margin: 0.5rem 0 0.3rem;}
+    .dr-free-cont p{max-width: unset ; white-space: unset ; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; max-height: 30px; margin: 0.5rem 0 0.3rem; padding-left: 19px;}
     .dr-free-cont .dr-free-icon{margin-left: 0 !important;}
     .dr-industry-cont ul li p{max-width: 360px; width: calc(100% - 80px)}
+    .dr-free-wrap .dr-free-cont .dr-free-icon{padding-left: 19px;}
     
     /* 커뮤니티_글상세 s */
     .dr-community-main.details{display: block !important;} 
@@ -1050,7 +1051,7 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
     
     /* .dr-bg-w {background-color: #fff;} */
     /* ------로그인------ s */
-    .dr-cont-wrap{width:100%;padding:1rem;border:0;}
+    .dr-cont-wrap{width:100%;padding:1rem 2rem;border:0;}
     .dr-join {margin:5rem auto;}
     /* ------로그인------ e */
 
