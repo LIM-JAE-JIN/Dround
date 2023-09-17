@@ -78,7 +78,7 @@ img{max-width:100%;}
 .dr-fw-900{font-weight:900 !important;}
 
 /* icon_label */
-.dr-icon-txt {display:inline-block;border:1px solid transparent; background: #f3f3f3; font-size: 1.2rem; padding: 0 0.5rem; font-weight: 600; vertical-align: middle; white-space: nowrap; border-radius: 0.3rem; margin: 0 0.6rem 0.6rem 0; } 
+.dr-icon-txt {display:inline-block;border:1px solid transparent; background: #f3f3f3; font-size: 1.2rem; padding: 0.3rem 0.7rem; font-weight: 400; vertical-align: middle; white-space: nowrap; border-radius: 0.3rem; margin: 0 0.4rem 0.6rem 0; } 
 .dr-icon-txt:last-child { margin-right: 0; } 
 
 /* color */
