@@ -54,10 +54,6 @@ $(document).ready( function(){
     });
     $(window).scroll();
 
-    if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-        // iOS 기기인 경우에만 필요한 스타일을 적용
-        $('.dr-details-comment .dr-textarea-wrap textarea::placeholder').css({'position':'absolute','top':'50%','transform':'translateY(-50%)','color':'#383A52'});
-    }
 
 })
 //팝업 열기

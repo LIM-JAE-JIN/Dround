@@ -1097,3 +1097,8 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
     /* ------전문가찾기------ e */
 } 
 /* ------반응형------ e */
+/* iOS 기기에서 textarea 스타일 재설정 */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    /* iOS 스타일 재설정 */
+    .dr-details-comment .dr-textarea-wrap textarea::placeholder{position: absolute; top: 50%; transform: translateY(-50%); color: #383A52;}
+  }
