@@ -188,7 +188,7 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
 .dr-no-industry-cont .dr-no-iconwrap div{ font-size: 1.5rem; color: #505866; font-weight: 500;}
 
 /* 배너 */
-.dr-community-banner{width:330px; height: 140px; display: inline-block; background-color: green; border-radius: 5px; position: relative;}
+.dr-community-banner{width:330px; height: 140px; display: inline-block;border-radius: 5px; position: relative;}
 .dr-community-banner p { font-size: 2rem; color: #fff; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }
 
 /* 투표 */
@@ -256,6 +256,9 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
 .dr-tab-mini-icon {width:20px; cursor: pointer; position: relative; display: none;}
 .dr-all-board-list > ul {display: flex; flex-wrap: wrap;}
 .dr-all-board-list > ul > li {position: relative; width:50%; padding:4rem 3rem; border-bottom:1px solid #e8e8eb; border-right:1px solid #e8e8eb; background-color:#fff;}
+.dr-all-board-list > ul > li.dr-banner{padding:2.4rem 2.8rem;}
+.dr-all-board-list > ul > li.dr-banner-long{padding:2.5rem}
+
 .dr-all-board-list > ul > li > a {position: absolute; top:0; left:0; bottom:0; right:0;}
 .dr-all-board-list > ul > li > span {color:#989CA1;}
 /* .dr-all-board-list > ul .dr-all-vote > span {color:#1b83cf;} 2023-07-16 카테고리 주석 */
