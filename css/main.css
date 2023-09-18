@@ -828,12 +828,6 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
 }
 
 @media (max-width: 768px) {
-    input:focus {
-        border-color: #353839 !important; 
-      }
-      input:focus-visible {
-        border-color: #353839 !important; 
-      }
     /* ------메인------ s */
     .dr-main .dr-main-banner{height: 293px;width: calc(100% + 60px);margin-left: -30px;}
     .dr-main .dr-main-banner .dr-tit-wrap h1{font-size: 3.3rem; letter-spacing: -3.5px;}
