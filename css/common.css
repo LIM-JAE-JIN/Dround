@@ -133,8 +133,8 @@ img{max-width:100%;}
 /* input */ 
 .dr-input-wrap { position: relative; display: inline-block; width: 100%; } 
 .dr-input-wrap .dr-input { width: 100%; height: 45px; padding: 1.2rem 0 1.2rem 1.5rem; border: 1px solid #d7d7d7; border-radius: 3px; color: #353839; font-size: 1.4rem; font-weight: 500; } 
-input:focus { border-color: #131414; } 
-.dr-input-wrap input:focus-visible{outline: none; border: 1px solid #353839;}
+input:focus { border-color: #131414 !important; } 
+.dr-input-wrap input:focus-visible{outline: none; border: 1px solid #353839 !important;}
 input::placeholder { color: #989ca1; font-weight: 400; } 
 
 /* textarea */
