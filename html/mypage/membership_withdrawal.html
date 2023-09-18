@@ -45,11 +45,20 @@
                     <div class="mb-5 dr-input-wrap dr-etc">
                         <input type="text" class="dr-input" id="company" name="company" placeholder="직접 입력">
                     </div>
-                    <div class="dr-input-wrap pt-3">
+                    <!-- 2023-09-18 주석 <div class="dr-input-wrap pt-3">
                         <p class="dr-fz-15 mb-3">비밀번호 입력</p>
                         <input type="password" class="dr-input" id="password" name="password" placeholder="비밀번호를 입력해주세요.">
                         <p class="dr-err-txt dr-fz-12 dr-fw-400 " id="password-status" style="display: none;">영문/숫자/특수문자 모두 사용(8~15자 이하)</p>
+                    </div> -->
+                    <!-- 2023-09-18 추가 -->
+                    <p class="dr-fz-15 mb-3">비밀번호 입력</p>
+                    <div class="dr-input-wrap mb-2">
+                        <div class="dr-phone-wrap">
+                            <input type="tel" class="dr-input" id="" name="" placeholder="비밀번호를 입력해주세요" maxlength="" >
+                            <button type="button" class="dr-phone_btn dr-fw-500 dr-fz-13" id="cert_send" disabled="true">확인</button>
+                        </div>
                     </div>
+                    <!-- 2023-09-18 추가 e -->
                     <div class="dr-withdrawal-information">
                         <ul>
                             <li>현재 사용중인 계정 정보는 회원 탈퇴 후 복구가 불가합니다.</li>
