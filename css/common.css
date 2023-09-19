@@ -132,13 +132,13 @@ img{max-width:100%;}
 /* Text field states s */
 /* input */ 
 .dr-input-wrap { position: relative; display: inline-block; width: 100%; } 
-.dr-input-wrap .dr-input { width: 100%; height: 45px; padding: 1.2rem 0 1.2rem 1.5rem; border: 1px solid #d7d7d7; border-radius: 3px; color: #353839; font-size: 1.4rem; font-weight: 500; } 
+.dr-input-wrap .dr-input { width: 100%; height: 45px; padding: 1.2rem 0 1.2rem 1.5rem; border: 1px solid #d7d7d7; border-radius: 3px; color: #353839; font-size: 1.4rem; font-weight: 500; outline-style: b; } 
 input:focus, input:focus-visible, .dr-title-search-box input:focus, textarea:focus, textarea:focus-visible { outline: 1px solid #131414; border-color: #131414; border-radius: 3px;} 
 input::placeholder { color: #989ca1; font-weight: 400; } 
 
 /* textarea */
 .dr-textarea-wrap { position: relative; display: inline-block; width: 100%; } 
-.dr-textarea-wrap .dr-textarea { width: 100%; padding: 1.2rem 1.5rem; border: 1px solid #D7D7D7; font-size: 1.4rem; line-height: 2.1rem; border-radius: 3px; resize: none;} 
+.dr-textarea-wrap .dr-textarea { width: 100%; padding: 1.2rem 1.5rem; border: 1px solid #D7D7D7; font-size: 1.4rem; line-height: 2.1rem; border-radius: inherit;} 
 
 /* check */
 .dr-checkbox {position: relative;}
