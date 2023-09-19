@@ -24,7 +24,7 @@
 .dr-main .dr-main-partner .dr-box-wrap > div:last-child{margin-right:0;}
 .dr-main .dr-main-partner .dr-box-wrap > div img{display: block;}
 .dr-main .dr-main-partner .dr-box-wrap > div img.dr-mobible{display: none;}
-.dr-main .dr-main-partner .dr-box-wrap > div p{background: #fff; padding: 30px 0 22px; margin: auto; font-size: 1.8rem; font-weight: 500; line-height: 27px;}
+.dr-main .dr-main-partner .dr-box-wrap > div p{background: #fff; padding: 22px 0; margin: auto; font-size: 1.8rem; font-weight: 500; line-height: 27px;}
 .dr-main .dr-main-partner .dr-box-wrap > div p strong{ font-weight: 800;}
 .dr-main .dr-main-community{position: relative;width: calc(100% + 60px);background: url(../img/main/img_section4.png) no-repeat;height: 310px;background-size: 100% 100%;text-align: center;margin-top: 24rem;margin-left: -30px;}
 .dr-main .dr-main-community .dr-tit-wrap{position: absolute; width: 100%; top: 50%; left: 50%; transform: translate(-50%,-50%); color: #fff;}
@@ -349,9 +349,9 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
 .dr-partner-comm-box > p {margin-top:10px; color:#fff; line-height:22px;}
 .dr-partner-chk-wrap {padding:25px 30px; border-radius: 5px; border: 1px solid#E8E8EB; background:#FFF;}
 .dr-partner-main .dr-title-search-box {width: 100%;}
-.dr-partner-main .dr-tab-mini-icon {width: 100%; text-align: right; margin:15px 0 10px;}
+.dr-partner-main .dr-tab-mini-icon {width: 20px; float:right; margin:15px 0 10px;}
 .dr-partner-main .dr-tab-mini-icon img {width: 20px;}
-.dr-partner-main .dr-comunity-tab-mini {position: absolute; right:0; top:-25px;}
+.dr-partner-main .dr-comunity-tab-mini {position: absolute; left:0; top:-25px;}
 .dr-list-view-wrap > a {color: #12A946; text-align: center; font-family: Pretendard; font-size: 13px; font-style: normal; font-weight: 500; line-height: 15px;  letter-spacing: -0.13px; text-transform: uppercase; display: flex; align-items: center; display: none;}
 .dr-list-view-wrap > a.dr_on {display: flex;}
 .dr-partenr-list-wrap > li {position: relative; padding:30px 30px 20px 30px; border-radius: 5px; background-color: #fff; border:1px solid transparent; box-shadow:0px 4px 15px 0px rgba(120, 120, 120, 0.06);}
@@ -960,6 +960,7 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
     
     /* ------파트너협업------ s */
     /* 파트너협업_메인 s */
+    .dr-partner-main .dr-comunity-tab-mini {width: 50% !important;}
     .dr-partner-main .dr-industry {width: 100%; min-width:auto; margin-top:0;}
     .dr-partner-main .dr-title-search-box input {width: 100%;}
     .dr-partner-main .dr-partner-chk-wrap {display: none; width: 270px; position: absolute; z-index: 11; top:24px; right:0;}
@@ -971,7 +972,7 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
     .dr-partner-sub main{display: block}
     .dr-partner-sub .dr-information{width: 100%; margin-top: 2rem;} 
     .dr-partner-sub .dr-tit{width: 100%;}
-    .dr-partner-find{padding: 2.5rem 0 0; border: 0; }
+    .dr-partner-find{padding: 2.5rem 2rem; border: 0; }
     .dr-business-overview{padding: 2.5rem 2rem;}
     /* 파트너 협업_글 상세 e */
 
