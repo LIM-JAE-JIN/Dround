@@ -188,13 +188,13 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
 .dr-no-industry-cont .dr-no-iconwrap div{ font-size: 1.5rem; color: #505866; font-weight: 500;}
 
 /* 배너 */
-.dr-community-banner{width:330px; height: 140px; display: inline-block;border-radius: 5px; position: relative;}
+.dr-community-banner{width:330px; height: 140px; display: inline-block;border-radius: 5px; position: relative; margin-top: 2rem;}
 .dr-community-banner span{font-size: 2.2rem;color: #fff;position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);line-height: 31px; font-weight: 700;margin-top: -20px;}
 .dr-community-banner span:last-child{margin-top: 20px; border:1px solid #fff; padding: 5px;}
 
 
 /* 투표 */
-.dr-community-vote{width:330px; height: 140px; border: 1px solid #E8E8EB;border-radius: 5px; padding: 2.5rem 3rem; overflow: hidden; background-color: #fff;}
+.dr-community-vote{width:330px; height: 140px; border: 1px solid #E8E8EB;border-radius: 5px; padding: 2.5rem 3rem; overflow: hidden; background-color: #fff; margin-top: 3rem;}
 .dr-community-vote h4::before{background-image: url(../../img/icon/icon_vote.png); margin-right: 0.5rem;}
 .dr-community-vote ul {margin-top: 1.8rem;}
 .dr-community-vote ul li{margin-bottom: 1.5rem;}
@@ -274,6 +274,8 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
 .dr-all-date-wrap {display: flex; justify-content: space-between; align-items: center;}
 .dr-all-date-wrap > p {color:#989ca1;}
 .dr-banner-link {position: relative; top: 50%; transform: translateY(-50%);}
+.dr-banner-link .dr-tablet{display: none;}
+.dr-banner-link .dr-mobile{display: none;}
 .dr-loading {margin-top:40px;}
 .dr-loading img {width: 24px; height: 24px; object-fit: cover; animation-name:dr-rotate; animation-iteration-count: infinite; animation-duration: 2s; animation-timing-function: linear;}
 @-webkit-keyframes dr-rotate{
@@ -338,7 +340,7 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
 .dr-feel-write-txt {color:#689e81; font-size:12px; font-weight:500; line-height:20px;}
 .dr-feel-write-txt span {margin:0 4px;}
 
-.dr-feel .dr-community-banner {position: relative; margin-top:25px; height: auto; text-align: center;}
+.dr-feel .dr-community-banner {position: relative; margin-top:2rem; height: auto; text-align: center;}
 .dr-feel .dr-community-banner img{border-radius: 5px;}
 /* 커뮤니티_감정평가법인 e */
 /* ------커뮤니티------ e */
@@ -448,7 +450,7 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
 .dr-popup-wrap.dr-popup-delete{width: 388px;}
 .dr-popup-wrap.dr-popup-delete footer{background-color: transparent;}
 .dr-popup-wrap.dr-popup-delete button{margin: 0 5px; display: flex;justify-content: space-around;}
-.dr-partner-banner {position:relative;margin:-2.5rem -3rem -3rem -3rem;top:50px;}
+.dr-partner-banner {position:relative;margin:-2.5rem -3rem -3rem -3rem;top:10px;}
 /* 파트너협업_글 상세 e*/
 
 /* 삭제하기 팝업 */
@@ -778,7 +780,7 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
     .dr-free-board{width: 100%;}
     .dr-industry{display: flex; flex-wrap: wrap; flex-direction: row; margin-top: 2.5rem; width: 100%;}
     .dr-industry-cont, .dr-no-industry-cont{width: 49%; margin-right: 2%;}
-    .dr-community-banner{width: 100%;}
+    .dr-community-banner{width: 100%; margin-top: 0;}
     .dr-community-side{ width: 49%;}
     .dr-community-vote{ width: 100%;}
 
@@ -786,6 +788,9 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
     .dr-details-wrap{max-width: 600px;}
     .dr-industry-cont-best{max-width: 290px;}
     .dr-community-banner.type2{width: unset; max-width: unset; height: auto;}
+    .dr-banner-link{padding: 40px 30px;}
+    .dr-banner-link .dr-tablet{display: block;}
+    .dr-banner-link .dr-pc{display: none;}
      /* 커뮤니티_글상세 e */
 
     /* 커뮤니티_감정법인 s */
@@ -924,7 +929,7 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
     .dr-industry-cont, .dr-no-industry-cont{width: 100%; margin-right: 0;}
     .dr-community-banner{width: 100% ; margin-top: 2.5rem;}
     .dr-community-side{ width: 100%;}
-    .dr-community-vote{ width: 100%;}
+    .dr-community-vote{ width: 100%; margin-top: 2.5rem;}
     .dr-free-wrap > div a {display: block; margin-bottom: 2rem;}
     .dr-num{margin-right: 0.5rem;}
     .dr-free-cont{display: unset !important;}
@@ -952,7 +957,10 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
     /* 커뮤니티_감정법인 s */
     .dr-feel .dr-industry{margin-top:2.5rem; min-width: auto;}
     .dr-feel .dr-title-wrap .dr-title-search-box input {width:calc(100% - 123px);}
-    .dr-all-board-list > ul > li.dr-banner-long{padding: 0;}
+    .dr-banner-link{padding: 40px 20px;}
+    .dr-banner-link .dr-pc{display: none;}
+    .dr-banner-link .dr-tablet{display: none;}
+    .dr-banner-link .dr-mobile{display: block;}
     /* 커뮤니티_감정법인 e */
     /* ------커뮤니티------ e*/
     
@@ -982,6 +990,7 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
     .dr-partner-sub .dr-tit{width: 100%;}
     .dr-partner-find{padding: 2.5rem 2rem; border: 0; }
     .dr-business-overview{padding: 2.5rem 2rem;}
+    .dr-partner-banner{top: 15px;}
     /* 파트너 협업_글 상세 e */
 
     /* 글올리기 s */
