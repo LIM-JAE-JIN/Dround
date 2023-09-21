@@ -571,10 +571,12 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
 .dr-cs-use-wrap {max-width:1200px; margin:90px auto 0; }
 .dr-cs-use-wrap h2 {font-size:30px; font-weight:600; line-height:45px;}
 .dr-cs-use-partner-box {margin-top: 50px; display: flex; flex-wrap: wrap;}
-.dr-cs-use-partner-box li {width: 48%; margin-right:4%;}
+.dr-cs-use-partner-box li {width: 48%; margin-right:4%; margin-bottom: 100px;}
 .dr-cs-use-partner-box li:nth-child(2n) {margin-right:0;}
-.dr-cs-use-partner-box li p {font-size:20px; line-height: 30px; font-weight: 600; color:#1c8f51; margin-top:25px;}
-.dr-cs-use-partner-box li span {display: block; margin-top:15px; color:#989CA1; font-size:16px; line-height: 24px; font-weight:500;}
+.dr-cs-use-partner-box li p {font-size:20px; line-height: 30px; font-weight: 600; color:#1c8f51; margin-top:25px; margin-bottom: 15px;}
+.dr-cs-use-partner-box li span {position: relative; display: block; color:#989CA1; font-size:16px; line-height: 24px; font-weight:500; padding-left: 20px; color: #505866;}
+.dr-cs-use-partner-box li strong.dr-red{color: #E55B5B; font-weight: 600;}
+.dr-cs-use-partner-box li span::before{content: ""; position: absolute; display: inline-block;top: 9px;left: 5px; border-radius: 50%; width: 5px; height: 5px; background-color: #505866;}
 
 .dr-cs-detail-wrap {margin:0 auto; max-width:1046px;}
 .dr-cs-detail-tit-wrap {padding-bottom:25px; border-bottom:1px solid #989CA1;}
@@ -820,6 +822,11 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
 
     /* ------전문가찾기------ e */
 
+    /* ------고객센터------ s */
+    .dr-cs-use-partner-box li{width: 100%; margin-right: 0; margin-bottom: 80px;}
+    /* ------고객센터------ e */
+
+
     /* ------마이페이지------ s */
     .dr-my-main{display: block;}
     .dr-my-tab-wrap {all: unset;}
@@ -1041,8 +1048,7 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
     .dr-cs-list-wrap .dr-cs-list-box li .dr-cs-list-num {width: 100%;}
     .dr-cs-list-wrap .dr-cs-list-box li .dr-cs-list-txt {width: 100%; margin-top:8px;}
     .dr-cs-list-wrap .dr-cs-list-box li .dr-cs-list-date {width: 100%; margin-top:8px;}
-    .dr-cs-use-partner-box li {width: 100%; margin-right:0; margin-bottom:50px;}
-    .dr-cs-use-partner-box li:last-child {margin-bottom:0;}
+
     /* ------고객센터------ e */
 
     /* ------마이페이지------ s */
