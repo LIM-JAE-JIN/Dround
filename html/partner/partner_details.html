@@ -103,63 +103,73 @@
                         <a href="#none" class="dr-button dr-delete-button" onclick="drPopupOpen('.dr-popup-delete')">글 삭제하기</a>
                     </div>
                 </div>  
-                <div class="dr-information"> 
-                    <h4>작성자 정보 보기</h4>
-                    <div>
-                        <div class="d-flex justify-content-between">
-                            <span>소속</span>
-                            <span>A홀딩스 운영 본부 기획팀</span>
+                <div class="dr-industry-repair"><!-- 2023-09-22 덮는 div 추가 -->
+                    <div class="dr-information"> 
+                        <h4>작성자 정보 보기</h4>
+                        <div>
+                            <div class="d-flex justify-content-between">
+                                <span>소속</span>
+                                <span>A홀딩스 운영 본부 기획팀</span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span>이름</span>
+                                <span>이용훈</span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span>연락처</span>
+                                <span>010-1234-1234</span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span>이메일</span>
+                                <span class="text-decoration-underline">asdfg@gmail.com</span>
+                            </div>
                         </div>
-                        <div class="d-flex justify-content-between">
-                            <span>이름</span>
-                            <span>이용훈</span>
-                        </div>
-                        <div class="d-flex justify-content-between">
-                            <span>연락처</span>
-                            <span>010-1234-1234</span>
-                        </div>
-                        <div class="d-flex justify-content-between">
-                            <span>이메일</span>
-                            <span class="text-decoration-underline">asdfg@gmail.com</span>
-                        </div>
+                        <!-- 2023-09-18 추가 s -->
+                        <!-- 2023-09-22 제거 부탁함, 작성자 정보 보기 div 밖으로 이동, 1개만 넣으면 됨 <div class="dr-partner-banner">
+                            <a href="#none" class="d-block"></a>
+                            <img src="../../img/contents/pr-banner-1.png" alt=""> 
+                        </div> -->
+                        <!-- 2023-09-18 추가 e -->
                     </div>
-                    <!-- 2023-09-18 추가 s -->
+
+                    <!-- 협업 의향 보내기 --> 
+                    <!-- <div class="dr-information"> 
+                        <h4>작성자 정보 보기</h4>
+                        <div>
+                            <div class="d-flex justify-content-between">
+                                <span>소속</span>
+                                <span>A홀딩스 운영 본부 기획팀</span>
+                            </div>
+                            <div class="d-flex">
+                                <button class="dr-button green w-100">협업 의향 보내기</button>
+                            </div>
+                            <p class="txt">연락처가 어떻게 요청되나요?</p>
+                        </div>
+                    </div> -->
+
+                    <!-- 마감 일시 --> 
+                    <!-- <div class="dr-information"> 
+                        <h4>작성자 정보 보기</h4>
+                        <div>
+                            <div class="d-flex justify-content-between">
+                                <span>소속</span>
+                                <span>A홀딩스 운영 본부 기획팀</span>
+                            </div>
+                            <div class="d-flex">
+                                <button class="dr-button deadline w-100">마감된 글입니다</button>
+                            </div>
+                            <p class="txt dr-selc-color">연락처가 어떻게 요청되나요?</p>
+                        </div>
+                    </div> -->
+                    <!-- 2023-09-22 추가 s -->
                     <div class="dr-partner-banner">
                         <a href="#none" class="d-block"></a>
-                        <img src="../../img/contents/pr-banner-1.png" alt="">
+                        <img src="../../img/contents/pr-banner-1.png" alt="" class="dr-pc">
+                        <img src="../../img/contents/pr-banner-1-pad.png" alt="" class="dr-tablet">
+                        <img src="../../img/contents/pr-banner-1-m.png" alt="" class="dr-mobile">
                     </div>
-                    <!-- 2023-09-18 추가 e -->
-                </div>
-
-                <!-- 협업 의향 보내기 --> 
-                <!-- <div class="dr-information"> 
-                    <h4>작성자 정보 보기</h4>
-                    <div>
-                        <div class="d-flex justify-content-between">
-                            <span>소속</span>
-                            <span>A홀딩스 운영 본부 기획팀</span>
-                        </div>
-                        <div class="d-flex">
-                            <button class="dr-button green w-100">협업 의향 보내기</button>
-                        </div>
-                        <p class="txt">연락처가 어떻게 요청되나요?</p>
-                    </div>
-                </div> -->
-
-                <!-- 마감 일시 --> 
-                <!-- <div class="dr-information"> 
-                    <h4>작성자 정보 보기</h4>
-                    <div>
-                        <div class="d-flex justify-content-between">
-                            <span>소속</span>
-                            <span>A홀딩스 운영 본부 기획팀</span>
-                        </div>
-                        <div class="d-flex">
-                            <button class="dr-button deadline w-100">마감된 글입니다</button>
-                        </div>
-                        <p class="txt dr-selc-color">연락처가 어떻게 요청되나요?</p>
-                    </div>
-                </div> -->
+                    <!-- 2023-09-22 추가 e -->
+                </div><!-- 2023-09-22 덮는 div 끝나는곳 -->  
             </main>    
         </div>
     </div>
