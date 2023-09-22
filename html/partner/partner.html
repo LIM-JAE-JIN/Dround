@@ -190,9 +190,14 @@
     </div>
     <!--// 컨테이너 -->
     <script>
-        // 탭팝업 기능 추가
+        // 탭팝업 기능 추가, 2023-09-22 오후 , 필터 온오프 추가 
         $('.dr-tab-mini-icon img').on('click',function(){
-            $('.dr-partner-chk-wrap').addClass('dr_on');
+            const $this = $('.dr-partner-chk-wrap');
+            if(!$this.hasClass('dr_on')){
+                $this.addClass('dr_on')
+            }else{
+                $this.removeClass('dr_on')
+            }
         })
         $(window).click(function (e){
             if(e.target.alt !== 'filter-icon' ){

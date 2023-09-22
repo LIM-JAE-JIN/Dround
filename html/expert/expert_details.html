@@ -69,6 +69,15 @@
                             </dl>    
                         </div>
                     </div>
+                    <!-- 2023-09-22 오후 추가 s -->
+                    <!-- *작성자 일시 보이는 버튼 -->
+                    <div class="dr-writer-button-wrap d-flex mt-4">
+                        <div class="dr-writer-button d-flex">
+                            <a href="#none" class="dr-button">수정하기</a>
+                            <a href="#none" class="dr-button dr-delete-button" onclick="drPopupOpen('.dr-popup-delete')">글 삭제하기</a>
+                        </div>
+                    </div>
+                    <!-- 2023-09-22 오후 추가 e -->
                 </div>  
                 <div class="dr-expert-information"> 
                     <div class="dr-adress">
@@ -82,13 +91,21 @@
                             <span class="text-decoration-underline">asdfg@gmail.com</span>
                         </div>
                     </div>
+                    <!-- 2023-09-22 오후 추가 s -->
                     <div class="dr-expert-banner">
-                        Banner image link
+                        <div class="dr-partner-banner">
+                            <a href="#none" class="d-block"></a>
+                            <img src="../../img/contents/pr-banner-1.png" alt="" class="dr-pc">
+                            <img src="../../img/contents/pr-banner-1-pad.png" alt="" class="dr-tablet">
+                            <img src="../../img/contents/pr-banner-1-m.png" alt="" class="dr-mobile">
+                        </div>
                     </div>
+                    <!-- 2023-09-22 오후 추가 e -->
                 </div>
             </main>   
-            <!-- *작성자 일시 보이는 버튼 -->
-            <div class="dr-writer-button-wrap d-flex mt-4">
+
+            <!--2023-09-22 오후 제거, 위치이동 함 제거부탁<div class="dr-writer-button-wrap d-flex mt-4">
+                *작성자 일시 보이는 버튼
                 <div class="dr-writer-button d-flex">
                     <a href="#none" class="dr-button">수정하기</a>
                     <a href="#none" class="dr-button dr-delete-button" onclick="drPopupOpen('.dr-popup-delete')">글 삭제하기</a>
@@ -96,7 +113,7 @@
                 <div class="dr-area">
 
                 </div>
-            </div> 
+            </div> --> 
         </div>
     </div>
     <!--// 컨테이너 --> 
