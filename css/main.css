@@ -153,7 +153,7 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
 .dr-free-cont{position:relative; margin-bottom: 2rem;}
 .dr-free-cont p {max-width: 524px; display: inline-block; overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
 .dr-free-icon{width: 108px;white-space: nowrap;}
-.dr-free-icon ul li{position: relative; width: 55px; padding-left: 1.7rem;display: inline-block;vertical-align:text-bottom; font-size: 1.3rem; font-family: 300;}
+.dr-free-icon ul li{position: relative; width: 55px; padding-left: 1.7rem;display: inline-block;vertical-align:text-bottom; font-size: 1.3rem; font-weight: 300;}
 .dr-num{display: inline-block; width: 10px; line-height: 1.7rem; color: #989CA1; margin-right: 1.5rem;}
 
 /* 하트, 말풍선 아이콘 */
@@ -527,7 +527,7 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
 .dr-expert-sub .dr-line{padding-top: 20px; margin-bottom: 40px;}
 .dr-expert-sub .dr-expert-information{width: 380px; color: #fff; border-radius: 3px;} 
 .dr-expert-sub .dr-expert-information .dr-adress{width: 100%; height: 154px; padding: 2.5rem 3rem 3rem 3rem; background: #353839; border-radius: 3px;} 
-.dr-expert-sub main .dr-expert-information .dr-expert-banner{  height: 100px; font-weight: 700; font-size: 1.8rem; border: 5px; background-color: #EBE5D5; margin-top: 1.5rem;}
+.dr-expert-sub main .dr-expert-information .dr-expert-banner{ font-weight: 700; font-size: 1.8rem; border: 5px; background-color: #EBE5D5; margin-top: 1.5rem;}
 .dr-expert-sub main .dr-expert-information h4{color: #F1F1F1; margin-bottom: 2rem;}
 .dr-expert-sub main .dr-expert-information > .dr-adress {font-weight: 500; font-size: 1.5rem;}
 .dr-expert-sub main .dr-expert-information > .dr-adress > div{margin-bottom: 2rem;}
