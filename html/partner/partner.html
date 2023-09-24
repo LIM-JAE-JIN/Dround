@@ -199,13 +199,14 @@
                 $this.removeClass('dr_on')
             }
         })
-        /* $(window).click(function (e){
+        $(window).click(function (e){
+            console.log(e.target.alt);
             if(e.target.alt !== 'filter-icon' ){
                 setTimeout(function(){
                     $('.dr-partner-chk-wrap').removeClass('dr_on');
                 },500)
             }
-        }); */
+        });
 
         //230820 작성글보기 기능 추가
         $('.dr-list-view-wrap > a').on('click',function(){
