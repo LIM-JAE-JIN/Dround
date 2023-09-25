@@ -304,13 +304,15 @@
                                 <input type="text" class="dr-input" id="company" name="company">
                             </div>
                         </div> 
+                        <!-- 2023-09-25 수정 s -->
                         <div class="dr-kakao-agree mt-2">
-                            <h4>카카오톡 알림 동의</h4>
+                            <h4>마케팅 활용 동의</h4>
                             <div class="dr-checkboxwrap">
-                                <input type="checkbox">
+                                <input type="checkbox" >
                             </div>
-                            <p>협업 의향 현황 등 다양한 정보를 받아보실 수 있습니다</p>
+                            <p>신규 서비스 안내 및 이벤트 등 다양한 정보를 받아보실 수 있습니다.</p>
                         </div>
+                        <!-- 2023-09-25 수정 e -->
                         <div class="dr-my-input-cont">
                             <div class="dr-input-wrap">
                                 <a href="#none" class="dr-button indigo dr-button-edit">수정하기</a>
@@ -497,6 +499,38 @@
     </div>
     <!-- 2023-08-09 비밀번호 변경 팝업 2번 e --> 
 
+    <!-- 2023-09-25, 개인정보 마케팅 활용 팝업  s -->   
+    <div class="dr-popup-wrap dr-popup-terms dr-popup-terms-2">
+        <div class="dr-popup-close" onclick="drPopupClose(this)"></div>
+        <header>
+            <h1>개인정보 마케팅 활용 </h1>
+        </header>
+        <div class="dr-popup-content">
+            <div class="dr-tit-h3 dr-mb-25">[수집항목]</div>
+            <p>① 필수 동의 사항에서 개인 정보 수집/이용에 동의한 모든 항목 및 이를 조합하여 생성된 정보</p>
+            <div class="dr-tit-h3"> &bull; [수집 및 이용 목적]</div>
+            <ol class="mb-5">
+                <li class="dr-pl-10">- 신규 서비스 개발 및 특화, 인구 통계학적 특성에 따른 서비스 제공 및 광고 게재, 접속 빈도 파악, 회원의 서비스 이용에 대한 통계 및 이벤트 등 광고성 정보 전달</li>
+                <li class="dr-pl-10">- 프로모션 및 이벤트 정보 등의 전달 및 참여기회 제공 </li>
+            </ol>
+            <div class="dr-tit-h3"> &bull; [이용 기간]</div>
+            <ol class="dr-mb-25">
+                <li class="dr-pl-10">- 동의 철회 시 또는 광고성 정보 수신 동의일로부터 2년</li>
+            </ol>
+
+            <p>② 쿠키, 기기/브라우저 관련 데이터, IP 주소, 사이트/앱 활동</p>
+            <div class="dr-tit-h3"> &bull; [수집 및 이용 목적]</div>
+            <ol>
+                <li class="dr-pl-10">- 잠재고객 생성 및 리마케팅 목적의 광고 제공</li>
+            </ol>
+            <div class="dr-tit-h3"> &bull; [이용 기간]</div>
+            <ol class="dr-mb-25">
+                <li class="dr-pl-10">- 정보수집일로부터 38개월</li>
+            </ol>
+            <p>개인정보의 수집 이용에 동의를 거부할 수 있으며, 동의 거부시에도 서비스 이용에 제한은 없습니다.</p>
+        </div>
+    </div>
+    <!-- 2023-09-25, 개인정보 마케팅 활용 팝업  e -->    
     <script>
         // 마이페이지 탭
         $('.dr-my-tab a').click(function (e) { 
@@ -516,6 +550,16 @@
                 $(this).closest('.folding-list').find('.dr-folding-head, .dr-folding-head a:first-child, .dr-folding-btn').css({"background-color": "#505866","color": "#fff"});
             }
         });
+
+        // 2023-09-25 스위치버튼 팝업 
+        $('.dr-kakao-agree input').change( function(){
+            if($(this).is(":checked")){
+                drPopupOpen('.dr-popup-terms-2')
+            } else{
+                drPopupClose('.dr-popup-terms-2')
+            }
+        })
+       
     </script>
 </body>
 </html>

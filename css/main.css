@@ -80,8 +80,10 @@
 .dr-popup-terms .dr-popup-content {height:50vh; overflow: hidden scroll;}
 .dr-popup-terms .dr-popup-content::-webkit-scrollbar {width: 3px;}
 .dr-popup-terms .dr-popup-content::-webkit-scrollbar-thumb {width:3px; border-radius: 3px; background-color:#505866;}
-.dr-popup-terms .dr-popup-content h3 {font-size:1.5rem; font-weight: 600;}
-.dr-popup-terms .dr-popup-content p {font-size:1.4rem; color:#505866; line-height:26px;}
+.dr-popup-terms .dr-popup-content .dr-tit-h3{font-size:1.5rem; font-weight: 700; color:#353839; line-height: 150%;}
+.dr-popup-content ol li.dr-pl-10{padding-left: 10px;}
+.dr-popup-terms .dr-popup-content p, .dr-popup-terms .dr-popup-content ol li {font-size:1.5rem; color:#353839; line-height:150%}
+.dr-popup-terms .dr-popup-content .dr-tit-h3.dr-mb-25, .dr-popup-terms .dr-popup-content p.dr-mb-25, .dr-popup-terms .dr-popup-content ol.dr-mb-25, .dr-popup-terms .dr-popup-content ol li.dr-mb-25{margin-bottom: 25px;}
 .dr-popup-complete {width:500px; text-align: center;}
 .dr-popup-complete .dr-popup-content p {font-size:1.5rem; line-height:2.1rem; color:#989ca1;}
 /* ------회원가입----- e */
@@ -376,7 +378,7 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
 .dr-partner-list-ci {width:calc(100% - 200px)}
 .dr-partner-list-date span {margin-left:10px; color:#d2d2d2; font-weight:400;}
 .dr-partner-close-area {position: absolute; top: 0; right: 0; bottom: 0; left: 0; background-color: #c1c1c1; opacity: 0.5; border-radius: 5px; display: none;}
-.dr-partner-close-area p {position: absolute; top:20px; right:30px; padding:7px 11px; border:0; font-size: 11px; font-weight: 600; background-color: #8692B0; color:#fff; border-radius: 3px;}
+.dr-partner-close-area p {position: absolute; top:20px; right:30px; padding:7px 11px; border:0; font-size: 11px; font-weight: 600; background-color: #2A458A ; color:#fff; border-radius: 3px;}
 .dr-partenr-no-list {padding:64px 0 !important; text-align: center;}
 .dr-partenr-no-list p {text-align: center; font-size:14px; font-weight: 500; line-height: 22.4px; color:#a0a4a6; text-transform: capitalize;}
 /* 파트너 협업_메인 e */
@@ -527,7 +529,7 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
 .dr-expert-sub .dr-line{padding-top: 20px; margin-bottom: 40px;}
 .dr-expert-sub .dr-expert-information{width: 380px; color: #fff; border-radius: 3px;} 
 .dr-expert-sub .dr-expert-information .dr-adress{width: 100%; height: 154px; padding: 2.5rem 3rem 3rem 3rem; background: #353839; border-radius: 3px;} 
-.dr-expert-sub main .dr-expert-information .dr-expert-banner{ font-weight: 700; font-size: 1.8rem; border: 5px; background-color: #EBE5D5; margin-top: 1.5rem;}
+.dr-expert-sub main .dr-expert-information .dr-expert-banner{ font-weight: 700; font-size: 1.8rem; border: 5px;margin-top: 1.5rem;}
 .dr-expert-sub main .dr-expert-information h4{color: #F1F1F1; margin-bottom: 2rem;}
 .dr-expert-sub main .dr-expert-information > .dr-adress {font-weight: 500; font-size: 1.5rem;}
 .dr-expert-sub main .dr-expert-information > .dr-adress > div{margin-bottom: 2rem;}
