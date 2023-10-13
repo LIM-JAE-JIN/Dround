@@ -465,7 +465,7 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
 
 /* ------전문가찾기------ s */
 /* 전문가 찾기_메인 s */
-.dr-container.dr-bg-type{margin-top: -30px;background: #fff;padding-top: 90px;} /* 배경색 2개일시 */
+.dr-container.dr-bg-type{margin-top:-90px; background: #fff;padding-top: 90px;} /* 배경색 2개일시 */
 .dr-expert-main{max-width: 1200px; width: 100%;}
 .dr-expert-main .dr-expert-banner{position: relative; height: 253px; background-image:url(../img/PR-banner.jpg); padding: 7rem 1rem 5rem 7rem; border-radius: 13px;}
 .dr-expert-main .dr-expert-banner h1{font-size: 2.5rem; color: #fff; line-height: 40px; font-weight: 400;}
@@ -1106,7 +1106,7 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
 
     /* ------파트너협업------ s */
     /* ------메인------ s */
-    .dr-expert-main .dr-expert-banner {padding: 5rem 2.5rem 5rem 2.5rem; background-image: url(../img/PR-banner-m.jpg);}
+    .dr-expert-main .dr-expert-banner {padding: 5rem 2.5rem 5rem 2.5rem; background-image: url(../img/PR-banner-m.jpg); background-size: cover;}
     .dr-expert-main .dr-expert-banner h1 {font-size: 2.3rem; word-break: keep-all;}
     .dr-expert-main .dr-expert-banner h1 br {display: none;}
     .dr-expert-main .dr-expert-banner .dr-txt {font-size: 1.5rem;}
