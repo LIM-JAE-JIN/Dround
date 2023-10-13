@@ -1105,6 +1105,11 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
     /* ------footer------ e */
 
     /* ------파트너협업------ s */
+    /* ------메인------ s */
+    .dr-expert-main .dr-expert-banner {padding: 5rem 2.5rem 5rem 2.5rem; background-image: url(../img/PR-banner-m.jpg);}
+    .dr-expert-main .dr-expert-banner h1 {font-size: 2.3rem; word-break: keep-all;}
+    .dr-expert-main .dr-expert-banner h1 br {display: none;}
+    .dr-expert-main .dr-expert-banner .dr-txt {font-size: 1.5rem;}
 
     /* 공개여부팝업 s */
     .disclosure-popup .dr-pop-profile ul li{width: 100%;}
@@ -1129,6 +1134,7 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
     .dr-main .dr-main-banner .dr-tit-wrap h1{font-size: 2.9rem;}
     /* ------메인------ e */
     /* ------파트너협업------ s */
+
     /* 글올리기 s */
     .dr-partner-write-wrap .dr-business-check .dr-checkbox.dr-sm{width: 100%;}
     /* 글올리기 e */
