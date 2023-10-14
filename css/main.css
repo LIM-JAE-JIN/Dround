@@ -1127,10 +1127,11 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
     /* ------전문가찾기------ e */
 
     /* ------마이페이지------ s */
-    .dr-popup-wrap.dr-popup-letter-received.type footer .dr-button{width: 48%;padding: 1.2rem 5.3rem;}}
+    .dr-popup-wrap.dr-popup-letter-received.type footer .dr-button{width: 48%;padding: 1.2rem 5.3rem;}
     .dr-popup-complete-received .dr-complete-txt div span{width: 100%;display: inline-block;line-height: 22px;}
     .dr-popup-complete-received .dr-complete-txt div span::after{all: unset;}
     /* ------마이페이지------ e */
+}
 @media (max-width: 350px) {
     /* ------메인------ s */
     .dr-main .dr-main-explanation h2{font-size: 1.9rem;}
