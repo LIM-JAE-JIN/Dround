@@ -1147,7 +1147,7 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
 
     /* ------전문가찾기------ s */
     /* 전문가 찾기_메인 s */
-    .dr-expert-main .dr-expert-banner h1 {font-size: 1,3rem;}
+    .dr-expert-main .dr-expert-banner h1 {font-size: 1.3rem;}
     .dr-expert-main .dr-expert-select-wrap .dr-button{width: 125px;}
     /* 전문가 찾기_메인 e */
     /* ------전문가찾기------ e */
