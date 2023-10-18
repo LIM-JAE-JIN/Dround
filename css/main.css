@@ -4,6 +4,7 @@
 .dr-main .dr-main-banner{position: relative; width: 100%; max-width: 1374px; background: url(../img/main/main_background.png) no-repeat; height: 638px; margin-left: auto; margin-right: auto; background-size: 100% 100%;}
 .dr-main .dr-main-banner .dr-tit-wrap{position: absolute; width: 100%; top: 50%; left: 50%; transform: translate(-50%,-50%); text-align: center;}
 .dr-main .dr-main-banner .dr-tit-wrap h1{font-family: 'Euclid-Circular-A-Light', sans-serif;letter-spacing: -1.5px;font-size: 8rem; line-height: 104px; color: #1F2027; word-spacing: 8px;}
+.dr-main .dr-main-banner .dr-tit-wrap h1 br {display: none;}
 .dr-main .dr-main-banner .dr-tit-wrap h1 strong{ font-weight: 800; font-family: 'Euclid-Circular-A-Medium', sans-serif;}
 .dr-main .dr-main-banner .dr-tit-wrap p{font-size: 2rem; line-height: 20px; letter-spacing: -1px; margin-top: 2.5rem;}
 .dr-main .dr-main-banner .dr-tit-wrap p span{font-weight: 600; color: #393939;}
@@ -873,9 +874,10 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
 
 @media (max-width: 768px) {
     /* ------메인------ s */
-    .dr-main .dr-main-banner{height: 293px;width: calc(100% + 60px);margin-left: -30px;}
-    .dr-main .dr-main-banner .dr-tit-wrap h1{font-size: 3.3rem; letter-spacing: -3.5px;}
-    .dr-main .dr-main-banner .dr-tit-wrap p{width: 220px; font-size: 1.7rem; margin: 0 auto;}
+    .dr-main .dr-main-banner{height: 293px;width: calc(100% + 0px);margin:auto;}
+    .dr-main .dr-main-banner .dr-tit-wrap h1{font-size: 3.3rem; letter-spacing: -1px;line-height: 130%; margin-bottom: 20px;}
+    .dr-main .dr-main-banner .dr-tit-wrap h1 br {display: block;}
+    .dr-main .dr-main-banner .dr-tit-wrap p{width: 220px; font-size: 1.7rem; margin: 0 auto; line-height: 150%;}
 
     .dr-main .dr-main-explanation{margin-top: 10rem;}
     .dr-main .dr-main-explanation h2{font-size: 2.3rem;}
