@@ -78,7 +78,7 @@ img{max-width:100%;}
 .dr-fw-900{font-weight:900 !important;}
 
 /* icon_label */
-.dr-icon-txt {display:inline-block;border:1px solid transparent; background: #f3f3f3; font-size: 1.2rem; padding: 0.3rem 0.7rem; font-weight: 400; vertical-align: middle; white-space: nowrap; border-radius: 0.3rem; margin: 0 0.4rem 0.6rem 0; } 
+.dr-icon-txt {display:inline-block;border:1px solid transparent; background: #f3f3f3; font-size: 1.2rem; padding: 0.3rem 0.7rem; font-weight: 500; vertical-align: middle; white-space: nowrap; border-radius: 0.3rem; margin: 0 0.4rem 0.6rem 0; } 
 .dr-icon-txt:last-child { margin-right: 0; } 
 
 /* color */
@@ -128,6 +128,8 @@ img{max-width:100%;}
 .dr-button.indigo { color: #fff; background-color: #353839; border-color: transparent; } 
 .dr-button.blue { background-color: #1B83CF; color: #fff; border-color: transparent;}
 .dr-button.disabled { color: #989ca1; background: #e8e8eb; border-color: transparent; } 
+.dr-button.deepblue { color: #fff; background-color: #061087; border-color: transparent; } 
+.dr-button.deepblue:hover { background-color: #061087; } 
 
 /* Text field states s */
 /* input */ 
@@ -138,7 +140,7 @@ input::placeholder { color: #6D727C; font-weight: 400; }
 
 /* textarea */
 .dr-textarea-wrap { position: relative; display: inline-block; width: 100%; } 
-.dr-textarea-wrap .dr-textarea { width: 100%; padding: 1.2rem 1.5rem; border: 1px solid #D7D7D7; font-size: 1.4rem; line-height: 2.1rem; border-radius: inherit;} 
+.dr-textarea-wrap .dr-textarea { width: 100%; padding: 1.2rem 1.5rem; border: 1px solid #D7D7D7; font-size: 1.6rem; line-height: 2.1rem; border-radius: 6px;} 
 
 /* check */
 .dr-checkbox {position: relative;}
