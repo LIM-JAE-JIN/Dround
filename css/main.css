@@ -402,13 +402,17 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
 /* 파트너협업_글올리기 e */
 
 /* 공개여부 팝업, 의향보내기 팝업 s */
-.dr-popup-wrap.disclosure-popup{ max-width: 500px; width: 100%;}
-.disclosure-popup .dr-input-wrap .dr-input{ background-color: #F3F3F3; color: #505866; border: 1px solid rgb(53, 56, 57);}   
+.dr-popup-wrap.disclosure-popup{ max-width: 550px; width: 100%;}
+.disclosure-popup .dr-input-wrap .dr-input{ background-color: #F3F3F3; color: #47A372; border: 1px solid rgb(53, 56, 57);}   
 .disclosure-popup .dr-input-wrap .dr-input:focus-visible{outline:transparent}
-.disclosure-popup .dr-belong-name{position: absolute; top: 50%; transform: translateY(-50%); display: inline-block; left: 65px; color: #353839; font-size: 1.3rem; font-weight: 600;}
-.disclosure-popup .dr-pop-profile{padding: 1.5rem; background-color: #F3F3F3; border-radius: 3px; border:1px solid #fff;}
-.disclosure-popup .dr-pop-profile ul li{ width:calc(50% - 30px); display: inline-block; line-height: 25px;}
-.disclosure-popup .dr-pop-profile ul li div{ color: #505866; display: inline-block; width: 34px;}
+.disclosure-popup .dr-belong-name{position: absolute; top: 50%; transform: translateY(-50%); display: inline-block; left: 65px; color: #353839; font-size: 1.6rem; font-weight: 600;}
+.disclosure-popup .dr-pop-profile{padding: 1.5rem 1.8rem; background-color: #F3F3F3; border-radius: 10px; border:1px solid #fff;}
+.disclosure-popup .dr-pop-profile .name {}
+.disclosure-popup .dr-pop-profile .belong {}
+.disclosure-popup .dr-pop-profile .number {}
+.disclosure-popup .dr-pop-profile .mail {}
+.disclosure-popup .dr-pop-profile ul li{ width:calc(50% - 5px); display: inline-block; line-height: 25px;}
+.disclosure-popup .dr-pop-profile ul li div{ color: #47A372; display: inline-block; width: 34px;}
 .disclosure-popup .dr-pop-profile ul li span{ display: inline-block; color: #353839; font-weight: 600;}
 .disclosure-popup.dr-intention-popup .dr-textarea-wrap .dr-textarea{height: 155px;}
 .dr-popup-wrap.dr-phone-popup{ max-width: 500px; width: 100%; height: 386px;}
