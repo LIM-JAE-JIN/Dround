@@ -25,7 +25,7 @@
 .dr-main .dr-main-partner .dr-box-wrap > div:last-child{margin-right:0;}
 .dr-main .dr-main-partner .dr-box-wrap > div img{display: block;}
 .dr-main .dr-main-partner .dr-box-wrap > div img.dr-mobible{display: none;}
-.dr-main .dr-main-partner .dr-box-wrap > div p{background: #fff; padding: 22px 0; margin: auto; font-size: 1.8rem; font-weight: 500; line-height: 27px;}
+.dr-main .dr-main-partner .dr-box-wrap > div p{background: #fff; padding: 28px 0; margin: auto; font-size: 1.8rem; font-weight: 500; line-height: 27px;}
 .dr-main .dr-main-partner .dr-box-wrap > div p strong{ font-weight: 800;}
 .dr-main .dr-main-community{position: relative;width: calc(100% + 60px);background: url(../img/main/img_section4.png) no-repeat;height: 310px;background-size: 100% 100%;text-align: center;margin-top: 24rem;margin-left: -30px;}
 .dr-main .dr-main-community .dr-tit-wrap{position: absolute; width: 100%; top: 50%; left: 50%; transform: translate(-50%,-50%); color: #fff;}
@@ -35,7 +35,7 @@
 .dr-main .dr-main-expert{position: relative; max-width: 1200px; width: 100%; margin-top: 24rem; background: url(../img/main/greenbg.png) no-repeat; height: 400px; background-size: 100% 100%; border-radius: 10px;}
 .dr-main .dr-main-expert .dr-tit-wrap{position: absolute;top: 11rem;left: 9rem;z-index: 5;}
 .dr-main .dr-main-expert .dr-tit-wrap p{font-size: 3.5rem; font-weight: 700; line-height: 52.5px; color: #fff;}
-.dr-main .dr-main-expert .dr-tit-wrap .dr-button{color: #198D4E; width:159px; height: 50px; font-size: 1.5rem; background-color: #D3EADE; margin-top: 2.5rem; border-color: transparent; letter-spacing: -1.5px;}
+.dr-main .dr-main-expert .dr-tit-wrap .dr-button{color: #198D4E; width:159px; height: 50px; font-size: 1.5rem; background-color: #D3EADE; margin-top: 2.5rem; border-color: transparent; letter-spacing: -.5px;}
 .dr-main .dr-main-expert img{position: absolute;}
 .dr-main .dr-main-expert img.dr-keyring{top: 0px; right: 140px; width: 419px;}
 .dr-main .dr-main-expert img.dr-green-circle{width: 628px; bottom: 0; right: 60px;}
@@ -253,7 +253,7 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
 
 /* 커뮤니티_게시판 s */
 .dr-all-board {max-width:1200px; border:1px; border-top:1px solid #e8e8eb; border-left:1px solid #e8e8eb;}
-.dr-all-board .dr-all-board-box {padding:2.5rem 3rem; border:1px solid #e8e8eb; border-top:0; border-left: 0; display: flex; justify-content: space-between; align-items: center; background-color: #fff;}
+.dr-all-board .dr-all-board-box {padding:2.5rem 3rem; border:1px solid #e8e8eb; border-top:0; border-left: 0; display: flex; justify-content: space-between; align-items: center; background-color: #fff; border-radius: 15px;}
 .dr-title-wrap {margin-bottom:40px;}
 .dr-title-wrap h2 {font-size:35px; font-weight: 700; line-height: 45px;}
 .dr-title-search-box {position: relative;}
@@ -391,9 +391,9 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
 .dr-partner-write-wrap{position: relative; margin:0 auto; width:440px; max-width:100%;}
 .dr-partner-write-wrap .dr-input-wrap{margin-bottom: 3rem;}
 .dr-partner-write-wrap .dr-business-check .dr-checkbox, .dr-partner-write-wrap .dr-business-check .dr-radio-wrap{display: inline-block; width: 24%; margin-top: 1.5rem; white-space: nowrap;}
-.dr-partner-write-wrap .dr-business-check .dr-checkbox input[type="checkbox"] + label{font-size: 1.5rem;}
+.dr-partner-write-wrap .dr-business-check .dr-checkbox input[type="checkbox"] + label{font-size: 1.4rem;}
 .dr-partner-write-wrap .dr-textarea-wrap{margin-top: 2.5rem;}
-.dr-partner-write-wrap .dr-input-wrap .dr-date{position: absolute;right: 12px;top: 15.5px;}
+.dr-partner-write-wrap .dr-input-wrap .dr-date{position: absolute;right: 12px;top: 19px;}
 .dr-partner-write-wrap .dr-button{margin-top: 5rem;}
 .dr-request{ margin-top: 10rem; font-size: 1.5rem; font-weight: 600; display: none;}
 .dr-request h3{ background-color: #505866; color: #fff; font-weight: 700; font-size: 1.6rem; line-height: 16px; padding: 1.2rem; margin-bottom: 2.5rem;}
@@ -405,19 +405,17 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
 .dr-popup-wrap.disclosure-popup{ max-width: 550px; width: 100%;}
 .disclosure-popup .dr-input-wrap .dr-input{ background-color: #F3F3F3; color: #47A372; border: 1px solid rgb(53, 56, 57);}   
 .disclosure-popup .dr-input-wrap .dr-input:focus-visible{outline:transparent}
-.disclosure-popup .dr-belong-name{position: absolute; top: 50%; transform: translateY(-50%); display: inline-block; left: 65px; color: #353839; font-size: 1.6rem; font-weight: 600;}
-.disclosure-popup .dr-pop-profile{padding: 1.5rem 1.8rem; background-color: #F3F3F3; border-radius: 10px; border:1px solid #fff;}
-.disclosure-popup .dr-pop-profile .name {}
-.disclosure-popup .dr-pop-profile .belong {}
-.disclosure-popup .dr-pop-profile .number {}
-.disclosure-popup .dr-pop-profile .mail {}
-.disclosure-popup .dr-pop-profile ul li{ width:calc(50% - 5px); display: inline-block; line-height: 25px;}
+.disclosure-popup .dr-belong-name{position: absolute; top: 50%; transform: translateY(-50%); display: inline-block; left: 65px; color: #353839; font-size: 1.5rem; font-weight: 600;}
+.disclosure-popup .dr-pop-profile{padding: 1.7rem 1.8rem; background-color: #F3F3F3; border-radius: 10px; border:1px solid #fff;}
+.disclosure-popup .dr-pop-profile ul li{ width:calc(50% - 30px); display: inline-block; line-height: 30px;}
 .disclosure-popup .dr-pop-profile ul li div{ color: #47A372; display: inline-block; width: 34px;}
+.disclosure-popup .dr-pop-profile ul li .text {font-size: 1.5rem; margin-left: 10px;}
+
 .disclosure-popup .dr-pop-profile ul li span{ display: inline-block; color: #353839; font-weight: 600;}
 .disclosure-popup.dr-intention-popup .dr-textarea-wrap .dr-textarea{height: 155px;}
 .dr-popup-wrap.dr-phone-popup{ max-width: 500px; width: 100%; height: 386px;}
 .dr-popup-wrap.dr-phone-popup header p {max-width: 370px; line-height: 18px;}
-.dr-popup-wrap.dr-phone-popup .dr-imgbox{position: absolute;display: block;max-width: 240px;height: 216px;margin: 0 auto;bottom: 0;left: 50%;transform: translateX(-50%);width: 100%;}
+.dr-popup-wrap.dr-phone-popup .dr-imgbox{position: absolute;display: block;max-width: 312px;height: 231px;margin: 0 auto;bottom: 0;left: 50%;transform: translateX(-50%);width: 100%;}
 .dr-popup-wrap.dr-phone-popup .dr-imgbox img{width: 100%;}
 /* 공개여부 팝업, 의향보내기 팝업 e */
 
