@@ -18,12 +18,13 @@
     <!-- 컨테이너 -->
     <div class="dr-container dr-bg-w">
         <div class="row">
-            <!--2023-10-19 dr-cont-wrap클래스 dr-login-wrap으로 변경-->
-            <div class="dr-login-wrap dr-login">
+            <!--<div class="dr-cont-wrap dr-login">-->
+            <div class="dr-login-wrap dr-login"><!--2023-10-18 dr-cont-wrap클래스 dr-login-wrap으로 변경-->
                 <div class="my-3 logo-wrap"><img src="../../img/icon_logo.png" alt="logo이미지"></div>
                 <h2 class="fs1_3 color3 fw-semibold mb-5">로그인 후 이용가능합니다.</h2><!--2023-10-19 fw-semibold 변경-->
                 <p class="text-danger fw-normal"> <!-- error_message  --></p>
                 <form method="post" action=" url 'signin' ">
+                    <!--<div class="mb-2 dr-input-wrap">-->
                     <div class="mb-3 dr-input-wrap"><!--2023-10-19 mb-3 변경-->
                         <input type="email" class="dr-input" id="email" name="email" placeholder="이메일 계정을 입력해주세요.">
                         <!-- <span id="email-status"></span> -->
@@ -46,6 +47,7 @@
                         <div>
                             <button type="submit" class="dr-button indigo w-100">로그인 하기</button>
                         </div>
+                        <!--<div class="mt-2">-->
                         <div class="mt-3"><!--2023-10-19 mt-3 변경-->
                             <a href="#none">
                                 <button type="button" class="dr-button disabled w-100">회원가입 하기</button>
