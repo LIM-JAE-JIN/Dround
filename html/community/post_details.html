@@ -1,6 +1,21 @@
-{% extends "common/header.html" %}
-{% load static %}
-{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../..//css/layout.css">
+    <!-- js -->
+    <script src="../../js/jquery-3.6.3.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+    <script src="../../js/bootstrap/bootstrap.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <title>Dround : 글 상세</title>
+</head>  
+<body>
+    <!-- 2023-07-13 글삭제 팝업 s -->
     <div class="dr-dim"></div>
     <div class="dr-popup-wrap dr-popup-delete">
         <header>
@@ -8,253 +23,266 @@
         </header>
         <footer>
             <div class="d-flex">
-                <button class="dr-button disabled w-100" onclick="location.href='{% url 'del_post' post.pk %}'">삭제하기</button>
+                <a href="#none" class="d-flex"><button class="dr-button disabled w-100 ">삭제하기</button></a>
                 <button class="dr-button indigo w-100 mx-0" onclick="drPopupClose(this)">취소</button>
             </div>
         </footer>
     </div>
+    <!--// 2023-07-13 글삭제 팝업 e -->
     <!-- 컨테이너 -->
     <div class="dr-container mt-5"><!-- 나중에지워 mt-5 -->
         <div class="dr-community-main details mx-auto d-flex justify-content-center">
             <div class="dr-details-wrap">
                 <div class="dr-details-header"><!-- 디테일 헤더부분 -->
                     <div class="d-flex align-items-center">
-                        {% if type == '00' %}
-                        <div class="dr-fz-17 dr-selc-color"><a href="{% url 'all_commu' %}" class="dr-fz-15 dr-selc-color">전체 커뮤니티</a> &gt; <a href="{% url 'filtering_post' '00' 1 post.category.code|get_digit:"1" %}" class="dr-fz-15 dr-selc-color">{{ post.category.name }}</a></div><!-- 2023-09-16 a태그 dr-selc-color 'dr-bg-d9' , 2023-09-22 오후 dr-selc-color로 다시 변경 -->
-                        {% else %}
-                        <div class="dr-fz-17 dr-selc-color"><a href="{% url 'pro' user.job_code.code %}" class="dr-selc-color dr-fz-15">{{ post.author.job_code.name }} 커뮤니티</a> &gt; <a href="{% url 'filtering_post' user.job_code.code 1 post.category.code|get_digit:"1" %}" class="dr-selc-color dr-fz-15">{{ post.category.name }}</a></div> <!-- 2023-09-22 오후 dr-selc-color로 다시 변경 -->
-                        {% endif %}
-
-                        {% if post.author_id == user.id or user.is_staff or user.is_superuser %}
-                        <a href="#None" onclick="drPopupOpen('.dr-popup-delete')" class="dr-delete-button dr-fw-500">글 삭제</a>
-                        {% endif %}
+                        <!-- 2023-08-28 주석처리 <div class="dr-selc-color dr-fz-15">[업무질문]</div> -->
+                        <div class="dr-fz-17 dr-selc-color"><a href="#none" class="dr-fz-15 dr-selc-color">업계 커뮤니티</a> &gt; <a href="#none" class="dr-fz-15 dr-selc-color">업무질문</a></div> <!-- 2023-08-28, 2023-09-16 'dr-bg-d9' 추가 , 2023-09-22 오후 dr-selc-color 로 다시 수정-->
+                        <a href="#none" class="dr-delete-button dr-fw-500" onclick="drPopupOpen('.dr-popup-delete')">글 삭제</a><!-- 2023-07-13 onclick 추가 -->
                     </div>
-                    <p class="dr-fz-20 my-4 dr-details-tit {% if not vote %}off{% endif %}">{{ post.title}}</p><!-- 2023-09-16 my-3 -> my-4 변경 -->
-
+                    <p class="dr-fz-20 my-4 dr-details-tit">개인사업자, 법인 대출 40억 이내 취급 요청 물건 의뢰 요청 드립니다.</p><!-- 2023-09-16 my-3 -> my-4 변경 -->
                     <div class="d-flex justify-content-between dr-fz-12">
                         <div>
-                            <span class="dr-color-02 dr-fz-14 dr-fw-500 align-bottom">{{ post.author.nickname}}</span><!-- 2023-09-22 오후, 폰트, 굵기 클래스 수정 // 2023-09-24 클래스 추가  -->
-                            <span class="dr-fw-300 dr-fz-14 dr-delete">{{ post.created_at|date:'y.m.d H:i'}}</span><!-- 2023-09-22 오후, 폰트, 굵기 클래스 수정 -->
+                            <span class="dr-color-02 dr-fz-14 dr-fw-500 align-bottom">id hyun</span><!-- 2023-09-16 dr-fw-600 추가, 2023-09-22 오후 fw-500변경 -->
+                            <span class="dr-fw-300 dr-fz-14 dr-delete">03.01 00:00</span><!-- 2023-09-22 오후 fw-300으로변경 -->
                         </div>
                         <div class="ms-auto dr-free-icon">
                             <ul>
-                                {% if like %}
-                                <li class="dr-selc-color dr-heart dr-heart-r" id="likes">{{ post.likes }}</li>
-                                {% else %}
-                                <li class="dr-selc-color dr-heart dr-heart-d" id="likes">{{ post.likes }}</li>
-                                {% endif %}
-                                <li class="dr-selc-color dr-coment dr-coment-d" id="comment_counts">{{ post.comment_count }}</li>
+                                <li class="dr-selc-color dr-heart dr-heart-d">440</li>
+                                <li class="dr-selc-color dr-coment dr-coment-d">4430</li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="dr-line"></div>
                 <div class="details-wrap-txt mt-5">
-{#                    <p class="dr-fz-18 dr-fw-400"><!-- 2023-09-22 오후, 폰트사이즈18, 굵기 400 변경 -->#}
-                    <p class="dr-fz-17 dr-fw-400">
-                        {% autoescape off %}
-                        {{ post.content}}
-                        {% endautoescape %}
-                        {% for img in attachment %}
-                        <img src="/media/{{ img.file }}" >
-                        {% endfor %}
+                    <!--<p class="dr-fz-17 dr-fw-400"><-->
+                    <p class="dr-fz-17 dr-fw-400"><!-- 2023-09-22 오후, 폰트사이즈18, 굵기 400 변경 --><!--2023-10-25 폰트사이즈 17변경-->
+                        현재 오피스 전문으로 일을 하다가. 1층 상가 몇개를 접수받아서 소형 커피 
+                        프랜차이즈들에게 연락을 돌려볼까 합니다.그 입점제안서? 가맹제안서? 에는 어떤 사항까지 넣는게 좋을까요? 주변 NOC 
+                        대비 해당 매장의 NOC와 입지조건, 기타 기본적인 사항들은 일단 기재를 했는데 추가로 기재해서 보낼때 좋을 포인트가 있다면 조언 부탁드립니다. 그 입점제안서? 가맹제안서? 에는 어떤 사항까지 넣는게 좋을까요? 주변 NOC  대비 해당 매장의 NOC와 입지조건, 기타 기본적인 사항들은 일단 기재를 했는데 추가로 기재해서 보낼때 좋을 포인트가 있다면 조언 부탁드립니다.
                     </p>
                 </div>
-            {% if vote %}
-                {% if not vote_record.exists %}
-                <div class="dr-vote-select-wrap" id="select_vote">
-                <input type="hidden" id="vote_id" value="{{ vote.pk }}">
-                {% for voter in vote_record %}
-                <input type="hidden" class="voter" value="{{ voter.choice_id }}">
-                {% endfor %}
+                <div class="dr-vote-select-wrap">
                     <div>
-                        <div class="dr-fz-13 dr-fw-600 d-flex justify-content-between pre_vote">
-                            <input type="hidden" id="vote_duplicate" value="{{ vote.is_duplicate }}" >
-                            <div class="dr-participation">총 참여 <span>{{ total_votes }}</span></div>
+                        <div class="dr-fz-13 dr-fw-600 d-flex justify-content-between">
+                            <div class="dr-participation">총 참여 <span>3</span></div>
                             <a href="#none" class="dr-vote-preview">결과 미리보기</a>
                         </div>
-                        {% if vote.is_duplicate == True %}
-                            {% for data in choice %}
-                            <div class="dr-checkbox-wrap-circle mt-3">
-                                <input class="cb" type="checkbox" name="checkbox" id="checkbox{{ forloop.counter }}" value="{{ data.pk }}">
-                                <label for="checkbox{{ forloop.counter }}"><span class="round">라디오버튼</span>{{ data.choice_text }}</label>
-                            </div>
-                            {% endfor %}
-                        {% else %}
-                            {% for data in choice %}
-                            <div class="dr-radio-wrap-circle mt-3">
-                                <input class="rd" type="radio" name="radio" id="radio{{ forloop.counter }}" value="{{ data.pk }}">
-                                <label for="radio{{ forloop.counter }}"><span class="round">라디오버튼</span>{{ data.choice_text }}</label>
-                            </div>
-                            {% endfor %}
-                        {% endif %}
-                        <button class="dr-button dr-vote-button disabled w-100 mt-4" id="btn_vote" disabled>투표하기</button>
+                        <div class="dr-radio-wrap-circle mt-3">
+                            <input type="radio" name="radio" id="radio1">
+                            <label for="radio1"><span class="round">라디오버튼</span>1</label>
+                        </div>
+                        <div class="dr-radio-wrap-circle mt-3">
+                            <input type="radio" name="radio" id="radio2">
+                            <label for="radio2"><span class="round">라디오버튼</span>2</label>
+                        </div>
+                        <button class="dr-button dr-vote-button disabled w-100 mt-4" disabled>투표하기</button>
                     </div>
                 </div>
-                {% endif %}
-                <div class="dr-vote-select-wrap dr-vote-result"  {% if vote_record.exists %} style="display: block" {% endif %}>
+                <!-- 2023-07-12 중복선택 가능시 체크박스버전 -->
+                <div class="dr-vote-select-wrap">
                     <div>
-                        <div class="dr-fz-13 dr-fw-600 votes">
-                            <div class="dr-participation vote">총 참여 <span>{{ total_votes }}</span></div>
+                        <div class="dr-fz-13 dr-fw-600 d-flex justify-content-between">
+                            <div class="dr-participation">총 참여 <span>3</span></div>
+                            <a href="#none" class="dr-vote-preview">결과 미리보기</a>
                         </div>
-
-                        {% for data in percent_list %}
-
+                        <div class="dr-checkbox-wrap-circle mt-3">
+                            <input type="checkbox" name="checkbox" id="checkbox1">
+                            <label for="checkbox1"><span class="round">라디오버튼</span>1</label>
+                        </div>
+                        <div class="dr-checkbox-wrap-circle mt-3">
+                            <input type="checkbox" name="checkbox" id="checkbox2">
+                            <label for="checkbox2"><span class="round">라디오버튼</span>2</label>
+                        </div>
+                        <button class="dr-button dr-vote-button disabled w-100 mt-4" disabled>투표하기</button>
+                    </div>
+                </div>
+                <!--// 2023-07-12 중복선택 가능시 체크박스버전 -->
+                <div class="dr-vote-select-wrap dr-vote-result">
+                    <div>
+                        <div class="dr-fz-13 dr-fw-600">
+                            <div class="dr-participation">총 참여 <span>3</span></div>
+                        </div>
                         <div>
                             <div class="d-flex justify-content-between mt-4">
-                                <span class="dr-fz-15 dr-fw-600 dr-participation">{{ data.choice_text }}</span>
+                                <span class="dr-fz-15 dr-fw-600 dr-participation">투표 01</span>
                                 <div class="dr-fz-13">
-                                    <span class="dr-color-13" data-percent-pk="{{ data.pk }}">{{ data.votes }}</span>
-                                    <p class="d-inline-block dr-color-14 percent" id="percent">(<span>{{ data.percent|floatformat:0 }}</span>%)</p>
+                                    <span class="dr-color-13">1</span>
+                                    <p class="d-inline-block dr-color-14">(<span>30</span>%)</p>
                                 </div>
                             </div>
                             <div class="mt-4 dr-persent-wrap">
-                                <div class="dr-persent" style="width: {{ data.percent|floatformat:0 }}%"></div>
+                                <div class="dr-persent"></div>
                             </div>
                         </div>
-                        {% endfor %}
-                        <button class="dr-button blue w-100 {% if vote_record.exists %}disabled{% endif %}" id="go_vote" {% if vote_record.exists %}disabled{% endif %} >투표하러 가기</button>
+                        <div>
+                            <div class="d-flex justify-content-between mt-4">
+                                <span class="dr-fz-15 dr-fw-600 dr-participation">투표 01</span>
+                                <div class="dr-fz-13">
+                                    <span class="dr-color-13">1</span>
+                                    <p class="d-inline-block dr-color-14">(<span>30</span>%)</p>
+                                </div>
+                            </div>
+                            <div class="mt-4 dr-persent-wrap">
+                                <div class="dr-persent"></div>
+                            </div>
+                        </div>
+                        <button class="dr-button blue w-100">투표하러 가기</button>
                     </div>
                 </div>
-            {% endif %}
-            {% if like %}
-                <a href="#none" class="dr-like on dr-heart dr-heart-r" data-post-id="{{ post.id }}" id="btn_like">좋아요</a>
-            {% else %}
-                <a href="#none" class="dr-like dr-heart dr-heart-d" data-post-id="{{ post.id }}" id="btn_like">좋아요</a>
-            {% endif %}
+                <a href="#none" class="dr-like dr-heart dr-heart-r">좋아요</a>
                 <div class="dr-details-comment">
-                    <div class="dr-participation">총 댓글 <span id="comment_count">{{ post.comment_count }}</span></div>
-                    <div class="dr-textarea-wrap mt-2">
-                        <textarea class="dr-textarea" name="content" id="content" cols="10" rows="10" placeholder="댓글 달기"></textarea>
-                        <a href="#none" id="comment_save">등록</a>
+                    <div class="dr-participation">총 댓글 <span>3</span></div>
+                    <div class="dr-textarea-wrap mt-2"> 
+                        <textarea class="dr-textarea" name="" id="" cols="10" rows="10" placeholder="댓글 달기"></textarea>
+                        <a href="#none">등록</a>
                     </div>
-                    <input type="hidden" id="post_pk" value="{{ post.pk }}">
-
-                    {% for comment in comments %}
-                    <div class="dr-writer-1" data-comment-pk="{{ comment.pk }}">
-                    {% if comment.is_deleted == True %}
-                        <p class="dr-fz-16 dr-fw-500 my-3">삭제된 댓글입니다.</p>
+                    <div class="dr-writer-1">
+                        <!--2023-07-08 <div class="dr-participation dr-fz-12">id Dke</div> -->                        
+                        <div class="dr-participation dr-fz-12 d-flex align-items-center"><!-- 2023-07-08 작성자가 댓글 달았을시-->
+                            <span>id dke</span>
+                            <i class="ms-2">작성자</i>
+                            <a href="#none" class="dr-delete-button dr-fw-500">삭제</a>
+                        </div>
+                        <!--<p class="dr-fz-18 dr-fw-400 my-3 mb-4">-->
+                        <!-- 2023-10-25 오후, 댓글 폰트사이즈16, text클래스추가 -->
+                        <p class="dr-fz-16 dr-fw-400 my-3 mb-4 text">신탁이나 금융권으로 가시면 좋겠지만 신탁금융권은 아무래도 대학졸업장은 필수지않을까싶어 자격요건 갖추시는게 어떠신지 생각이 듭니다 신탁이나 금융권으로 가시면 좋겠지만</p>
                         <div class="d-flex dr-fz-12 align-items-center">
-                        </div>
-                    {% else %}
-                        <div class="dr-participation dr-fz-12 d-flex align-items-center">{{ comment.author.nickname }}
-                            {% if post.author_id == comment.author_id %}
-                                <i class="ms-2">작성자</i>
-                            {% endif %}
-                            {% if comment.author_id == user.id %}
-                                <a href="#none" class="dr-delete-button dr-fw-500 comment_del">삭제</a>
-                            {% endif %}
-                        </div>
-{#                        <p class="dr-fz-18 dr-fw-400 my-3 mb-4">{{ comment.content|linebreaksbr|safe }}</p><!-- 2023-09-22 오후, 댓글 폰트사이즈18, 굵기 400 변경 -->#}
-                        <p class="dr-fz-16 dr-fw-400 my-3 mb-4 text">{{ comment.content|linebreaksbr|safe }}</p>
-                        <div class="d-flex dr-fz-12 mb-4 align-items-center">
-                            <span class="me-2 dr-selc-color">{{ comment.created_at }}</span>
-                            <div class="dr-free-icon ">
+                            <span class="me-2 dr-selc-color">8분</span>
+                            <div class="dr-free-icon">
                                 <ul>
-                                    {% if comment.id in liked_comments %}
-                                        <li class="dr-selc-color dr-heart dr-heart-r comment_like" data-comment-id="{{ comment.id }}">{{ comment.likes }}</li>
-                                    {% else %}
-                                        <li class="dr-selc-color dr-heart dr-heart-d comment_like" data-comment-id="{{ comment.id }}">{{ comment.likes }}</li>
-                                    {% endif %}
-                                    <li class="dr-selc-color dr-coment dr-coment-d dr-color-main" data-comment-id="{{ comment.id }}" >답글 달기</li>
-
+                                    <li class="dr-selc-color dr-heart dr-heart-d">20</li>
+                                    <li class="dr-selc-color dr-coment dr-coment-d dr-color-main">답글 달기</li>
                                 </ul>
                             </div>
                         </div>
-                    {% endif %}
-                        <div class="dr-textarea-wrap mt-2 dr-reply-form" id="reply_comment" data-comment-id="{{ comment.id }}" data-parent-id="{{ parent_id }}" style="display: none;">
-                            <input type="hidden" name="{{ comment.author_id }}" id="reply_id">
-                            <textarea class="dr-textarea reply_content" name="reply_content" id="reply_content_{{ comment.id }}" cols="10" rows="10" placeholder="댓글 달기"></textarea>
-                            <a href="#none" class="reply_save" id="reply_save">등록</a>
-                        </div>
-                            <div class="replies-container">
-                            {% for reply in comment.replies.all %}
-                    <div class="dr-writer dr-reply-comments d-flex" id="reply_comments_{{ reply.id }}" data-reply-pk="{{ reply.id }}">
+                    </div>
+                    <div class="dr-writer d-flex">
                         <div class="vector_10">
-                            <img src="{% static 'img/icon/Vector_10.png' %}" alt="댓글용 화살표">
+                            <img src="../../img/icon/Vector_10.png" alt="댓글용 화살표">
                         </div>
-                        <div class="ms-2 w-100">
+                        <div class="ms-2">
                             <div class="dr-participation dr-fz-12 d-flex align-items-center">
-                                <span>{{ reply.author.nickname }}</span>
-                                {% if post.author_id == reply.author_id %}
+                                <span>lddeha</span>
                                 <i class="ms-2">작성자</i>
-                                {% endif %}
-                                {% if reply.author_id == user.id %}
-                                <a href="#none" class="dr-delete-button dr-fw-500 reply_delete">삭제</a>
-                                {% endif %}
+                                <a href="#none" class="dr-delete-button dr-fw-500">삭제</a>
                             </div>
-{#                            <p class="dr-fz-18 dr-fw-400 my-3 mb-4">{{ reply.content|linebreaksbr|safe}}</p><!-- 2023-09-22 오후, 댓글 폰트사이즈18, 굵기 400 변경 -->#}
-                            <p class="dr-fz-16 dr-fw-400 my-3 mb-4 text">{{ reply.content|linebreaksbr|safe}}</p>
+                            <!--<p class="dr-fz-18 dr-fw-400 my-3 mb-4">-->
+                            <!-- 2023-10-25 오후, 대댓글 폰트사이즈16, text클래스추가-->
+                            <p class="dr-fz-16 dr-fw-400 my-3 mb-4 text">신탁이나 금융권으로 가시면 좋겠지만 신탁금융권은 아무래도 대학졸업장은 필수지않을까싶어 자격요건 갖추시는게 어떠신지 생각이 듭니다 신탁이나 금융권으로 가시면 좋겠지만</p>
                             <div class="d-flex dr-fz-12 align-items-center">
-                                <span class="me-2 dr-selc-color">{{ reply.created_at }}</span>
+                                <span class="me-2 dr-selc-color">8분</span>
                                 <div class="dr-free-icon">
                                     <ul>
-                                        {% if reply.id in liked_comments %}
-                                            <li class="dr-selc-color dr-heart dr-heart-r comment_like" data-comment-id="{{ reply.id }}">{{ reply.likes }}</li>
-                                        {% else %}
-                                            <li class="dr-selc-color dr-heart dr-heart-d comment_like" data-comment-id="{{ reply.id }}">{{ reply.likes }}</li>
-                                        {% endif %}
+                                        <li class="dr-selc-color dr-heart dr-heart-d">20</li>
                                     </ul>
                                 </div>
                             </div>
+                        </div>    
+                    </div>
+                    <div class="dr-writer-1">
+                        <div class="dr-participation dr-fz-12">아이디아이디</div>
+                        <p class="dr-fz-16 dr-fw-500 my-3">신탁이나 금융권으로 가시면 좋겠지만 신탁금융권은 아무래도 대학졸업장은 필수지않을까싶어 자격요건 갖추시는게 어떠신지 생각이 듭니다 신탁이나 금융권으로 가시면 좋겠지만</p>
+                        <div class="d-flex dr-fz-12 align-items-center">
+                            <span class="me-2 dr-selc-color">8분</span>
+                            <div class="dr-free-icon">
+                                <ul>
+                                    <li class="dr-selc-color dr-heart dr-heart-d">20</li>
+                                    <li class="dr-selc-color dr-coment dr-coment-r dr-color-main">답글 달기</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                            {% endfor %}
-                            </div>
+                    <div class="dr-textarea-wrap">
+                        <textarea class="dr-textarea" name="" id="" cols="10" rows="10" placeholder="댓글 달기"></textarea>
+                        <a href="#none">등록</a>
                     </div>
-                    {% endfor %}
-
                 </div>
             </div>
-            <div class="dr-industry-repair">
+            <div class="dr-industry-repair"><!-- 2023-09-22 덮는 div 추가 -->
                 <div class="dr-industry-cont-best">
                     <div class="dr-tit-3">
                         <h4 class="dr-fw-700 mb-4 dr-icon-best dr-fz-18">베스트</h4><!-- 2023-09-16 dr-icon-best, dr-fz-18 추가 -->
-                    </div>
+                    </div>   
                     <div class="dr-line"></div>
                     <div class="mt-4">
                         <ul>
-                            {% for data in best_post %}
                             <li>
-                                <a href="{% url 'detail' data.pk %}">
-                                    <p>{{ data.title }}</p>
+                                <a href="#none">
+                                    <p>개인사업자, 법인대출 40억</p>
                                 </a>
                             </li>
-                            {% endfor %}
+                            <li>
+                                <a href="#none">
+                                    <p>개인사업자, 법인대출 40억개인사업자, 법인대출 40억</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <p>개인사업자, 법인대출 40억</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <p>개인사업자, 법인대출 40억개인사업자, 법인대출 40억개인사업자, 법인대출 40억</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <p>개인사업자, 법인대출 40억</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <p>개인사업자, 법인대출 40억</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <p>개인사업자, 법인대출 40억 개인사업자, 법인대출 40억 개인사업자, 법인대출 40억</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <p>개인사업자, 법인대출 40억</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <p>개인사업자, 법인대출 40억 개인사업자, 법인대출 40억 개인사업자, 법인대출 40억</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <p>개인사업자, 법인대출 40억</p>
+                                </a>
+                            </li>
                         </ul>
                     </div>
-                </div>
-            <div class="dr-community-banner_type2">
-                            <a href="{% url 'partner' %}" class="d-block">
-                                <img src="{% static 'img/contents/co-banner-5.png' %}" alt="광고 이미지">
-                            </a>
-            </div>
-            </div>
-        </div>
+                </div>    
+                <!-- 2023-09-18, 2023-09-22 추가 s -->
+                <div class="dr-community-banner_type2"><!-- 2023-09-22 클래스명 변경 -> 'dr-community-banner_type2' -->
+                    <a href="#none" class="d-block">
+                        <img src="../../img/contents/co-banner-5.png" alt="광고 이미지">
+                    </a>    
+                </div> 
+                <!-- 2023-09-18, 2023-09-22 추가 e -->
+            </div><!-- 2023-09-22 덮는 div 끝나는곳  -->
+        </div>            
     </div>
-    <input type="hidden" id="author" value="{{ post.author_id }}">
-    <!--// 컨테이너 -->
+    <!--// 컨테이너 --> 
     <script>
-        $(document).ready(function () {
-            var is_voted = '{{ vote_record.exists }}';
-            if(is_voted === 'True'){
-                setCheckedStatus();
-                $('.dr-checkbox-wrap-circle input').off('click');
-                $('.dr-radio-wrap-circle input').off('change');
-            }
+        // radio 클릭시 '투표하기' 버튼에 disabled 제거
+        $('.dr-radio-wrap input').click( function(){
+            $('.dr-vote-select-wrap').find('button.dr-vote-button').removeClass('disabled').removeAttr('disabled','disabled').css({'background-color':'#1B83CF', 'color' : '#fff'});
         });
-        function is_User() {
-            // 로그인 여부 확인
-            var isLoggedIn = "{{ user.is_authenticated }}";
-            return isLoggedIn;
-        }
+        // 결과 미리보기 클릭시 투표결과 
+        $('.dr-vote-preview').on('click', function(e){
+            e.preventDefault();
+            if(!$(this)) return fasle;
+            $(this).closest('.dr-vote-select-wrap').hide();
+            $('.dr-vote-result').css('display','block')
+        })
     </script>
-    <script>
-      $.ajaxSetup({
-        headers: { "X-CSRFToken": '{{csrf_token}}' }
-      });
-    </script>
-
-    <script src="{% static 'js/community.js' %}"></script>
-    {% include "common/footer.html" %}
-{% endblock content %}
+</body>
+</html>

@@ -1,151 +1,252 @@
-{% extends "common/header.html" %}
-{% load static %}
-{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../..//css/layout.css">
+    <!-- js -->
+    <script src="../../js/jquery-3.6.3.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+    <script src="../../js/bootstrap/bootstrap.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <title>Dround : 감정평가법인 게시판</title>
+</head>
+<body>
     <!-- 컨테이너 -->
     <div class="dr-container dr-feel">
         <div class="dr-community-main mx-auto">
             <div class="dr-title-wrap d-flex justify-content-between align-items-center">
-                <h2>{{ user.job_code.name }} 커뮤니티</h2>
+                <h2>감정평가법인 게시판</h2>
                 <div class="dr-title-search-box d-flex">
-                    <input type="text" id='search_title' placeholder="검색어를 입력하세요"/>
-                    <input type="hidden" id="job_type" value="{{ user.job_code.pk }}">
-                    <input type="hidden" id="total_page" value="{{ total_page }}">
-                    <a href="{% url 'post' user.job_code.pk %}"><button class="dr-button green">글 올리기</button></a>
+                    <input type="text" placeholder="검색어를 입력하세요"/>
+                    <button class="dr-button green">글 올리기</button>
                 </div>
             </div>
-            <div class=" d-md-flex">
+            <div class="d-md-flex flex-row-reverse">
+                <div class="dr-industry mb-5">  
+                    <div class="dr-feel-comm-box d-flex justify-content-between align-items-center">
+                        <p class="dr-fz-13 dr-fw-500">업계 커뮤니티는 같은 직군<br/>사람들을 위한 공간입니다.</p>
+                        <button class="dr-button-worker text-center">감정평가법인</button>
+                    </div>
+                    <div class="dr-feel-partner-wrap">
+                        <div class="dr-feel-partner-tit">
+                            <img src="../../img/icon/icon_man_black.png" alt="">
+                            <p>감정평가법인 파트너를 찾습니다</p>
+                        </div>
+                        <ul class="dr-feel-partner-list">
+                            <li>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="#none"></a>
+                                    <p>개인사업자, 법인 대출</p>
+                                    <div class="dr-allow-img-wrap"><img src="../../img/icon/icon_arrow.png" alt="allow"></div>
+                                </div>
+                                <p class="dr-feel-write-txt">작성<span>|</span>시행사</p>
+                            </li>
+                            <li>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="#none"></a>
+                                    <p>개인사업자, 법인 대출개인사업자, 법인 대출개인사업자, 법인 대출개인사업자, 법인 대출</p>
+                                    <div class="dr-allow-img-wrap"><img src="../../img/icon/icon_arrow.png" alt="allow"></div>
+                                </div>
+                                <p class="dr-feel-write-txt">작성<span>|</span>대주</p>
+                            </li>
+                            <li>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="#none"></a>
+                                    <p>개인사업자, 법인 대출 40억 이내 취급</p>
+                                    <div class="dr-allow-img-wrap"><img src="../../img/icon/icon_arrow.png" alt="allow"></div>
+                                </div>
+                                <p class="dr-feel-write-txt">작성<span>|</span>대주</p>
+                            </li>
+                            <li>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="#none"></a>
+                                    <p>개인사업자, 법인 대출</p>
+                                    <div class="dr-allow-img-wrap"><img src="../../img/icon/icon_arrow.png" alt="allow"></div>
+                                </div>
+                                <p class="dr-feel-write-txt">작성<span>|</span>회계법인</p>
+                            </li>
+                            <li>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="#none"></a>
+                                    <p>개인사업자, 법인 대출 40억 이내 취급</p>
+                                    <div class="dr-allow-img-wrap"><img src="../../img/icon/icon_arrow.png" alt="allow"></div>
+                                </div>
+                                <p class="dr-feel-write-txt">작성<span>|</span>대주</p>
+                            </li>
+                            <li>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="#none"></a>
+                                    <p>개인사업자, 법인 대출</p>
+                                    <div class="dr-allow-img-wrap"><img src="../../img/icon/icon_arrow.png" alt="allow"></div>
+                                </div>
+                                <p class="dr-feel-write-txt">작성<span>|</span>대주</p>
+                            </li>
+                        </ul>
+                        <div class="p-5">
+                            <button class="dr-button indigo w-100 dr-fz-13">파트너 협업 전체보기</button>
+                        </div>
+                    </div>
+                    <div  class="dr-community-banner">
+                        <!-- <p class="">Banner image link</p> 2023-09-18 주석-->
+                        <!-- 2023-09-18 추가 s -->
+                        <a href="#none" class="d-block">
+                            <img src="../../img/contents/co-banner-4.png" alt="광고 이미지">
+                            <span>모든 소통의 장</span>
+                            <span>전체 커뮤니티</span>
+                        </a>
+                        <!-- 2023-09-18 추가 e -->
+                    </div> 
+                </div>
                 <div class="w-100">
                     <div class="dr-all-board me-md-5">
                         <div class="dr-all-board-box">
                             <ul class="dr-comunity-tab d-flex dr-fz-19">
-                                <li {% if tab == None or tab == '0' %}class="dr_on"{% endif %} value="00">전체보기</li>
-                                <li {% if tab == '1' %}class="dr_on"{% endif %} value="01">업무관련</li>
-                                <li {% if tab == '2' %}class="dr_on"{% endif %} value="02">잡담</li>
+                                <li class="dr_on" onclick="tabBtnClick(this)">전체보기</li>
+                                <li onclick="tabBtnClick(this)">업무관련</li>
+                                <li onclick="tabBtnClick(this)">잡담</li>
                             </ul>
                             <ul class="dr-comunity-tab-mini d-flex dr-fz-13">
-                                <li class="me-3 {% if filter == None or filter == '1' or filter == '0'%}dr_on{% endif %}" value="01">최신순</li>
-                                <li {% if filter == '2' %}class="dr_on"{% endif %} value="02">인기순</li>
+                                <li class="me-3 dr_on" onclick="tabBtnClick(this)">최신순</li>
+                                <li onclick="tabBtnClick(this)">인기순</li>
                             </ul>
                             <div class="dr-tab-mini-icon">
-                                <img src="{% static 'img/icon/icon_filter.png' %}" alt="filter-icon">
+                                <img src="../../img/icon/icon_filter.png" alt="filter-icon">
                                 <ul class="dr-mini-tab-comm">
-                                    <li class="me-3 {% if filter == None or filter == '1' or filter == '0'%}dr_on{% endif %}" value="01">최신순</li>
-                                    <li {% if filter == '2' %}class="dr_on"{% endif %} value="02">인기순</li>
+                                    <li class="dr_on"onclick="tabBtnClick(this)">최신순</li>
+                                    <li onclick="tabBtnClick(this)">인기순</li>
                                 </ul>
                             </div>
                         </div>
                         <div class="dr-all-board-list">
-                            <ul id="post-list">
-                                {% for data in post %}
-                                    {% if data.is_vote %}
-                                <li class="dr-all-vote w-100">
-                                    {% else %}
+                            <ul>
                                 <li class="w-100">
-                                    {% endif %}
-                                    <span class="dr-fz-15 dr-fw-300">[{{ data.category.name }}]</span>
+                                    <span class="dr-fz-15 dr-fw-300">[잡담]</span><!-- 2023-09-13 클래스 'dr-fw-500' -> 'dr-fw-300' 변경 // 잡담, 투표, 업무관련 동일함 --> 
                                     <div class="dr-all-board-txt">
                                         <p class="dr-fw-700 dr-fz-17 dr-color-main">
-                                            <span></span>{{ data.title }} <!-- span 아이콘임-->
+                                            <span></span>개인사업자, 법인 대출 40억 이내 취급 요청 물건 의뢰 요청 드립니다. <!-- span 아이콘임-->
                                         </p>
                                         <span class="dr-fw-500 dr-fz-15">
-                                            {{ data.content|striptags }}
+                                            요즘 금투협 보면 작년과 비교했을때 채용 공고가 거의 없는듯 한데 1분기이후 5~6월즘엔 
+                                            채용이 진행될 것입니다용
                                         </span>
                                         <div class="dr-all-date-wrap">
-                                            <p class="dr-fz-12 dr-fw-500">{{ data.created_at }}</p>
+                                            <p class="dr-fz-12 dr-fw-500">20분</p>
                                             <div class="ms-auto dr-free-icon">
                                                 <ul>
-                                                    {% if data.pk in like %}
-                                                    <li class="dr-selc-color dr-heart dr-heart-r">{{ data.likes }}</li>
-                                                    {% else %}
-                                                    <li class="dr-selc-color dr-heart dr-heart-d">{{ data.likes }}</li>
-                                                    {% endif %}
-                                                    <li class="dr-selc-color dr-coment dr-coment-d">{{ data.comment_count }}</li>
+                                                    <li class="dr-selc-color dr-heart dr-heart-d">440</li>   <!-- 2023-09-13 클래스 'dr-fz-13' 제거 --> 
+                                                    <li class="dr-selc-color dr-coment dr-coment-d">4430</li><!-- 2023-09-13 클래스 'dr-fz-13' 제거 --> 
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
-                                    <a href="{% url 'detail' data.pk user.job_code.pk %}"></a>
+                                    <a href="#none"></a>
                                 </li>
-                                {% endfor %}
+                                <li class="w-100">
+                                    <span class="dr-fz-15 dr-fw-300">[잡담]</span>
+                                    <div class="dr-all-board-txt">
+                                        <p class="dr-fw-700 dr-fz-17 dr-color-main">
+                                            <span></span>개인사업자, 법인 대출 40억 이내 취급 요청 물건 의뢰 요청 드립니다. <!-- span 아이콘임-->
+                                        </p>
+                                        <span class="dr-fw-500 dr-fz-15">
+                                            요즘 금투협 보면 작년과 비교했을때 채용 공고가 거의 없는듯 한데 1분기이후 5~6월즘엔 
+                                            채용이 진행될 것입니다용
+                                        </span>
+                                        <div class="dr-all-date-wrap">
+                                            <p class="dr-fz-12 dr-fw-500">20분</p>
+                                            <div class="ms-auto dr-free-icon">
+                                                <ul>
+                                                    <li class="dr-selc-color dr-heart dr-heart-d dr-fz-13">440</li>
+                                                    <li class="dr-selc-color dr-coment dr-coment-d dr-fz-13">4430</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#none"></a>
+                                </li>
+                                <!-- 투표 있을 때 li에 dr-all-vote 추가 s -->
+                                <li class="dr-all-vote w-100">
+                                    <span class="dr-fz-15 dr-fw-300">[투표]</span>
+                                    <div class="dr-all-board-txt">
+                                        <p class="dr-fw-700 dr-fz-17 dr-color-main">
+                                            <span></span>개인사업자, 법인 대출 40억 이내 취급 요청 물건 의뢰 요청 드립니다.
+                                        </p>
+                                        <span class="dr-fw-500 dr-fz-15">
+                                            요즘 금투협 보면 작년과 비교했을때 채용 공고가 거의 없는듯 한데 1분기이후 5~6월즘엔 
+                                            채용이 진행될 것입니다용
+                                        </span>
+                                        <div class="dr-all-date-wrap">
+                                            <p class="dr-fz-12 dr-fw-500">20분</p>
+                                            <div class="ms-auto dr-free-icon">
+                                                <ul>
+                                                    <li class="dr-selc-color dr-heart dr-heart-d dr-fz-13">440</li>
+                                                    <li class="dr-selc-color dr-coment dr-coment-d dr-fz-13">4430</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#none"></a>
+                                </li>
+                                <!-- 투표 있을 때 li에 dr-all-vote 추가 e -->
+                                <li class="w-100">
+                                    <span class="dr-fz-15 dr-fw-300">[잡담]</span>
+                                    <div class="dr-all-board-txt">
+                                        <p class="dr-fw-700 dr-fz-17 dr-color-main">개인사업자, 법인 대출 40억 이내 취급 요청 물건 의뢰 요청 드립니다.</p>
+                                        <span class="dr-fw-500 dr-fz-15">
+                                            요즘 금투협 보면 작년과 비교했을때 채용 공고가 거의 없는듯 한데 1분기이후 5~6월즘엔 
+                                            채용이 진행될 것입니다용
+                                        </span>
+                                        <div class="dr-all-date-wrap">
+                                            <p class="dr-fz-12 dr-fw-500">20분</p>
+                                            <div class="ms-auto dr-free-icon">
+                                                <ul>
+                                                    <li class="dr-selc-color dr-heart dr-heart-d dr-fz-13">440</li>
+                                                    <li class="dr-selc-color dr-coment dr-coment-d dr-fz-13">4430</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#none"></a>
+                                </li>
                                 <li class="w-100 dr-banner-long">
                                     <div class="dr-banner-link">
-                                        <a href="{% url 'expert' %}" class="d-block">
-                                            <img src="{% static 'img/contents/co-banner-3.png' %}" alt="광고 이미지" class="dr-pc">
-                                            <img src="{% static 'img/contents/co-banner-3-pad.png' %}" alt="광고 이미지" class="dr-tablet">
-                                            <img src="{% static 'img/contents/co-banner-3-m.png' %}" alt="광고 이미지" class="dr-mobile">
+                                        <!-- 2023-09-18 추가 s -->
+                                        <a href="#none" class="d-block">
+                                            <img src="../../img/contents/co-banner-3.png" alt="광고 이미지" class="dr-pc">
+                                            <img src="../../img/contents/co-banner-3-pad.png" alt="광고 이미지" class="dr-tablet">
+                                            <img src="../../img/contents/co-banner-3-m.png" alt="광고 이미지" class="dr-mobile">
                                         </a>
+                                        <!-- 2023-09-18 추가 e -->
                                     </div>
                                 </li>
                             </ul>
                         </div>
                     </div> 
                     <!-- 로딩 s -->
-                    <div class="dr-loading w-full text-center">
-                        <img src="{% static 'img/icon/icon_loader.png' %}" alt="loading-icon">
+                    <div class="dr-loading w-full text-center m">
+                        <img src="../../img/icon/icon_loader.png" alt="loading-icon">
                     </div>
                     <!-- 로딩 e -->
-                </div>
-                <div class="dr-industry">  
-                    <div class="dr-feel-comm-box d-flex justify-content-between align-items-center">
-                        <p class="dr-fz-13 dr-fw-500">업계 커뮤니티는 같은 직군<br/>사람들을 위한 공간입니다.</p>
-                        <button class="dr-button-worker text-center">{{ user.job_code.name }}</button>
-                    </div>
-                    <div class="dr-feel-partner-wrap">
-                        <div class="dr-feel-partner-tit">
-                            <img src="{% static 'img/icon/icon_man_black.png' %}" alt="">
-                            <p>{{ user.job_code.name }} 파트너를 찾습니다</p>
-                        </div>
-                        <ul class="dr-feel-partner-list">
-                            {% for data in pt_req %}
-                            <li>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <a href="{% url 'partner_detail' data.pk %}"></a>
-                                    <p>{{ data.title}}</p>
-                                    <div class="dr-allow-img-wrap"><img src="{% static 'img/icon/icon_arrow.png' %}" alt="allow"></div>
-                                </div>
-                                <p class="dr-feel-write-txt">작성<span>|</span>{{ data.author.job_code }}</p>
-                            </li>
-                            {% endfor %}
-{#                            <li>#}
-{#                                <div class="d-flex justify-content-between align-items-center">#}
-{#                                    <a href="#none"></a>#}
-{#                                    <p>개인사업자, 법인 대출 40억 이내 취급</p>#}
-{#                                    <div class="dr-allow-img-wrap"><img src="../../img/icon/icon_arrow.png" alt="allow"></div>#}
-{#                                </div>#}
-{#                                <p class="dr-feel-write-txt">작성<span>|</span>대주</p>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <div class="d-flex justify-content-between align-items-center">#}
-{#                                    <a href="#none"></a>#}
-{#                                    <p>개인사업자, 법인 대출</p>#}
-{#                                    <div class="dr-allow-img-wrap"><img src="../../img/icon/icon_arrow.png" alt="allow"></div>#}
-{#                                </div>#}
-{#                                <p class="dr-feel-write-txt">작성<span>|</span>대주</p>#}
-{#                            </li>#}
-                        </ul>
-                        <div class="p-5">
-                            <button class="dr-button indigo w-100 dr-fz-13" onclick="window.location.href='/partner/'">파트너 협업 전체보기</button><!-- 2023-09-16 'dr-fw-500'  제거 -->
-                        </div>
-                    </div>
-                    <div class="dr-community-banner">
-{#                        <p class="">Banner image link</p>#}
-                        <a href="{% url 'all_commu' %}" class="d-block">
-                            <img src="{% static 'img/contents/co-banner-4.png' %}" alt="광고 이미지">
-                            <span>모든 소통의 장</span>
-                            <span>전체 커뮤니티</span>
-                        </a>
-                    </div> 
                 </div>
             </div>
         </div>
     </div>
     <!--// 컨테이너 -->
     <script>
-      $.ajaxSetup({
-        headers: { "X-CSRFToken": '{{csrf_token}}' }
-      });
-    </script>
-    <script src="{% static 'js/community.js' %}"></script>
-    <script src="{% static 'js/paging.js' %}"></script>
-    {% include "common/footer.html" %}
-{% endblock content %}
+        // 230703 탭팝업 기능 추가
+        $('.dr-tab-mini-icon img').on('click',function(){
+            $('.dr-mini-tab-comm').addClass('dr_on');
+        })
+        $(window).click(function (e){
+            if(e.target.alt !== 'filter-icon' ){
+                setTimeout(function(){
+                    $('.dr-mini-tab-comm').removeClass('dr_on');
+                },500)
+            }
+        });
+        </script>
+</body>
+</html>

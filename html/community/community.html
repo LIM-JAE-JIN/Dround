@@ -1,83 +1,212 @@
-{% extends "common/header.html" %}
-{% load static %}
-{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../..//css/layout.css">
+    <!-- js -->
+    <script src="../../js/jquery-3.6.3.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+    <script src="../../js/bootstrap/bootstrap.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <title>Dround : 커뮤니티</title>
+</head>
+<body>
+    <!-- 컨테이너 -->
     <div class="dr-container">
-        <div class="dr-community-main mx-auto d-xl-flex">
+        <div class="dr-community-main mx-auto d-xl-flex"> 
             <div class="dr-free-board me-xl-5">
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="dr-tit-3">
-                        <h3>전체 커뮤니티</h3>
-                    </div>
-                    <div>
-                        <a href="{% url 'all_commu' %}"><button class="dr-button-view text-center">전체보기</button></a>
+                        <h3> 자유 게시판</h3>
+                    </div>        
+                    <div> 
+                        <button class="dr-button-view text-center">전체보기</button>
                     </div>
                 </div>
                 <div class="dr-line"></div>
                 <div class="dr-free-wrap">
                     <h4 class="mb-4 dr-icon-best dr-fw-700">베스트 순위</h4>
                     <div>
-                        {% for post_data in post %}
-                        <a href="{% url 'detail' post_data.pk %}">
+                        <a href="#none">
                             <div class="dr-fz-15 dr-fw-500 dr-free-cont d-flex align-items-center">
-                                <span class="dr-num">{{ forloop.counter }}</span>
-                                <div class="d-inline-block dr-selc-color me-1 text-nowrap dr-fw-300"><span></span>[{{ post_data.category.name }}]</div>
-                                <p>{{ post_data.title }}</p>
+                                <span class="dr-num">1</span>
+                                <div class="d-inline-block dr-selc-color me-1 text-nowrap dr-fw-300">[잡담]</div><!-- 2023-09-13 클래스 'dr-fw-300' 추가 // 잡담, 업무질문 동일함 --> 
+                                <p>개인사업자, 법인 대출 40억 이내 취급 요청 물건 의뢰 요청 드립니다.개인사업자, 법인 대출 40억 이내 취급 요청 물건 의뢰 요청 드립니다.</p>
                                 <div class="ms-auto dr-free-icon">
                                     <ul>
-                                        {% if post_data.pk in like  %}
-                                        <li class="dr-selc-color dr-heart dr-heart-r">{{ post_data.likes }}</li>
-                                        {% else %}
-                                        <li class="dr-selc-color dr-heart dr-heart-d">{{ post_data.likes }}</li>
-                                        {% endif %}
-                                        <li class="dr-selc-color dr-coment dr-coment-d">{{ post_data.comment_count }}</li>
+                                        <li class="dr-selc-color dr-heart dr-heart-d">440</li>
+                                        <li class="dr-selc-color dr-coment dr-coment-d">4430</li>
+                                        <!-- 하트, 말풍선 컬러버전 <li class="dr-selc-color dr-heart dr-heart-d">4420</li>
+                                        <li class="dr-selc-color dr-coment dr-coment-d">443</li> -->
                                     </ul>
                                 </div>
                             </div>
                         </a>
-                        {% endfor %}
+                        <a href="#none">
+                            <div class="dr-fz-15 dr-fw-500 dr-free-cont d-flex align-items-center">
+                                <span class="dr-num red">2</span>
+                                <div class="d-inline-block dr-selc-color me-1 text-nowrap dr-fw-300">[업무질문]</div>
+                                <p>최근 5개월 동안 분석결과 포트폴리오</p>
+                                <div class="ms-auto dr-free-icon">
+                                    <ul>
+                                        <li class="dr-selc-color dr-heart dr-heart-d">20</li>
+                                        <li class="dr-selc-color dr-coment dr-coment-d">344</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>  
+                        <a href="#none">
+                            <div class="dr-fz-15 dr-fw-500 dr-free-cont d-flex align-items-center">
+                                <span class="dr-num red">3</span>
+                                <div class="d-inline-block dr-selc-color me-1 text-nowrap dr-fw-300">[잡담]</div>
+                                <p>분양계약 10% 정말 환불 및 포기 안되는걸까요?</p>
+                                <div class="ms-auto dr-free-icon">
+                                    <ul>
+                                        <li class="dr-selc-color dr-heart dr-heart-d">200</li>
+                                        <li class="dr-selc-color dr-coment dr-coment-d">304</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>  
+                        <a href="#none">
+                            <div class="dr-fz-15 dr-fw-500 dr-free-cont d-flex align-items-center">
+                                <span class="dr-num">4</span>
+                                <div class="d-inline-block dr-selc-color me-1 text-nowrap dr-fw-300">[잡담]</div>
+                                <p>분양계약 10% 정말 환불 및 포기 안되는걸까요?</p>
+                                <div class="ms-auto dr-free-icon">
+                                    <ul>
+                                        <li class="dr-selc-color dr-heart dr-heart-r">2000</li>
+                                        <li class="dr-selc-color dr-coment dr-coment-r">3404</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a> 
+                        <a href="#none">
+                            <div class="dr-fz-15 dr-fw-500 dr-free-cont d-flex align-items-center">
+                                <span class="dr-num">5</span>
+                                <div class="d-inline-block dr-selc-color me-1 text-nowrap dr-fw-300">[잡담]</div>
+                                <p>분양계약 10% 정말 환불 및 포기 안되는걸까요?</p>
+                                <div class="ms-auto dr-free-icon">
+                                    <ul>
+                                        <li class="dr-selc-color dr-heart dr-heart-r">0</li>
+                                        <li class="dr-selc-color dr-coment dr-coment-r">3404</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a> 
+                        <a href="#none">
+                            <div class="dr-fz-15 dr-fw-500 dr-free-cont d-flex align-items-center">
+                                <span class="dr-num">6</span>
+                                <div class="d-inline-block dr-selc-color me-1 text-nowrap dr-fw-300">[잡담]</div>
+                                <p>분양계약 10% 정말 환불 및 포기 안되는걸까요?</p>
+                                <div class="ms-auto dr-free-icon">
+                                    <ul>
+                                        <li class="dr-selc-color dr-heart dr-heart-r">200</li>
+                                        <li class="dr-selc-color dr-coment dr-coment-r">3404</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a> 
+                        <a href="#none">
+                            <div class="dr-fz-15 dr-fw-500 dr-free-cont d-flex align-items-center">
+                                <span class="dr-num">7</span>
+                                <div class="d-inline-block dr-selc-color me-1 text-nowrap dr-fw-300">[잡담]</div>
+                                <p>분양계약 10% 정말 환불 및 포기 안되는걸까요?분양계약 10% 정말 환불 및 포기 안되는걸까요?분양계약 10% 정말 환불 및 포기 안되는걸까요?</p>
+                                <div class="ms-auto dr-free-icon">
+                                    <ul>
+                                        <li class="dr-selc-color dr-heart dr-heart-r">200</li>
+                                        <li class="dr-selc-color dr-coment dr-coment-r">3404</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a> 
                     </div>
                 </div>
-            </div>
+            </div>  
             <div class="dr-industry">
                 <!-- 로그인일시 노출 s -->
-                {% if user.is_authenticated %}
                 <div class="dr-industry-cont">
                     <div class="d-flex justify-content-between align-items-center ">
                         <div class="dr-tit-3">
                             <h3>업계 커뮤니티</h3>
                         </div>
                         <div>
-                            <button class="dr-button-worker text-center">{{ user.job_code.name }}</button>
-                        </div>
-                    </div>
+                            <button class="dr-button-worker text-center">감정평가법인</button>
+                        </div>   
+                    </div>  
                     <div class="dr-line"></div>
                     <div class="mt-4">
                         <ul>
-                        {% for data in combined_data %}
-                            {% if data.is_partner %}
                             <li>
-                                <a href="{% url 'partner_detail' data.pk %}">
+                                <a href="#none">
                                     <span>파트너</span>
-                                    <p>{{ data.title }}</p>
+                                    <p>개인사업자, 법인대출 40억</p>
                                 </a>
                             </li>
-                            {% else %}
                             <li>
-                                <a href="{% url 'detail' data.pk user.job_code.code %}">
+                                <a href="#none">
                                     <span>게시판</span>
-                                    <p>{{ data.title}}</p>
+                                    <p>개인사업자, 법인대출 40억개인사업자, 법인대출 40억</p>
                                 </a>
                             </li>
-                            {% endif %}
-                        {% endfor %}
-
+                            <li>
+                                <a href="#none">
+                                    <span>파트너</span>
+                                    <p>개인사업자, 법인대출 40억</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <span>게시판</span>
+                                    <p>개인사업자, 법인대출 40억개인사업자, 법인대출 40억개인사업자, 법인대출 40억</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <span>파트너</span>
+                                    <p>개인사업자, 법인대출 40억</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <span>게시판</span>
+                                    <p>개인사업자, 법인대출 40억</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <span>파트너</span>
+                                    <p>개인사업자, 법인대출 40억 개인사업자, 법인대출 40억 개인사업자, 법인대출 40억</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <span>게시판</span>
+                                    <p>개인사업자, 법인대출 40억</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <span>파트너</span>
+                                    <p>개인사업자, 법인대출 40억 개인사업자, 법인대출 40억 개인사업자, 법인대출 40억</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <span>게시판</span>
+                                    <p>개인사업자, 법인대출 40억</p>
+                                </a>
+                            </li>
                         </ul>
                     </div>
-                    <a href="{% url 'pro' user.job_code.code %}"><button class="dr-button-view text-center">전체보기</button></a>
-                </div>
+                    <button class="dr-button-view text-center">전체보기</button>
+                </div>    
                 <!-- 로그인일시 노출 e -->
                 <!-- 로그인 아닐 시 노출 s-->
-                {% else %}
                 <div class="dr-no-industry-cont">
                     <div class="dr-tit-3">
                         <h3>업계 커뮤니티</h3>
@@ -91,36 +220,37 @@
                             사람들을 위한 공간입니다.</p>
                         <div>로그인 후 이용하실 수 있습니다.</div>
                     </div>
-                    <button class="dr-button-view w-100" onclick="window.location.href='{% url 'signin' %}'">로그인하기</button>
-                </div>
+                    <button class="dr-button-view w-100">로그인하기</button>
+                </div> 
                 <!-- 로그인 아닐 시 노출 e-->
-                {% endif %}
                 <div class="dr-community-side">
-                    <div class="dr-community-banner"><!-- 2023-09-22 오후, 클래스 mt-xl-4 제거 -->
-{#                        <p class="">Banner image link</p>#}
-                        <a href="{% url 'partner' %}" class="d-block">
-                            <img src="{% static 'img/contents/co-banner-1.png' %}" alt="광고 이미지">
-                        </a>
-                    </div>
-                    <div class="dr-community-vote">
+                    <div class="dr-community-banner mt-xl-4">
+                        <!-- 2023-09-18 추가 s -->
+                        <!-- <p class="">Banner image link</p> -->
+                        <a href="#none" class="d-block">
+                            <img src="../../img/contents/co-banner-1.png" alt="광고 이미지">
+                        </a>    
+                        <!-- 2023-09-18 추가 s -->
+                    </div> 
+                    <div class="dr-community-vote"><!-- 2023-09-18 클래스 'mt-4' 제거 -->
                         <h4 class="dr-icon-vote dr-fw-700">인기 투표</h4>
                         <ul>
-                            {% for vote_data in vote %}
                             <li>
-                                <a href="{% url 'detail' vote_data.post_id %}">
-                                    <p>{{ vote_data.title}}</p>
+                                <a href="#none">
+                                    <p>구글 대화형 AI ‘바드’ 출시 1등 수혜주는?</p>
                                 </a>
                             </li>
-                            {% endfor %}
+                            <li>
+                                <a href="#none">
+                                    <p>구글 대화형 AI ‘바드’ 출시 1등 수혜주는?</p>
+                                </a>
+                            </li>
                         </ul>
-                    </div>
+                    </div>  
                 </div>
             </div>
         </div>
     </div>
     <!--// 컨테이너 -->
-{#</body>#}
-{#</html>#}
-    <script src="{% static 'js/community.js' %}"></script>
-    {% include "common/footer.html" %}
-{% endblock content %}
+</body>
+</html>
