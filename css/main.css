@@ -215,7 +215,9 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
 .dr-details-tit.off::before{content: ""; all: unset;}
 .dr-details-wrap{width: 100%; max-width: 840px; overflow: hidden;border: 1px solid #E8E8EB;border-radius: 5px;padding: 2.5rem 3.5rem;background: #fff; margin-right: 3rem;}
 .dr-details-wrap .dr-delete-button{font-size: 1.2rem; color: #EA5555; margin-left: auto; border-bottom: 1px solid #EA5555;}
-.dr-details-wrap .details-wrap-txt p{line-height: 27px;  padding-bottom: 3rem;}
+/*.dr-details-wrap .details-wrap-txt p{line-height: 27px;  padding-bottom: 3rem;}*/
+.dr-details-wrap .details-wrap-txt p{line-height: 27px;}
+
 .dr-community-main.details h4.dr-icon-best::before{margin-right: 6px; vertical-align: text-top;}
 .dr-details-header{margin-bottom: 2.5rem;}
 .dr-details-header .dr-delete{color: #c2c2c2; vertical-align: middle; margin-left: 8px;}
@@ -229,7 +231,7 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
 .dr-participation{font-size: 1.3rem; font-weight: 500; color: #505866;}
 .dr-writer-1 .text {line-height: 23px;}
 .dr-writer .text {line-height: 25px;}
-.dr-like{position: relative; display: inline-block;width: 90px;height: 40px;font-size: 1.3rem;font-weight: 500;color: #989CA2;border: 1px solid #D7D7D7;border-radius: 5px;padding: 1.3rem 0rem 2rem 3.5rem;}
+.dr-like{position: relative; display: inline-block;width: 90px;height: 40px;font-size: 1.3rem;font-weight: 500;color: #989CA2;border: 1px solid #D7D7D7;border-radius: 5px;padding: 1.3rem 0rem 2rem 3.5rem; margin-top: 3.5rem;}
 .dr-like.dr-heart::before{left: 16px;}
 .dr-like.on{color:#EA5555; border: 1px solid #e9aaaa;} 
 .dr-like.on.dr-heart::before{left: 10px;} 
