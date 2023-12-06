@@ -1,108 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- css -->
-    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="../../css/layout.css">
-    <!-- js -->
-    <script src="../../js/jquery-3.6.3.min.js"></script>
-    <script src="../../js/jquery-ui.min.js"></script>
-    <script src="../../js/bootstrap/bootstrap.min.js"></script>
-    <script defer src="../../js/common.js"></script>
-    <title>Dround : 글 올리기</title>
-</head>
-<body>
+{% extends "common/header.html" %}
+{% load static %}
+
+{% block content %}
     <!-- 컨테이너 -->
     <div class="dr-container dr-bg-white">
         <div class="dr-registaer-wrap">
             <h1 class="text-center mb-5">커뮤니티 글올리기</h1>
-            <form class="dr-fz-15 dr-fw-600" method="post">
+            <form class="dr-fz-15 dr-fw-600" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
                 <div class="dr-input-wrap">
                     <p class="mb-3">제목<span class="dr-important">*</span></p>
-                    <input type="text" class="dr-input" id="title" name="title" placeholder="ex) 제목을 입력해 주세요"><!--2023-10-24 제목을입력해주세요 변경-->
+                    <input type="text" class="dr-input" id="title" name="title" placeholder="제목을 입력해주세요.">
                 </div>
-                <p class="mb-3">사업단계</p>
+                <p class="mb-3">카테고리<span class="dr-important">*</span></p>
                 <div class="d-flex">
                     <div class="dr-checkbox dr-fw-500">
-                        <input type="checkbox" id="drCheck2">
+                        <input type="checkbox" id="drCheck2" name="category" value="01" onclick="toggleCheckbox('drCheck2')">
                         <label for="drCheck2">업무관련</label>
                     </div>
                     <div class="dr-checkbox dr-fw-500 ms-5">
-                        <input type="checkbox" id="drCheck3">
+                        <input type="checkbox" id="drCheck3" name="category" value="02" onclick="toggleCheckbox('drCheck3')">
                         <label for="drCheck3">잡담</label>
-                    </div>    
+                    </div>
                 </div>
                 
                 <div class="dr-textarea-wrap">
-                    <p>내용</p>
-                    <textarea class="dr-textarea mt-3" id="" cols="10" rows="10" placeholder="내용을 입력해주세요."></textarea>
+                    <p class="mb-3">내용</p>
+                    <textarea class="dr-textarea mt-3" id="summernote" name="content" cols="10" rows="10" placeholder="내용을 입력해주세요."></textarea>
                 </div>
-                <!-- 2023-07-12 주석처리 <div class="d-flex align-items-center mt-2">
-                    <button class="dr-vote-upload-button me-2"><a href="javascript:void(0);" class="dr-selc-color" onclick="drPopupOpen('.dr-popup-vote')">투표 올리기</a></button>
-                    <label class="dr-input-file-button" for="input-file">
+                <div class="d-flex align-items-center mt-2">
+                    <label class="dr-input-file-button" for="input-file" max-size="10485760">
                         이미지
                     </label>
-                    <input type="file" id="input-file" />
-                </div> -->
-                <!-- 2023-07-12 ui 변경 추가된 부분 s -->
-                <div class="d-flex mt-2">
-                    <a class="d-block w-100" href="javascript:void(0);" onclick="drPopupOpen('.dr-popup-vote')">
-                        <button type="button" class="dr-vote-upload-button me-2 dr-selc-color">투표 올리기</button>
-                    </a>
-                </div>
-                <div class="d-flex mt-2 position-relative">
-                    <label class="dr-input-file-button" for="input-file">
-                        이미지
-                    </label>
-                    <input type="file" id="input-file" />
-                </div>
+                    <input type="file" id="input-file" name="input-file" onchange="handleImageUpload(this)" accept="image/*" multiple/>
+                    <a href="javascript:void(0);" class="dr-selc-color" onclick="drPopupOpen('.dr-popup-vote')"><button class="dr-vote-upload-button ms-2" type="button">투표</button></a>
 
-                <div class="dr-vote-complete dr-tooltop">
+                </div>
+                <div class="dr-vote-complete dr-tooltop" style="display: none">
                     <div class="d-flex justify-content-between align-content-center">
-                        <p class="opacity-50">투표가 등록되었습니다.<a href="#none" class="dr-arr" onclick="drPopupOpen('.dr-popup-vote')"></a></p>
-                        <a href="#none" class="dr-vote-close" onclick="tooltipClose('.dr-tooltop')"></a>
-                    </div>
-                </div>   
-                <div class="dr-picture-wrap mt-3">
-                    <div class="dr-picture-box">
-                        <div class="inner">
-                            <div>
-                                <img src="../../img/hairy_boy.png" alt="털보이미지">
-                                <a href="#none"><i></i></a>
-                            </div>
-                            <div>
-                                <img src="../../img/hairy_boy.png" alt="털보이미지">
-                                <a href="#none"><i></i></a>
-                            </div>
-                            <div>
-                                <img src="../../img/hairy_boy.png" alt="털보이미지">
-                                <a href="#none"><i></i></a>
-                            </div>
-                            <div>
-                                <img src="../../img/hairy_boy.png" alt="털보이미지">
-                                <a href="#none"><i></i></a>
-                            </div>
-                            <div>
-                                <img src="../../img/hairy_boy.png" alt="털보이미지">
-                                <a href="#none"><i></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="dr-camera">                  
-                        <label for="input-file-1"></label>
-                        <input type="file" id="input-file-1" />
+                        <a href="#none" class="dr-arr opacity-50" onclick="drPopupOpen('.dr-popup-vote')">투표가 등록되었습니다.</a>
+                        <a href="#none" class="dr-vote-close" onclick="vote_delte('.dr-tooltop')"></a>
                     </div>
                 </div>
-                <!--// 2023-07-12 ui 변경 추가된 부분 e -->
-                <button class="dr-button indigo w-100">글 올리기</button>
-            </form>    
+                <input type="hidden" id="hidden-data1" name="hidden-data1">
+                <input type="hidden" id="hidden-data2" name="hidden-data2">
+                <input type="hidden" id="hidden-data3" name="hidden-data3">
+                <button type="submit" class="dr-button indigo w-100 mt-5" onclick="return validateForm();" >글 올리기</button>
+            </form>
         </div>
     </div>
-    <!--// 컨테이너 --> 
-
+    <!--// 컨테이너 -->
     <!-- 투표 만들기 팝업  s -->
     <div class="dr-dim"></div>
     <div class="dr-popup-wrap dr-popup-vote">
@@ -111,27 +58,32 @@
             <h1>투표 만들기</h1>
         </header>
         <div class="dr-popup-content">
-            <form method="post">
+{#            <form method="post">#}
                 <div class="dr-input-wrap mb-4">
-                    <input type="text" class="dr-input" id="popTitle" name="title" placeholder="제목을 입력해주세요.">
+                    <input type="text" class="dr-input" id="popTitle" name="popTitle" placeholder="제목을 입력해주세요.">
                 </div>
                 <div class="dr-checkbox mt-2 mb-3">
                     <input type="checkbox" id="drCheck4">
                     <label for="drCheck4">복수선택 허용</label>
                 </div>
-                <div class="dr-input-wrap">
+                <div class="dr-input-wrap" id="choice">
                     <input type="text" class="dr-input mb-2" placeholder="보기 1">
-                    <input type="text" class="dr-input" placeholder="보기 2">
+                    <input type="text" class="dr-input mb-2" placeholder="보기 2">
                 </div>
                 <div class="d-flex mt-2">
-                    <button class="dr-button dr-plus-button w-100 dr-bg-white">보기 추가하기</button>
+                    <button class="dr-button dr-plus-button w-100 dr-bg-white" type="button" id="vote_add">보기 추가하기</button>
                 </div>
                 <div class="d-flex mt-5">
-                    <button class="dr-button indigo w-100">투표 등록하기</button>
+                    <button class="dr-button indigo w-100" type="button" id="vote_save">투표 등록하기</button>
                 </div>
-            </form>
+{#            </form>#}
         </div>
     </div>
     <!-- 투표 만들기 팝업  e -->
-</body>
-</html>
+<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
+<script src="{% static 'js/common.js' %}"></script>
+<script src="{% static 'js/editor.js' %}"></script>
+<script src="{% static 'js/community.js' %}"></script>
+    {% include "common/footer.html" %}
+{% endblock content %}
