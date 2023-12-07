@@ -74,7 +74,7 @@
 .dr-job-selection .dr-job:nth-child(2n) {margin-right:0;}
 .dr-job-selection .dr-job label{width: 100%; border:1px solid #d7d7d7; border-radius:8px; line-height:2.5rem; padding:1rem 0; font-size:1.4rem; font-weight:500; text-align: center; cursor: pointer;}
 .dr-job-selection .dr-job input.btn-check:checked + label {background-color: #353839; border-color:#353839; color:#fff !important;}
-.dr-selc-color {color:#989ca1 !important; line-height: 18px;}
+.dr-selc-color {color:#7c7e81 !important; line-height: 18px;}
 .dr-join-chk-wrap {padding:40px 0;}
 .dr-join-chk-wrap .dr-checkbox:first-child {border-bottom:1px solid #e6e5ec;}
 .dr-bs-info-txt {font-size:1.2rem; color:#989ca1; font-weight:400; line-height:1.6rem; margin:6px 0 0 65px;}
@@ -152,8 +152,9 @@ footer.dr-container.dr-fixed {position: fixed; bottom:0; left:0; right:0;}
 .dr-free-board{width: 840px; overflow: hidden; border:1px solid #E8E8EB; border-radius:8px; padding: 2.5rem 3rem; background: #fff;}
 .dr-free-board > div:nth-child(1){padding-bottom: 2.5rem;}
 .dr-tit-3 h3{font-size: 2.3rem; font-weight: 700;}
-button.dr-button-view{font-size:1.3rem; height: 35px; border: 1px solid #E8E8EB; border-radius: 3px;color: #989CA2; background-color: #fff; padding: 0.8rem 2.6rem;}
-.dr-line{height: 1px; border-bottom: 1px solid #e9e9e9; margin: 0 -3rem;}
+button.dr-button-write{font-size:1.4rem; height: 35px; background-color: #1c8f51; border-color: transparent; border-radius: 5px;color: #fff;  padding: 0.8rem 2.6rem;}
+button.dr-button-view{font-size:1.4rem; height: 35px; border: 1px solid #E8E8EB; border-radius: 5px;color: #777a7f; background-color: #fff; padding: 0.8rem 2.6rem; margin-left: 3px;}
+.dr-line{height: 1px; border-bottom: 1px solid #e9e9e9; margin: 0 0rem; opacity: .7;}
 .dr-free-wrap{margin-top: 2rem;}
 h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inline-block; width: 20px; height: 20px; background-image: url(../img/icon/icon_best.png); background-size: cover;vertical-align: bottom; margin-left: -0.5rem; margin-right: 1rem;}
 .dr-free-cont{position:relative; margin-bottom: 2rem;}
@@ -433,7 +434,7 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
 .dr-partner-sub .dr-content-wrap{max-width: 795px;width: 100%; margin-right: 25px; } 
 .dr-partner-sub main{display: flex;}
 .dr-partner-sub main h4{ font-size: 1.8rem; font-weight: 600; line-height: 19px; color: #353839;}
-.dr-business-overview { padding: 4rem 4rem; box-shadow: 0px 1px 23px 0px rgba(0, 0, 0, 0.05); border-radius: 15px; background: #fff;}
+.dr-business-overview { padding: 4.5rem 4rem; box-shadow: 0px 1px 23px 0px rgba(0, 0, 0, 0.05); border-radius: 12px; background: #fff;}
 .dr-business-overview h4::before{content: ""; display: inline-block; width: 18px; height: 18px; background-image: url(../img/icon/icon_info.png); background-size: cover; vertical-align: bottom; margin-right: 10px;}
 .dr-partner-find{padding:4rem 4rem; box-shadow: 0px 1px 23px 0px rgba(0, 0, 0, 0.05); border-radius: 15px; margin-top: 2.5rem; background: #fff;}
 .dr-partner-find h4::before{content: ""; display: inline-block; width: 18px; height: 18px; background-image: url(../img/icon/icon_search.png); background-size: cover; vertical-align: bottom; margin-right: 10px;}
@@ -449,7 +450,7 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
 .dr-partner-sub table, .dr-partner-sub th, .dr-partner-sub td{border: 1px solid #e8e8e8;}
 .dr-partner-sub th{vertical-align: middle;width: 100px;color: #989CA1;font-weight: 500;font-size: 1.5rem;padding: 1.2rem 0 1rem 2.5rem;border-right: 0;}
 .dr-partner-sub td{font-size: 1.6rem; font-weight: 500; padding: 2rem 2rem 2rem 0; border-left: 0; line-height: 26px;}
-.dr-business-overview .dr-icon-txt{ padding: 0rem 0.7rem;}
+.dr-business-overview .dr-icon-txt{ padding: 0rem 1rem;}
 .dr-information{width: 330px; height: 246px; padding: 3.5rem 3rem 3.5rem 3rem; color: #fff; background: #353839; border-radius:15px;} 
 .dr-partner-sub main .dr-information h4{color: #25D477;}
 .dr-partner-sub main .dr-information .belong::before {content: "";display: inline-block;background: url(../img/icon/ex-belong.svg) no-repeat;width: 17px;height: 17px;background-size: cover;position: absolute;margin-left: -25px; margin-top: -1px; }
@@ -533,7 +534,7 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
 /* 전문가 찾기_상세 s */
 .dr-expert-sub{max-width: 1200px;}
 .dr-expert-sub .dr-tit{width: 67.4%; font-size: 3.5rem; font-weight: 700; line-height: 50px;}
-.dr-expert-sub .dr-name{font-size: 3rem; font-weight: 700; line-height: 54px; opacity: 0.9;}
+.dr-expert-sub .dr-name{font-size: 3rem; font-weight: 700; line-height: 54px; }
 .dr-expert-sub .dr-txt span{display:inline-block; font-size: 1.3rem; font-weight: 500;}
 .dr-expert-sub .dr-txt span.dr-date{ color:#D2D2D2;}
 .dr-expert-sub .dr-txt span.dr-progress{padding: 0.2rem 0.6rem; color: #0F4CEA; border: 1px solid #397FE9;}
@@ -543,13 +544,13 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
 .dr-expert-sub main h4{ font-size: 1.8rem; font-weight: 600; line-height: 18px; color: #353839;}
 .dr-expert-sub dl{display: table; margin-bottom: 2rem;}
 .dr-expert-sub dl:last-child{margin-bottom: 0;}
-.dr-expert-sub dt, dd{display: table-cell;line-height: 19px; margin-bottom: 1.5rem;}
+.dr-expert-sub dt, dd{display: table-cell;line-height: 26px; margin-bottom: 1.5rem;}
 .dr-expert-sub dt{width: 85px; vertical-align:top; color: #989CA1; font-weight: 500; font-size: 1.5rem; }
 .dr-expert-sub dd{font-size: 1.6rem; font-weight: 500;}
 .dr-expert-sub dd p { line-height: 24px;}
 .dr-expert-sub .dr-line{padding-top: 20px; margin-bottom: 40px;}
 .dr-expert-sub .dr-expert-information{width: 380px; color: #fff; border-radius: 3px;} 
-.dr-expert-sub .dr-expert-information .dr-adress{width: 100%; height: 165px; padding: 3.5rem 3rem 3.5rem 3rem; background: #353839; border-radius: 15px;} 
+.dr-expert-sub .dr-expert-information .dr-adress{width: 100%; height: 165px; padding: 3.5rem 3rem 3.5rem 3rem; background: #353839; border-radius: 12px;} 
 .dr-expert-sub main .dr-expert-information .dr-expert-banner{ font-weight: 700; font-size: 1.8rem; border: 5px;margin-top: 1.5rem;}
 .dr-expert-sub main .dr-expert-information h4{color: #72E0FC; margin-bottom: 3rem;}
 .dr-expert-sub main .dr-expert-information > .dr-adress {font-weight: 400; font-size: 1.4rem;}
@@ -973,19 +974,21 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
     /* ------팝업------ e */
     
     /* ------커뮤니티------ s*/
-    .dr-free-board{width: 100% ;}
+    
+    button.dr-button-write {	z-index: 1000; position: fixed; right: 20px; bottom: 35px; padding:0 35px; background: #1c8f51; height: 40px; box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2); border-radius: 5px; text-decoration: none !important;}
+    .dr-free-board{width: 100% ; padding: 2.5rem 2.2rem;}
     .dr-feel .dr-industry{width: 100%;}
     .dr-industry-cont, .dr-no-industry-cont{width: 100%; margin-right: 0;}
     .dr-community-banner{width: 100% ; margin-top: 2.5rem;}
     .dr-community-side{ width: 100%;}
-    .dr-community-vote{ width: 100%; margin-top: 2.5rem;}
-    .dr-free-wrap > div a {display: block; margin-bottom: 2rem;}
-    .dr-num{margin-right: 0.5rem;}
+    .dr-community-vote{ width: 100%; margin-top: 2.7rem;}
+    .dr-free-wrap > div a {display: block; margin-bottom: 2.5rem;}
+    .dr-num{display: none; margin-right: 0.5rem;}
     .dr-free-cont{display: unset !important;}
-    .dr-free-cont p{max-width: unset ; white-space: unset ; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; max-height: 30px; margin: 0.5rem 0 0.3rem; padding-left: 19px;}
+    .dr-free-cont p{font-size:1.65rem ; max-width: unset ; white-space: unset ; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; max-height: 45px; margin: 0.5rem 0 0.8rem; line-height: 23px;}
     .dr-free-cont .dr-free-icon{margin-left: 0 !important;}
     .dr-industry-cont ul li p{max-width: 360px; width: calc(100% - 80px)}
-    .dr-free-wrap .dr-free-cont .dr-free-icon{padding-left: 19px;}
+    .dr-free-wrap h4::before {margin-bottom: -1.3px;}
     
     /* 커뮤니티_글상세 s */
     .dr-community-main.details{display: block !important;} 
@@ -1006,6 +1009,7 @@ h4.dr-icon-best::before, .dr-community-vote h4::before{content:"";display: inlin
     /* 커뮤니티_게시판 e */
     
     /* 커뮤니티_감정법인 s */
+    .dr-industry-cont {padding: 2.6rem 2.2rem;}
     .dr-feel .dr-industry{margin-top:2.5rem; min-width: auto;}
     .dr-feel .dr-title-wrap .dr-title-search-box input {width:calc(100% - 123px);}
     .dr-banner-link{padding: 40px 20px;}
